@@ -1,0 +1,538 @@
+﻿﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Super Street Fighter II Turbo - Hitbox Diagrams : Zangief</title>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+<script type="text/javascript">
+var selectedImage;
+
+function insertImage(src) {
+    if (window.parent && window.parent.frames) {
+        window.parent.frames[1].insertImage(src);
+    }
+}
+
+function add1p() {
+    insertImage(selectedImage);
+}
+
+function add2p() {
+    var imgsrc = selectedImage.replace('ssf2st', 'ssf2st/flop');
+    insertImage(imgsrc);
+}
+
+function onMouseoutEvt(evt) {
+    $('#addimagemenu').hide();
+}
+
+function onMouseoverEvt(evt) {
+    selectedImage = this.src;
+    var imgid = this.id;
+    $('#addimagemenu').show();
+    $('#addimagemenu').position({
+      my: "center",
+      at: "center",
+      of: "#" + imgid
+    }).show();
+}
+
+function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+if (getParameterByName('dragndrop')) {
+    $(function() {
+        $('.movesetimg').mouseover(onMouseoverEvt);
+    });
+}
+</script>
+
+<style>
+
+.movesetimg
+{
+	background: #fff;
+	border-color: #aaa #ccc #ddd #bbb;
+	border-style: solid;
+	border-width: 1px;
+	color: inherit;
+	padding: 2px;
+	vertical-align: top;
+}
+
+
+.hoverbox
+{
+	cursor: default;
+	list-style: none;
+}
+
+.hoverbox a .preview
+{
+	display: none;
+}
+
+.hoverbox a:hover .preview
+{
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 1;
+}
+
+.hoverbox img
+{
+	background: #fff;
+	border-color: #aaa #ccc #ddd #bbb;
+	border-style: solid;
+	border-width: 1px;
+	color: inherit;
+	padding: 2px;
+	vertical-align: top;
+}
+
+.hoverbox .preview
+{
+	border-color: #000;
+}
+
+
+body {
+	position: relative;
+	font-family: sans-serif;
+}
+
+a:hover {
+	color:blue;	
+	text-decoration:underline;
+}
+
+a {
+	color:Gray;
+	text-decoration:none;
+}
+
+.move-property {
+	padding: 5px;
+	font-weight: bold;
+	width:70px;
+	text-align:center;
+	margin:3px;
+	float:left;
+}
+
+.active {
+	background-color: #1E90FF;
+	color: White;
+}
+
+.inactive {
+	background-color: #708090;
+	color: #A9A9A9;
+}
+
+div.attack-block-hit {
+	border-style: solid;
+	border-color: Black;
+	border-width: medium;
+	padding: 5px;
+	width: 100%;
+}
+
+table.attack-block-hit  td {
+	padding: 5px;
+}
+
+td.tl {
+	border-left:medium solid black;
+	border-top:medium solid black
+}
+td.tr {
+	border-right:medium solid black;
+	border-top:medium solid black
+}
+td.ml {
+	border-left:medium solid black;
+	border-top:medium solid black
+}
+td.mr {
+	border-right:medium solid black;
+	border-top:medium solid black
+}
+td.bl {
+	border-left:medium solid black;
+	border-top:medium solid black;
+	border-bottom:medium solid black
+}
+td.br {
+	border-right:medium solid black;
+	border-top:medium solid black;
+	border-bottom:medium solid black
+}
+tr.movename {
+	background-color:pink;
+	font-size:larger;
+	font-weight:bold;
+	padding:5px;
+}
+
+td.movename {
+	font-size:larger;
+	font-weight:bold;
+	padding:5px;
+}
+
+td.back-to-top {
+	font-size:small;
+	font-weight:thin;
+	padding:5px;
+}
+
+.frame {
+	float:left;
+	padding:5px;
+	margin-top:3px;
+	text-align:center;
+	font-size:small;
+}
+
+.inactive-frame {
+	background-color:#999;	
+}
+.active-frame {
+	background-color:#F60;	
+}
+
+</style>
+</head>
+<body>
+<a name='top'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Zangief</td><td class='back-to-top' align=right><a class='fixquery' href='../../'>Select another character</a></td></tr><tr><td valign=top><img src='../../images/new/zangief.png' border=0/></td><td valign=top><a href='#Standing'>Standing</a> | <a href='#Crouching'>Crouching</a><br/><a href='#close-lp'>close-lp</a> | <a href='#close-mp'>close-mp</a> | <a href='#close-hp'>close-hp</a> | <a href='#close-lk'>close-lk</a> | <a href='#close-mk'>close-mk</a> | <a href='#close-hk'>close-hk</a><br/><a href='#far-lp'>far-lp</a> | <a href='#far-mp'>far-mp</a> | <a href='#far-hp'>far-hp</a> | <a href='#far-lk'>far-lk</a> | <a href='#far-mk'>far-mk</a> | <a href='#far-hk'>far-hk</a><br/><a href='#crouch-lp'>crouch-lp</a> | <a href='#crouch-mp'>crouch-mp</a> | <a href='#crouch-hp'>crouch-hp</a> | <a href='#crouch-lk'>crouch-lk</a> | <a href='#crouch-mk'>crouch-mk</a> | <a href='#crouch-hk'>crouch-hk</a><br/><a href='#up-lp'>up-lp</a> | <a href='#up-mp'>up-mp</a> | <a href='#up-hp'>up-hp</a> | <a href='#up-lk'>up-lk</a> | <a href='#up-mk'>up-mk</a> | <a href='#up-hk'>up-hk</a><br/><a href='#jump-lp'>jump-lp</a> | <a href='#jump-mp'>jump-mp</a> | <a href='#jump-hp'>jump-hp</a> | <a href='#jump-lk'>jump-lk</a> | <a href='#jump-mk'>jump-mk</a> | <a href='#jump-hk'>jump-hk</a><br/><a href='#throw-1'>throw-1</a> | <a href='#throw-2'>throw-2</a> | <a href='#throw-3'>throw-3</a> | <a href='#throw-4'>throw-4</a> | <a href='#throw-5'>throw-5</a><br/><a href='#airthrow-1'>airthrow-1</a> | <a href='#airthrow-2'>airthrow-2</a><br/><a href='#Stomach Crunch (strong)'>Stomach Crunch (strong)</a> | <a href='#Stomach Crunch (fierce)'>Stomach Crunch (fierce)</a> | <a href='#Splash'>Splash</a> | <a href='#Ground Hop'>Ground Hop</a> | <a href='#Knees (short)'>Knees (short)</a> | <a href='#Knees (forward)'>Knees (forward)</a><br/><a href='#Lariat (punch)'>Lariat (punch)</a> | <a href='#Lariat (kick)'>Lariat (kick)</a> | <a href='#Banishing Flat (Green Hand)'>Banishing Flat (Green Hand)</a> | <a href='#Spinning Pile Driver'>Spinning Pile Driver</a> | <a href='#Double Suplex'>Double Suplex</a> | <a href='#Running Bear Grab'>Running Bear Grab</a><br/><a href='#Super'>Super</a></td></tr></table><br/><br/><a name='Standing'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Standing</td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td><div style='padding-top:3px'><img id='standing1crjpg' class='movesetimg hoverbox' style='float:left' src='./standing/1_cr.jpg'/><img id='standing2crjpg' class='movesetimg hoverbox' style='float:left' src='./standing/2_cr.jpg'/><img id='standing3crjpg' class='movesetimg hoverbox' style='float:left' src='./standing/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Crouching'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouching</td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td><div style='padding-top:3px'><img id='crouching1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouching/1_cr.jpg'/><img id='crouching2crjpg' class='movesetimg hoverbox' style='float:left' src='./crouching/2_cr.jpg'/><img id='crouching3crjpg' class='movesetimg hoverbox' style='float:left' src='./crouching/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-lp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/lp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property active'>Chain Cancel</div><div class='move-property active'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>9</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:3px' class='frame inactive-frame'>1</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:6px' class='frame active-frame'>2</div><div style='width:6px' class='frame active-frame'>2</div><div style='width:45px' class='frame inactive-frame'>15</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closelp1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lp/1_cr.jpg'/><img id='closelp2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lp/2_cr.jpg'/><img id='closelp3crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lp/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-mp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>15</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closemp1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mp/1_cr.jpg'/><img id='closemp2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-hp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:18px' class='frame active-frame'>6</div><div style='width:87px' class='frame inactive-frame'>29</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closehp1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hp/1_cr.jpg'/><img id='closehp2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-lk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:24px' class='frame inactive-frame'>8</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closelk1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-mk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>15</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:27px' class='frame inactive-frame'>9</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closemk1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mk/1_cr.jpg'/><img id='closemk2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mk/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-hk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18+3</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:30px' class='frame inactive-frame'>10</div><div style='width:18px' class='frame active-frame'>6</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:78px' class='frame inactive-frame'>26</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closehk1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/1_cr.jpg'/><img id='closehk2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/2_cr.jpg'/><img id='closehk3crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/3_cr.jpg'/><img id='closehk4crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/4_cr.jpg'/><img id='closehk5crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/5_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-lp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/lp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property active'>Chain Cancel</div><div class='move-property active'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:9px' class='frame inactive-frame'>3</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farlp1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-mp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>15</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mp/1_cr.jpg'/><img id='farmp2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-hp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:18px' class='frame active-frame'>6</div><div style='width:87px' class='frame inactive-frame'>29</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farhp1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hp/1_cr.jpg'/><img id='farhp2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-lk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farlk1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-mk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>15</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:27px' class='frame inactive-frame'>9</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mk/1_cr.jpg'/><img id='farmk2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mk/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-hk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:33px' class='frame inactive-frame'>11</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farhk1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-lp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/lp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property active'>Chain Cancel</div><div class='move-property active'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>3</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:12px' class='frame inactive-frame'>4</div><div style='width:15px' class='frame active-frame'>5</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchlp1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-lp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-mp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>15</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:27px' class='frame inactive-frame'>9</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-mp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-hp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:69px' class='frame inactive-frame'>23</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchhp1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-lk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property active'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:12px' class='frame inactive-frame'>4</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:21px' class='frame inactive-frame'>7</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchlk1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-lk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-mk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property active'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>15</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:12px' class='frame inactive-frame'>4</div><div style='width:18px' class='frame active-frame'>6</div><div style='width:27px' class='frame inactive-frame'>9</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-mk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-hk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:39px' class='frame inactive-frame'>13</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchhk1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hk/1_cr.jpg'/><img id='crouchhk2crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hk/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-lp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/lp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:6px' class='frame inactive-frame'>2</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:84px' class='frame inactive-frame'>28</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='uplp1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-lp/1_cr.jpg'/><img id='uplp2crjpg' class='movesetimg hoverbox' style='float:left' src='./up-lp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-mp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:6px' class='frame inactive-frame'>2</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:84px' class='frame inactive-frame'>28</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='upmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-mp/1_cr.jpg'/><img id='upmp2crjpg' class='movesetimg hoverbox' style='float:left' src='./up-mp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-hp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:6px' class='frame inactive-frame'>2</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:84px' class='frame inactive-frame'>28</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='uphp1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-hp/1_cr.jpg'/><img id='uphp2crjpg' class='movesetimg hoverbox' style='float:left' src='./up-hp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-lk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:9px' class='frame inactive-frame'>3</div><div style='width:114px' class='frame active-frame'>38</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='uplk1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-lk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-mk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:9px' class='frame inactive-frame'>3</div><div style='width:48px' class='frame active-frame'>16</div><div style='width:24px' class='frame inactive-frame'>8</div><div style='width:18px' class='frame inactive-frame'>6</div><div style='width:24px' class='frame inactive-frame'>8</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='upmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-mk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-hk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:9px' class='frame inactive-frame'>3</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:24px' class='frame inactive-frame'>8</div><div style='width:18px' class='frame inactive-frame'>6</div><div style='width:48px' class='frame inactive-frame'>16</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='uphk1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-hk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-lp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/lp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:6px' class='frame inactive-frame'>2</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:78px' class='frame inactive-frame'>26</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumplp1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-lp/1_cr.jpg'/><img id='jumplp2crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-lp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-mp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:6px' class='frame inactive-frame'>2</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:78px' class='frame inactive-frame'>26</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumpmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-mp/1_cr.jpg'/><img id='jumpmp2crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-mp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-hp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:21px' class='frame active-frame'>7</div><div style='width:75px' class='frame inactive-frame'>25</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumphp1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-hp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-lk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:9px' class='frame inactive-frame'>3</div><div style='width:48px' class='frame active-frame'>16</div><div style='width:24px' class='frame inactive-frame'>8</div><div style='width:18px' class='frame inactive-frame'>6</div><div style='width:18px' class='frame inactive-frame'>6</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumplk1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-lk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-mk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:9px' class='frame inactive-frame'>3</div><div style='width:48px' class='frame active-frame'>16</div><div style='width:24px' class='frame inactive-frame'>8</div><div style='width:18px' class='frame inactive-frame'>6</div><div style='width:18px' class='frame inactive-frame'>6</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumpmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-mk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-hk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:9px' class='frame inactive-frame'>3</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:24px' class='frame inactive-frame'>8</div><div style='width:18px' class='frame inactive-frame'>6</div><div style='width:42px' class='frame inactive-frame'>14</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumphk1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-hk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='throw-1'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Throw 1&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>22</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>&nbsp</td></tr>
+</table>
+</td></tr></table></td><td><div style='padding-top:3px'><img id='throw11crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-1/1_cr.jpg'/><img id='throw12crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-1/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='throw-2'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Throw 2&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18 + 3*n</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>&nbsp</td></tr>
+</table>
+</td></tr></table></td><td><div style='padding-top:3px'><img id='throw21crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-2/1_cr.jpg'/><img id='throw22crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-2/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='throw-3'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Throw 3&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>22</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>&nbsp</td></tr>
+</table>
+</td></tr></table></td><td><div style='padding-top:3px'><img id='throw31crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-3/1_cr.jpg'/><img id='throw32crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-3/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='throw-4'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Throw 4&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18 + 3*n</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>&nbsp</td></tr>
+</table>
+</td></tr></table></td><td><div style='padding-top:3px'><img id='throw41crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-4/1_cr.jpg'/><img id='throw42crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-4/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='throw-5'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Throw 5&#160;&#160;&#160;&#160;<img src='../../images/down.png' border=0/> + <img src='../../images/mp.png' border=0/>/<img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>18 + 3*n</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>&nbsp</td></tr>
+</table>
+</td></tr></table></td><td><div style='padding-top:3px'><img id='throw51crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-5/1_cr.jpg'/><img id='throw52crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-5/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><table ><tr valign=top><th>Beats</th><td><table><tr><td> feilong </td><td>13</td></tr><tr><td> thawk </td><td>11</td></tr><tr><td> balrog-hp-throw </td><td>10</td></tr><tr><td> sagat </td><td>8</td></tr><tr><td> cammy </td><td>7</td></tr><tr><td> deejay </td><td>6</td></tr><tr><td> guile </td><td>6</td></tr><tr><td> ryu </td><td>5</td></tr><tr><td> ken </td><td>5</td></tr><tr><td> vega </td><td>4</td></tr><tr><td> chunli </td><td>1</td></tr></table></td></tr><tr valign=top><th>Loses to</th><td><table><tr><td> thawk-360/720 </td><td>-24</td></tr><tr><td> ehonda oicho </td><td>-17</td></tr><tr><td> ehonda </td><td>-12</td></tr><tr><td> blanka </td><td>-10</td></tr><tr><td> dhalsim </td><td>-5</td></tr></table></td></tr><tr valign=top><th>Draws with</th><td>balrog-mp-throw<br/>mbison</td></tr></table><a name='airthrow-1'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Air Throw 1&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/mp.png' border=0/>/<img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>30</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>&nbsp</td></tr>
+</table>
+</td></tr></table></td><td><div style='padding-top:3px'><img id='airthrow11crjpg' class='movesetimg hoverbox' style='float:left' src='./airthrow-1/1_cr.jpg'/><img id='airthrow12crjpg' class='movesetimg hoverbox' style='float:left' src='./airthrow-1/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='airthrow-2'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Air Throw 2&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/mk.png' border=0/>/<img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>24</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>&nbsp</td></tr>
+</table>
+</td></tr></table></td><td><div style='padding-top:3px'><img id='airthrow21crjpg' class='movesetimg hoverbox' style='float:left' src='./airthrow-2/1_cr.jpg'/><img id='airthrow22crjpg' class='movesetimg hoverbox' style='float:left' src='./airthrow-2/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Stomach Crunch (strong)'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Stomach Crunch (strong)&#160;&#160;&#160;&#160;<img src='../../images/up.png' border=0/><img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>16</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:9px' class='frame inactive-frame'>3</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:90px' class='frame inactive-frame'>30</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='unique21crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-2/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Stomach Crunch (fierce)'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Stomach Crunch (fierce)&#160;&#160;&#160;&#160;<img src='../../images/up.png' border=0/><img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>20</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:9px' class='frame inactive-frame'>3</div><div style='width:18px' class='frame active-frame'>6</div><div style='width:96px' class='frame inactive-frame'>32</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='unique31crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-3/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Splash'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Splash&#160;&#160;&#160;&#160;<img src='../../images/down.png' border=0/><img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>16</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:102px' class='frame active-frame'>34</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='unique61crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-6/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Ground Hop'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Ground Hop&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/mp.png' border=0/>/<img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>16</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:45px' class='frame inactive-frame'>15</div><div style='width:69px' class='frame active-frame'>23</div><div style='width:120px' class='frame inactive-frame'>40</div><div style='clear:both'></div><div style='width:45px' class='frame inactive-frame'>15</div><div style='width:75px' class='frame active-frame'>25</div><div style='width:129px' class='frame inactive-frame'>43</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='unique11crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-1/1_cr.jpg'/><img id='unique12crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-1/2_cr.jpg'/><img id='unique13crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-1/3_cr.jpg'/><img id='unique14crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-1/4_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Knees (short)'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Knees (short)&#160;&#160;&#160;&#160;<img src='../../images/down.png' border=0/><img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>10</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:102px' class='frame active-frame'>34</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='unique41crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-4/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Knees (forward)'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Knees (forward)&#160;&#160;&#160;&#160;<img src='../../images/down.png' border=0/><img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:54px' class='frame active-frame'>18</div><div style='width:42px' class='frame inactive-frame'>14</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='unique51crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-5/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Lariat (punch)'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Lariat (punch)&#160;&#160;&#160;&#160;<img src='../../images/lp.png' border=0/><img src='../../images/mp.png' border=0/><img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>10, 11, 12</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame active-frame'>7</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:9px' class='frame inactive-frame'>3</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='special11crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/1_cr.jpg'/><img id='special12crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/2_cr.jpg'/><img id='special13crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/3_cr.jpg'/><img id='special14crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/4_cr.jpg'/><img id='special15crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/5_cr.jpg'/><img id='special16crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/6_cr.jpg'/><img id='special17crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/7_cr.jpg'/><img id='special18crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/8_cr.jpg'/><img id='special19crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/9_cr.jpg'/><img id='special19acrjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/9a_cr.jpg'/><img id='special19bcrjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/9b_cr.jpg'/><img id='special19ccrjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/9c_cr.jpg'/><img id='special19dcrjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/9d_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Lariat (kick)'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Lariat (kick)&#160;&#160;&#160;&#160;<img src='../../images/lk.png' border=0/><img src='../../images/mk.png' border=0/><img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>10, 11, 12</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame active-frame'>7</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:18px' class='frame inactive-frame'>6</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='special21crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/1_cr.jpg'/><img id='special22crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/2_cr.jpg'/><img id='special23crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/3_cr.jpg'/><img id='special24crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/4_cr.jpg'/><img id='special25crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/5_cr.jpg'/><img id='special26crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/6_cr.jpg'/><img id='special27crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/7_cr.jpg'/><img id='special28crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/8_cr.jpg'/><img id='special29crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/9_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Banishing Flat (Green Hand)'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Banishing Flat (Green Hand)&#160;&#160;&#160;&#160;<img src='../../images/right.png' border=0/><img src='../../images/downright.png' border=0/><img src='../../images/down.png' border=0/><img src='../../images/punch.gif' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>16</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:18px' class='frame inactive-frame'>6</div><div style='width:36px' class='frame active-frame'>12</div><div style='width:66px' class='frame inactive-frame'>22</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='special41crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/1_cr.jpg'/><img id='special42crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/2_cr.jpg'/><img id='special43crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/3_cr.jpg'/><img id='special44crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/4_cr.jpg'/><img id='special45crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/5_cr.jpg'/><img id='special46crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/6_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Spinning Pile Driver'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Spinning Pile Driver&#160;&#160;&#160;&#160;<img src='../../images/fcb.png' border=0/><img src='../../images/punch.gif' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>25, 28, 30</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:66px' class='frame inactive-frame'>22</div><div style='clear:both'></div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:72px' class='frame inactive-frame'>24</div><div style='clear:both'></div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:78px' class='frame inactive-frame'>26</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='special31crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/1_cr.jpg'/><img id='special32crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/2_cr.jpg'/><img id='special33crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/3_cr.jpg'/><img id='special39crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/9_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Double Suplex'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Double Suplex&#160;&#160;&#160;&#160;Close<img src='../../images/fcb.png' border=0/><img src='../../images/kick.gif' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>14+18, 14+19, 14+20</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
+</table>
+</td></tr></table></td><td><div style='padding-top:3px'><img id='special51crjpg' class='movesetimg hoverbox' style='float:left' src='./special-5/1_cr.jpg'/><img id='special52crjpg' class='movesetimg hoverbox' style='float:left' src='./special-5/2_cr.jpg'/><img id='special53crjpg' class='movesetimg hoverbox' style='float:left' src='./special-5/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Running Bear Grab'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Running Bear Grab&#160;&#160;&#160;&#160;Far<img src='../../images/fcb.png' border=0/><img src='../../images/kick.gif' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>20, 20, 20</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
+</table>
+</td></tr><tr><td style='padding-top:3px'><div style='width:30px' class='frame inactive-frame'>10</div><div style='width:48px' class='frame active-frame'>16</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:66px' class='frame inactive-frame'>22</div><div style='clear:both'></div><div style='width:36px' class='frame inactive-frame'>12</div><div style='width:48px' class='frame active-frame'>16</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:72px' class='frame inactive-frame'>24</div><div style='clear:both'></div><div style='width:42px' class='frame inactive-frame'>14</div><div style='width:48px' class='frame active-frame'>16</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:78px' class='frame inactive-frame'>26</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='special61crjpg' class='movesetimg hoverbox' style='float:left' src='./special-6/1_cr.jpg'/><img id='special62crjpg' class='movesetimg hoverbox' style='float:left' src='./special-6/2_cr.jpg'/><img id='special63crjpg' class='movesetimg hoverbox' style='float:left' src='./special-6/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Super'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Super&#160;&#160;&#160;&#160;<img src='../../images/fcb.png' border=0/><img src='../../images/fcb.png' border=0/><img src='../../images/punch.gif' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
+<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
+<tr><td class='tl'>Attack</td><td class='tr'>14+14+30</td></tr>
+<tr><td class='ml'>Block</td><td class='mr'>&nbsp;</td></tr>
+<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
+</table>
+</td></tr></table></td><td><div style='padding-top:3px'><img id='super1crjpg' class='movesetimg hoverbox' style='float:left' src='./super/1_cr.jpg'/><img id='super2crjpg' class='movesetimg hoverbox' style='float:left' src='./super/2_cr.jpg'/><img id='super3crjpg' class='movesetimg hoverbox' style='float:left' src='./super/3_cr.jpg'/><img id='super4crjpg' class='movesetimg hoverbox' style='float:left' src='./super/4_cr.jpg'/></div></td></tr></table></td></tr></table><br/>
+<script>
+    var index = window.location.href.indexOf('?');
+    if(index != -1){
+        var querystring = window.location.href.slice(index + 1)       
+		$('a[class="fixquery"]').each(function() {
+		   var $this = $(this);       
+		   var href = $this.attr("href");
+		   href += (href.indexOf('?') != -1) ? '&' : '?';
+		   href += querystring;
+		   $this.attr("href", href);
+		});
+	}
+</script>
+<map name='Map' id='Map'>
+  <area shape='rect' coords='0,0,98,30' href='javascript:add1p();' />
+  <area shape='rect' coords='0,30,98,60' href='javascript:add2p()' />
+</map>
+<img  id='addimagemenu' style='display:none' src='../../images/addimage.png' width='98' height='60' border='0' usemap='#Map'/></body></html>

@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title></title>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+<style type="text/css">
+body {
+    position:relative;
+    height:95%;
+	color:LightSlateGray ;
+	font-family: sans-serif;
+}
+#slider { margin: 10px; }
+#droppable { text-align:center; float:right; width: 125px; height: 75px; background: gray; color: white; margin: 20px; padding-top:30px }
+
+</style>
+<link id='customcss' rel="stylesheet" type="text/css" href="white.css"/>
+
+<script type="text/javascript">
+
+function toggleCss() {
+    var css = $("#customcss");
+    if (css.attr('href') == "black.css") {
+        css.attr('href',"white.css");
+    } else {
+        css.attr('href',"black.css");
+    }        
+}    
+
+function getZIndex(j) {
+  var z = $(j).css("z-index");
+  z = parseInt(z,10); 
+  if (isNaN(z)) return 1;
+  return z;
+}    
+    
+function maxZ() {
+    var mj = 0;
+    $('img').each(function(){
+        var z = getZIndex(this);
+        if (z > mj) {
+            mj = z;
+        }
+    });
+    return mj;
+} 
+
+function updateZindex(){
+    var z = getZIndex(this);
+    var mz = maxZ();
+    if (z < mz || mz == 1) {
+        $(this).css("z-index",mz+1);
+    }
+}
+
+$.generateId = function() {
+    return arguments.callee.prefix + arguments.callee.count++;
+};
+
+$.generateId.prefix = 'jqid';
+$.generateId.count = 0;
+    
+$.fn.generateId = function() {
+    return this.each(function() {
+        this.id = $.generateId();
+    });
+};
+
+
+function insertImage(src) {
+    var id = $.generateId();
+    var opacity = $("#slider").slider("option", "value");
+    $('#content').append('<img id="'+ id + '" src="' + src + '"/>');
+    setTimeout(function() {
+       $('#'+id).css("z-index",1).draggable().fadeTo('fast', opacity).mousedown(updateZindex);
+    },100);
+}
+
+$(function() {
+    var defaultOpacity = 0.5;
+    $("#slider").slider({
+        min:0.05,
+        step:0.05,
+        value:defaultOpacity,
+        max:1.0,
+       change: function(event, ui) {
+            $('img').fadeTo('fast', ui.value);
+       }
+    });
+    $("#clear-all").button().click(function() {
+        $('img').remove();
+    });
+    $("#change-bg").button().click(
+        toggleCss
+    );
+    $("#droppable").droppable({
+      drop: function(evt,ui) { 
+        ui.draggable.remove();
+      }
+    });
+    //insertImage('/ssf2st/flop/old-chars/balrog/crouch-mk/1_cr.jpg');
+    //insertImage('/ssf2st/st/dhalsim/close-mp/3_cr.jpg');
+});
+</script>
+</head>
+<body>
+<table><tr valign=center>
+    <td><div style='float:left'>Opacity:</div></td>
+    <td><div style='float:left;width:300' id="slider"></div></td>
+    <td><button id='change-bg'>Background Color</button></td>
+    <td><button id='clear-all'>Clear Images</button></td>
+</tr></table>
+<div id='droppable'>Trash Bin</div>
+<div id='content'></div>
+<div style='position:absolute;bottom:0'>Select a character, then move your mouse over an image and click add</div>
+</body>
+</html>
