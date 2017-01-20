@@ -106,10 +106,31 @@ td.br {
         require('util.php');
         printImageMap()
     ?>
-
+<div id="links">
 <h3><a href="https://doctorguile.github.io/ssf2st/compare.html">Hitbox Split View Comparison</a></h3>
 <h3><a href="https://doctorguile.github.io/ssf2st/theoryfighter.html">Hitbox Theory Fighter</a></h3>
+<h3><a href="https://doctorguile.github.io/ssf2st/throwrange/">Throw Range Comparison</a></h3>
+<h3><a href="https://doctorguile.github.io/ssf2st/safejump/">Safe Jump Timing</a></h3>
+</div>
+<script>
 
+    function getParameterByName(name, url) {
+        if (!url) {
+            url = window.location.href;
+        }
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    $( document ).ready(function() {
+        if (getParameterByName('hidelinks')) {
+            $('#links').hide();
+        }
+    });
+</script>
 <!--
       <map name="Map">
 <area shape='rect' coords='4,4,52,52' href='st/ryu'>

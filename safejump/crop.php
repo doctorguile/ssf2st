@@ -1,12 +1,16 @@
 <?php
 
-function convertdir($srcdir) {
+function convertdir($srcdir, $dstdir) {
     $newsize = '192x224+192+0';
     $srcdir = realpath($srcdir);
     echo $srcdir;
     echo "\n";
-    $dstdir = dirname($srcdir) . DIRECTORY_SEPARATOR . "processed";
-    if (!file_exists($dstdir)) mkdir($dstdir);
+    echo $dstdir;
+    echo "\n";
+//    $dstdir = dirname($srcdir) . DIRECTORY_SEPARATOR . "processed";
+    if (!file_exists($dstdir)) {
+        mkdir($dstdir, 0755, true);
+    }
     $files = glob($srcdir . '/*.png');
     $count = count($files);
     foreach($files as $file) {
@@ -21,6 +25,8 @@ function convertdir($srcdir) {
         //$cmd = "convert $file -crop $newsize $dstfile";
         //  -background black
         //miff:-
+        echo $cmd;
+        echo "\n";
         shell_exec($cmd);
     }
 }
@@ -33,8 +39,6 @@ deejay/srk
 deejay/rh
 honda/srk
 honda/rh
-ryu/jump
-ryu/full knock down
 vega/srk
 vega/rh
 thawk/srk
@@ -61,6 +65,9 @@ EOF
 );
 
 
-var_dump($dirs);
-//convertdir($argv[1],$argv[2]);
+foreach($dirs as $dir) {
+    $srcdir = "ssf2st/st-safejump/" . $dir;
+    $dstdir = "ssf2st/safejump/" . $dir;
+    convertdir($srcdir,$dstdir);
+}
 
