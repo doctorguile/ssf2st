@@ -51,7 +51,7 @@ $jumpframes = array(
 <style type="text/css">
 </style>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"/>
 <script>
     //$(document).ready(function(){ $('#click').click(function() { alert('click'); }); });
 </script>

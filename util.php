@@ -629,10 +629,10 @@ function htmlHeader($character) {
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Super Street Fighter II Turbo -$old Hitbox Diagrams : {$character->name}</title>
-<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
-<script type="text/javascript">
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+<script>
 var selectedImage;
 
 function insertImage(src) {

@@ -1,33 +1,49 @@
-﻿﻿<html>
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Super Street Fighter II Turbo - Old character Hitbox Diagrams : E.Honda</title>
-<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
-<script type="text/javascript">
-var selectedImage;
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.3.14">
+  <title></title>
+</head>
+<body>
+  ﻿
+  <head>
+    <meta http-equiv="Content-Type" content=
+    "text/html; charset=utf-8">
+    <title>Super Street Fighter II Turbo - Old character Hitbox
+    Diagrams : E.Honda</title>
+    <link href=
+    "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css"
+    rel="stylesheet" type="text/css">
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+    </script>
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js">
+    </script>
+    <script>
+    var selectedImage;
 
-function insertImage(src) {
+    function insertImage(src) {
     if (window.parent && window.parent.frames) {
         window.parent.frames[1].insertImage(src);
     }
-}
+    }
 
-function add1p() {
+    function add1p() {
     insertImage(selectedImage);
-}
+    }
 
-function add2p() {
+    function add2p() {
     var imgsrc = selectedImage.replace('ssf2st', 'ssf2st/flop');
     insertImage(imgsrc);
-}
+    }
 
-function onMouseoutEvt(evt) {
+    function onMouseoutEvt(evt) {
     $('#addimagemenu').hide();
-}
+    }
 
-function onMouseoverEvt(evt) {
+    function onMouseoverEvt(evt) {
     selectedImage = this.src;
     var imgid = this.id;
     $('#addimagemenu').show();
@@ -36,9 +52,9 @@ function onMouseoverEvt(evt) {
       at: "center",
       of: "#" + imgid
     }).show();
-}
+    }
 
-function getParameterByName(name, url) {
+    function getParameterByName(name, url) {
     if (!url) {
       url = window.location.href;
     }
@@ -48,419 +64,3458 @@ function getParameterByName(name, url) {
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
+    }
 
-if (getParameterByName('dragndrop')) {
+    if (getParameterByName('dragndrop')) {
     $(function() {
         $('.movesetimg').mouseover(onMouseoverEvt);
     });
-}
-</script>
+    }
+    </script>
+    <style>
 
-<style>
-
-.movesetimg
-{
-	background: #fff;
-	border-color: #aaa #ccc #ddd #bbb;
-	border-style: solid;
-	border-width: 1px;
-	color: inherit;
-	padding: 2px;
-	vertical-align: top;
-}
-
-
-.hoverbox
-{
-	cursor: default;
-	list-style: none;
-}
-
-.hoverbox a .preview
-{
-	display: none;
-}
-
-.hoverbox a:hover .preview
-{
-	display: block;
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	z-index: 1;
-}
-
-.hoverbox img
-{
-	background: #fff;
-	border-color: #aaa #ccc #ddd #bbb;
-	border-style: solid;
-	border-width: 1px;
-	color: inherit;
-	padding: 2px;
-	vertical-align: top;
-}
-
-.hoverbox .preview
-{
-	border-color: #000;
-}
+    .movesetimg
+    {
+        background: #fff;
+        border-color: #aaa #ccc #ddd #bbb;
+        border-style: solid;
+        border-width: 1px;
+        color: inherit;
+        padding: 2px;
+        vertical-align: top;
+    }
 
 
-body {
-	position: relative;
-	font-family: sans-serif;
-}
+    .hoverbox
+    {
+        cursor: default;
+        list-style: none;
+    }
 
-a:hover {
-	color:blue;	
-	text-decoration:underline;
-}
+    .hoverbox a .preview
+    {
+        display: none;
+    }
 
-a {
-	color:Gray;
-	text-decoration:none;
-}
+    .hoverbox a:hover .preview
+    {
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 1;
+    }
 
-.move-property {
-	padding: 5px;
-	font-weight: bold;
-	width:70px;
-	text-align:center;
-	margin:3px;
-	float:left;
-}
+    .hoverbox img
+    {
+        background: #fff;
+        border-color: #aaa #ccc #ddd #bbb;
+        border-style: solid;
+        border-width: 1px;
+        color: inherit;
+        padding: 2px;
+        vertical-align: top;
+    }
 
-.active {
-	background-color: #1E90FF;
-	color: White;
-}
+    .hoverbox .preview
+    {
+        border-color: #000;
+    }
 
-.inactive {
-	background-color: #708090;
-	color: #A9A9A9;
-}
 
-div.attack-block-hit {
-	border-style: solid;
-	border-color: Black;
-	border-width: medium;
-	padding: 5px;
-	width: 100%;
-}
+    body {
+        position: relative;
+        font-family: sans-serif;
+    }
 
-table.attack-block-hit  td {
-	padding: 5px;
-}
+    a:hover {
+        color:blue;     
+        text-decoration:underline;
+    }
 
-td.tl {
-	border-left:medium solid black;
-	border-top:medium solid black
-}
-td.tr {
-	border-right:medium solid black;
-	border-top:medium solid black
-}
-td.ml {
-	border-left:medium solid black;
-	border-top:medium solid black
-}
-td.mr {
-	border-right:medium solid black;
-	border-top:medium solid black
-}
-td.bl {
-	border-left:medium solid black;
-	border-top:medium solid black;
-	border-bottom:medium solid black
-}
-td.br {
-	border-right:medium solid black;
-	border-top:medium solid black;
-	border-bottom:medium solid black
-}
-tr.movename {
-	background-color:pink;
-	font-size:larger;
-	font-weight:bold;
-	padding:5px;
-}
+    a {
+        color:Gray;
+        text-decoration:none;
+    }
 
-td.movename {
-	font-size:larger;
-	font-weight:bold;
-	padding:5px;
-}
+    .move-property {
+        padding: 5px;
+        font-weight: bold;
+        width:70px;
+        text-align:center;
+        margin:3px;
+        float:left;
+    }
 
-td.back-to-top {
-	font-size:small;
-	font-weight:thin;
-	padding:5px;
-}
+    .active {
+        background-color: #1E90FF;
+        color: White;
+    }
 
-.frame {
-	float:left;
-	padding:5px;
-	margin-top:3px;
-	text-align:center;
-	font-size:small;
-}
+    .inactive {
+        background-color: #708090;
+        color: #A9A9A9;
+    }
 
-.inactive-frame {
-	background-color:#999;	
-}
-.active-frame {
-	background-color:#F60;	
-}
+    div.attack-block-hit {
+        border-style: solid;
+        border-color: Black;
+        border-width: medium;
+        padding: 5px;
+        width: 100%;
+    }
 
-</style>
-</head>
-<body>
-<a name='top'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>E.Honda</td><td class='back-to-top' align=right><a class='fixquery' href='../../'>Select another character</a></td></tr><tr><td valign=top><img src='../../images/old/ehonda.png' border=0/></td><td valign=top><a href='#Standing'>Standing</a> | <a href='#Crouching'>Crouching</a><br/><a href='#close-lp'>close-lp</a> | <a href='#close-mp'>close-mp</a> | <a href='#close-hp'>close-hp</a> | <a href='#close-lk'>close-lk</a> | <a href='#close-mk'>close-mk</a> | <a href='#close-hk'>close-hk</a><br/><a href='#far-lp'>far-lp</a> | <a href='#far-mp'>far-mp</a> | <a href='#far-hp'>far-hp</a> | <a href='#far-lk'>far-lk</a> | <a href='#far-mk'>far-mk</a> | <a href='#far-hk'>far-hk</a><br/><a href='#crouch-lp'>crouch-lp</a> | <a href='#crouch-mp'>crouch-mp</a> | <a href='#crouch-hp'>crouch-hp</a> | <a href='#crouch-lk'>crouch-lk</a> | <a href='#crouch-mk'>crouch-mk</a> | <a href='#crouch-hk'>crouch-hk</a><br/><a href='#up-lp'>up-lp</a> | <a href='#up-mp'>up-mp</a> | <a href='#up-hp'>up-hp</a> | <a href='#up-lk'>up-lk</a> | <a href='#up-mk'>up-mk</a> | <a href='#up-hk'>up-hk</a><br/><a href='#jump-lp'>jump-lp</a> | <a href='#jump-mp'>jump-mp</a> | <a href='#jump-hp'>jump-hp</a> | <a href='#jump-lk'>jump-lk</a> | <a href='#jump-mk'>jump-mk</a> | <a href='#jump-hk'>jump-hk</a><br/><a href='#throw-1'>throw-1</a> | <a href='#throw-2'>throw-2</a> | <a href='#throw-3'>throw-3</a><br/><a href='#Knee Bash'>Knee Bash</a> | <a href='#Belly Flop'>Belly Flop</a><br/><a href='#Hundred Hand Slap'>Hundred Hand Slap</a> | <a href='#Headbutt'>Headbutt</a> | <a href='#Butt Slam'>Butt Slam</a></td></tr><tr><td colspan=2>Select E.Honda, then <img src='../../images/up.png' border=0/><img src='../../images/up.png' border=0/><img src='../../images/up.png' border=0/><img src='../../images/down.png' border=0/><img src='../../images/lp.png' border=0/> or Mash <img src='../../images/up.png' border=0/><img src='../../images/down.png' border=0/><img src='../../images/lp.png' border=0/></td></tr></table><br/><br/><a name='Standing'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Standing</td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td><div style='padding-top:3px'><img id='standing1crjpg' class='movesetimg hoverbox' style='float:left' src='./standing/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Crouching'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouching</td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td><div style='padding-top:3px'><img id='crouching1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouching/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-lp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/lp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property active'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>12</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:9px' class='frame inactive-frame'>3</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closelp1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-mp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>15</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:6px' class='frame active-frame'>2</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closemp1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mp/1_cr.jpg'/><img id='closemp2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mp/2_cr.jpg'/><img id='closemp3crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mp/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-hp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:54px' class='frame inactive-frame'>18</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closehp1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hp/1_cr.jpg'/><img id='closehp2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hp/2_cr.jpg'/><img id='closehp3crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hp/3_cr.jpg'/><img id='closehp4crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hp/4_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-lk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property active'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:12px' class='frame inactive-frame'>4</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:12px' class='frame inactive-frame'>4</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closelk1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-mk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:24px' class='frame inactive-frame'>8</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closemk1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='close-hk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Close <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>4+18</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:24px' class='frame inactive-frame'>8</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:15px' class='frame active-frame'>5</div><div style='width:54px' class='frame inactive-frame'>18</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='closehk1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/1_cr.jpg'/><img id='closehk2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-lp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/lp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>12</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:9px' class='frame inactive-frame'>3</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farlp1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-mp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>15</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-hp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:54px' class='frame inactive-frame'>18</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farhp1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hp/1_cr.jpg'/><img id='farhp2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hp/2_cr.jpg'/><img id='farhp3crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hp/3_cr.jpg'/><img id='farhp4crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hp/4_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-lk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:30px' class='frame inactive-frame'>10</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:21px' class='frame inactive-frame'>7</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farlk1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lk/1_cr.jpg'/><img id='farlk2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lk/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-mk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>4+15</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:30px' class='frame inactive-frame'>10</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:36px' class='frame inactive-frame'>12</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mk/1_cr.jpg'/><img id='farmk2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mk/2_cr.jpg'/><img id='farmk3crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mk/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='far-hk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Far <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>4+18</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:30px' class='frame inactive-frame'>10</div><div style='width:18px' class='frame active-frame'>6</div><div style='width:57px' class='frame inactive-frame'>19</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='farhk1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hk/1_cr.jpg'/><img id='farhk2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hk/2_cr.jpg'/><img id='farhk3crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hk/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-lp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/lp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>12</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchlp1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-lp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-mp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>15</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:39px' class='frame inactive-frame'>13</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-mp/1_cr.jpg'/><img id='crouchmp2crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-mp/2_cr.jpg'/><img id='crouchmp3crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-mp/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-hp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>11+11</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:18px' class='frame inactive-frame'>6</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:90px' class='frame inactive-frame'>30</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchhp1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hp/1_cr.jpg'/><img id='crouchhp2crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hp/2_cr.jpg'/><img id='crouchhp3crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hp/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-lk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property active'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>11</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:30px' class='frame inactive-frame'>10</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:27px' class='frame inactive-frame'>9</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchlk1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-lk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-mk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:18px' class='frame active-frame'>6</div><div style='width:36px' class='frame inactive-frame'>12</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-mk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='crouch-hk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Crouch <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>20</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:24px' class='frame inactive-frame'>8</div><div style='width:18px' class='frame active-frame'>6</div><div style='width:12px' class='frame inactive-frame'>4</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:24px' class='frame inactive-frame'>8</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='crouchhk1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hk/1_cr.jpg'/><img id='crouchhk2crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hk/2_cr.jpg'/><img id='crouchhk3crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hk/3_cr.jpg'/><img id='crouchhk4crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hk/4_cr.jpg'/><img id='crouchhk5crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hk/5_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-lp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/lp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>12</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:24px' class='frame inactive-frame'>8</div><div style='width:90px' class='frame active-frame'>30</div><div style='width:15px' class='frame inactive-frame'>5</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='uplp1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-lp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-mp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:36px' class='frame active-frame'>12</div><div style='width:60px' class='frame inactive-frame'>20</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='upmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-mp/1_cr.jpg'/><img id='upmp2crjpg' class='movesetimg hoverbox' style='float:left' src='./up-mp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-hp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>19</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:18px' class='frame active-frame'>6</div><div style='width:90px' class='frame inactive-frame'>30</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='uphp1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-hp/1_cr.jpg'/><img id='uphp2crjpg' class='movesetimg hoverbox' style='float:left' src='./up-hp/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-lk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>10</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:90px' class='frame active-frame'>30</div><div style='width:18px' class='frame inactive-frame'>6</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='uplk1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-lk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-mk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:36px' class='frame active-frame'>12</div><div style='width:72px' class='frame inactive-frame'>24</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='upmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-mk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='up-hk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Neutral Jump <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:18px' class='frame active-frame'>6</div><div style='width:90px' class='frame inactive-frame'>30</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='uphk1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-hk/1_cr.jpg'/><img id='uphk2crjpg' class='movesetimg hoverbox' style='float:left' src='./up-hk/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-lp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/lp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>10</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:24px' class='frame inactive-frame'>8</div><div style='width:90px' class='frame active-frame'>30</div><div style='width:12px' class='frame inactive-frame'>4</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumplp1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-lp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-mp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:36px' class='frame active-frame'>12</div><div style='width:57px' class='frame inactive-frame'>19</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumpmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-mp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-hp'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:24px' class='frame active-frame'>8</div><div style='width:81px' class='frame inactive-frame'>27</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumphp1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-hp/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-lk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/lk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>10</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:105px' class='frame active-frame'>35</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumplk1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-lk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-mk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>14</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:36px' class='frame active-frame'>12</div><div style='width:69px' class='frame inactive-frame'>23</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumpmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-mk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='jump-hk'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Jump <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td><div class='move-property inactive'>Chain Cancel</div><div class='move-property inactive'>Special Cancel</div><div class='move-property inactive'>Super Cancel</div></td></tr><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>18</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:30px' class='frame active-frame'>10</div><div style='width:75px' class='frame inactive-frame'>25</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='jumphk1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-hk/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='throw-1'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Throw 1&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/mp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>22</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>&nbsp</td></tr>
-</table>
-</td></tr></table></td><td><div style='padding-top:3px'><img id='throw11crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-1/1_cr.jpg'/><img id='throw12crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-1/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='throw-2'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Throw 2&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/hp.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>17+3*n</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>&nbsp</td></tr>
-</table>
-</td></tr></table></td><td><div style='padding-top:3px'><img id='throw22crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-2/2_cr.jpg'/><img id='throw23crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-2/3_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='throw-3'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Throw 3&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/hk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>17+3*n</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>&nbsp</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>&nbsp</td></tr>
-</table>
-</td></tr></table></td><td><div style='padding-top:3px'><img id='throw31crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-3/1_cr.jpg'/><img id='throw32crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-3/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><table ><tr valign=top><th>Beats</th><td><table><tr><td> feilong </td><td>25</td></tr><tr><td> thawk </td><td>23</td></tr><tr><td> balrog-hp-throw </td><td>22</td></tr><tr><td> sagat </td><td>20</td></tr><tr><td> cammy </td><td>19</td></tr><tr><td> guile </td><td>18</td></tr><tr><td> deejay </td><td>18</td></tr><tr><td> ken </td><td>17</td></tr><tr><td> ryu </td><td>17</td></tr><tr><td> zangief fab </td><td>17</td></tr><tr><td> vega </td><td>16</td></tr><tr><td> chunli </td><td>13</td></tr><tr><td> zangief double-suplex lk/mk </td><td>12</td></tr><tr><td> zangief </td><td>12</td></tr><tr><td> balrog-mp-throw </td><td>12</td></tr><tr><td> mbison </td><td>12</td></tr><tr><td> zangief running-bear lk/mk </td><td>8</td></tr><tr><td> zangief running-bear hk </td><td>7</td></tr><tr><td> dhalsim </td><td>7</td></tr><tr><td> blanka </td><td>2</td></tr></table></td></tr><tr valign=top><th>Loses to</th><td><table><tr><td> zangief spd </td><td>-30</td></tr><tr><td> thawk-360/720 </td><td>-12</td></tr><tr><td> zangief double-suplex hk </td><td>-2</td></tr></table></td></tr></table><a name='Knee Bash'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Knee Bash&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>15+10</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:30px' class='frame inactive-frame'>10</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:21px' class='frame inactive-frame'>7</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='unique21crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-2/1_cr.jpg'/><img id='unique22crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-2/2_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Belly Flop'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Belly Flop&#160;&#160;&#160;&#160;<img src='../../images/down.png' border=0/><img src='../../images/mk.png' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>15</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:21px' class='frame inactive-frame'>7</div><div style='width:105px' class='frame active-frame'>35</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='unique11crjpg' class='movesetimg hoverbox' style='float:left' src='./unique-1/1_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Hundred Hand Slap'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Hundred Hand Slap&#160;&#160;&#160;&#160;<img src='../../images/punch.gif' border=0/>*5</td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>15+15+14, 16+16+15, 17+17+16</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>3rd & 6th hit must be blocked Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Push Back</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:9px' class='frame inactive-frame'>3</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:12px' class='frame active-frame'>4</div><div style='width:12px' class='frame active-frame'>4</div><div style='clear:both'></div><div style='width:12px' class='frame inactive-frame'>4</div><div style='width:6px' class='frame active-frame'>2</div><div style='width:6px' class='frame active-frame'>2</div><div style='width:6px' class='frame active-frame'>2</div><div style='width:6px' class='frame active-frame'>2</div><div style='width:6px' class='frame active-frame'>2</div><div style='width:6px' class='frame active-frame'>2</div><div style='clear:both'></div><div style='width:18px' class='frame inactive-frame'>6</div><div style='width:3px' class='frame active-frame'>1</div><div style='width:3px' class='frame active-frame'>1</div><div style='width:3px' class='frame active-frame'>1</div><div style='width:3px' class='frame active-frame'>1</div><div style='width:3px' class='frame active-frame'>1</div><div style='width:3px' class='frame active-frame'>1</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='special11crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/1_cr.jpg'/><img id='special12crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/2_cr.jpg'/><img id='special13crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/3_cr.jpg'/><img id='special14crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/4_cr.jpg'/><img id='special15crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/5_cr.jpg'/><img id='special16crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/6_cr.jpg'/><img id='special17crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/7_cr.jpg'/><img id='special18crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/8_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Headbutt'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Headbutt&#160;&#160;&#160;&#160;<img src='../../images/bf.png' border=0/><img src='../../images/punch.gif' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>17, 18, 19</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:39px' class='frame inactive-frame'>13</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:9px' class='frame active-frame'>3</div><div style='width:66px' class='frame active-frame'>22</div><div style='width:36px' class='frame inactive-frame'>12</div><div style='width:36px' class='frame inactive-frame'>12</div><div style='clear:both'></div><div style='width:27px' class='frame inactive-frame'>9</div><div style='width:6px' class='frame inactive-frame'>2</div><div style='width:6px' class='frame active-frame'>2</div><div style='width:159px' class='frame active-frame'>53</div><div style='width:36px' class='frame inactive-frame'>12</div><div style='width:36px' class='frame inactive-frame'>12</div><div style='clear:both'></div><div style='width:15px' class='frame inactive-frame'>5</div><div style='width:3px' class='frame inactive-frame'>1</div><div style='width:3px' class='frame active-frame'>1</div><div style='width:159px' class='frame active-frame'>53</div><div style='width:36px' class='frame inactive-frame'>12</div><div style='width:36px' class='frame inactive-frame'>12</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='special21crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/1_cr.jpg'/><img id='special22crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/2_cr.jpg'/><img id='special23crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/3_cr.jpg'/><img id='special24crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/4_cr.jpg'/><img id='special25crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/5_cr.jpg'/><img id='special26crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/6_cr.jpg'/></div></td></tr></table></td></tr></table><br/><a name='Butt Slam'></a><table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>Butt Slam&#160;&#160;&#160;&#160;<img src='../../images/du.png' border=0/><img src='../../images/punch.gif' border=0/></td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr><tr><td colspan=2><table><tr><td width=280 valign=top><table cellpadding='0' cellspacing='0' ><tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>15, 17, 19</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>Standing / Crouching</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>Knock Down</td></tr>
-</table>
-</td></tr><tr><td style='padding-top:3px'><div style='width:63px' class='frame inactive-frame'>21</div><div style='width:27px' class='frame active-frame'>9</div><div style='width:39px' class='frame inactive-frame'>13</div><div style='width:30px' class='frame active-frame'>10</div><div style='width:12px' class='frame inactive-frame'>4</div><div style='clear:both'></div><div style='width:57px' class='frame inactive-frame'>19</div><div style='width:27px' class='frame active-frame'>9</div><div style='width:39px' class='frame inactive-frame'>13</div><div style='width:36px' class='frame active-frame'>12</div><div style='width:12px' class='frame inactive-frame'>4</div><div style='clear:both'></div><div style='width:54px' class='frame inactive-frame'>18</div><div style='width:33px' class='frame active-frame'>11</div><div style='width:39px' class='frame inactive-frame'>13</div><div style='width:45px' class='frame active-frame'>15</div><div style='width:18px' class='frame inactive-frame'>6</div><div style='clear:both'></div></td></tr></table></td><td><div style='padding-top:3px'><img id='special31crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/1_cr.jpg'/><img id='special32crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/2_cr.jpg'/><img id='special33crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/3_cr.jpg'/><img id='special34crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/4_cr.jpg'/><img id='special35crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/5_cr.jpg'/><img id='special36crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/6_cr.jpg'/></div></td></tr></table></td></tr></table><br/>
-<script>
+    table.attack-block-hit  td {
+        padding: 5px;
+    }
+
+    td.tl {
+        border-left:medium solid black;
+        border-top:medium solid black
+    }
+    td.tr {
+        border-right:medium solid black;
+        border-top:medium solid black
+    }
+    td.ml {
+        border-left:medium solid black;
+        border-top:medium solid black
+    }
+    td.mr {
+        border-right:medium solid black;
+        border-top:medium solid black
+    }
+    td.bl {
+        border-left:medium solid black;
+        border-top:medium solid black;
+        border-bottom:medium solid black
+    }
+    td.br {
+        border-right:medium solid black;
+        border-top:medium solid black;
+        border-bottom:medium solid black
+    }
+    tr.movename {
+        background-color:pink;
+        font-size:larger;
+        font-weight:bold;
+        padding:5px;
+    }
+
+    td.movename {
+        font-size:larger;
+        font-weight:bold;
+        padding:5px;
+    }
+
+    td.back-to-top {
+        font-size:small;
+        font-weight:thin;
+        padding:5px;
+    }
+
+    .frame {
+        float:left;
+        padding:5px;
+        margin-top:3px;
+        text-align:center;
+        font-size:small;
+    }
+
+    .inactive-frame {
+        background-color:#999;  
+    }
+    .active-frame {
+        background-color:#F60;  
+    }
+
+    </style>
+  </head><a name='top' id="top"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>E.Honda</td>
+      <td class='back-to-top' align="right">
+        <a class='fixquery' href='../../'>Select another
+        character</a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><img src='../../images/old/ehonda.png'
+      border="0"></td>
+      <td valign="top">
+        <a href='#Standing'>Standing</a> | <a href=
+        '#Crouching'>Crouching</a><br>
+        <a href='#close-lp'>close-lp</a> | <a href=
+        '#close-mp'>close-mp</a> | <a href='#close-hp'>close-hp</a>
+        | <a href='#close-lk'>close-lk</a> | <a href=
+        '#close-mk'>close-mk</a> | <a href=
+        '#close-hk'>close-hk</a><br>
+        <a href='#far-lp'>far-lp</a> | <a href='#far-mp'>far-mp</a>
+        | <a href='#far-hp'>far-hp</a> | <a href=
+        '#far-lk'>far-lk</a> | <a href='#far-mk'>far-mk</a> |
+        <a href='#far-hk'>far-hk</a><br>
+        <a href='#crouch-lp'>crouch-lp</a> | <a href=
+        '#crouch-mp'>crouch-mp</a> | <a href=
+        '#crouch-hp'>crouch-hp</a> | <a href=
+        '#crouch-lk'>crouch-lk</a> | <a href=
+        '#crouch-mk'>crouch-mk</a> | <a href=
+        '#crouch-hk'>crouch-hk</a><br>
+        <a href='#up-lp'>up-lp</a> | <a href='#up-mp'>up-mp</a> |
+        <a href='#up-hp'>up-hp</a> | <a href='#up-lk'>up-lk</a> |
+        <a href='#up-mk'>up-mk</a> | <a href='#up-hk'>up-hk</a><br>
+        <a href='#jump-lp'>jump-lp</a> | <a href=
+        '#jump-mp'>jump-mp</a> | <a href='#jump-hp'>jump-hp</a> |
+        <a href='#jump-lk'>jump-lk</a> | <a href=
+        '#jump-mk'>jump-mk</a> | <a href='#jump-hk'>jump-hk</a><br>
+        <a href='#throw-1'>throw-1</a> | <a href=
+        '#throw-2'>throw-2</a> | <a href='#throw-3'>throw-3</a><br>
+        <a href='#Knee%20Bash'>Knee Bash</a> | <a href=
+        '#Belly%20Flop'>Belly Flop</a><br>
+        <a href='#Hundred%20Hand%20Slap'>Hundred Hand Slap</a> |
+        <a href='#Headbutt'>Headbutt</a> | <a href=
+        '#Butt%20Slam'>Butt Slam</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">Select E.Honda, then <img src=
+      '../../images/up.png' border="0"><img src=
+      '../../images/up.png' border="0"><img src=
+      '../../images/up.png' border="0"><img src=
+      '../../images/down.png' border="0"><img src=
+      '../../images/lp.png' border="0"> or Mash <img src=
+      '../../images/up.png' border="0"><img src=
+      '../../images/down.png' border="0"><img src=
+      '../../images/lp.png' border="0"></td>
+    </tr>
+  </table><br>
+  <br>
+  <a name='Standing' id="Standing"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Standing</td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td>
+              <div style='padding-top:3px'><img id='standing1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './standing/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='Crouching' id="Crouching"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Crouching</td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td>
+              <div style='padding-top:3px'><img id=
+              'crouching1crjpg' class='movesetimg hoverbox' style=
+              'float:left' src='./crouching/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='close-lp' id="close-lp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Close <img src='../../images/lp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property active'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>12</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:15px' class=
+                    'frame inactive-frame'>
+                      5
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:9px' class=
+                    'frame inactive-frame'>
+                      3
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='closelp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './close-lp/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='close-mp' id="close-mp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Close <img src='../../images/mp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>15</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:15px' class=
+                    'frame inactive-frame'>
+                      5
+                    </div>
+                    <div style='width:6px' class=
+                    'frame active-frame'>
+                      2
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:15px' class=
+                    'frame inactive-frame'>
+                      5
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='closemp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './close-mp/1_cr.jpg'><img id='closemp2crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './close-mp/2_cr.jpg'><img id='closemp3crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './close-mp/3_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='close-hp' id="close-hp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Close <img src='../../images/hp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>18</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:9px' class=
+                    'frame active-frame'>
+                      3
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:54px' class=
+                    'frame inactive-frame'>
+                      18
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='closehp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './close-hp/1_cr.jpg'><img id='closehp2crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './close-hp/2_cr.jpg'><img id='closehp3crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './close-hp/3_cr.jpg'><img id='closehp4crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './close-hp/4_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='close-lk' id="close-lk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Close <img src='../../images/lk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property active'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>11</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:12px' class=
+                    'frame inactive-frame'>
+                      4
+                    </div>
+                    <div style='width:9px' class=
+                    'frame active-frame'>
+                      3
+                    </div>
+                    <div style='width:12px' class=
+                    'frame inactive-frame'>
+                      4
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='closelk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './close-lk/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='close-mk' id="close-mk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Close <img src='../../images/mk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>14</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:15px' class=
+                    'frame active-frame'>
+                      5
+                    </div>
+                    <div style='width:24px' class=
+                    'frame inactive-frame'>
+                      8
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='closemk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './close-mk/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='close-hk' id="close-hk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Close <img src='../../images/hk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>4+18</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:24px' class=
+                    'frame inactive-frame'>
+                      8
+                    </div>
+                    <div style='width:9px' class=
+                    'frame active-frame'>
+                      3
+                    </div>
+                    <div style='width:15px' class=
+                    'frame active-frame'>
+                      5
+                    </div>
+                    <div style='width:54px' class=
+                    'frame inactive-frame'>
+                      18
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='closehk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './close-hk/1_cr.jpg'><img id='closehk2crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './close-hk/2_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='far-lp' id="far-lp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Far <img src='../../images/lp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>12</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:15px' class=
+                    'frame inactive-frame'>
+                      5
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:9px' class=
+                    'frame inactive-frame'>
+                      3
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='farlp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './far-lp/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='far-mp' id="far-mp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Far <img src='../../images/mp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>15</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:15px' class=
+                    'frame inactive-frame'>
+                      5
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='farmp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './far-mp/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='far-hp' id="far-hp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Far <img src='../../images/hp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>18</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:9px' class=
+                    'frame active-frame'>
+                      3
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:54px' class=
+                    'frame inactive-frame'>
+                      18
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='farhp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './far-hp/1_cr.jpg'><img id='farhp2crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './far-hp/2_cr.jpg'><img id='farhp3crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './far-hp/3_cr.jpg'><img id='farhp4crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './far-hp/4_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='far-lk' id="far-lk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Far <img src='../../images/lk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>11</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:30px' class=
+                    'frame inactive-frame'>
+                      10
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='farlk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './far-lk/1_cr.jpg'><img id='farlk2crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './far-lk/2_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='far-mk' id="far-mk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Far <img src='../../images/mk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>4+15</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:30px' class=
+                    'frame inactive-frame'>
+                      10
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:36px' class=
+                    'frame inactive-frame'>
+                      12
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='farmk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './far-mk/1_cr.jpg'><img id='farmk2crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './far-mk/2_cr.jpg'><img id='farmk3crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './far-mk/3_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='far-hk' id="far-hk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Far <img src='../../images/hk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>4+18</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Knock Down</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:30px' class=
+                    'frame inactive-frame'>
+                      10
+                    </div>
+                    <div style='width:18px' class=
+                    'frame active-frame'>
+                      6
+                    </div>
+                    <div style='width:57px' class=
+                    'frame inactive-frame'>
+                      19
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='farhk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './far-hk/1_cr.jpg'><img id='farhk2crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './far-hk/2_cr.jpg'><img id='farhk3crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './far-hk/3_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='crouch-lp' id="crouch-lp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Crouch <img src='../../images/lp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>12</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:15px' class=
+                    'frame inactive-frame'>
+                      5
+                    </div>
+                    <div style='width:24px' class=
+                    'frame active-frame'>
+                      8
+                    </div>
+                    <div style='width:15px' class=
+                    'frame inactive-frame'>
+                      5
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='crouchlp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-lp/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='crouch-mp' id="crouch-mp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Crouch <img src='../../images/mp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>15</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:24px' class=
+                    'frame active-frame'>
+                      8
+                    </div>
+                    <div style='width:39px' class=
+                    'frame inactive-frame'>
+                      13
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='crouchmp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-mp/1_cr.jpg'><img id='crouchmp2crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-mp/2_cr.jpg'><img id='crouchmp3crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-mp/3_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='crouch-hp' id="crouch-hp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Crouch <img src='../../images/hp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>11+11</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Knock Down</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:18px' class=
+                    'frame inactive-frame'>
+                      6
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:90px' class=
+                    'frame inactive-frame'>
+                      30
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='crouchhp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-hp/1_cr.jpg'><img id='crouchhp2crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-hp/2_cr.jpg'><img id='crouchhp3crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-hp/3_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='crouch-lk' id="crouch-lk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Crouch <img src='../../images/lk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property active'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>11</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:30px' class=
+                    'frame inactive-frame'>
+                      10
+                    </div>
+                    <div style='width:9px' class=
+                    'frame active-frame'>
+                      3
+                    </div>
+                    <div style='width:27px' class=
+                    'frame inactive-frame'>
+                      9
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='crouchlk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-lk/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='crouch-mk' id="crouch-mk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Crouch <img src='../../images/mk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>14</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:9px' class=
+                    'frame active-frame'>
+                      3
+                    </div>
+                    <div style='width:18px' class=
+                    'frame active-frame'>
+                      6
+                    </div>
+                    <div style='width:36px' class=
+                    'frame inactive-frame'>
+                      12
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='crouchmk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-mk/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='crouch-hk' id="crouch-hk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Crouch <img src='../../images/hk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>20</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Knock Down</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:24px' class=
+                    'frame inactive-frame'>
+                      8
+                    </div>
+                    <div style='width:18px' class=
+                    'frame active-frame'>
+                      6
+                    </div>
+                    <div style='width:12px' class=
+                    'frame inactive-frame'>
+                      4
+                    </div>
+                    <div style='width:24px' class=
+                    'frame active-frame'>
+                      8
+                    </div>
+                    <div style='width:24px' class=
+                    'frame inactive-frame'>
+                      8
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='crouchhk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-hk/1_cr.jpg'><img id='crouchhk2crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-hk/2_cr.jpg'><img id='crouchhk3crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-hk/3_cr.jpg'><img id='crouchhk4crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-hk/4_cr.jpg'><img id='crouchhk5crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './crouch-hk/5_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='up-lp' id="up-lp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Neutral Jump <img src=
+      '../../images/lp.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>12</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:24px' class=
+                    'frame inactive-frame'>
+                      8
+                    </div>
+                    <div style='width:90px' class=
+                    'frame active-frame'>
+                      30
+                    </div>
+                    <div style='width:15px' class=
+                    'frame inactive-frame'>
+                      5
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='uplp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './up-lp/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='up-mp' id="up-mp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Neutral Jump <img src=
+      '../../images/mp.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>14</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:36px' class=
+                    'frame active-frame'>
+                      12
+                    </div>
+                    <div style='width:60px' class=
+                    'frame inactive-frame'>
+                      20
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='upmp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './up-mp/1_cr.jpg'><img id='upmp2crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './up-mp/2_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='up-hp' id="up-hp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Neutral Jump <img src=
+      '../../images/hp.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>19</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:18px' class=
+                    'frame active-frame'>
+                      6
+                    </div>
+                    <div style='width:90px' class=
+                    'frame inactive-frame'>
+                      30
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='uphp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './up-hp/1_cr.jpg'><img id='uphp2crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './up-hp/2_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='up-lk' id="up-lk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Neutral Jump <img src=
+      '../../images/lk.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>10</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:90px' class=
+                    'frame active-frame'>
+                      30
+                    </div>
+                    <div style='width:18px' class=
+                    'frame inactive-frame'>
+                      6
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='uplk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './up-lk/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='up-mk' id="up-mk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Neutral Jump <img src=
+      '../../images/mk.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>14</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:36px' class=
+                    'frame active-frame'>
+                      12
+                    </div>
+                    <div style='width:72px' class=
+                    'frame inactive-frame'>
+                      24
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='upmk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './up-mk/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='up-hk' id="up-hk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Neutral Jump <img src=
+      '../../images/hk.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>18</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:18px' class=
+                    'frame active-frame'>
+                      6
+                    </div>
+                    <div style='width:90px' class=
+                    'frame inactive-frame'>
+                      30
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='uphk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './up-hk/1_cr.jpg'><img id='uphk2crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './up-hk/2_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='jump-lp' id="jump-lp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Jump <img src='../../images/lp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>10</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:24px' class=
+                    'frame inactive-frame'>
+                      8
+                    </div>
+                    <div style='width:90px' class=
+                    'frame active-frame'>
+                      30
+                    </div>
+                    <div style='width:12px' class=
+                    'frame inactive-frame'>
+                      4
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='jumplp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './jump-lp/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='jump-mp' id="jump-mp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Jump <img src='../../images/mp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>14</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:36px' class=
+                    'frame active-frame'>
+                      12
+                    </div>
+                    <div style='width:57px' class=
+                    'frame inactive-frame'>
+                      19
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='jumpmp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './jump-mp/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='jump-hp' id="jump-hp"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Jump <img src='../../images/hp.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>18</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:24px' class=
+                    'frame active-frame'>
+                      8
+                    </div>
+                    <div style='width:81px' class=
+                    'frame inactive-frame'>
+                      27
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='jumphp1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './jump-hp/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='jump-lk' id="jump-lk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Jump <img src='../../images/lk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>10</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:105px' class=
+                    'frame active-frame'>
+                      35
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='jumplk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './jump-lk/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='jump-mk' id="jump-mk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Jump <img src='../../images/mk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>14</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:36px' class=
+                    'frame active-frame'>
+                      12
+                    </div>
+                    <div style='width:69px' class=
+                    'frame inactive-frame'>
+                      23
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='jumpmk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './jump-mk/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='jump-hk' id="jump-hk"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Jump <img src='../../images/hk.png'
+      border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td>
+                    <div class='move-property inactive'>
+                      Chain Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Special Cancel
+                    </div>
+                    <div class='move-property inactive'>
+                      Super Cancel
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>18</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:30px' class=
+                    'frame active-frame'>
+                      10
+                    </div>
+                    <div style='width:75px' class=
+                    'frame inactive-frame'>
+                      25
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='jumphk1crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './jump-hk/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='throw-1' id="throw-1"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Throw 1&nbsp;&nbsp;&nbsp;&nbsp;<img src=
+      '../../images/left.png' border="0">/<img src=
+      '../../images/right.png' border="0"> + <img src=
+      '../../images/mp.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>22</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='throw11crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './throw-1/1_cr.jpg'><img id='throw12crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './throw-1/2_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='throw-2' id="throw-2"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Throw 2&nbsp;&nbsp;&nbsp;&nbsp;<img src=
+      '../../images/left.png' border="0">/<img src=
+      '../../images/right.png' border="0"> + <img src=
+      '../../images/hp.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>17+3*n</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='throw22crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './throw-2/2_cr.jpg'><img id='throw23crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './throw-2/3_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='throw-3' id="throw-3"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Throw 3&nbsp;&nbsp;&nbsp;&nbsp;<img src=
+      '../../images/left.png' border="0">/<img src=
+      '../../images/right.png' border="0"> + <img src=
+      '../../images/hk.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>17+3*n</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='throw31crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './throw-3/1_cr.jpg'><img id='throw32crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './throw-3/2_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <table>
+    <tr valign="top">
+      <th>Beats</th>
+      <td>
+        <table>
+          <tr>
+            <td>feilong</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>thawk</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>balrog-hp-throw</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>sagat</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>cammy</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>guile</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>deejay</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>ken</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>ryu</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>zangief fab</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>vega</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>chunli</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>zangief double-suplex lk/mk</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>zangief</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>balrog-mp-throw</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>mbison</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>zangief running-bear lk/mk</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>zangief running-bear hk</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>dhalsim</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>blanka</td>
+            <td>2</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr valign="top">
+      <th>Loses to</th>
+      <td>
+        <table>
+          <tr>
+            <td>zangief spd</td>
+            <td>-30</td>
+          </tr>
+          <tr>
+            <td>thawk-360/720</td>
+            <td>-12</td>
+          </tr>
+          <tr>
+            <td>zangief double-suplex hk</td>
+            <td>-2</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><a name='Knee Bash'></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Knee
+      Bash&nbsp;&nbsp;&nbsp;&nbsp;<img src='../../images/left.png'
+      border="0">/<img src='../../images/right.png' border="0"> +
+      <img src='../../images/mk.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>15+10</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:30px' class=
+                    'frame inactive-frame'>
+                      10
+                    </div>
+                    <div style='width:9px' class=
+                    'frame active-frame'>
+                      3
+                    </div>
+                    <div style='width:9px' class=
+                    'frame active-frame'>
+                      3
+                    </div>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='unique21crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './unique-2/1_cr.jpg'><img id='unique22crjpg' class=
+              'movesetimg hoverbox' style='float:left' src=
+              './unique-2/2_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='Belly Flop'></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Belly
+      Flop&nbsp;&nbsp;&nbsp;&nbsp;<img src='../../images/down.png'
+      border="0"><img src='../../images/mk.png' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>15</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:21px' class=
+                    'frame inactive-frame'>
+                      7
+                    </div>
+                    <div style='width:105px' class=
+                    'frame active-frame'>
+                      35
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='unique11crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './unique-1/1_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='Hundred Hand Slap'></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Hundred Hand
+      Slap&nbsp;&nbsp;&nbsp;&nbsp;<img src='../../images/punch.gif'
+      border="0">*5</td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>15+15+14, 16+16+15,
+                        17+17+16</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>3rd & 6th hit must be
+                        blocked Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Push Back</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:9px' class=
+                    'frame inactive-frame'>
+                      3
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='width:12px' class=
+                    'frame active-frame'>
+                      4
+                    </div>
+                    <div style='clear:both'></div>
+                    <div style='width:12px' class=
+                    'frame inactive-frame'>
+                      4
+                    </div>
+                    <div style='width:6px' class=
+                    'frame active-frame'>
+                      2
+                    </div>
+                    <div style='width:6px' class=
+                    'frame active-frame'>
+                      2
+                    </div>
+                    <div style='width:6px' class=
+                    'frame active-frame'>
+                      2
+                    </div>
+                    <div style='width:6px' class=
+                    'frame active-frame'>
+                      2
+                    </div>
+                    <div style='width:6px' class=
+                    'frame active-frame'>
+                      2
+                    </div>
+                    <div style='width:6px' class=
+                    'frame active-frame'>
+                      2
+                    </div>
+                    <div style='clear:both'></div>
+                    <div style='width:18px' class=
+                    'frame inactive-frame'>
+                      6
+                    </div>
+                    <div style='width:3px' class=
+                    'frame active-frame'>
+                      1
+                    </div>
+                    <div style='width:3px' class=
+                    'frame active-frame'>
+                      1
+                    </div>
+                    <div style='width:3px' class=
+                    'frame active-frame'>
+                      1
+                    </div>
+                    <div style='width:3px' class=
+                    'frame active-frame'>
+                      1
+                    </div>
+                    <div style='width:3px' class=
+                    'frame active-frame'>
+                      1
+                    </div>
+                    <div style='width:3px' class=
+                    'frame active-frame'>
+                      1
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='special11crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-1/1_cr.jpg'><img id='special12crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-1/2_cr.jpg'><img id='special13crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-1/3_cr.jpg'><img id='special14crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-1/4_cr.jpg'><img id='special15crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-1/5_cr.jpg'><img id='special16crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-1/6_cr.jpg'><img id='special17crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-1/7_cr.jpg'><img id='special18crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-1/8_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='Headbutt' id="Headbutt"></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>
+      Headbutt&nbsp;&nbsp;&nbsp;&nbsp;<img src='../../images/bf.png'
+      border="0"><img src='../../images/punch.gif' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>17, 18, 19</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Knock Down</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:39px' class=
+                    'frame inactive-frame'>
+                      13
+                    </div>
+                    <div style='width:9px' class=
+                    'frame active-frame'>
+                      3
+                    </div>
+                    <div style='width:9px' class=
+                    'frame active-frame'>
+                      3
+                    </div>
+                    <div style='width:66px' class=
+                    'frame active-frame'>
+                      22
+                    </div>
+                    <div style='width:36px' class=
+                    'frame inactive-frame'>
+                      12
+                    </div>
+                    <div style='width:36px' class=
+                    'frame inactive-frame'>
+                      12
+                    </div>
+                    <div style='clear:both'></div>
+                    <div style='width:27px' class=
+                    'frame inactive-frame'>
+                      9
+                    </div>
+                    <div style='width:6px' class=
+                    'frame inactive-frame'>
+                      2
+                    </div>
+                    <div style='width:6px' class=
+                    'frame active-frame'>
+                      2
+                    </div>
+                    <div style='width:159px' class=
+                    'frame active-frame'>
+                      53
+                    </div>
+                    <div style='width:36px' class=
+                    'frame inactive-frame'>
+                      12
+                    </div>
+                    <div style='width:36px' class=
+                    'frame inactive-frame'>
+                      12
+                    </div>
+                    <div style='clear:both'></div>
+                    <div style='width:15px' class=
+                    'frame inactive-frame'>
+                      5
+                    </div>
+                    <div style='width:3px' class=
+                    'frame inactive-frame'>
+                      1
+                    </div>
+                    <div style='width:3px' class=
+                    'frame active-frame'>
+                      1
+                    </div>
+                    <div style='width:159px' class=
+                    'frame active-frame'>
+                      53
+                    </div>
+                    <div style='width:36px' class=
+                    'frame inactive-frame'>
+                      12
+                    </div>
+                    <div style='width:36px' class=
+                    'frame inactive-frame'>
+                      12
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='special21crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-2/1_cr.jpg'><img id='special22crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-2/2_cr.jpg'><img id='special23crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-2/3_cr.jpg'><img id='special24crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-2/4_cr.jpg'><img id='special25crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-2/5_cr.jpg'><img id='special26crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-2/6_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <a name='Butt Slam'></a>
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr class='movename'>
+      <td class='movename'>Butt
+      Slam&nbsp;&nbsp;&nbsp;&nbsp;<img src='../../images/du.png'
+      border="0"><img src='../../images/punch.gif' border="0"></td>
+      <td class='back-to-top' align="right">
+        <a href='#top'>Back to top</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table>
+          <tr>
+            <td width="280" valign="top">
+              <table cellpadding='0' cellspacing='0'>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <table cellpadding='0' cellspacing='0' width=
+                    '100%' class='attack-block-hit'>
+                      <tr>
+                        <td class='tl'>Attack</td>
+                        <td class='tr'>15, 17, 19</td>
+                      </tr>
+                      <tr>
+                        <td class='ml'>Block</td>
+                        <td class='mr'>Standing / Crouching</td>
+                      </tr>
+                      <tr>
+                        <td class='bl'>On Hit</td>
+                        <td class='br'>Knock Down</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style='padding-top:3px'>
+                    <div style='width:63px' class=
+                    'frame inactive-frame'>
+                      21
+                    </div>
+                    <div style='width:27px' class=
+                    'frame active-frame'>
+                      9
+                    </div>
+                    <div style='width:39px' class=
+                    'frame inactive-frame'>
+                      13
+                    </div>
+                    <div style='width:30px' class=
+                    'frame active-frame'>
+                      10
+                    </div>
+                    <div style='width:12px' class=
+                    'frame inactive-frame'>
+                      4
+                    </div>
+                    <div style='clear:both'></div>
+                    <div style='width:57px' class=
+                    'frame inactive-frame'>
+                      19
+                    </div>
+                    <div style='width:27px' class=
+                    'frame active-frame'>
+                      9
+                    </div>
+                    <div style='width:39px' class=
+                    'frame inactive-frame'>
+                      13
+                    </div>
+                    <div style='width:36px' class=
+                    'frame active-frame'>
+                      12
+                    </div>
+                    <div style='width:12px' class=
+                    'frame inactive-frame'>
+                      4
+                    </div>
+                    <div style='clear:both'></div>
+                    <div style='width:54px' class=
+                    'frame inactive-frame'>
+                      18
+                    </div>
+                    <div style='width:33px' class=
+                    'frame active-frame'>
+                      11
+                    </div>
+                    <div style='width:39px' class=
+                    'frame inactive-frame'>
+                      13
+                    </div>
+                    <div style='width:45px' class=
+                    'frame active-frame'>
+                      15
+                    </div>
+                    <div style='width:18px' class=
+                    'frame inactive-frame'>
+                      6
+                    </div>
+                    <div style='clear:both'></div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <div style='padding-top:3px'><img id='special31crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-3/1_cr.jpg'><img id='special32crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-3/2_cr.jpg'><img id='special33crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-3/3_cr.jpg'><img id='special34crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-3/4_cr.jpg'><img id='special35crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-3/5_cr.jpg'><img id='special36crjpg'
+              class='movesetimg hoverbox' style='float:left' src=
+              './special-3/6_cr.jpg'></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table><br>
+  <script>
     var index = window.location.href.indexOf('?');
     if(index != -1){
         var querystring = window.location.href.slice(index + 1)       
-		$('a[class="fixquery"]').each(function() {
-		   var $this = $(this);       
-		   var href = $this.attr("href");
-		   href += (href.indexOf('?') != -1) ? '&' : '?';
-		   href += querystring;
-		   $this.attr("href", href);
-		});
-	}
-</script>
-<map name='Map' id='Map'>
-  <area shape='rect' coords='0,0,98,30' href='javascript:add1p();' />
-  <area shape='rect' coords='0,30,98,60' href='javascript:add2p()' />
-</map>
-<img  id='addimagemenu' style='display:none' src='../../images/addimage.png' width='98' height='60' border='0' usemap='#Map'/></body></html>
+                $('a[class="fixquery"]').each(function() {
+                   var $this = $(this);       
+                   var href = $this.attr("href");
+                   href += (href.indexOf('?') != -1) ? '&' : '?';
+                   href += querystring;
+                   $this.attr("href", href);
+                });
+        }
+  </script> <map name='Map' id='Map'>
+    <area shape='rect' coords='0,0,98,30' href=
+    'javascript:add1p();'>
+    <area shape='rect' coords='0,30,98,60' href=
+    'javascript:add2p()'>
+  </map> <img id='addimagemenu' style='display:none' src=
+  '../../images/addimage.png' width='98' height='60' border='0'
+  usemap='#Map'>
+</body>
+</html>
