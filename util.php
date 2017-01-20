@@ -975,7 +975,7 @@ function printImageMap() {
 				$x = $startx + ($j * $boxsize);
 				$xend = $x + $boxsize;
 				$yend = $y + $boxsize;
-				$link = ($starty == 4 ? 'st/' : 'old-chars/') . $chars[$charidx];
+				$link = ($starty == 4 ? 'st/' : 'old-chars/') . $chars[$charidx] . '/';
 				//$buf = "<area shape='rect' coords='$x,$y,$xend,$yend' href='$link$qstr'>";
 				$buf = "<area shape='rect' coords='$x,$y,$xend,$yend' href='$link'>";
 				$charidx++;

@@ -3,245 +3,133 @@
 <head>
   <meta name="generator" content=
   "HTML Tidy for HTML5 for Linux version 5.3.14">
-  <style type="text/css">
-  </style><script src=
-  "https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script>
-    //$(document).ready(function(){ $('#click').click(function() { alert('click'); }); });
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+  </script>
+  <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js">
+  </script>
+  <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js">
+  </script>
+  <script src="sprintf-0.7-beta1.js">
+  </script>
+  <script src="safejump.js">
   </script>
   <title></title>
 </head>
 <body>
-  Safe jump with<br>
-  <input type='radio' name='attacker' value='41' checked> 41 frames
-  Claw<br>
-  <input type='radio' name='attacker' value='44'> 44 frames
-  Blanka<br>
-  <input type='radio' name='attacker' value='46'> 46 frames
-  FeiLong&nbsp;Sagat&nbsp;THawk&nbsp;Zangief<br>
-  <input type='radio' name='attacker' value='48'> 48 frames
-  Boxer&nbsp;DeeJay<br>
-  <input type='radio' name='attacker' value='49'> 49 frames
-  Ken&nbsp;Ryu<br>
-  <input type='radio' name='attacker' value='50'> 50 frames
-  Cammy&nbsp;ChunLi&nbsp;EHonda<br>
-  <input type='radio' name='attacker' value='51'> 51 frames
-  Dictator<br>
-  <input type='radio' name='attacker' value='52'> 52 frames
-  Guile<br>
-  Target: <select id='target-character'>
-    <option value="balrog">
-      balrog
-    </option>
-    <option value="blanka">
-      blanka
-    </option>
-    <option value="cammy">
-      cammy
-    </option>
-    <option value="chunli">
-      chunli
-    </option>
-    <option value="deejay">
-      deejay
-    </option>
-    <option value="dhalsim">
-      dhalsim
-    </option>
-    <option value="ehonda">
-      ehonda
-    </option>
-    <option value="feilong">
-      feilong
-    </option>
-    <option value="guile">
-      guile
-    </option>
-    <option value="ken">
-      ken
-    </option>
-    <option value="mbison">
-      mbison
-    </option>
-    <option value="ryu">
-      ryu
-    </option>
-    <option value="sagat">
-      sagat
-    </option>
-    <option value="thawk">
-      thawk
-    </option>
-    <option value="vega">
-      vega
-    </option>
-    <option value="zangief">
-      zangief
-    </option>
-  </select>
-  <div id='image-background' style='padding:5px'><img id=
-  'animation' style="border: 6px white solid" src=
-  '0000.png'></div><button id='left'>&lt;&lt;</button> <button id=
-  'click'>Animate</button> <button id='jump'>Jump</button>
-  <button id='right'>&gt;&gt;</button> 
-  <script>
-    (function () {
-        var initializing = false, fnTest = /xyz/.test(function () {
-            xyz;
-        }) ? /\b_super\b/ : /.*/;
-        // The base Class implementation (does nothing)
-        this.Class = function () {
-        };
-        // Create a new Class that inherits from this class
-        Class.extend = function (prop) {
-            var _super = this.prototype;
-            // Instantiate a base class (but only create the instance,
-            // don't run the init constructor)
-            initializing = true;
-            var prototype = new this();
-            initializing = false;
-            // Copy the properties over onto the new prototype
-            for (var name in prop) {
-                // Check if we're overwriting an existing function
-                prototype[name] = typeof prop[name] == "function" &&
-                typeof _super[name] == "function" && fnTest.test(prop[name]) ?
-                    (function (name, fn) {
-                        return function () {
-                            var tmp = this._super;
-
-                            // Add a new ._super() method that is the same method
-                            // but on the super-class
-                            this._super = _super[name];
-
-                            // The method only need to be bound temporarily, so we
-                            // remove it when we're done executing
-                            var ret = fn.apply(this, arguments);
-                            this._super = tmp;
-
-                            return ret;
-                        };
-                    })(name, prop[name]) :
-                    prop[name];
-            }
-            // The dummy class constructor
-            function Class() {
-                // All construction is actually done in the init method
-                if (!initializing && this.init)
-                    this.init.apply(this, arguments);
-            }
-
-            // Populate our constructed prototype object
-            Class.prototype = prototype;
-            // Enforce the constructor to be what we expect
-            Class.prototype.constructor = Class;
-            // And make this class extendable
-            Class.extend = arguments.callee;
-            return Class;
-        };
-    })();
-
-
-    var attackerJumpframe = 41;
-
-    function updateAttacker() {
-        var val = $("input[@name='attacker']:checked").val();
-        attackerJumpframe = parseInt(val, 10);
-
-    }
-
-    $('input[@name="attacker"]').change(updateAttacker);
-
-    var Animation = Class.extend({
-        init: function (files) {
-            this.files = [
-                            ];
-            this.direction = -1;
-            this.mousedown = false;
-            this.idx = 0;
-            var self = this;
-            $('#jump').click(function () {
-                self.idx = attackerJumpframe;
-                self.render();
-            });
-            /*
-             $('#left').click(function(){
-             if (self.idx + 1 >= self.files.length) {
-             return;
-             }
-             self.idx++;
-             self.render();
-             });
-             $('#right').click(function(){
-             if (self.idx - 1 < 0) {
-             return;
-             }
-             self.idx--;
-             self.render();
-             });
-             */
-            $('#click').click(function () {
-                $('button').attr("disabled", true);
-                self.idx = self.files.length - 1;
-                self.animate();
-            });
-
-            $('#left').mousedown($.proxy(this.fastBackward, this));
-            $('#right').mousedown($.proxy(this.fastForward, this));
-            $('#left').mouseup($.proxy(this.mouseup, this));
-            $('#right').mouseup($.proxy(this.mouseup, this));
-        },
-        render: function () {
-            if (this.idx < 0 || this.idx >= this.files.length) {
-                return;
-            }
-            var color = "black";
-            if (this.idx == attackerJumpframe) {
-                color = "blue";
-            }
-            $('#animation').attr('src', this.files[this.idx]).css("border", "6px " + color + " solid");
-        },
-        moveFrames: function () {
-            if (this.idx + this.direction < 0 || this.idx + this.direction >= this.files.length) {
-                return;
-            }
-            this.idx += this.direction;
-            this.render();
-            if (this.mousedown) {
-                setTimeout($.proxy(this.moveFrames, this), 100);
-            }
-        },
-        fastBackward: function () {
-            this.direction = 1;
-            this.mousedown = true;
-            setTimeout($.proxy(this.moveFrames, this), 100);
-        },
-        fastForward: function () {
-            this.direction = -1;
-            this.mousedown = true;
-            setTimeout($.proxy(this.moveFrames, this), 100);
-        },
-        mouseup: function () {
-            this.mousedown = false;
-        },
-        animate: function (idx) {
-            var self = this;
-            this.direction = -1;
-            var delay = 100;
-            if (this.idx == attackerJumpframe) {
-                delay = 1000;
-            }
-            this.render();
-            if (this.idx + this.direction < 0 || this.idx + this.direction >= this.files.length) {
-                $('button').attr("disabled", false);
-                return;
-            }
-            this.idx += this.direction;
-            setTimeout($.proxy(this.animate, this), delay);
-        }
-    });
-
-    new Animation();
-
-  </script>
+  <h1>Safe Jump Illustrated Guide</h1>
+  <table>
+    <tr>
+      <td valign="top">
+        <div id='attacker-container'>
+          Attacker<br>
+          <input type='radio' name='attacker' value='41' checked
+          id='41-frames'><label for="41-frames">41 frames
+          Claw</label><br>
+          <input type='radio' name='attacker' value='44' id=
+          '44-frames'><label for="44-frames">44 frames
+          Blanka,&nbsp;Old Sagat</label><br>
+          <input type='radio' name='attacker' value='46' id=
+          '46-frames'><label for="46-frames">46 frames
+          FeiLong,&nbsp;Sagat,&nbsp;T-Hawk,&nbsp;Zangief,&nbsp;Old
+          DeeJay</label><br>
+          <input type='radio' name='attacker' value='48' id=
+          '48-frames'><label for="48-frames">48 frames
+          Boxer,&nbsp;DeeJay,&nbsp;Old Ken,&nbsp;Old
+          Ryu</label><br>
+          <input type='radio' name='attacker' value='49' id=
+          '49-frames'><label for="49-frames">49 frames
+          Ken,&nbsp;Ryu</label><br>
+          <input type='radio' name='attacker' value='50' id=
+          '50-frames'><label for="50-frames">50 frames
+          Cammy,&nbsp;ChunLi,&nbsp;EHonda</label><br>
+          <input type='radio' name='attacker' value='51' id=
+          '51-frames'><label for="51-frames">51 frames
+          Dictator</label><br>
+          <input type='radio' name='attacker' value='52' id=
+          '52-frames'><label for="52-frames">52 frames
+          Guile</label><br>
+        </div>
+      </td>
+      <td valign="top">
+        <div id='target-container'>
+          <label for='target-character'>Target</label><br>
+          <table>
+            <tr>
+              <td valign="top"><input type='radio' name=
+              'target-character' value='balrog' checked id=
+              'target-balrog'><label for=
+              "target-balrog">balrog</label><br>
+              <input type='radio' name='target-character' value=
+              'blanka' id='target-blanka'><label for=
+              "target-blanka">blanka</label><br>
+              <input type='radio' name='target-character' value=
+              'cammy' id='target-cammy'><label for=
+              "target-cammy">cammy</label><br>
+              <input type='radio' name='target-character' value=
+              'chunli' id='target-chunli'><label for=
+              "target-chunli">chunli</label><br>
+              <input type='radio' name='target-character' value=
+              'deejay' id='target-deejay'><label for=
+              "target-deejay">deejay</label><br>
+              <input type='radio' name='target-character' value=
+              'dhalsim' id='target-dhalsim'><label for=
+              "target-dhalsim">dhalsim</label><br>
+              <input type='radio' name='target-character' value=
+              'ehonda' id='target-ehonda'><label for=
+              "target-ehonda">ehonda</label><br>
+              <input type='radio' name='target-character' value=
+              'feilong' id='target-feilong'><label for=
+              "target-feilong">feilong</label><br></td>
+              <td valign="top"><input type='radio' name=
+              'target-character' value='guile' id=
+              'target-guile'><label for=
+              "target-guile">guile</label><br>
+              <input type='radio' name='target-character' value=
+              'mbison' id='target-mbison'><label for=
+              "target-mbison">mbison</label><br>
+              <input type='radio' name='target-character' value=
+              'shoto' id='target-shoto'><label for=
+              "target-shoto">shoto</label><br>
+              <input type='radio' name='target-character' value=
+              'sagat' id='target-sagat'><label for=
+              "target-sagat">sagat</label><br>
+              <input type='radio' name='target-character' value=
+              'thawk' id='target-thawk'><label for=
+              "target-thawk">thawk</label><br>
+              <input type='radio' name='target-character' value=
+              'vega' id='target-vega'><label for=
+              "target-vega">vega</label><br>
+              <input type='radio' name='target-character' value=
+              'zangief' id='target-zangief'><label for=
+              "target-zangief">zangief</label><br></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <div id='knockdown-container'>
+          <input type='radio' name='knockdown' id='knockdown-srk'
+          value='srk' checked> <label for='knockdown-srk'>Full
+          Knockdown (Shoryuken)</label> <input type='radio' name=
+          'knockdown' id='knockdown-rh' value='rh'> <label for=
+          'knockdown-rh'>Regular Knockdown (Crouching
+          Roundhouse)</label>
+        </div>
+        <div id='animation-container'>
+          <div id='image-background' style='padding:5px'><img id=
+          'animation' style=
+          "border: 6px white solid"></div><button id=
+          'left'>&lt;&lt;</button> <button id=
+          'animate'>Animate</button> <button id=
+          'jump'>Jump</button> <button id='right'>&gt;&gt;</button>
+        </div>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
