@@ -99,7 +99,7 @@ td.br {
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 </head>
 <body>
-<h3><a href="https:/doctorguile.github.io/ssf2st/">Character Hitbox Diagrams</a></h3>
+<h3><a href="https://doctorguile.github.io/ssf2st/">Character Hitbox Diagrams</a></h3>
 
     <img src="images/charselect.png" width="393" height="237" border="0" usemap="#Map">
     <?php
@@ -107,8 +107,8 @@ td.br {
         printImageMap()
     ?>
 
-<h3><a href="https:/doctorguile.github.io/ssf2st/compare.html">Hitbox Split View Comparison</a></h3>
-<h3><a href="https:/doctorguile.github.io/ssf2st/theoryfighter.html">Hitbox Theory Fighter</a></h3>
+<h3><a href="https://doctorguile.github.io/ssf2st/compare.html">Hitbox Split View Comparison</a></h3>
+<h3><a href="https://doctorguile.github.io/ssf2st/theoryfighter.html">Hitbox Theory Fighter</a></h3>
 
 <!--
       <map name="Map">
