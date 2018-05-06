@@ -49,11 +49,9 @@ $character->movesets["close-hp"]->specialCancel = true;
 $character->movesets["far-lp"]->chainCancel = true;
 $character->movesets["far-lp"]->specialCancel = true;
 $character->movesets["far-mp"]->specialCancel = true;
+$character->movesets["far-hp"]->specialCancel = true;
 $character->movesets["crouch-lp"]->specialCancel = true;
 $character->movesets["crouch-mp"]->specialCancel = true;
-$character->movesets["close-lk"]->specialCancel = true;
-$character->movesets["close-mk"]->specialCancel = true;
-$character->movesets["crouch-lk"]->specialCancel = true;
 $character->movesets["crouch-mk"]->specialCancel = true;
 
 $character->movesets["close-lp"]->frames  = array(5,4,4);
