@@ -15,23 +15,23 @@ $character->addMoveset(
   array(QCF, KICK), array(array(13,SKIP,37),array(13,SKIP,39),array(13,SKIP,41))
 );
 
+
 $character->addMoveset(
-  'Tiger Knee', SPECIAL, movesetImages("./special-3/*.jpg"), "14+11, 15+11, 16+11", STANDING | CROUCHING, 'Last hit Knockdown',
+    'Tiger Uppercut', SPECIAL, movesetImages("./special-3/*.jpg"), "21, 23, 29", STANDING | CROUCHING, KNOCKDOWN,
+    array(DP,PUNCH),
+    array(
+        array(3,4,SKIP,3,SKIP,14,21,SKIP,6),
+        array(3,4,SKIP,3,SKIP,22,23,SKIP,6),
+        array(3,4,SKIP,3,SKIP,26,25,SKIP,10))
+);
+
+$character->addMoveset(
+  'Tiger Knee', SPECIAL, movesetImages("./special-4/*.jpg"), "14+11, 15+11, 16+11", STANDING | CROUCHING, 'Last hit Knockdown',
   array(DOWN, FORWARD,UPFORWARD, KICK), array(
 array(4,3,SKIP,3,SKIP,5,13,SKIP,7),
 array(4,3,SKIP,3,SKIP,6,14,SKIP,7),
 array(5,3,SKIP,3,SKIP,7,15,SKIP,7))
 );
-
-$character->addMoveset(
-  'Tiger Uppercut', SPECIAL, movesetImages("./special-4/*.jpg"), "21, 23, 29", STANDING | CROUCHING, KNOCKDOWN,
-  array(DP,PUNCH),
-  array(
-array(3,4,SKIP,3,SKIP,14,21,SKIP,6),
-array(3,4,SKIP,3,SKIP,22,23,SKIP,6),
-array(3,4,SKIP,3,SKIP,26,25,SKIP,10))
-);
-
 
 $character->addMoveset(
   'Super', SUPER, movesetImages("./super/*.jpg"), "10+10+10+10+10+10", STANDING | CROUCHING, 'Last 4 hit Knockdown',
