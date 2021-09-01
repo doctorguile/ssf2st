@@ -213,12 +213,6 @@ global $throwranges       ;
     echo "</table>";
 }
 
-/*
-<map name='Map' id='Map'>
-  <area shape='rect' coords='0,0,98,30' href='javascript:alert(1)' />
-  <area shape='rect' coords='0,30,98,60' href='javascript:alert(2)' />
-</map>
-*/
 function movesetImages1() {
 	$buf = '';
 	$args = func_get_args();
@@ -425,48 +419,7 @@ class Moveset {
     echo "<tr><td colspan=2>";
 
 	echo "<table><tr>";
-
-	if ($this->type != NEUTRAL) {
-		echo "<td width=280 valign=top>";
-		echo "<table cellpadding='0' cellspacing='0' >";
-		if ($this->type == NORMAL || $this->chainCancel || $this->specialCancel || $this->superCancel) {
-			echo "<tr><td>";
-			echo "<div class='move-property ";
-			echo $this->chainCancel ? 'active' : 'inactive';
-			echo "'>Chain Cancel</div>";
-			echo "<div class='move-property ";
-			echo $this->specialCancel ? 'active' : 'inactive';
-			echo "'>Special Cancel</div>";
-			echo "<div class='move-property ";
-			echo $this->superCancel ? 'active' : 'inactive';
-			echo "'>Super Cancel</div>";
-			echo "</td></tr>";		
-		}
-		$howToBlock = '';
-		if (is_string($this->block)) {
-    		$howToBlock = $this->block;
-		} else {
-		    if ($this->block & STANDING) {
-    			$howToBlock = 'Standing';
-    		}
-    		if ($this->block & CROUCHING) {
-    			if (!empty($howToBlock)) {
-    				$howToBlock .= ' / ';
-    			}
-    			$howToBlock .= 'Crouching';
-    		}
-    	}
-		$howToBlock = $howToBlock ? $howToBlock : '&nbsp';
-		$hit = $this->hit ? $this->hit : '&nbsp';
-	  	echo <<<EOF
-<tr><td style='padding-top:3px'>
-<table cellpadding='0' cellspacing='0'  width='100%' class='attack-block-hit'>
-<tr><td class='tl'>Attack</td><td class='tr'>{$this->attack}</td></tr>
-<tr><td class='ml'>Block</td><td class='mr'>$howToBlock</td></tr>
-<tr><td class='bl'>On Hit</td><td class='br'>$hit</td></tr>
-</table>
-</td></tr>
-EOF;
+	
 		if ($this->frames) {
 			echo "<tr><td style='padding-top:3px'>";
 			$active = false;
