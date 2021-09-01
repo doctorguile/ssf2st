@@ -35,7 +35,7 @@
     }
 
     function add2p() {
-	imageflip(selectedImage, IMG_FLIP_HORIZONTAL)
+	selectedImage.setAttribute("style", "transform: rotate(" + 180 + "deg)");
 	insertImage(selectedImage);
     }
 
