@@ -35,8 +35,8 @@
     }
 
     function add2p() {
-    var imgsrc = selectedImage.replace('ssf2st', 'ssf2st/flop');
-    insertImage(imgsrc);
+	imageflip(selectedImage, IMG_FLIP_HORIZONTAL)
+	insertImage(selectedImage);
     }
 
     function onMouseoutEvt(evt) {
