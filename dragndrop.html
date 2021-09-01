@@ -15,6 +15,10 @@ body {
 #slider { margin: 10px; }
 #droppable { text-align:center; float:right; width: 125px; height: 75px; background: gray; color: white; margin: 20px; padding-top:30px }
 
+.p2 {
+  transform: scaleX(-1);
+}
+
 </style>
 <link id='customcss' rel="stylesheet" type="text/css" href="white.css"/>
 
@@ -69,10 +73,19 @@ $.fn.generateId = function() {
 };
 
 
-function insertImage(src) {
+function insertImageP1(src) {
     var id = $.generateId();
     var opacity = 1;
     $('#content').append('<img id="'+ id + '" src="' + src + '"/>');
+    setTimeout(function() {
+       $('#'+id).css("z-index",1).draggable().fadeTo('fast', opacity).mousedown(updateZindex);
+    },100);
+}
+
+function insertImageP2(src) {
+    var id = $.generateId();
+    var opacity = 1;
+    $('#content').append('<img class="p2" id="'+ id + '" src="' + src + '"/>');
     setTimeout(function() {
        $('#'+id).css("z-index",1).draggable().fadeTo('fast', opacity).mousedown(updateZindex);
     },100);
@@ -98,7 +111,6 @@ $(function() {
 </head>
 <body>
 <table><tr valign=center>
-    <td><div style='float:left'>Opacity:</div></td>
     <td><div style='float:left;width:300' id="slider"></div></td>
     <td><button id='change-bg'>Background Color</button></td>
     <td><button id='clear-all'>Clear Images</button></td>
