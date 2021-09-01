@@ -378,32 +378,6 @@ function renderFrames($frames) {
 	echo "<div style='clear:both'></div>";
 }
 
-class Moveset {
-  public function __construct(
-  $id, $name, $type, $images,
-  $attack = 0, $block = 0, $hit = '',
-  $input = null,
-  $frames = null,
-  $chainCancel = false, $specialCancel = false, $superCancel = false
-  ) {
-    $this->character = null;
-    $this->id = $id;
-    $this->name = $name;
-    $this->input = $input;
-    $this->type = $type;
-    $this->images = $images;
-    $this->attack = $attack;
-    $this->block = $block;
-    $this->hit = $hit;
-    $this->frames = $frames;
-    // Renda Canceling
-    $this->chainCancel = $chainCancel;
-    $this->specialCancel = $specialCancel;
-    $this->superCancel = $superCancel;
-  }
-
-}
-
 class Character {
   public function __construct($name, $old = false) {
     $this->name = $name;
