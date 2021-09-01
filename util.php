@@ -401,53 +401,7 @@ class Moveset {
     $this->specialCancel = $specialCancel;
     $this->superCancel = $superCancel;
   }
-  
-  public function toHTML() {
-  	echo "<a name='{$this->id}'></a>";
-    echo "<table cellspacing=0 cellpadding=0 width=100%><tr class='movename'><td class='movename'>";
-//	echo "<div>";
-//	echo "<div class='movename' >";
-	echo $this->name;
-	if ($this->input) {
-		echo "&#160;&#160;&#160;&#160;";
-		foreach ($this->input as $input) {
-			echo $input;
-		}
-	}
-//	echo "</div>";
-    echo "</td><td class='back-to-top' align=right><a href='#top'>Back to top</a></td></tr>";
-    echo "<tr><td colspan=2>";
 
-	echo "<table><tr>";
-	
-		if ($this->frames) {
-			echo "<tr><td style='padding-top:3px'>";
-			$active = false;
-			if(is_array($this->frames[0])) {
-				foreach($this->frames as $frames) {
-					renderFrames($frames);
-				}
-			} else {
-				renderFrames($this->frames);
-			}
-			echo "</td></tr>";
-		}
-		echo "</table>";
-		echo "</td>";
-	}
-	echo "<td>";
-
-	echo "<div style='padding-top:3px'>";
-	echo($this->images);
-	echo "</div>";
-	echo "</td>";
-	echo "</tr></table>";
-
-    echo "</td></tr></table>";
-
-	//echo "</div>";
-	echo "<br/>";
-  }
 }
 
 class Character {
@@ -469,90 +423,6 @@ class Character {
   	$reflection = new ReflectionClass('Moveset');
   	$this->movesets[$id] = $reflection->newInstanceArgs($args);
   	$this->movesets[$id]->character = $this;
-  }
-  public function toHTML() {	
-	$prepend = false;
-	$previousType = null;
-	$previousNormal = null;
-	$headshot = strtolower(preg_replace('/[^a-zA-Z]+/', '', $this->name));
-	$subdir = $this->old ? 'old' : 'new';
-	$headshot = image("images/$subdir/$headshot.png");
-	echo "<table cellspacing=0 cellpadding=0 width=100%>";
-    echo "<tr class='movename'><td class='movename'>{$this->name}";
-//    $qstr = getRawQueryString();
-//    echo "</td><td class='back-to-top' align=right><a class='fixquery' href='../../$qstr'>Select another character</a></td></tr>";
-    echo "</td><td class='back-to-top' align=right><a class='fixquery' href='../../'>Select another character</a></td></tr>";
-	echo "<tr><td valign=top>$headshot</td><td valign=top>";
-
-	foreach ($this->movesets as $name => $moveset) {
-		$name = $moveset->id;
-		if ($previousType && $moveset->type != $previousType) {
-			$prepend = false;
-			echo "<br/>";
-		} elseif ($moveset->type == NORMAL) {
-			if (preg_match('/^(.+)-[^-]+$/', $name, $match) != 0) {
-				if ($previousNormal && $match[1] != $previousNormal) {
-					$prepend = false;
-					echo "<br/>";
-				}
-				$previousNormal = $match[1];
-			}
-		}
-		if ($prepend)
-			echo " | ";
-		$previousType = $moveset->type;
-		echo "<a href='#$name'>$name</a>";
-		$prepend = true;
-	}
-	echo "</td></tr>";	
-	if ($this->old) {
-		echo "<tr><td colspan=2>Select ";
-		echo $this->name;
-		echo ", then ";
-		echo $this->old;
-		echo LP;
-		echo " or Mash ";
-		if (strstr($this->old, UP)) {
-			echo UP . DOWN;
-		} else {
-			echo LEFT . RIGHT;
-		}
-		echo LP;
-		echo "</td></tr>";
-	}
-	echo "</table>";
-	echo "<br/>";
-	echo "<br/>";
-	$previousType = null;
-	foreach ($this->movesets as $name => $moveset) {
-		if ($previousType == GRAB && $previousType != $moveset->type) {
-		    $key = preg_replace('/[^a-z]/', '', strtolower($this->name));
-		    displayThrowRanges($key);
-		}
-	    $moveset->toHTML();
-		$previousType = $moveset->type;
-	}
-
-
-	echo <<<'FIXLINK2'
-
-<script>
-    var index = window.location.href.indexOf('?');
-    if(index != -1){
-        var querystring = window.location.href.slice(index + 1)       
-		$('a[class="fixquery"]').each(function() {
-		   var $this = $(this);       
-		   var href = $this.attr("href");
-		   href += (href.indexOf('?') != -1) ? '&' : '?';
-		   href += querystring;
-		   $this.attr("href", href);
-		});
-	}
-</script>
-
-FIXLINK2;
-
-
   }
 }
 
