@@ -109,8 +109,8 @@ td.br {
 <div id="links">
 <h3><a href="compare.html">Hitbox Split View Comparison</a></h3>
 <h3><a href="theoryfighter.html">Hitbox Theory Fighter</a></h3>
-<h3><a href="https://doctorguile.github.io/ssf2st/throwrange/">Throw Range Comparison</a></h3>
-<h3><a href="https://doctorguile.github.io/ssf2st/safejump/">Safe Jump Timing</a></h3>
+<h3><a href="throwrange/index.html">Throw Range Comparison</a></h3>
+<h3><a href="safejump/index.html">Safe Jump Timing</a></h3>
 </div>
 <script>
 
