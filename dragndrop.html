@@ -71,7 +71,7 @@ $.fn.generateId = function() {
 
 function insertImage(src) {
     var id = $.generateId();
-    var opacity = $("#slider").slider("option", "value");
+    var opacity = 1;
     $('#content').append('<img id="'+ id + '" src="' + src + '"/>');
     setTimeout(function() {
        $('#'+id).css("z-index",1).draggable().fadeTo('fast', opacity).mousedown(updateZindex);
@@ -79,16 +79,7 @@ function insertImage(src) {
 }
 
 $(function() {
-    var defaultOpacity = 0.5;
-    $("#slider").slider({
-        min:0.05,
-        step:0.05,
-        value:defaultOpacity,
-        max:1.0,
-       change: function(event, ui) {
-            $('img').fadeTo('fast', ui.value);
-       }
-    });
+    var defaultOpacity = 1;
     $("#clear-all").button().click(function() {
         $('img').remove();
     });
