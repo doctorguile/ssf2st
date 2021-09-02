@@ -12,6 +12,7 @@
     "text/html; charset=utf-8">
     <title>Super Street Fighter II Turbo - Hitbox Diagrams :
     Ryu</title>
+    <link rel="stylesheet" href="../movelist.css">
     <link href=
     "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css"
     rel="stylesheet" type="text/css">
@@ -21,221 +22,8 @@
     <script src=
     "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js">
     </script>
-    <script>
-    var selectedImage; 
- 
-    function insertImageP1(src) { 
-        if (window.parent && window.parent.frames) { 
-            window.parent.frames[1].insertImageP1(src); 
-        }  
-    }  
-
-    function insertImageP2(src) { 
-        if (window.parent && window.parent.frames) { 
-            window.parent.frames[1].insertImageP2(src); 
-        } 
-    } 
- 
-    function add1p() { 
-        insertImageP1(selectedImage); 
-    } 
- 
-    function add2p() { 
-        insertImageP2(selectedImage); 
-    } 
- 
-    function onMouseoutEvt(evt) { 
-
-    $('#addimagemenu').hide();
-    }
-
-    function onMouseoverEvt(evt) {
-    selectedImage = this.src;
-    var imgid = this.id;
-    $('#addimagemenu').show();
-    $('#addimagemenu').position({
-      my: "center",
-      at: "center",
-      of: "#" + imgid
-    }).show();
-    }
-
-    function getParameterByName(name, url) {
-    if (!url) {
-      url = window.location.href;
-    }
-    name = name.replace(/[\[\]]/g, "\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-
-    if (getParameterByName('dragndrop')) {
-    $(function() {
-        $('.movesetimg').mouseover(onMouseoverEvt);
-    });
-    }
-    </script>
-    <style>
-
-    .movesetimg
-    {
-        background: #fff;
-        border-color: #aaa #ccc #ddd #bbb;
-        border-style: solid;
-        border-width: 1px;
-        color: inherit;
-        padding: 2px;
-        vertical-align: top;
-    }
 
 
-    .hoverbox
-    {
-        cursor: default;
-        list-style: none;
-    }
-
-    .hoverbox a .preview
-    {
-        display: none;
-    }
-
-    .hoverbox a:hover .preview
-    {
-        display: block;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        z-index: 1;
-    }
-
-    .hoverbox img
-    {
-        background: #fff;
-        border-color: #aaa #ccc #ddd #bbb;
-        border-style: solid;
-        border-width: 1px;
-        color: inherit;
-        padding: 2px;
-        vertical-align: top;
-    }
-
-    .hoverbox .preview
-    {
-        border-color: #000;
-    }
-
-
-    body {
-        position: relative;
-        font-family: sans-serif;
-    }
-
-    a:hover {
-        color:blue;     
-        text-decoration:underline;
-    }
-
-    a {
-        color:Gray;
-        text-decoration:none;
-    }
-
-    .move-property {
-        padding: 5px;
-        font-weight: bold;
-        width:70px;
-        text-align:center;
-        margin:3px;
-        float:left;
-    }
-
-    .active {
-        background-color: #1E90FF;
-        color: White;
-    }
-
-    .inactive {
-        background-color: #708090;
-        color: #A9A9A9;
-    }
-
-    div.attack-block-hit {
-        border-style: solid;
-        border-color: Black;
-        border-width: medium;
-        padding: 5px;
-        width: 100%;
-    }
-
-    table.attack-block-hit  td {
-        padding: 5px;
-    }
-
-    td.tl {
-        border-left:medium solid black;
-        border-top:medium solid black
-    }
-    td.tr {
-        border-right:medium solid black;
-        border-top:medium solid black
-    }
-    td.ml {
-        border-left:medium solid black;
-        border-top:medium solid black
-    }
-    td.mr {
-        border-right:medium solid black;
-        border-top:medium solid black
-    }
-    td.bl {
-        border-left:medium solid black;
-        border-top:medium solid black;
-        border-bottom:medium solid black
-    }
-    td.br {
-        border-right:medium solid black;
-        border-top:medium solid black;
-        border-bottom:medium solid black
-    }
-    tr.movename {
-        background-color:pink;
-        font-size:larger;
-        font-weight:bold;
-        padding:5px;
-    }
-
-    td.movename {
-        font-size:larger;
-        font-weight:bold;
-        padding:5px;
-    }
-
-    td.back-to-top {
-        font-size:small;
-        font-weight:thin;
-        padding:5px;
-    }
-
-    .frame {
-        float:left;
-        padding:5px;
-        margin-top:3px;
-        text-align:center;
-        font-size:small;
-    }
-
-    .inactive-frame {
-        background-color:#999;  
-    }
-    .active-frame {
-        background-color:#F60;  
-    }
-
-    </style>
   </head><a name='top' id="top"></a>
   <table cellspacing="0" cellpadding="0" width="100%">
     <tr class='movename'>
@@ -1526,19 +1314,8 @@
       </td>
     </tr>
   </table><br>
-  <script>
-    var index = window.location.href.indexOf('?');
-    if(index != -1){
-        var querystring = window.location.href.slice(index + 1)       
-                $('a[class="fixquery"]').each(function() {
-                   var $this = $(this);       
-                   var href = $this.attr("href");
-                   href += (href.indexOf('?') != -1) ? '&' : '?';
-                   href += querystring;
-                   $this.attr("href", href);
-                });
-        }
-  </script> <map name='Map' id='Map'>
+
+  <map name='Map' id='Map'>
     <area shape='rect' coords='0,0,98,30' href=
     'javascript:add1p();'>
     <area shape='rect' coords='0,30,98,60' href=
@@ -1546,5 +1323,8 @@
   </map> <img id='addimagemenu' style='display:none' src=
   '../../images/addimage.png' width='98' height='60' border='0'
   usemap='#Map'>
+
+  <script src="../movelist.js"></script>
+  <script src="../dragndrop.js"></script>
 </body>
 </html>
