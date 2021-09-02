@@ -1,3 +1,3 @@
 # ssf2st
 
-[Hitbox Theory Fighter](https://doctorguile.github.io/ssf2st/theoryfighter.html)
+[Hitbox Theory Fighter](https://toufadev.github.io/ssf2st/theoryfighter.html)
