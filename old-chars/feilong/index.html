@@ -9,24 +9,30 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
       <script>
-         var selectedImage;
-         
-         function insertImage(src) {
-             if (window.parent && window.parent.frames) {
-                 window.parent.frames[1].insertImage(src);
-             }
-         }
-         
-         function add1p() {
-             insertImage(selectedImage);
-         }
-         
-         function add2p() {
-             var imgsrc = selectedImage.replace('ssf2st', 'ssf2st/flop');
-             insertImage(imgsrc);
-         }
-         
-         function onMouseoutEvt(evt) {
+    var selectedImage; 
+ 
+    function insertImageP1(src) { 
+        if (window.parent && window.parent.frames) { 
+            window.parent.frames[1].insertImageP1(src); 
+        }  
+    }  
+
+    function insertImageP2(src) { 
+        if (window.parent && window.parent.frames) { 
+            window.parent.frames[1].insertImageP2(src); 
+        } 
+    } 
+ 
+    function add1p() { 
+        insertImageP1(selectedImage); 
+    } 
+ 
+    function add2p() { 
+        insertImageP2(selectedImage); 
+    } 
+ 
+    function onMouseoutEvt(evt) { 
+
              $('#addimagemenu').hide();
          }
          

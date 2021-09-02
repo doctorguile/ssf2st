@@ -22,29 +22,30 @@
     "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js">
     </script>
     <script>
-    var selectedImage;
+    var selectedImage; 
+ 
+    function insertImageP1(src) { 
+        if (window.parent && window.parent.frames) { 
+            window.parent.frames[1].insertImageP1(src); 
+        }  
+    }  
 
-    function insertImageP1(src) {
-	if (window.parent && window.parent.frames) {
-            window.parent.frames[1].insertImageP1(src);
-	}
-    }
+    function insertImageP2(src) { 
+        if (window.parent && window.parent.frames) { 
+            window.parent.frames[1].insertImageP2(src); 
+        } 
+    } 
+ 
+    function add1p() { 
+        insertImageP1(selectedImage); 
+    } 
+ 
+    function add2p() { 
+        insertImageP2(selectedImage); 
+    } 
+ 
+    function onMouseoutEvt(evt) { 
 
-    function insertImageP2(src) {
-	if (window.parent && window.parent.frames) {
-            window.parent.frames[1].insertImageP2(src);
-	}
-    }
-
-    function add1p() {
-	insertImageP1(selectedImage);
-    }
-
-    function add2p() {
-	insertImageP2(selectedImage);
-    }
-
-    function onMouseoutEvt(evt) {
     $('#addimagemenu').hide();
     }
 
