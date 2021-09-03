@@ -1,5 +1,3 @@
-import { readdirSync } from 'fs';
-
 const moveList = readdirSync(__dirname);
 console.log(moveList);
 moveList.forEach(move => {
