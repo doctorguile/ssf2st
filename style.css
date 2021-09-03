@@ -9,7 +9,7 @@ a:hover {
 }
 
 a {
-    color:Gray;
+    color: #112233;
     text-decoration:none;
 }
 
@@ -71,7 +71,7 @@ td.br {
     border-bottom:medium solid black
 }
 .movename {
-    background-color:pink;
+    background-color:lightskyblue;
     font-size:larger;
     font-weight:bold;
     padding:5px;
@@ -89,4 +89,74 @@ td.br {
 }
 .active-frame {
     background-color:#F60;  
+}
+
+footer {
+    background-color: lightskyblue;
+    display: flex;
+    align-content: center;
+    flex-flow: column nowrap;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+footer li {
+    list-style-type: none;
+    margin-right: 14px;
+    margin-bottom: 6px;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 4px;
+    margin-bottom: 4px
+}
+
+#hitbox-list {
+    margin-top: 24px;
+    margin-bottom: 240px;
+}
+
+#attack-list {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#attack-list img {
+    margin-right: 12px
+}
+
+.heading {
+    background-color:lightskyblue;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 6px
+}
+
+.heading a {
+    align-self: center;
+    font-size: 0.9rem;
+}
+
+.move {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-between;
+    margin-bottom: 24px;
+}
+
+.screenshots {
+    padding: 8px
 }
