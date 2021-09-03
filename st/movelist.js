@@ -1,4 +1,4 @@
-import * as fs from '../node_modules/@npmcli/fs';
+import * as fs from 'fs';
 
 const moveList = fs.readdirSync(__dirname);
 console.log(moveList);
