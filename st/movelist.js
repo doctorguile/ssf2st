@@ -1,4 +1,6 @@
-const moveList = readdirSync(__dirname);
+import * as fs from '../node_modules/@npmcli/fs';
+
+const moveList = fs.readdirSync(__dirname);
 console.log(moveList);
 moveList.forEach(move => {
   console.log(move);
