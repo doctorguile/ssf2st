@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sed '/<section id="hitbox-list">/q' index.html > top.html
+sed -n '/<\/section id="hitbox-list">/, $p' index.html > bottom.html
+
 echo "" > table.html
 
 for move in $(echo */ | tr -d "/"); do
@@ -31,3 +34,7 @@ for move in $(echo */ | tr -d "/"); do
     echo '  </table>' >> table.html
     echo '  <br>' >> table.html
 done
+
+cat top.html table.html bottom.html > index.html
+rm top.html bottom.html table.html
+
