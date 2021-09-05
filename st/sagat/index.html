@@ -1,1035 +1,143 @@
-
-
-﻿﻿
+<!DOCTYPE html>
 <html>
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <title>Super Street Fighter II Turbo - Hitbox Diagrams : Sagat</title>
-      <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
-      <script>
-    var selectedImage; 
- 
-    function insertImageP1(src) { 
-        if (window.parent && window.parent.frames) { 
-            window.parent.frames[1].insertImageP1(src); 
-        }  
-    }  
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8">
+  <title>Super Street Fighter II Turbo - Hitbox Diagrams :
+  Sagat</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../movelist.css">
+  <link href=
+  "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css"
+  rel="stylesheet" type="text/css">
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+  </script>
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js">
+  </script>
+</head>
 
-    function insertImageP2(src) { 
-        if (window.parent && window.parent.frames) { 
-            window.parent.frames[1].insertImageP2(src); 
-        } 
-    } 
- 
-    function add1p() { 
-        insertImageP1(selectedImage); 
-    } 
- 
-    function add2p() { 
-        insertImageP2(selectedImage); 
-    } 
- 
-    function onMouseoutEvt(evt) { 
+  <header>
+    <div class="heading">
+      <h1>Sagat</h1>
+      <a href="../..">Back to characters →</a>
+    </div>
+  </header>
 
-             $('#addimagemenu').hide();
-         }
-         
-         function onMouseoverEvt(evt) {
-             selectedImage = this.src;
-             var imgid = this.id;
-             $('#addimagemenu').show();
-             $('#addimagemenu').position({
-               my: "center",
-               at: "center",
-               of: "#" + imgid
-             }).show();
-         }
-         
-         function getParameterByName(name, url) {
-             if (!url) {
-               url = window.location.href;
-             }
-             name = name.replace(/[\[\]]/g, "\$&");
-             var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-                 results = regex.exec(url);
-             if (!results) return null;
-             if (!results[2]) return '';
-             return decodeURIComponent(results[2].replace(/\+/g, " "));
-         }
-         
-         if (getParameterByName('dragndrop')) {
-             $(function() {
-                 $('.movesetimg').mouseover(onMouseoverEvt);
-             });
-         }
-      </script>
-      <style>
-         .movesetimg
-         {
-         background: #fff;
-         border-color: #aaa #ccc #ddd #bbb;
-         border-style: solid;
-         border-width: 1px;
-         color: inherit;
-         padding: 2px;
-         vertical-align: top;
-         }
-         .hoverbox
-         {
-         cursor: default;
-         list-style: none;
-         }
-         .hoverbox a .preview
-         {
-         display: none;
-         }
-         .hoverbox a:hover .preview
-         {
-         display: block;
-         position: absolute;
-         top: 5px;
-         left: 5px;
-         z-index: 1;
-         }
-         .hoverbox img
-         {
-         background: #fff;
-         border-color: #aaa #ccc #ddd #bbb;
-         border-style: solid;
-         border-width: 1px;
-         color: inherit;
-         padding: 2px;
-         vertical-align: top;
-         }
-         .hoverbox .preview
-         {
-         border-color: #000;
-         }
-         body {
-         position: relative;
-         font-family: sans-serif;
-         }
-         a:hover {
-         color:blue;	
-         text-decoration:underline;
-         }
-         a {
-         color:Gray;
-         text-decoration:none;
-         }
-         .move-property {
-         padding: 5px;
-         font-weight: bold;
-         width:70px;
-         text-align:center;
-         margin:3px;
-         float:left;
-         }
-         .active {
-         background-color: #1E90FF;
-         color: White;
-         }
-         .inactive {
-         background-color: #708090;
-         color: #A9A9A9;
-         }
-         div.attack-block-hit {
-         border-style: solid;
-         border-color: Black;
-         border-width: medium;
-         padding: 5px;
-         width: 100%;
-         }
-         table.attack-block-hit  td {
-         padding: 5px;
-         }
-         td.tl {
-         border-left:medium solid black;
-         border-top:medium solid black
-         }
-         td.tr {
-         border-right:medium solid black;
-         border-top:medium solid black
-         }
-         td.ml {
-         border-left:medium solid black;
-         border-top:medium solid black
-         }
-         td.mr {
-         border-right:medium solid black;
-         border-top:medium solid black
-         }
-         td.bl {
-         border-left:medium solid black;
-         border-top:medium solid black;
-         border-bottom:medium solid black
-         }
-         td.br {
-         border-right:medium solid black;
-         border-top:medium solid black;
-         border-bottom:medium solid black
-         }
-         tr.movename {
-         background-color:pink;
-         font-size:larger;
-         font-weight:bold;
-         padding:5px;
-         }
-         td.movename {
-         font-size:larger;
-         font-weight:bold;
-         padding:5px;
-         }
-         td.back-to-top {
-         font-size:small;
-         font-weight:thin;
-         padding:5px;
-         }
-         .frame {
-         float:left;
-         padding:5px;
-         margin-top:3px;
-         text-align:center;
-         font-size:small;
-         }
-         .inactive-frame {
-         background-color:#999;	
-         }
-         .active-frame {
-         background-color:#F60;	
-         }
-      </style>
-   </head>
-   <body>
-      <a name='top'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Sagat</td>
-            <td class='back-to-top' align=right><a class='fixquery' href='../../'>Select another character</a></td>
-         </tr>
-         <tr>
-            <td valign=top><img src='../../images/new/sagat.png' border=0/></td>
-            <td valign=top><a href='#Standing'>Standing</a> | <a href='#Crouching'>Crouching</a><br/><a href='#close-lp'>close-lp</a> | <a href='#close-mp'>close-mp</a> | <a href='#close-hp'>close-hp</a> | <a href='#close-lk'>close-lk</a> | <a href='#close-mk'>close-mk</a> | <a href='#close-hk'>close-hk</a><br/><a href='#far-lp'>far-lp</a> | <a href='#far-mp'>far-mp</a> | <a href='#far-hp'>far-hp</a> | <a href='#far-lk'>far-lk</a> | <a href='#far-mk'>far-mk</a> | <a href='#far-hk'>far-hk</a><br/><a href='#crouch-lp'>crouch-lp</a> | <a href='#crouch-mp'>crouch-mp</a> | <a href='#crouch-hp'>crouch-hp</a> | <a href='#crouch-lk'>crouch-lk</a> | <a href='#crouch-mk'>crouch-mk</a> | <a href='#crouch-hk'>crouch-hk</a><br/><a href='#up-lp'>up-lp</a> | <a href='#up-mp'>up-mp</a> | <a href='#up-hp'>up-hp</a> | <a href='#up-lk'>up-lk</a> | <a href='#up-mk'>up-mk</a> | <a href='#up-hk'>up-hk</a><br/><a href='#jump-lp'>jump-lp</a> | <a href='#jump-mp'>jump-mp</a> | <a href='#jump-hp'>jump-hp</a> | <a href='#jump-lk'>jump-lk</a> | <a href='#jump-mk'>jump-mk</a> | <a href='#jump-hk'>jump-hk</a><br/><a href='#throw-1'>throw-1</a><br/><a href='#High Tiger (fire ball)'>High Tiger (fire ball)</a> | <a href='#Low Tiger (fire ball)'>Low Tiger (fire ball)</a> | <a href='#Tiger Uppercut'>Tiger Uppercut</a> | <a href='#Tiger Knee'>Tiger Knee</a><br/><a href='#Super'>Super</a></td>
-         </tr>
-      </table>
-      <br/><br/><a name='Standing'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Standing</td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='standing1crjpg' class='movesetimg hoverbox' style='float:left' src='./standing/1_cr.jpg'/><img id='standing2crjpg' class='movesetimg hoverbox' style='float:left' src='./standing/2_cr.jpg'/><img id='standing3crjpg' class='movesetimg hoverbox' style='float:left' src='./standing/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='Crouching'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Crouching</td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='crouching1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouching/1_cr.jpg'/><img id='crouching2crjpg' class='movesetimg hoverbox' style='float:left' src='./crouching/2_cr.jpg'/><img id='crouching3crjpg' class='movesetimg hoverbox' style='float:left' src='./crouching/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='close-lp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Close <img src='../../images/lp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='closelp1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lp/1_cr.jpg'/><img id='closelp2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lp/2_cr.jpg'/><img id='closelp3crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lp/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='close-mp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Close <img src='../../images/mp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='closemp1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mp/1_cr.jpg'/><img id='closemp2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mp/2_cr.jpg'/><img id='closemp3crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mp/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='close-hp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Close <img src='../../images/hp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='closehp1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hp/1_cr.jpg'/><img id='closehp2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hp/2_cr.jpg'/><img id='closehp3crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hp/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='close-lk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Close <img src='../../images/lk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='closelk1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lk/1_cr.jpg'/><img id='closelk2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lk/2_cr.jpg'/><img id='closelk3crjpg' class='movesetimg hoverbox' style='float:left' src='./close-lk/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='close-mk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Close <img src='../../images/mk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='closemk1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mk/1_cr.jpg'/><img id='closemk2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mk/2_cr.jpg'/><img id='closemk3crjpg' class='movesetimg hoverbox' style='float:left' src='./close-mk/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='close-hk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Close <img src='../../images/hk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='closehk1crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/1_cr.jpg'/><img id='closehk2crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/2_cr.jpg'/><img id='closehk3crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/3_cr.jpg'/><img id='closehk4crjpg' class='movesetimg hoverbox' style='float:left' src='./close-hk/4_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='far-lp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Far <img src='../../images/lp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='farlp1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lp/1_cr.jpg'/><img id='farlp2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lp/2_cr.jpg'/><img id='farlp3crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lp/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='far-mp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Far <img src='../../images/mp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='farmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mp/1_cr.jpg'/><img id='farmp2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mp/2_cr.jpg'/><img id='farmp3crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mp/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='far-hp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Far <img src='../../images/hp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='farhp1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hp/1_cr.jpg'/><img id='farhp2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hp/2_cr.jpg'/><img id='farhp3crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hp/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='far-lk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Far <img src='../../images/lk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='farlk1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lk/1_cr.jpg'/><img id='farlk2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lk/2_cr.jpg'/><img id='farlk3crjpg' class='movesetimg hoverbox' style='float:left' src='./far-lk/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='far-mk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Far <img src='../../images/mk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='farmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mk/1_cr.jpg'/><img id='farmk2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mk/2_cr.jpg'/><img id='farmk3crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mk/3_cr.jpg'/><img id='farmk4crjpg' class='movesetimg hoverbox' style='float:left' src='./far-mk/4_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='far-hk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Far <img src='../../images/hk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='farhk1crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hk/1_cr.jpg'/><img id='farhk2crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hk/2_cr.jpg'/><img id='farhk3crjpg' class='movesetimg hoverbox' style='float:left' src='./far-hk/3_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='crouch-lp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Crouch <img src='../../images/lp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='crouchlp1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-lp/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='crouch-mp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Crouch <img src='../../images/mp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='crouchmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-mp/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='crouch-hp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Crouch <img src='../../images/hp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='crouchhp1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hp/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='crouch-lk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Crouch <img src='../../images/lk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='crouchlk1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-lk/1_cr.jpg'/><img id='crouchlk2crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-lk/2_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='crouch-mk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Crouch <img src='../../images/mk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='crouchmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-mk/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='crouch-hk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Crouch <img src='../../images/hk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='crouchhk1crjpg' class='movesetimg hoverbox' style='float:left' src='./crouch-hk/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='up-lp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Neutral Jump <img src='../../images/lp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='uplp1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-lp/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='up-mp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Neutral Jump <img src='../../images/mp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='upmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-mp/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='up-hp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Neutral Jump <img src='../../images/hp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='uphp1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-hp/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='up-lk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Neutral Jump <img src='../../images/lk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='uplk1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-lk/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='up-mk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Neutral Jump <img src='../../images/mk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='upmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-mk/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='up-hk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Neutral Jump <img src='../../images/hk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='uphk1crjpg' class='movesetimg hoverbox' style='float:left' src='./up-hk/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='jump-lp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Jump <img src='../../images/lp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='jumplp1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-lp/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='jump-mp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Jump <img src='../../images/mp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='jumpmp1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-mp/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='jump-hp'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Jump <img src='../../images/hp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='jumphp1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-hp/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='jump-lk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Jump <img src='../../images/lk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='jumplk1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-lk/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='jump-mk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Jump <img src='../../images/mk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='jumpmk1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-mk/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='jump-hk'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Jump <img src='../../images/hk.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='jumphk1crjpg' class='movesetimg hoverbox' style='float:left' src='./jump-hk/1_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='throw-1'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Throw 1&#160;&#160;&#160;&#160;<img src='../../images/left.png' border=0/>/<img src='../../images/right.png' border=0/> + <img src='../../images/mp.png' border=0/>/<img src='../../images/hp.png' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='throw11crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-1/1_cr.jpg'/><img id='throw12crjpg' class='movesetimg hoverbox' style='float:left' src='./throw-1/2_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/>
-      <table >
-         <tr valign=top>
-            <th>Beats</th>
-            <td>
-               <table>
-                  <tr>
-                     <td> feilong </td>
-                     <td>5</td>
-                  </tr>
-                  <tr>
-                     <td> thawk </td>
-                     <td>3</td>
-                  </tr>
-                  <tr>
-                     <td> balrog-hp-throw </td>
-                     <td>2</td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-         <tr valign=top>
-            <th>Loses to</th>
-            <td>
-               <table>
-                  <tr>
-                     <td> zangief spd </td>
-                     <td>-50</td>
-                  </tr>
-                  <tr>
-                     <td> thawk-360/720 </td>
-                     <td>-32</td>
-                  </tr>
-                  <tr>
-                     <td> ehonda oicho </td>
-                     <td>-25</td>
-                  </tr>
-                  <tr>
-                     <td> zangief double-suplex hk </td>
-                     <td>-22</td>
-                  </tr>
-                  <tr>
-                     <td> ehonda </td>
-                     <td>-20</td>
-                  </tr>
-                  <tr>
-                     <td> blanka </td>
-                     <td>-18</td>
-                  </tr>
-                  <tr>
-                     <td> dhalsim </td>
-                     <td>-13</td>
-                  </tr>
-                  <tr>
-                     <td> zangief running-bear hk </td>
-                     <td>-13</td>
-                  </tr>
-                  <tr>
-                     <td> zangief running-bear lk/mk </td>
-                     <td>-12</td>
-                  </tr>
-                  <tr>
-                     <td> zangief double-suplex lk/mk </td>
-                     <td>-8</td>
-                  </tr>
-                  <tr>
-                     <td> zangief </td>
-                     <td>-8</td>
-                  </tr>
-                  <tr>
-                     <td> mbison </td>
-                     <td>-8</td>
-                  </tr>
-                  <tr>
-                     <td> balrog-mp-throw </td>
-                     <td>-8</td>
-                  </tr>
-                  <tr>
-                     <td> chunli </td>
-                     <td>-7</td>
-                  </tr>
-                  <tr>
-                     <td> vega </td>
-                     <td>-4</td>
-                  </tr>
-                  <tr>
-                     <td> zangief fab </td>
-                     <td>-3</td>
-                  </tr>
-                  <tr>
-                     <td> ken </td>
-                     <td>-3</td>
-                  </tr>
-                  <tr>
-                     <td> ryu </td>
-                     <td>-3</td>
-                  </tr>
-                  <tr>
-                     <td> deejay </td>
-                     <td>-2</td>
-                  </tr>
-                  <tr>
-                     <td> guile </td>
-                     <td>-2</td>
-                  </tr>
-                  <tr>
-                     <td> cammy </td>
-                     <td>-1</td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <a name='High Tiger (fire ball)'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>High Tiger (fire ball)&#160;&#160;&#160;&#160;<img src='../../images/qcf.png' border=0/><img src='../../images/punch.gif' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='special11crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/1_cr.jpg'/><img id='special12crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/2_cr.jpg'/><img id='special13crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/3_cr.jpg'/><img id='special14crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/4_cr.jpg'/><img id='special15crjpg' class='movesetimg hoverbox' style='float:left' src='./special-1/5_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='Low Tiger (fire ball)'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Low Tiger (fire ball)&#160;&#160;&#160;&#160;<img src='../../images/qcf.png' border=0/><img src='../../images/kick.gif' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='special21crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/1_cr.jpg'/><img id='special22crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/2_cr.jpg'/><img id='special23crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/3_cr.jpg'/><img id='special24crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/4_cr.jpg'/><img id='special25crjpg' class='movesetimg hoverbox' style='float:left' src='./special-2/5_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='Tiger Uppercut'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Tiger Uppercut&#160;&#160;&#160;&#160;<img src='../../images/zright.png' border=0/><img src='../../images/punch.gif' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='special31crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/1_cr.jpg'/><img id='special32crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/2_cr.jpg'/><img id='special33crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/3_cr.jpg'/><img id='special34crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/4_cr.jpg'/><img id='special35crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/5_cr.jpg'/><img id='special36crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/6_cr.jpg'/><img id='special37crjpg' class='movesetimg hoverbox' style='float:left' src='./special-3/7_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='Tiger Knee'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Tiger Knee&#160;&#160;&#160;&#160;<img src='../../images/down.png' border=0/><img src='../../images/right.png' border=0/><img src='../../images/upright.png' border=0/><img src='../../images/kick.gif' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='special41crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/1_cr.jpg'/><img id='special42crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/2_cr.jpg'/><img id='special43crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/3_cr.jpg'/><img id='special44crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/4_cr.jpg'/><img id='special45crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/5_cr.jpg'/><img id='special46crjpg' class='movesetimg hoverbox' style='float:left' src='./special-4/6_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/><a name='Super'></a>
-      <table cellspacing=0 cellpadding=0 width=100%>
-         <tr class='movename'>
-            <td class='movename'>Super&#160;&#160;&#160;&#160;<img src='../../images/qcf.png' border=0/><img src='../../images/down.png' border=0/><img src='../../images/downright.png' border=0/><img src='../../images/punch.gif' border=0/></td>
-            <td class='back-to-top' align=right><a href='#top'>Back to top</a></td>
-         </tr>
-         <tr>
-            <td colspan=2>
-               <table>
-                  <tr>
-                     <td>
-                        <div style='padding-top:3px'><img id='super1crjpg' class='movesetimg hoverbox' style='float:left' src='./super/1_cr.jpg'/><img id='super2crjpg' class='movesetimg hoverbox' style='float:left' src='./super/2_cr.jpg'/><img id='super3crjpg' class='movesetimg hoverbox' style='float:left' src='./super/3_cr.jpg'/><img id='super4crjpg' class='movesetimg hoverbox' style='float:left' src='./super/4_cr.jpg'/><img id='super5crjpg' class='movesetimg hoverbox' style='float:left' src='./super/5_cr.jpg'/><img id='super6crjpg' class='movesetimg hoverbox' style='float:left' src='./super/6_cr.jpg'/><img id='super7crjpg' class='movesetimg hoverbox' style='float:left' src='./super/7_cr.jpg'/><img id='super8crjpg' class='movesetimg hoverbox' style='float:left' src='./super/8_cr.jpg'/><img id='super9crjpg' class='movesetimg hoverbox' style='float:left' src='./super/9_cr.jpg'/><img id='super9acrjpg' class='movesetimg hoverbox' style='float:left' src='./super/9a_cr.jpg'/><img id='super9bcrjpg' class='movesetimg hoverbox' style='float:left' src='./super/9b_cr.jpg'/><img id='super9ccrjpg' class='movesetimg hoverbox' style='float:left' src='./super/9c_cr.jpg'/></div>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <br/>
-      <script>
-         var index = window.location.href.indexOf('?');
-         if(index != -1){
-             var querystring = window.location.href.slice(index + 1)       
-         $('a[class="fixquery"]').each(function() {
-          var $this = $(this);       
-          var href = $this.attr("href");
-          href += (href.indexOf('?') != -1) ? '&' : '?';
-          href += querystring;
-          $this.attr("href", href);
-         });
-         }
-      </script>
-      <map name='Map' id='Map'>
-         <area shape='rect' coords='0,0,98,30' href='javascript:add1p();' />
-         <area shape='rect' coords='0,30,98,60' href='javascript:add2p()' />
-      </map>
-      <img  id='addimagemenu' style='display:none' src='../../images/addimage.png' width='98' height='60' border='0' usemap='#Map'/>
-   </body>
+  <section id="attack-list">
+    
+    <div class="mugshot-container">
+      <img src='../../images/new/sagat.png' alt="sagat portrait">
+    </div>
+    <nav>
+      <h2>Character moveset</h2>
+      <ul id="attack-index">
+        <li><a href='#Standing'>Standing</a></li>
+        <li><a href='#Crouching'>Crouching</a></li>
+        <li><a href='#close-lp'>close-lp</a></li>
+        <li><a href='#close-mp'>close-mp</a></li>
+        <li><a href='#close-hp'>close-hp</a></li>
+        <li><a href='#close-lk'>close-lk</a></li>
+        <li><a href='#close-mk'>close-mk</a></li>
+        <li><a href='#close-hk'>close-hk</a></li>
+        <li><a href='#far-lp'>far-lp</a></li>
+        <li><a href='#far-mp'>far-mp</a></li>
+        <li><a href='#far-hp'>far-hp</a></li>
+        <li><a href='#far-lk'>far-lk</a></li>
+        <li><a href='#far-lk'>far-lk</a></li>
+        <li><a href='#far-hk'>far-hk</a></li>
+        <li><a href='#crouch-lp'>crouch-lp</a></li>
+        <li><a href='#crouch-mp'>crouch-mp</a></li>
+        <li><a href='#crouch-hp'>crouch-hp</a></li>
+        <li><a href='#crouch-lk'>crouch-lk</a></li>
+        <li><a href='#crouch-mk'>crouch-mk</a></li>
+        <li><a href='#crouch-hk'>crouch-hk</a></li>
+        <li><a href='#up-lp'>up-lp</a></li>
+        <li><a href='#up-mp'>up-mp</a></li>
+        <li><a href='#up-hp'>up-hp</a></li>
+        <li><a href='#up-lk'>up-lk</a></li>
+        <li><a href='#up-mk'>up-mk</a></li>
+        <li><a href='#up-hk'>up-hk</a></li>
+        <li><a href='#jump-lp'>jump-lp</a></li>
+        <li><a href='#jump-mp'>jump-mp</a></li>
+        <li><a href='#jump-hp'>jump-hp</a></li>
+        <li><a href='#jump-lk'>jump-lk</a></li>
+        <li><a href='#jump-mk'>jump-mk</a></li>
+        <li><a href='#jump-hk'>jump-hk</a></li>
+        <li><a href='#throw-1'>throw-1</a></li>
+        <li><a href='#throw-2'>throw-2</a></li>
+        <li><a href='#Overhead'>Overhead</a></li>
+        <li><a href='#Rush%20Punch'>Rush Punch</a></li>
+        <li><a href='#Hadouken%20(fire%20ball)'>Hadouken (fireball)</a></li>
+        <li><a href='#Fire%20Hadouken%20(fire%20ball)'>Fire Hadouken (fire ball)</a></li>
+        <li><a href='#Shoryuken%20(Uppercut)'>Shoryuken (Uppercut)</a></li>
+        <li><a href='#Hurricane%20Kick'>Hurricane Kick</a></li>
+        <li><a href='#Air%20Hurricane%20Kick'>Air Hurricane Kick</a></li>
+        <li><a href='#Super'>Super</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section id="hitbox-list">
+
+    <!--iterate this structure-->
+    <div id="back-jump" class="move">
+      <div class="heading">
+        <h2>back-jump</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+        <img id="bj1" class="movesetimg hoverbox" src="./bj/bj1.png">
+        <img id="bj2" class="movesetimg hoverbox" src="./bj/bj2.png">
+        <img id="bj3" class="movesetimg hoverbox" src="./bj/bj3.png">
+        <img id="bj4" class="movesetimg hoverbox" src="./bj/bj4.png">
+        <img id="bj5" class="movesetimg hoverbox" src="./bj/bj5.png">
+        <img id="bj6" class="movesetimg hoverbox" src="./bj/bj6.png">
+        <img id="bj7" class="movesetimg hoverbox" src="./bj/bj7.png">
+        <img id="bj8" class="movesetimg hoverbox" src="./bj/bj8.png">
+        <img id="bj9" class="movesetimg hoverbox" src="./bj/bj9.png">
+        <img id="bj10" class="movesetimg hoverbox" src="./bj/bj10.png">
+        <img id="bj11" class="movesetimg hoverbox" src="./bj/bj11.png">
+        <img id="bj12" class="movesetimg hoverbox" src="./bj/bj12.png">
+        <img id="bj13" class="movesetimg hoverbox" src="./bj/bj13.png">
+        <img id="bj14" class="movesetimg hoverbox" src="./bj/bj14.png">
+      </div>
+    </div>
+  
+  </section>
+
+  <map name='Map' id='Map'>
+    <area shape='rect' coords='0,0,98,30' href=
+    'javascript:add1p();'>
+    <area shape='rect' coords='0,30,98,60' href=
+    'javascript:add2p()'>
+  </map> <img id='addimagemenu' style='display:none' src=
+  '../../images/addimage.png' width='98' height='60' border='0'
+  usemap='#Map'>
+
+  <footer>
+    <h2>Characters:</h2>
+    <ul>
+      <li><a href="../../st/ryu/index.html">Ryu</a> <a href="../../old-chars/ryu/index.html">(old)</a></li>
+      <li><a href="../../st/ken/index.html">Ken</a> <a href="../../old-chars/ken/index.html">(old)</a></li>
+      <li><a href="../../st/ehonda/index.html">E. Honda</a> <a href="../../old-chars/ehonda/index.html">(old)</a></li>
+      <li><a href="../../st/chunli/index.html">Chun-Li</a> <a href="../../old-chars/chunli/index.html">(old)</a></li>
+      <li><a href="../../st/blanka/index.html">Blanka</a> <a href="../../old-chars/blanka/index.html">(old)</a></li>
+      <li><a href="../../st/zangief/index.html">Zangief</a> <a href="../../old-chars/zangief/index.html">(old)</a></li>
+      <li><a href="../../st/guile/index.html">Guile</a> <a href="../../old-chars/guile/index.html">(old)</a></li>
+      <li><a href="../../st/dhalsim/index.html">Dhalsim</a> <a href="../../old-chars/dhalsim/index.html">(old)</a></li>
+      <li><a href="../../st/thawk/index.html">T. Hawk</a> <a href="../../old-chars/thawk/index.html">(old)</a></li>
+      <li><a href="../../st/cammy/index.html">Cammy</a> <a href="../../old-chars/cammy/index.html">(old)</a></li>
+      <li><a href="../../st/feilong/index.html">Fei Long</a> <a href="../../old-chars/feilong/index.html">(old)</a></li>
+      <li><a href="../../st/deejay/index.html">Dee Jay</a> <a href="../../old-chars/deejay/index.html">(old)</a></li>
+      <li><a href="../../st/balrog/index.html">Boxer</a> <a href="../../old-chars/balrog/index.html">(old)</a></li>
+      <li><a href="../../st/vega/index.html">Claw</a> <a href="../../old-chars/vega/index.html">(old)</a></li>
+      <li><a href="../../st/sagat/index.html">Sagat</a> <a href="../../old-chars/sagat/index.html">(old)</a></li>
+      <li><a href="../../st/mbison/index.html">Dictator</a> <a href="../../old-chars/mbison/index.html">(old)</a></li>
+    </ul>
+  </footer>
+
+  <script src="../dragndrop.js"></script>
+</body>
 </html>
-
