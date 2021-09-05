@@ -48,11 +48,9 @@ if (!results[2]) return '';
 return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-if (getParameterByName('dragndrop')) {
 $(function() {
     $('.movesetimg').mouseover(onMouseoverEvt);
 });
-}
 
 var index = window.location.href.indexOf('?');
 if(index != -1){

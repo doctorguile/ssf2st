@@ -215,4 +215,5 @@ h2 {
     overflow: hidden;
     border: 1px solid #BBB;
     margin-right: 4px;
+    max-width: 150px;
 }
