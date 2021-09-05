@@ -16,6 +16,57 @@
     <script src=
 	    "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js">
     </script>
+        <script>
+    var selectedImage;
+
+    function insertImage(src) {
+    if (window.parent && window.parent.frames) {
+        window.parent.frames[1].insertImage(src);
+    }
+    }
+
+    function add1p() {
+    insertImage(selectedImage);
+    }
+
+    function add2p() {
+    var imgsrc = selectedImage.replace('ssf2st', 'ssf2st/flop');
+    insertImage(imgsrc);
+    }
+
+    function onMouseoutEvt(evt) {
+    $('#addimagemenu').hide();
+    }
+
+    function onMouseoverEvt(evt) {
+    selectedImage = this.src;
+    var imgid = this.id;
+    $('#addimagemenu').show();
+    $('#addimagemenu').position({
+      my: "center",
+      at: "center",
+      of: "#" + imgid
+    }).show();
+    }
+
+    function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    if (getParameterByName('dragndrop')) {
+    $(function() {
+        $('.movesetimg').mouseover(onMouseoverEvt);
+    });
+    }
+    </script>
   </head>
 
   <header>
@@ -881,6 +932,6 @@
     </ul>
   </footer>
 
-  <script src="../dragndrop.js"></script>
+ <!-- <script src="../dragndrop.js"></script> -->
 </body>
 </html>
