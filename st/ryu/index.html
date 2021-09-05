@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content=
-  "text/html; charset=utf-8">
-  <title>Super Street Fighter II Turbo - Hitbox Diagrams :
-  Ryu</title>
-  <link rel="stylesheet" href="../../style.css">
-  <link rel="stylesheet" href="../movelist.css">
-  <link href=
-  "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css"
-  rel="stylesheet" type="text/css">
-  <script src=
-  "https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
-  </script>
-  <script src=
-  "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js">
-  </script>
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content=
+	  "text/html; charset=utf-8">
+    <title>Super Street Fighter II Turbo - Hitbox Diagrams :
+      Ryu</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../movelist.css">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      var selectedImage;
+
+      function insertImage(src) {
+	  if (window.parent && window.parent.frames) {
+              window.parent.frames[1].insertImage(src);
+	  }
+      }
+
+      function add1p() {
+	  insertImage(selectedImage);
+      }
+
+      function add2p() {
+	  var imgsrc = selectedImage.replace('ssf2st', 'ssf2st/flop');
+	  insertImage(imgsrc);
+      }
+
+      function onMouseoutEvt(evt) {
+	  $('#addimagemenu').hide();
+      }
+
+      function onMouseoverEvt(evt) {
+	  selectedImage = this.src;
+	  var imgid = this.id;
+	  $('#addimagemenu').show();
+	  $('#addimagemenu').position({
+	      my: "center",
+	      at: "center",
+	      of: "#" + imgid
+	  }).show();
+      }
+
+      function getParameterByName(name, url) {
+	  if (!url) {
+	      url = window.location.href;
+	  }
+	  name = name.replace(/[\[\]]/g, "\$&");
+	  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+              results = regex.exec(url);
+	  if (!results) return null;
+	  if (!results[2]) return '';
+	  return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      if (getParameterByName('dragndrop')) {
+	  $(function() {
+              $('.movesetimg').mouseover(onMouseoverEvt);
+	  });
+      }
+    </script>
+  </head>
 
   <header>
     <div class="heading">
@@ -34,49 +79,49 @@
       <h2>Character moveset</h2>
       <ul id="attack-index">
 
-<li><a href='#&'>&</a></li>
-<li><a href='#0&'>0&</a></li>
-<li><a href='#0frwrd'>0frwrd</a></li>
-<li><a href='#0rh'>0rh</a></li>
-<li><a href='#airtatsu'>airtatsu</a></li>
-<li><a href='#atatsu'>atatsu</a></li>
-<li><a href='#crfrc'>crfrc</a></li>
-<li><a href='#crfrwrd'>crfrwrd</a></li>
-<li><a href='#crjab'>crjab</a></li>
-<li><a href='#crrh'>crrh</a></li>
-<li><a href='#crshrt'>crshrt</a></li>
-<li><a href='#crstrng'>crstrng</a></li>
-<li><a href='#dash'>dash</a></li>
-<li><a href='#djfrc'>djfrc</a></li>
-<li><a href='#djfrwrd'>djfrwrd</a></li>
-<li><a href='#djjab'>djjab</a></li>
-<li><a href='#djrh'>djrh</a></li>
-<li><a href='#djstrng'>djstrng</a></li>
-<li><a href='#fb'>fb</a></li>
-<li><a href='#frwrd'>frwrd</a></li>
-<li><a href='#njfrc'>njfrc</a></li>
-<li><a href='#njfrwrd'>njfrwrd</a></li>
-<li><a href='#njjab'>njjab</a></li>
-<li><a href='#njrh'>njrh</a></li>
-<li><a href='#njshrt'>njshrt</a></li>
-<li><a href='#njstrng'>njstrng</a></li>
-<li><a href='#rh'>rh</a></li>
-<li><a href='#srk'>srk</a></li>
-<li><a href='#stclfrc'>stclfrc</a></li>
-<li><a href='#stclfrwrd'>stclfrwrd</a></li>
-<li><a href='#stcljab'>stcljab</a></li>
-<li><a href='#stclrh'>stclrh</a></li>
-<li><a href='#stclshrt'>stclshrt</a></li>
-<li><a href='#stclstrng'>stclstrng</a></li>
-<li><a href='#stfarfrc'>stfarfrc</a></li>
-<li><a href='#stfarfrwrd'>stfarfrwrd</a></li>
-<li><a href='#stfarjab'>stfarjab</a></li>
-<li><a href='#stfarrh'>stfarrh</a></li>
-<li><a href='#stfarshrt'>stfarshrt</a></li>
-<li><a href='#stfarstrng'>stfarstrng</a></li>
-<li><a href='#super'>super</a></li>
-<li><a href='#swing'>swing</a></li>
-<li><a href='#tatsu'>tatsu</a></li>
+	<li><a href='#&'>&</a></li>
+	<li><a href='#0&'>0&</a></li>
+	<li><a href='#0frwrd'>0frwrd</a></li>
+	<li><a href='#0rh'>0rh</a></li>
+	<li><a href='#airtatsu'>airtatsu</a></li>
+	<li><a href='#atatsu'>atatsu</a></li>
+	<li><a href='#crfrc'>crfrc</a></li>
+	<li><a href='#crfrwrd'>crfrwrd</a></li>
+	<li><a href='#crjab'>crjab</a></li>
+	<li><a href='#crrh'>crrh</a></li>
+	<li><a href='#crshrt'>crshrt</a></li>
+	<li><a href='#crstrng'>crstrng</a></li>
+	<li><a href='#dash'>dash</a></li>
+	<li><a href='#djfrc'>djfrc</a></li>
+	<li><a href='#djfrwrd'>djfrwrd</a></li>
+	<li><a href='#djjab'>djjab</a></li>
+	<li><a href='#djrh'>djrh</a></li>
+	<li><a href='#djstrng'>djstrng</a></li>
+	<li><a href='#fb'>fb</a></li>
+	<li><a href='#frwrd'>frwrd</a></li>
+	<li><a href='#njfrc'>njfrc</a></li>
+	<li><a href='#njfrwrd'>njfrwrd</a></li>
+	<li><a href='#njjab'>njjab</a></li>
+	<li><a href='#njrh'>njrh</a></li>
+	<li><a href='#njshrt'>njshrt</a></li>
+	<li><a href='#njstrng'>njstrng</a></li>
+	<li><a href='#rh'>rh</a></li>
+	<li><a href='#srk'>srk</a></li>
+	<li><a href='#stclfrc'>stclfrc</a></li>
+	<li><a href='#stclfrwrd'>stclfrwrd</a></li>
+	<li><a href='#stcljab'>stcljab</a></li>
+	<li><a href='#stclrh'>stclrh</a></li>
+	<li><a href='#stclshrt'>stclshrt</a></li>
+	<li><a href='#stclstrng'>stclstrng</a></li>
+	<li><a href='#stfarfrc'>stfarfrc</a></li>
+	<li><a href='#stfarfrwrd'>stfarfrwrd</a></li>
+	<li><a href='#stfarjab'>stfarjab</a></li>
+	<li><a href='#stfarrh'>stfarrh</a></li>
+	<li><a href='#stfarshrt'>stfarshrt</a></li>
+	<li><a href='#stfarstrng'>stfarstrng</a></li>
+	<li><a href='#super'>super</a></li>
+	<li><a href='#swing'>swing</a></li>
+	<li><a href='#tatsu'>tatsu</a></li>
       </ul id="attack-index">
     </nav>
   </section>
@@ -84,641 +129,641 @@
   <section id="hitbox-list">
 
 
-     <div id="&" class="move">
-       <div class="heading">
-         <h2>&</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="4&8&12&16frwrd" alt="&" class="movesetimg hoverbox" src="./&/4&8&12&16frwrd.png">
-<img id="4&8&12&16&20rh" alt="&" class="movesetimg hoverbox" src="./&/4&8&12&16&20rh.png">
-<img id="5&9&13&17frwrd" alt="&" class="movesetimg hoverbox" src="./&/5&9&13&17frwrd.png">
-<img id="5&9&13&17&21rh" alt="&" class="movesetimg hoverbox" src="./&/5&9&13&17&21rh.png">
-</div>
+    <div id="&" class="move">
+      <div class="heading">
+        <h2>&</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="4&8&12&16frwrd" alt="&" class="movesetimg hoverbox" src="./&/4&8&12&16frwrd.png">
+	<img id="4&8&12&16&20rh" alt="&" class="movesetimg hoverbox" src="./&/4&8&12&16&20rh.png">
+	<img id="5&9&13&17frwrd" alt="&" class="movesetimg hoverbox" src="./&/5&9&13&17frwrd.png">
+	<img id="5&9&13&17&21rh" alt="&" class="movesetimg hoverbox" src="./&/5&9&13&17&21rh.png">
+      </div>
     </div>
 
-     <div id="0&" class="move">
-       <div class="heading">
-         <h2>0&</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="6&10&14&18frwrd" alt="0&" class="movesetimg hoverbox" src="./0&/6&10&14&18frwrd.png">
-<img id="6&10&14&18&22rh" alt="0&" class="movesetimg hoverbox" src="./0&/6&10&14&18&22rh.png">
-</div>
+    <div id="0&" class="move">
+      <div class="heading">
+        <h2>0&</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="6&10&14&18frwrd" alt="0&" class="movesetimg hoverbox" src="./0&/6&10&14&18frwrd.png">
+	<img id="6&10&14&18&22rh" alt="0&" class="movesetimg hoverbox" src="./0&/6&10&14&18&22rh.png">
+      </div>
     </div>
 
-     <div id="0frwrd" class="move">
-       <div class="heading">
-         <h2>0frwrd</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="10frwrd" alt="0frwrd" class="movesetimg hoverbox" src="./0frwrd/10frwrd.png">
-<img id="20frwrd" alt="0frwrd" class="movesetimg hoverbox" src="./0frwrd/20frwrd.png">
-</div>
+    <div id="0frwrd" class="move">
+      <div class="heading">
+        <h2>0frwrd</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="10frwrd" alt="0frwrd" class="movesetimg hoverbox" src="./0frwrd/10frwrd.png">
+	<img id="20frwrd" alt="0frwrd" class="movesetimg hoverbox" src="./0frwrd/20frwrd.png">
+      </div>
     </div>
 
-     <div id="0rh" class="move">
-       <div class="heading">
-         <h2>0rh</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="2&6&10rh" alt="0rh" class="movesetimg hoverbox" src="./0rh/2&6&10rh.png">
-</div>
+    <div id="0rh" class="move">
+      <div class="heading">
+        <h2>0rh</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="2&6&10rh" alt="0rh" class="movesetimg hoverbox" src="./0rh/2&6&10rh.png">
+      </div>
     </div>
 
-     <div id="airtatsu" class="move">
-       <div class="heading">
-         <h2>airtatsu</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="airtatsu" alt="airtatsu" class="movesetimg hoverbox" src="./airtatsu/airtatsu.png">
-</div>
+    <div id="airtatsu" class="move">
+      <div class="heading">
+        <h2>airtatsu</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="airtatsu" alt="airtatsu" class="movesetimg hoverbox" src="./airtatsu/airtatsu.png">
+      </div>
     </div>
 
-     <div id="atatsu" class="move">
-       <div class="heading">
-         <h2>atatsu</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="atatsu1shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu1shrt.png">
-<img id="atatsu2shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu2shrt.png">
-<img id="atatsu3shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu3shrt.png">
-<img id="atatsu4shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu4shrt.png">
-<img id="atatsu5shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu5shrt.png">
-<img id="atatsu6shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu6shrt.png">
-<img id="atatsu7shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu7shrt.png">
-<img id="atatsu8shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu8shrt.png">
-<img id="atatsu9shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu9shrt.png">
-<img id="atatsu10shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu10shrt.png">
-</div>
+    <div id="atatsu" class="move">
+      <div class="heading">
+        <h2>atatsu</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="atatsu1shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu1shrt.png">
+	<img id="atatsu2shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu2shrt.png">
+	<img id="atatsu3shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu3shrt.png">
+	<img id="atatsu4shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu4shrt.png">
+	<img id="atatsu5shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu5shrt.png">
+	<img id="atatsu6shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu6shrt.png">
+	<img id="atatsu7shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu7shrt.png">
+	<img id="atatsu8shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu8shrt.png">
+	<img id="atatsu9shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu9shrt.png">
+	<img id="atatsu10shrt" alt="atatsu" class="movesetimg hoverbox" src="./atatsu/atatsu10shrt.png">
+      </div>
     </div>
 
-     <div id="crfrc" class="move">
-       <div class="heading">
-         <h2>crfrc</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="crfrc1" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc1.png">
-<img id="crfrc2" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc2.png">
-<img id="crfrc3" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc3.png">
-<img id="crfrc4" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc4.png">
-<img id="crfrc5" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc5.png">
-<img id="crfrc6" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc6.png">
-</div>
+    <div id="crfrc" class="move">
+      <div class="heading">
+        <h2>crfrc</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="crfrc1" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc1.png">
+	<img id="crfrc2" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc2.png">
+	<img id="crfrc3" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc3.png">
+	<img id="crfrc4" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc4.png">
+	<img id="crfrc5" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc5.png">
+	<img id="crfrc6" alt="crfrc" class="movesetimg hoverbox" src="./crfrc/crfrc6.png">
+      </div>
     </div>
 
-     <div id="crfrwrd" class="move">
-       <div class="heading">
-         <h2>crfrwrd</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="crfrwrd1" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd1.png">
-<img id="crfrwrd2" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd2.png">
-<img id="crfrwrd3" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd3.png">
-<img id="crfrwrd4" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd4.png">
-<img id="crfrwrd5" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd5.png">
-<img id="crfrwrd6" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd6.png">
-</div>
+    <div id="crfrwrd" class="move">
+      <div class="heading">
+        <h2>crfrwrd</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="crfrwrd1" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd1.png">
+	<img id="crfrwrd2" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd2.png">
+	<img id="crfrwrd3" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd3.png">
+	<img id="crfrwrd4" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd4.png">
+	<img id="crfrwrd5" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd5.png">
+	<img id="crfrwrd6" alt="crfrwrd" class="movesetimg hoverbox" src="./crfrwrd/crfrwrd6.png">
+      </div>
     </div>
 
-     <div id="crjab" class="move">
-       <div class="heading">
-         <h2>crjab</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="crjab1" alt="crjab" class="movesetimg hoverbox" src="./crjab/crjab1.png">
-<img id="crjab2" alt="crjab" class="movesetimg hoverbox" src="./crjab/crjab2.png">
-<img id="crjab3" alt="crjab" class="movesetimg hoverbox" src="./crjab/crjab3.png">
-<img id="crjab4" alt="crjab" class="movesetimg hoverbox" src="./crjab/crjab4.png">
-</div>
+    <div id="crjab" class="move">
+      <div class="heading">
+        <h2>crjab</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="crjab1" alt="crjab" class="movesetimg hoverbox" src="./crjab/crjab1.png">
+	<img id="crjab2" alt="crjab" class="movesetimg hoverbox" src="./crjab/crjab2.png">
+	<img id="crjab3" alt="crjab" class="movesetimg hoverbox" src="./crjab/crjab3.png">
+	<img id="crjab4" alt="crjab" class="movesetimg hoverbox" src="./crjab/crjab4.png">
+      </div>
     </div>
 
-     <div id="crrh" class="move">
-       <div class="heading">
-         <h2>crrh</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="crrh1" alt="crrh" class="movesetimg hoverbox" src="./crrh/crrh1.png">
-<img id="crrh2" alt="crrh" class="movesetimg hoverbox" src="./crrh/crrh2.png">
-<img id="crrh3" alt="crrh" class="movesetimg hoverbox" src="./crrh/crrh3.png">
-<img id="crrh4" alt="crrh" class="movesetimg hoverbox" src="./crrh/crrh4.png">
-<img id="crrh5" alt="crrh" class="movesetimg hoverbox" src="./crrh/crrh5.png">
-</div>
+    <div id="crrh" class="move">
+      <div class="heading">
+        <h2>crrh</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="crrh1" alt="crrh" class="movesetimg hoverbox" src="./crrh/crrh1.png">
+	<img id="crrh2" alt="crrh" class="movesetimg hoverbox" src="./crrh/crrh2.png">
+	<img id="crrh3" alt="crrh" class="movesetimg hoverbox" src="./crrh/crrh3.png">
+	<img id="crrh4" alt="crrh" class="movesetimg hoverbox" src="./crrh/crrh4.png">
+	<img id="crrh5" alt="crrh" class="movesetimg hoverbox" src="./crrh/crrh5.png">
+      </div>
     </div>
 
-     <div id="crshrt" class="move">
-       <div class="heading">
-         <h2>crshrt</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="crshrt1" alt="crshrt" class="movesetimg hoverbox" src="./crshrt/crshrt1.png">
-<img id="crshrt2" alt="crshrt" class="movesetimg hoverbox" src="./crshrt/crshrt2.png">
-<img id="crshrt3" alt="crshrt" class="movesetimg hoverbox" src="./crshrt/crshrt3.png">
-<img id="crshrt4" alt="crshrt" class="movesetimg hoverbox" src="./crshrt/crshrt4.png">
-</div>
+    <div id="crshrt" class="move">
+      <div class="heading">
+        <h2>crshrt</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="crshrt1" alt="crshrt" class="movesetimg hoverbox" src="./crshrt/crshrt1.png">
+	<img id="crshrt2" alt="crshrt" class="movesetimg hoverbox" src="./crshrt/crshrt2.png">
+	<img id="crshrt3" alt="crshrt" class="movesetimg hoverbox" src="./crshrt/crshrt3.png">
+	<img id="crshrt4" alt="crshrt" class="movesetimg hoverbox" src="./crshrt/crshrt4.png">
+      </div>
     </div>
 
-     <div id="crstrng" class="move">
-       <div class="heading">
-         <h2>crstrng</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="crstrng1" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng1.png">
-<img id="crstrng2" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng2.png">
-<img id="crstrng3" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng3.png">
-<img id="crstrng4" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng4.png">
-<img id="crstrng5" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng5.png">
-<img id="crstrng6" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng6.png">
-</div>
+    <div id="crstrng" class="move">
+      <div class="heading">
+        <h2>crstrng</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="crstrng1" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng1.png">
+	<img id="crstrng2" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng2.png">
+	<img id="crstrng3" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng3.png">
+	<img id="crstrng4" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng4.png">
+	<img id="crstrng5" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng5.png">
+	<img id="crstrng6" alt="crstrng" class="movesetimg hoverbox" src="./crstrng/crstrng6.png">
+      </div>
     </div>
 
-     <div id="dash" class="move">
-       <div class="heading">
-         <h2>dash</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="dash1" alt="dash" class="movesetimg hoverbox" src="./dash/dash1.png">
-<img id="dash2" alt="dash" class="movesetimg hoverbox" src="./dash/dash2.png">
-<img id="dash3" alt="dash" class="movesetimg hoverbox" src="./dash/dash3.png">
-<img id="dash4" alt="dash" class="movesetimg hoverbox" src="./dash/dash4.png">
-<img id="dash6" alt="dash" class="movesetimg hoverbox" src="./dash/dash6.png">
-<img id="dash7" alt="dash" class="movesetimg hoverbox" src="./dash/dash7.png">
-</div>
+    <div id="dash" class="move">
+      <div class="heading">
+        <h2>dash</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="dash1" alt="dash" class="movesetimg hoverbox" src="./dash/dash1.png">
+	<img id="dash2" alt="dash" class="movesetimg hoverbox" src="./dash/dash2.png">
+	<img id="dash3" alt="dash" class="movesetimg hoverbox" src="./dash/dash3.png">
+	<img id="dash4" alt="dash" class="movesetimg hoverbox" src="./dash/dash4.png">
+	<img id="dash6" alt="dash" class="movesetimg hoverbox" src="./dash/dash6.png">
+	<img id="dash7" alt="dash" class="movesetimg hoverbox" src="./dash/dash7.png">
+      </div>
     </div>
 
-     <div id="djfrc" class="move">
-       <div class="heading">
-         <h2>djfrc</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="djfrc1" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc1.png">
-<img id="djfrc2" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc2.png">
-<img id="djfrc4" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc4.png">
-<img id="djfrc5" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc5.png">
-<img id="djfrc6" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc6.png">
-<img id="djfrc7" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc7.png">
-</div>
+    <div id="djfrc" class="move">
+      <div class="heading">
+        <h2>djfrc</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="djfrc1" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc1.png">
+	<img id="djfrc2" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc2.png">
+	<img id="djfrc4" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc4.png">
+	<img id="djfrc5" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc5.png">
+	<img id="djfrc6" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc6.png">
+	<img id="djfrc7" alt="djfrc" class="movesetimg hoverbox" src="./djfrc/djfrc7.png">
+      </div>
     </div>
 
-     <div id="djfrwrd" class="move">
-       <div class="heading">
-         <h2>djfrwrd</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="djfrwrd5" alt="djfrwrd" class="movesetimg hoverbox" src="./djfrwrd/djfrwrd5.png">
-<img id="djfrwrd6" alt="djfrwrd" class="movesetimg hoverbox" src="./djfrwrd/djfrwrd6.png">
-<img id="djfrwrd7" alt="djfrwrd" class="movesetimg hoverbox" src="./djfrwrd/djfrwrd7.png">
-</div>
+    <div id="djfrwrd" class="move">
+      <div class="heading">
+        <h2>djfrwrd</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="djfrwrd5" alt="djfrwrd" class="movesetimg hoverbox" src="./djfrwrd/djfrwrd5.png">
+	<img id="djfrwrd6" alt="djfrwrd" class="movesetimg hoverbox" src="./djfrwrd/djfrwrd6.png">
+	<img id="djfrwrd7" alt="djfrwrd" class="movesetimg hoverbox" src="./djfrwrd/djfrwrd7.png">
+      </div>
     </div>
 
-     <div id="djjab" class="move">
-       <div class="heading">
-         <h2>djjab</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="djjab1" alt="djjab" class="movesetimg hoverbox" src="./djjab/djjab1.png">
-<img id="djjab2" alt="djjab" class="movesetimg hoverbox" src="./djjab/djjab2.png">
-</div>
+    <div id="djjab" class="move">
+      <div class="heading">
+        <h2>djjab</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="djjab1" alt="djjab" class="movesetimg hoverbox" src="./djjab/djjab1.png">
+	<img id="djjab2" alt="djjab" class="movesetimg hoverbox" src="./djjab/djjab2.png">
+      </div>
     </div>
 
-     <div id="djrh" class="move">
-       <div class="heading">
-         <h2>djrh</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="djrh5" alt="djrh" class="movesetimg hoverbox" src="./djrh/djrh5.png">
-<img id="djrh6" alt="djrh" class="movesetimg hoverbox" src="./djrh/djrh6.png">
-<img id="djrh7" alt="djrh" class="movesetimg hoverbox" src="./djrh/djrh7.png">
-</div>
+    <div id="djrh" class="move">
+      <div class="heading">
+        <h2>djrh</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="djrh5" alt="djrh" class="movesetimg hoverbox" src="./djrh/djrh5.png">
+	<img id="djrh6" alt="djrh" class="movesetimg hoverbox" src="./djrh/djrh6.png">
+	<img id="djrh7" alt="djrh" class="movesetimg hoverbox" src="./djrh/djrh7.png">
+      </div>
     </div>
 
-     <div id="djstrng" class="move">
-       <div class="heading">
-         <h2>djstrng</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="djstrng7" alt="djstrng" class="movesetimg hoverbox" src="./djstrng/djstrng7.png">
-<img id="djstrng8" alt="djstrng" class="movesetimg hoverbox" src="./djstrng/djstrng8.png">
-<img id="djstrng9" alt="djstrng" class="movesetimg hoverbox" src="./djstrng/djstrng9.png">
-</div>
+    <div id="djstrng" class="move">
+      <div class="heading">
+        <h2>djstrng</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="djstrng7" alt="djstrng" class="movesetimg hoverbox" src="./djstrng/djstrng7.png">
+	<img id="djstrng8" alt="djstrng" class="movesetimg hoverbox" src="./djstrng/djstrng8.png">
+	<img id="djstrng9" alt="djstrng" class="movesetimg hoverbox" src="./djstrng/djstrng9.png">
+      </div>
     </div>
 
-     <div id="fb" class="move">
-       <div class="heading">
-         <h2>fb</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="fb1" alt="fb" class="movesetimg hoverbox" src="./fb/fb1.png">
-<img id="fb2" alt="fb" class="movesetimg hoverbox" src="./fb/fb2.png">
-<img id="fb3" alt="fb" class="movesetimg hoverbox" src="./fb/fb3.png">
-<img id="fb4" alt="fb" class="movesetimg hoverbox" src="./fb/fb4.png">
-<img id="fb5" alt="fb" class="movesetimg hoverbox" src="./fb/fb5.png">
-<img id="fb7bfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb7bfrc.png">
-<img id="fb7bjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb7bjab.png">
-<img id="fb7bstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb7bstrng.png">
-<img id="fb7rfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb7rfrc.png">
-<img id="fb7rjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb7rjab.png">
-<img id="fb7rstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb7rstrng.png">
-<img id="fb10bfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb10bfrc.png">
-<img id="fb10bjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb10bjab.png">
-<img id="fb10bstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb10bstrng.png">
-<img id="fb10rfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb10rfrc.png">
-<img id="fb10rjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb10rjab.png">
-<img id="fb10rstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb10rstrng.png">
-<img id="fb13bfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb13bfrc.png">
-<img id="fb13bjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb13bjab.png">
-<img id="fb13bstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb13bstrng.png">
-<img id="fb13rfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb13rfrc.png">
-<img id="fb13rjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb13rjab.png">
-<img id="fb13rstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb13rstrng.png">
-<img id="fb14bfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb14bfrc.png">
-<img id="fb14bjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb14bjab.png">
-<img id="fb14bstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb14bstrng.png">
-<img id="fb14rfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb14rfrc.png">
-<img id="fb14rjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb14rjab.png">
-<img id="fb14rstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb14rstrng.png">
-</div>
+    <div id="fb" class="move">
+      <div class="heading">
+        <h2>fb</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="fb1" alt="fb" class="movesetimg hoverbox" src="./fb/fb1.png">
+	<img id="fb2" alt="fb" class="movesetimg hoverbox" src="./fb/fb2.png">
+	<img id="fb3" alt="fb" class="movesetimg hoverbox" src="./fb/fb3.png">
+	<img id="fb4" alt="fb" class="movesetimg hoverbox" src="./fb/fb4.png">
+	<img id="fb5" alt="fb" class="movesetimg hoverbox" src="./fb/fb5.png">
+	<img id="fb7bfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb7bfrc.png">
+	<img id="fb7bjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb7bjab.png">
+	<img id="fb7bstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb7bstrng.png">
+	<img id="fb7rfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb7rfrc.png">
+	<img id="fb7rjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb7rjab.png">
+	<img id="fb7rstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb7rstrng.png">
+	<img id="fb10bfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb10bfrc.png">
+	<img id="fb10bjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb10bjab.png">
+	<img id="fb10bstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb10bstrng.png">
+	<img id="fb10rfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb10rfrc.png">
+	<img id="fb10rjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb10rjab.png">
+	<img id="fb10rstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb10rstrng.png">
+	<img id="fb13bfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb13bfrc.png">
+	<img id="fb13bjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb13bjab.png">
+	<img id="fb13bstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb13bstrng.png">
+	<img id="fb13rfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb13rfrc.png">
+	<img id="fb13rjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb13rjab.png">
+	<img id="fb13rstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb13rstrng.png">
+	<img id="fb14bfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb14bfrc.png">
+	<img id="fb14bjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb14bjab.png">
+	<img id="fb14bstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb14bstrng.png">
+	<img id="fb14rfrc" alt="fb" class="movesetimg hoverbox" src="./fb/fb14rfrc.png">
+	<img id="fb14rjab" alt="fb" class="movesetimg hoverbox" src="./fb/fb14rjab.png">
+	<img id="fb14rstrng" alt="fb" class="movesetimg hoverbox" src="./fb/fb14rstrng.png">
+      </div>
     </div>
 
-     <div id="frwrd" class="move">
-       <div class="heading">
-         <h2>frwrd</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="1&5frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/1&5frwrd.png">
-<img id="2&6frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/2&6frwrd.png">
-<img id="3&7frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/3&7frwrd.png">
-<img id="4&8frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/4&8frwrd.png">
-<img id="9frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/9frwrd.png">
-<img id="12frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/12frwrd.png">
-<img id="13frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/13frwrd.png">
-<img id="14frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/14frwrd.png">
-<img id="21frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/21frwrd.png">
-<img id="23frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/23frwrd.png">
-</div>
+    <div id="frwrd" class="move">
+      <div class="heading">
+        <h2>frwrd</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="1&5frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/1&5frwrd.png">
+	<img id="2&6frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/2&6frwrd.png">
+	<img id="3&7frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/3&7frwrd.png">
+	<img id="4&8frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/4&8frwrd.png">
+	<img id="9frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/9frwrd.png">
+	<img id="12frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/12frwrd.png">
+	<img id="13frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/13frwrd.png">
+	<img id="14frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/14frwrd.png">
+	<img id="21frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/21frwrd.png">
+	<img id="23frwrd" alt="frwrd" class="movesetimg hoverbox" src="./frwrd/23frwrd.png">
+      </div>
     </div>
 
-     <div id="njfrc" class="move">
-       <div class="heading">
-         <h2>njfrc</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="njfrc1" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc1.png">
-<img id="njfrc2" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc2.png">
-<img id="njfrc4" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc4.png">
-<img id="njfrc5" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc5.png">
-<img id="njfrc6" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc6.png">
-<img id="njfrc7" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc7.png">
-</div>
+    <div id="njfrc" class="move">
+      <div class="heading">
+        <h2>njfrc</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="njfrc1" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc1.png">
+	<img id="njfrc2" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc2.png">
+	<img id="njfrc4" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc4.png">
+	<img id="njfrc5" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc5.png">
+	<img id="njfrc6" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc6.png">
+	<img id="njfrc7" alt="njfrc" class="movesetimg hoverbox" src="./njfrc/njfrc7.png">
+      </div>
     </div>
 
-     <div id="njfrwrd" class="move">
-       <div class="heading">
-         <h2>njfrwrd</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="njfrwrd3" alt="njfrwrd" class="movesetimg hoverbox" src="./njfrwrd/njfrwrd3.png">
-<img id="njfrwrd4" alt="njfrwrd" class="movesetimg hoverbox" src="./njfrwrd/njfrwrd4.png">
-<img id="njfrwrd5" alt="njfrwrd" class="movesetimg hoverbox" src="./njfrwrd/njfrwrd5.png">
-</div>
+    <div id="njfrwrd" class="move">
+      <div class="heading">
+        <h2>njfrwrd</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="njfrwrd3" alt="njfrwrd" class="movesetimg hoverbox" src="./njfrwrd/njfrwrd3.png">
+	<img id="njfrwrd4" alt="njfrwrd" class="movesetimg hoverbox" src="./njfrwrd/njfrwrd4.png">
+	<img id="njfrwrd5" alt="njfrwrd" class="movesetimg hoverbox" src="./njfrwrd/njfrwrd5.png">
+      </div>
     </div>
 
-     <div id="njjab" class="move">
-       <div class="heading">
-         <h2>njjab</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="njjab1" alt="njjab" class="movesetimg hoverbox" src="./njjab/njjab1.png">
-<img id="njjab2" alt="njjab" class="movesetimg hoverbox" src="./njjab/njjab2.png">
-</div>
+    <div id="njjab" class="move">
+      <div class="heading">
+        <h2>njjab</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="njjab1" alt="njjab" class="movesetimg hoverbox" src="./njjab/njjab1.png">
+	<img id="njjab2" alt="njjab" class="movesetimg hoverbox" src="./njjab/njjab2.png">
+      </div>
     </div>
 
-     <div id="njrh" class="move">
-       <div class="heading">
-         <h2>njrh</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="njrh6" alt="njrh" class="movesetimg hoverbox" src="./njrh/njrh6.png">
-<img id="njrh7" alt="njrh" class="movesetimg hoverbox" src="./njrh/njrh7.png">
-</div>
+    <div id="njrh" class="move">
+      <div class="heading">
+        <h2>njrh</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="njrh6" alt="njrh" class="movesetimg hoverbox" src="./njrh/njrh6.png">
+	<img id="njrh7" alt="njrh" class="movesetimg hoverbox" src="./njrh/njrh7.png">
+      </div>
     </div>
 
-     <div id="njshrt" class="move">
-       <div class="heading">
-         <h2>njshrt</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="njshrt3" alt="njshrt" class="movesetimg hoverbox" src="./njshrt/njshrt3.png">
-</div>
+    <div id="njshrt" class="move">
+      <div class="heading">
+        <h2>njshrt</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="njshrt3" alt="njshrt" class="movesetimg hoverbox" src="./njshrt/njshrt3.png">
+      </div>
     </div>
 
-     <div id="njstrng" class="move">
-       <div class="heading">
-         <h2>njstrng</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="njstrng1" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng1.png">
-<img id="njstrng2" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng2.png">
-<img id="njstrng3" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng3.png">
-<img id="njstrng4" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng4.png">
-<img id="njstrng5" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng5.png">
-<img id="njstrng6" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng6.png">
-<img id="njstrng7" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng7.png">
-</div>
+    <div id="njstrng" class="move">
+      <div class="heading">
+        <h2>njstrng</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="njstrng1" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng1.png">
+	<img id="njstrng2" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng2.png">
+	<img id="njstrng3" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng3.png">
+	<img id="njstrng4" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng4.png">
+	<img id="njstrng5" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng5.png">
+	<img id="njstrng6" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng6.png">
+	<img id="njstrng7" alt="njstrng" class="movesetimg hoverbox" src="./njstrng/njstrng7.png">
+      </div>
     </div>
 
-     <div id="rh" class="move">
-       <div class="heading">
-         <h2>rh</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="1&5&9rh" alt="rh" class="movesetimg hoverbox" src="./rh/1&5&9rh.png">
-<img id="4&8&12rh" alt="rh" class="movesetimg hoverbox" src="./rh/4&8&12rh.png">
-<img id="13rh" alt="rh" class="movesetimg hoverbox" src="./rh/13rh.png">
-<img id="14rh" alt="rh" class="movesetimg hoverbox" src="./rh/14rh.png">
-<img id="15rh" alt="rh" class="movesetimg hoverbox" src="./rh/15rh.png">
-<img id="16rh" alt="rh" class="movesetimg hoverbox" src="./rh/16rh.png">
-<img id="17rh" alt="rh" class="movesetimg hoverbox" src="./rh/17rh.png">
-<img id="18rh" alt="rh" class="movesetimg hoverbox" src="./rh/18rh.png">
-<img id="24rh" alt="rh" class="movesetimg hoverbox" src="./rh/24rh.png">
-<img id="25rh" alt="rh" class="movesetimg hoverbox" src="./rh/25rh.png">
-<img id="26rh" alt="rh" class="movesetimg hoverbox" src="./rh/26rh.png">
-<img id="27rh" alt="rh" class="movesetimg hoverbox" src="./rh/27rh.png">
-</div>
+    <div id="rh" class="move">
+      <div class="heading">
+        <h2>rh</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="1&5&9rh" alt="rh" class="movesetimg hoverbox" src="./rh/1&5&9rh.png">
+	<img id="4&8&12rh" alt="rh" class="movesetimg hoverbox" src="./rh/4&8&12rh.png">
+	<img id="13rh" alt="rh" class="movesetimg hoverbox" src="./rh/13rh.png">
+	<img id="14rh" alt="rh" class="movesetimg hoverbox" src="./rh/14rh.png">
+	<img id="15rh" alt="rh" class="movesetimg hoverbox" src="./rh/15rh.png">
+	<img id="16rh" alt="rh" class="movesetimg hoverbox" src="./rh/16rh.png">
+	<img id="17rh" alt="rh" class="movesetimg hoverbox" src="./rh/17rh.png">
+	<img id="18rh" alt="rh" class="movesetimg hoverbox" src="./rh/18rh.png">
+	<img id="24rh" alt="rh" class="movesetimg hoverbox" src="./rh/24rh.png">
+	<img id="25rh" alt="rh" class="movesetimg hoverbox" src="./rh/25rh.png">
+	<img id="26rh" alt="rh" class="movesetimg hoverbox" src="./rh/26rh.png">
+	<img id="27rh" alt="rh" class="movesetimg hoverbox" src="./rh/27rh.png">
+      </div>
     </div>
 
-     <div id="srk" class="move">
-       <div class="heading">
-         <h2>srk</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="srk1" alt="srk" class="movesetimg hoverbox" src="./srk/srk1.png">
-<img id="srk2" alt="srk" class="movesetimg hoverbox" src="./srk/srk2.png">
-<img id="srk3" alt="srk" class="movesetimg hoverbox" src="./srk/srk3.png">
-<img id="srk3jab" alt="srk" class="movesetimg hoverbox" src="./srk/srk3jab.png">
-<img id="srk4" alt="srk" class="movesetimg hoverbox" src="./srk/srk4.png">
-<img id="srk4jab" alt="srk" class="movesetimg hoverbox" src="./srk/srk4jab.png">
-<img id="srk5" alt="srk" class="movesetimg hoverbox" src="./srk/srk5.png">
-<img id="srk6" alt="srk" class="movesetimg hoverbox" src="./srk/srk6.png">
-<img id="srk7" alt="srk" class="movesetimg hoverbox" src="./srk/srk7.png">
-</div>
+    <div id="srk" class="move">
+      <div class="heading">
+        <h2>srk</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="srk1" alt="srk" class="movesetimg hoverbox" src="./srk/srk1.png">
+	<img id="srk2" alt="srk" class="movesetimg hoverbox" src="./srk/srk2.png">
+	<img id="srk3" alt="srk" class="movesetimg hoverbox" src="./srk/srk3.png">
+	<img id="srk3jab" alt="srk" class="movesetimg hoverbox" src="./srk/srk3jab.png">
+	<img id="srk4" alt="srk" class="movesetimg hoverbox" src="./srk/srk4.png">
+	<img id="srk4jab" alt="srk" class="movesetimg hoverbox" src="./srk/srk4jab.png">
+	<img id="srk5" alt="srk" class="movesetimg hoverbox" src="./srk/srk5.png">
+	<img id="srk6" alt="srk" class="movesetimg hoverbox" src="./srk/srk6.png">
+	<img id="srk7" alt="srk" class="movesetimg hoverbox" src="./srk/srk7.png">
+      </div>
     </div>
 
-     <div id="stclfrc" class="move">
-       <div class="heading">
-         <h2>stclfrc</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stclfrc1" alt="stclfrc" class="movesetimg hoverbox" src="./stclfrc/stclfrc1.png">
-<img id="stclfrc2" alt="stclfrc" class="movesetimg hoverbox" src="./stclfrc/stclfrc2.png">
-<img id="stclfrc3" alt="stclfrc" class="movesetimg hoverbox" src="./stclfrc/stclfrc3.png">
-<img id="stclfrc4" alt="stclfrc" class="movesetimg hoverbox" src="./stclfrc/stclfrc4.png">
-<img id="stclfrc5" alt="stclfrc" class="movesetimg hoverbox" src="./stclfrc/stclfrc5.png">
-</div>
+    <div id="stclfrc" class="move">
+      <div class="heading">
+        <h2>stclfrc</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stclfrc1" alt="stclfrc" class="movesetimg hoverbox" src="./stclfrc/stclfrc1.png">
+	<img id="stclfrc2" alt="stclfrc" class="movesetimg hoverbox" src="./stclfrc/stclfrc2.png">
+	<img id="stclfrc3" alt="stclfrc" class="movesetimg hoverbox" src="./stclfrc/stclfrc3.png">
+	<img id="stclfrc4" alt="stclfrc" class="movesetimg hoverbox" src="./stclfrc/stclfrc4.png">
+	<img id="stclfrc5" alt="stclfrc" class="movesetimg hoverbox" src="./stclfrc/stclfrc5.png">
+      </div>
     </div>
 
-     <div id="stclfrwrd" class="move">
-       <div class="heading">
-         <h2>stclfrwrd</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stclfrwrd1" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd1.png">
-<img id="stclfrwrd2" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd2.png">
-<img id="stclfrwrd3" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd3.png">
-<img id="stclfrwrd4" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd4.png">
-<img id="stclfrwrd5" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd5.png">
-<img id="stclfrwrd6" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd6.png">
-</div>
+    <div id="stclfrwrd" class="move">
+      <div class="heading">
+        <h2>stclfrwrd</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stclfrwrd1" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd1.png">
+	<img id="stclfrwrd2" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd2.png">
+	<img id="stclfrwrd3" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd3.png">
+	<img id="stclfrwrd4" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd4.png">
+	<img id="stclfrwrd5" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd5.png">
+	<img id="stclfrwrd6" alt="stclfrwrd" class="movesetimg hoverbox" src="./stclfrwrd/stclfrwrd6.png">
+      </div>
     </div>
 
-     <div id="stcljab" class="move">
-       <div class="heading">
-         <h2>stcljab</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stcljab1" alt="stcljab" class="movesetimg hoverbox" src="./stcljab/stcljab1.png">
-<img id="stcljab2" alt="stcljab" class="movesetimg hoverbox" src="./stcljab/stcljab2.png">
-<img id="stcljab3" alt="stcljab" class="movesetimg hoverbox" src="./stcljab/stcljab3.png">
-</div>
+    <div id="stcljab" class="move">
+      <div class="heading">
+        <h2>stcljab</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stcljab1" alt="stcljab" class="movesetimg hoverbox" src="./stcljab/stcljab1.png">
+	<img id="stcljab2" alt="stcljab" class="movesetimg hoverbox" src="./stcljab/stcljab2.png">
+	<img id="stcljab3" alt="stcljab" class="movesetimg hoverbox" src="./stcljab/stcljab3.png">
+      </div>
     </div>
 
-     <div id="stclrh" class="move">
-       <div class="heading">
-         <h2>stclrh</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stclrh1" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh1.png">
-<img id="stclrh2" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh2.png">
-<img id="stclrh3" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh3.png">
-<img id="stclrh4" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh4.png">
-<img id="stclrh5" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh5.png">
-<img id="stclrh6" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh6.png">
-</div>
+    <div id="stclrh" class="move">
+      <div class="heading">
+        <h2>stclrh</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stclrh1" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh1.png">
+	<img id="stclrh2" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh2.png">
+	<img id="stclrh3" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh3.png">
+	<img id="stclrh4" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh4.png">
+	<img id="stclrh5" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh5.png">
+	<img id="stclrh6" alt="stclrh" class="movesetimg hoverbox" src="./stclrh/stclrh6.png">
+      </div>
     </div>
 
-     <div id="stclshrt" class="move">
-       <div class="heading">
-         <h2>stclshrt</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stclshrt1" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt1.png">
-<img id="stclshrt2" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt2.png">
-<img id="stclshrt3" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt3.png">
-<img id="stclshrt4" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt4.png">
-<img id="stclshrt5" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt5.png">
-<img id="stclshrt6" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt6.png">
-</div>
+    <div id="stclshrt" class="move">
+      <div class="heading">
+        <h2>stclshrt</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stclshrt1" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt1.png">
+	<img id="stclshrt2" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt2.png">
+	<img id="stclshrt3" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt3.png">
+	<img id="stclshrt4" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt4.png">
+	<img id="stclshrt5" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt5.png">
+	<img id="stclshrt6" alt="stclshrt" class="movesetimg hoverbox" src="./stclshrt/stclshrt6.png">
+      </div>
     </div>
 
-     <div id="stclstrng" class="move">
-       <div class="heading">
-         <h2>stclstrng</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stclstrng1" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng1.png">
-<img id="stclstrng2" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng2.png">
-<img id="stclstrng3" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng3.png">
-<img id="stclstrng4" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng4.png">
-<img id="stclstrng5" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng5.png">
-<img id="stclstrng6" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng6.png">
-<img id="stclstrng7" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng7.png">
-</div>
+    <div id="stclstrng" class="move">
+      <div class="heading">
+        <h2>stclstrng</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stclstrng1" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng1.png">
+	<img id="stclstrng2" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng2.png">
+	<img id="stclstrng3" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng3.png">
+	<img id="stclstrng4" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng4.png">
+	<img id="stclstrng5" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng5.png">
+	<img id="stclstrng6" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng6.png">
+	<img id="stclstrng7" alt="stclstrng" class="movesetimg hoverbox" src="./stclstrng/stclstrng7.png">
+      </div>
     </div>
 
-     <div id="stfarfrc" class="move">
-       <div class="heading">
-         <h2>stfarfrc</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stfarfrc1" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc1.png">
-<img id="stfarfrc2" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc2.png">
-<img id="stfarfrc3" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc3.png">
-<img id="stfarfrc4" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc4.png">
-<img id="stfarfrc5" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc5.png">
-<img id="stfarfrc6" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc6.png">
-</div>
+    <div id="stfarfrc" class="move">
+      <div class="heading">
+        <h2>stfarfrc</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stfarfrc1" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc1.png">
+	<img id="stfarfrc2" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc2.png">
+	<img id="stfarfrc3" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc3.png">
+	<img id="stfarfrc4" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc4.png">
+	<img id="stfarfrc5" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc5.png">
+	<img id="stfarfrc6" alt="stfarfrc" class="movesetimg hoverbox" src="./stfarfrc/stfarfrc6.png">
+      </div>
     </div>
 
-     <div id="stfarfrwrd" class="move">
-       <div class="heading">
-         <h2>stfarfrwrd</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stfarfrwrd1" alt="stfarfrwrd" class="movesetimg hoverbox" src="./stfarfrwrd/stfarfrwrd1.png">
-<img id="stfarfrwrd2" alt="stfarfrwrd" class="movesetimg hoverbox" src="./stfarfrwrd/stfarfrwrd2.png">
-<img id="stfarfrwrd3" alt="stfarfrwrd" class="movesetimg hoverbox" src="./stfarfrwrd/stfarfrwrd3.png">
-<img id="stfarfrwrd4" alt="stfarfrwrd" class="movesetimg hoverbox" src="./stfarfrwrd/stfarfrwrd4.png">
-<img id="stfarfrwrd5" alt="stfarfrwrd" class="movesetimg hoverbox" src="./stfarfrwrd/stfarfrwrd5.png">
-</div>
+    <div id="stfarfrwrd" class="move">
+      <div class="heading">
+        <h2>stfarfrwrd</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stfarfrwrd1" alt="stfarfrwrd" class="movesetimg hoverbox" src="./stfarfrwrd/stfarfrwrd1.png">
+	<img id="stfarfrwrd2" alt="stfarfrwrd" class="movesetimg hoverbox" src="./stfarfrwrd/stfarfrwrd2.png">
+	<img id="stfarfrwrd3" alt="stfarfrwrd" class="movesetimg hoverbox" src="./stfarfrwrd/stfarfrwrd3.png">
+	<img id="stfarfrwrd4" alt="stfarfrwrd" class="movesetimg hoverbox" src="./stfarfrwrd/stfarfrwrd4.png">
+	<img id="stfarfrwrd5" alt="stfarfrwrd" class="movesetimg hoverbox" src="./stfarfrwrd/stfarfrwrd5.png">
+      </div>
     </div>
 
-     <div id="stfarjab" class="move">
-       <div class="heading">
-         <h2>stfarjab</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stfarjab1" alt="stfarjab" class="movesetimg hoverbox" src="./stfarjab/stfarjab1.png">
-<img id="stfarjab2" alt="stfarjab" class="movesetimg hoverbox" src="./stfarjab/stfarjab2.png">
-<img id="stfarjab3" alt="stfarjab" class="movesetimg hoverbox" src="./stfarjab/stfarjab3.png">
-<img id="stfarjab4" alt="stfarjab" class="movesetimg hoverbox" src="./stfarjab/stfarjab4.png">
-</div>
+    <div id="stfarjab" class="move">
+      <div class="heading">
+        <h2>stfarjab</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stfarjab1" alt="stfarjab" class="movesetimg hoverbox" src="./stfarjab/stfarjab1.png">
+	<img id="stfarjab2" alt="stfarjab" class="movesetimg hoverbox" src="./stfarjab/stfarjab2.png">
+	<img id="stfarjab3" alt="stfarjab" class="movesetimg hoverbox" src="./stfarjab/stfarjab3.png">
+	<img id="stfarjab4" alt="stfarjab" class="movesetimg hoverbox" src="./stfarjab/stfarjab4.png">
+      </div>
     </div>
 
-     <div id="stfarrh" class="move">
-       <div class="heading">
-         <h2>stfarrh</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stfarrh1" alt="stfarrh" class="movesetimg hoverbox" src="./stfarrh/stfarrh1.png">
-<img id="stfarrh2" alt="stfarrh" class="movesetimg hoverbox" src="./stfarrh/stfarrh2.png">
-<img id="stfarrh3" alt="stfarrh" class="movesetimg hoverbox" src="./stfarrh/stfarrh3.png">
-<img id="stfarrh4" alt="stfarrh" class="movesetimg hoverbox" src="./stfarrh/stfarrh4.png">
-<img id="stfarrh5" alt="stfarrh" class="movesetimg hoverbox" src="./stfarrh/stfarrh5.png">
-</div>
+    <div id="stfarrh" class="move">
+      <div class="heading">
+        <h2>stfarrh</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stfarrh1" alt="stfarrh" class="movesetimg hoverbox" src="./stfarrh/stfarrh1.png">
+	<img id="stfarrh2" alt="stfarrh" class="movesetimg hoverbox" src="./stfarrh/stfarrh2.png">
+	<img id="stfarrh3" alt="stfarrh" class="movesetimg hoverbox" src="./stfarrh/stfarrh3.png">
+	<img id="stfarrh4" alt="stfarrh" class="movesetimg hoverbox" src="./stfarrh/stfarrh4.png">
+	<img id="stfarrh5" alt="stfarrh" class="movesetimg hoverbox" src="./stfarrh/stfarrh5.png">
+      </div>
     </div>
 
-     <div id="stfarshrt" class="move">
-       <div class="heading">
-         <h2>stfarshrt</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stfarshrt1" alt="stfarshrt" class="movesetimg hoverbox" src="./stfarshrt/stfarshrt1.png">
-<img id="stfarshrt2" alt="stfarshrt" class="movesetimg hoverbox" src="./stfarshrt/stfarshrt2.png">
-<img id="stfarshrt3" alt="stfarshrt" class="movesetimg hoverbox" src="./stfarshrt/stfarshrt3.png">
-<img id="stfarshrt4" alt="stfarshrt" class="movesetimg hoverbox" src="./stfarshrt/stfarshrt4.png">
-<img id="stfarshrt5" alt="stfarshrt" class="movesetimg hoverbox" src="./stfarshrt/stfarshrt5.png">
-</div>
+    <div id="stfarshrt" class="move">
+      <div class="heading">
+        <h2>stfarshrt</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stfarshrt1" alt="stfarshrt" class="movesetimg hoverbox" src="./stfarshrt/stfarshrt1.png">
+	<img id="stfarshrt2" alt="stfarshrt" class="movesetimg hoverbox" src="./stfarshrt/stfarshrt2.png">
+	<img id="stfarshrt3" alt="stfarshrt" class="movesetimg hoverbox" src="./stfarshrt/stfarshrt3.png">
+	<img id="stfarshrt4" alt="stfarshrt" class="movesetimg hoverbox" src="./stfarshrt/stfarshrt4.png">
+	<img id="stfarshrt5" alt="stfarshrt" class="movesetimg hoverbox" src="./stfarshrt/stfarshrt5.png">
+      </div>
     </div>
 
-     <div id="stfarstrng" class="move">
-       <div class="heading">
-         <h2>stfarstrng</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="stfarstrng1" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng1.png">
-<img id="stfarstrng2" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng2.png">
-<img id="stfarstrng3" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng3.png">
-<img id="stfarstrng4" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng4.png">
-<img id="stfarstrng5" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng5.png">
-<img id="stfarstrng6" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng6.png">
-</div>
+    <div id="stfarstrng" class="move">
+      <div class="heading">
+        <h2>stfarstrng</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="stfarstrng1" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng1.png">
+	<img id="stfarstrng2" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng2.png">
+	<img id="stfarstrng3" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng3.png">
+	<img id="stfarstrng4" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng4.png">
+	<img id="stfarstrng5" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng5.png">
+	<img id="stfarstrng6" alt="stfarstrng" class="movesetimg hoverbox" src="./stfarstrng/stfarstrng6.png">
+      </div>
     </div>
 
-     <div id="super" class="move">
-       <div class="heading">
-         <h2>super</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="super8" alt="super" class="movesetimg hoverbox" src="./super/super8.png">
-<img id="super9" alt="super" class="movesetimg hoverbox" src="./super/super9.png">
-<img id="super10" alt="super" class="movesetimg hoverbox" src="./super/super10.png">
-<img id="super11" alt="super" class="movesetimg hoverbox" src="./super/super11.png">
-<img id="super12" alt="super" class="movesetimg hoverbox" src="./super/super12.png">
-</div>
+    <div id="super" class="move">
+      <div class="heading">
+        <h2>super</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="super8" alt="super" class="movesetimg hoverbox" src="./super/super8.png">
+	<img id="super9" alt="super" class="movesetimg hoverbox" src="./super/super9.png">
+	<img id="super10" alt="super" class="movesetimg hoverbox" src="./super/super10.png">
+	<img id="super11" alt="super" class="movesetimg hoverbox" src="./super/super11.png">
+	<img id="super12" alt="super" class="movesetimg hoverbox" src="./super/super12.png">
+      </div>
     </div>
 
-     <div id="swing" class="move">
-       <div class="heading">
-         <h2>swing</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="swing2" alt="swing" class="movesetimg hoverbox" src="./swing/swing2.png">
-<img id="swing3" alt="swing" class="movesetimg hoverbox" src="./swing/swing3.png">
-<img id="swing4" alt="swing" class="movesetimg hoverbox" src="./swing/swing4.png">
-<img id="swing5" alt="swing" class="movesetimg hoverbox" src="./swing/swing5.png">
-<img id="swing7" alt="swing" class="movesetimg hoverbox" src="./swing/swing7.png">
-</div>
+    <div id="swing" class="move">
+      <div class="heading">
+        <h2>swing</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="swing2" alt="swing" class="movesetimg hoverbox" src="./swing/swing2.png">
+	<img id="swing3" alt="swing" class="movesetimg hoverbox" src="./swing/swing3.png">
+	<img id="swing4" alt="swing" class="movesetimg hoverbox" src="./swing/swing4.png">
+	<img id="swing5" alt="swing" class="movesetimg hoverbox" src="./swing/swing5.png">
+	<img id="swing7" alt="swing" class="movesetimg hoverbox" src="./swing/swing7.png">
+      </div>
     </div>
 
-     <div id="tatsu" class="move">
-       <div class="heading">
-         <h2>tatsu</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="tatsu2" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu2.png">
-<img id="tatsu3" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu3.png">
-<img id="tatsu4shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu4shrt.png">
-<img id="tatsu5shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu5shrt.png">
-<img id="tatsu6shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu6shrt.png">
-<img id="tatsu7shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu7shrt.png">
-<img id="tatsu8shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu8shrt.png">
-<img id="tatsu9shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu9shrt.png">
-<img id="tatsu10shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu10shrt.png">
-<img id="tatsu11shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu11shrt.png">
-</div>
+    <div id="tatsu" class="move">
+      <div class="heading">
+        <h2>tatsu</h2>
+        <a href="#top">Back to top</a>
+      </div>
+      <div class="screenshots">
+	<img id="tatsu2" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu2.png">
+	<img id="tatsu3" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu3.png">
+	<img id="tatsu4shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu4shrt.png">
+	<img id="tatsu5shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu5shrt.png">
+	<img id="tatsu6shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu6shrt.png">
+	<img id="tatsu7shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu7shrt.png">
+	<img id="tatsu8shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu8shrt.png">
+	<img id="tatsu9shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu9shrt.png">
+	<img id="tatsu10shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu10shrt.png">
+	<img id="tatsu11shrt" alt="tatsu" class="movesetimg hoverbox" src="./tatsu/tatsu11shrt.png">
+      </div>
     </div>
   </section id="hitbox-list">
 
   <map name='Map' id='Map'>
     <area shape='rect' coords='0,0,98,30' href=
-    'javascript:add1p();'>
+	  'javascript:add1p();'>
     <area shape='rect' coords='0,30,98,60' href=
-    'javascript:add2p()'>
+	  'javascript:add2p()'>
   </map> <img id='addimagemenu' style='display:none' src=
-  '../../images/addimage.png' width='98' height='60' border='0'
-  usemap='#Map'>
+	      '../../images/addimage.png' width='98' height='60' border='0'
+	      usemap='#Map'>
 
   <footer>
     <h2>Characters:</h2>
