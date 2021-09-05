@@ -1,0 +1,27 @@
+body {
+    position:relative;
+    height:95%;
+	color:LightSlateGray ;
+	font-family: sans-serif;
+    background-color: #000212;
+}
+
+.dragndrop--btn {
+    text-align:center;
+    float:right;
+    width: 105px;
+    height: 75px;
+    border-radius: 12px;
+    color: white;
+    margin: 20px;
+    padding-top:30px;
+    border: 1px #fff solid;
+}
+
+.p2 {
+  transform: scaleX(-1);
+}
+
+i {
+    font-size: 2.4rem
+}
