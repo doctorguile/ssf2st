@@ -207,7 +207,7 @@ h2 {
 }
 
 .mugshot-container {
-    flex: 0.15;
+    flex: 0.25;
     display: flex;
     height: 225px;
     align-self: center;
