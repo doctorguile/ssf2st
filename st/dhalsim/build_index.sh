@@ -6,10 +6,13 @@ sed -n '/<\/section id="hitbox-list">/, $p' index.html > bottom.html
 echo "" > table.html
 
 for move in $(echo */ | tr -d "/"); do
+    
+    move_no_underscore=$(echo $move | tr '_' ' ')
+
     echo "
      <div id=\"$move\" class=\"move\">
        <div class=\"heading\">
-         <h2>$move</h2>
+         <h2>$move_no_underscore</h2>
          <a href=\"#top\">Back to top</a>
        </div>
      <div class=\"screenshots\">" >> table.html
