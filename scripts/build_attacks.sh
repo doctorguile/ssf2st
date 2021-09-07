@@ -6,7 +6,12 @@ sed -n '/<\/ul id="attack-index">/, $p' index.html > bottom.html
 echo "" > attacks.html
 
 for move in $(echo */ | tr -d "/"); do
-    echo "<li><a href='#"$move"'>$move</a></li>" >> attacks.html
+
+    if [[ $move =~ [0-9][0-9][0-9][0-9]-.* ]]; then
+	move_name=$(echo $move | cut -d "-" -f 2)
+    fi
+    
+    echo "<li><a href='#"$move"'>$move_name</a></li>" >> attacks.html
 done
 
 cat top.html attacks.html bottom.html > index.html

@@ -7,12 +7,15 @@ echo "" > table.html
 
 for move in $(echo */ | tr -d "/"); do
     
-    move_no_underscore=$(echo $move | tr '_' ' ')
-
+    move_name=$(echo $move | tr '_' ' ')
+    if [[ $move_name =~ [0-9][0-9][0-9][0-9]-.* ]]; then
+	move_name=$(echo $move_name | cut -d "-" -f 2)
+    fi
+    
     echo "
      <div id=\"$move\" class=\"move\">
        <div class=\"heading\">
-         <h2>$move_no_underscore</h2>
+         <h2>$move_name</h2>
          <a href=\"#top\">Back to top</a>
        </div>
      <div class=\"screenshots\">" >> table.html
