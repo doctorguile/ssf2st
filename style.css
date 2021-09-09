@@ -1,7 +1,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: #FAFAFA;
+    background-color: #EFEFEF;
 }
 
 a:hover {
@@ -24,7 +24,7 @@ a {
 
 .active {
     background-color: #1E90FF;
-    color: #FAFAFA;
+    color: #EFEFEF;
 }
 
 .inactive {
@@ -164,7 +164,7 @@ h2 {
     top: 27px;
     right: 2px;
     z-index: 3;
-    background: #FAFAFA;
+    background: #EFEFEF;
     color: #595959;
     display: inline;
     font-size: 1.1rem;

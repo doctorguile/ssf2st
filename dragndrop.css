@@ -3,7 +3,8 @@ body {
     height:95%;
 	color:LightSlateGray ;
 	font-family: sans-serif;
-    background-color: #000212;
+    background: rgb(239,239,255);
+    background: linear-gradient(158deg, rgba(239,239,255,1) 0%, rgba(239,239,239,1) 44%, rgba(202,202,255,1) 91%);
 }
 
 .dragndrop--btn {
@@ -12,10 +13,10 @@ body {
     width: 105px;
     height: 75px;
     border-radius: 12px;
-    color: white;
+    color: #111;
     margin: 20px;
     padding-top:30px;
-    border: 1px #fff solid;
+    border: 1px #111 solid;
 }
 
 .p2 {
@@ -24,4 +25,13 @@ body {
 
 i {
     font-size: 2.4rem
+}
+
+#droppable {
+    color: black;
+    border-radius: 4px;
+    border: 5px black dashed;
+    position: absolute;
+    bottom: 0px;
+    width: 95%;
 }
