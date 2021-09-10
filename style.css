@@ -218,3 +218,7 @@ h2 {
     margin-right: 4px;
     max-width: 150px;
 }
+
+#attack-index li {
+    font-size: 0.95rem;
+}

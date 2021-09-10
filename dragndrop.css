@@ -4,19 +4,25 @@ body {
 	color:LightSlateGray ;
 	font-family: sans-serif;
     background: rgb(239,239,255);
-    background: linear-gradient(158deg, rgba(239,239,255,1) 0%, rgba(239,239,239,1) 44%, rgba(202,202,255,1) 91%);
+    background: linear-gradient(158deg, rgba(232,232,244,1) 0%, rgba(226,225,226,1) 44%, rgba(202,202,255,1) 91%);
 }
 
-.dragndrop--btn {
+.dragndrop {
+    display: flex;
+    width: 100%;
+    flex-flow: nowrap row;
+    position: absolute;
+    bottom: 0px;
+}
+
+.dragndrop__btn {
     text-align:center;
     float:right;
     width: 105px;
     height: 75px;
-    border-radius: 12px;
     color: #111;
     margin: 20px;
     padding-top:30px;
-    border: 1px #111 solid;
 }
 
 .p2 {
@@ -29,9 +35,39 @@ i {
 
 #droppable {
     color: black;
-    border-radius: 4px;
     border: 5px black dashed;
+    flex: 1;
+    border-radius: 10px;
+}
+
+div#clear-all {
+    border: none;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(34deg, rgba(17,17,17,1) 0%, rgba(39,39,39,1) 66%, rgba(47,47,57,1) 100%);
+    color: #eee;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+    align-self: center;
+    border-radius: 8px;
+}
+
+div#clear-all::after {
+    content: "";
     position: absolute;
-    bottom: 0px;
-    width: 95%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+    transform: opacity 250ms;
+    background: linear-gradient(34deg, rgba(24,24,24,1) 0%, rgba(44,44,44,1) 66%, rgba(58,58,70,1) 100%);
+    color: #eee;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: opacity 220ms;
+    border-radius: 8px;
+}
+
+div#clear-all:hover::after{
+    opacity: 1;
 }
