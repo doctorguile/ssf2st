@@ -8,9 +8,9 @@ echo "" > attacks.html
 for move in $(echo */ | tr -d "/"); do
 
     if [[ $move =~ [0-9][0-9][0-9][0-9]-.* ]]; then
-	move_name=$(echo $move | cut -d "-" -f 2)
+	move_name=$(echo $move | cut -d "-" -f 2 | tr "_" " ")
     fi
-    
+    move_name=$(echo "${move_name^}")
     echo "<li><a href='#"$move"'>$move_name</a></li>" >> attacks.html
 done
 

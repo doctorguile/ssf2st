@@ -11,7 +11,7 @@ for move in $(echo */ | tr -d "/"); do
     if [[ $move_name =~ [0-9][0-9][0-9][0-9]-.* ]]; then
 	move_name=$(echo $move_name | cut -d "-" -f 2)
     fi
-    
+    move_name=$(echo "${move_name^}")
     echo "
      <div id=\"$move\" class=\"move\">
        <div class=\"heading\">
