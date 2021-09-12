@@ -20,7 +20,7 @@ for move in $(echo */ | tr -d "/"); do
        </div>
      <div class=\"screenshots\">" >> table.html
 
-    for image in $(find $move -name "*.png" | sort -V); do
+    for image in $(find $move -name "*.png" -o -name "*.gif" | sort -V); do
 	image_id=$(basename $image | cut -d "." -f 1)
 	echo "<img id=\"$image_id\" alt=\"$move\" class=\"movesetimg hoverbox\" src=\"./$image\">" >> table.html
     done
