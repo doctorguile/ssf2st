@@ -20,11 +20,6 @@ function add2p() {
     insertImageP2(selectedImage); 
 } 
 
-function onMouseoutEvt(evt) { 
-
-$('#addimagemenu').hide();
-}
-
 function onMouseoverEvt(evt) {
 selectedImage = this.src;
 var imgid = this.id;

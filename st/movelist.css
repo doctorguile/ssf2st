@@ -59,14 +59,14 @@ body {
     border-radius: 6px;
     background: rgb(136,0,0);
     background: linear-gradient(180deg, rgba(156,12,0,1) 0%, rgba(140,6,0,1) 76%, rgba(124,0,0,1) 96%);
-    border: 1px solid #660000;
+    border: 1px solid rgba(124,0,0,1);
     box-shadow: 1px 3px 5px rgb(0,0,0,0.4);
 }
 
 #addimagemenu a:first-child {
     background: rgb(0,0,136);
     background: linear-gradient(180deg, rgba(0,48,216,1) 0%, rgba(0,30,199,1) 76%, rgba(0,12,184,1) 96%);
-    border: 1px solid #000071;
+    border: 1px solid rgba(0,12,184,1);
 }
 
 #addimagemenu a::after {
