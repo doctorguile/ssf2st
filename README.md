@@ -5,7 +5,6 @@
 # TODO
 
 Blanka
-Zangief
 T.Hawk
 FeiLong
 Claw
@@ -23,3 +22,4 @@ Chun-li
 Cammy
 Ken
 Boxer
+Zangief
