@@ -5,7 +5,6 @@
 # TODO
 
 Blanka
-FeiLong
 Claw
 Sagat
 
@@ -23,3 +22,4 @@ Boxer
 Zangief
 T.Hawk
 Dictator
+FeiLong
