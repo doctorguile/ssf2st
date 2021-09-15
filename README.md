@@ -4,7 +4,6 @@
 
 # TODO
 
-ken
 Blanka
 Zangief
 T.Hawk
@@ -20,6 +19,7 @@ Ryu
 Honda
 Guile
 Dhalsim
-DeeJa
+DeeJay
 Chun-li
 Cammy
+Ken
