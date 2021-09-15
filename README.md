@@ -6,7 +6,6 @@
 
 Blanka
 Claw
-Sagat
 
 # DONE
 
@@ -23,3 +22,4 @@ Zangief
 T.Hawk
 Dictator
 FeiLong
+Sagat
