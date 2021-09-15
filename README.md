@@ -8,7 +8,6 @@ Blanka
 FeiLong
 Claw
 Sagat
-Dictator
 
 # DONE
 
@@ -23,3 +22,4 @@ Ken
 Boxer
 Zangief
 T.Hawk
+Dictator
