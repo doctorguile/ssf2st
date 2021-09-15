@@ -8,7 +8,6 @@ Blanka
 Zangief
 T.Hawk
 FeiLong
-Boxer
 Claw
 Sagat
 Dictator
@@ -23,3 +22,4 @@ DeeJay
 Chun-li
 Cammy
 Ken
+Boxer
