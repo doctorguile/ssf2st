@@ -21,5 +21,4 @@ Zangief
 T.Hawk
 Dictator
 FeiLong
-Blanka
 Sagat
