@@ -8,7 +8,6 @@ ken
 Blanka
 Zangief
 T.Hawk
-Cammy
 FeiLong
 Boxer
 Claw
@@ -23,3 +22,4 @@ Guile
 Dhalsim
 DeeJa
 Chun-li
+Cammy
