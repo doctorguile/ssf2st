@@ -5,7 +5,6 @@
 # TODO
 
 Blanka
-T.Hawk
 FeiLong
 Claw
 Sagat
@@ -23,3 +22,4 @@ Cammy
 Ken
 Boxer
 Zangief
+T.Hawk
