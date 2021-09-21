@@ -83,6 +83,14 @@ i {
     border-radius: 58px;
 }
 
+img {
+    image-rendering: pixelated;
+}
+
 section.zoomedIn img {
-    height: 7rem;
+    transform: scale(2);
+}
+
+section.zoomedIn img.p2 {
+    transform: scale(-2, 2);
 }
