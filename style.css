@@ -5,12 +5,12 @@ body {
 }
 
 a:hover {
-    color:#71b8ff;     
+    color:#90c7ff;     
     text-decoration:underline;
 }
 
 a, h1, h2 {
-    color: #CDE;
+    color: #def;
     text-decoration:none;
 }
 
