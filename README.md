@@ -7,7 +7,6 @@
 Claw
 
 ## MISSING ATTACKS
-Dhalsim crouching strong (both versions)
 Chun empty jumps
 Ken crouching strong
 
