@@ -10,11 +10,14 @@
   </head>
 
   <body>
-    <div id='content'></div>
-    <div class="dragndrop">
-      <div id='droppable' class="dragndrop__btn"><i class="fas fa-trash"></i></div>
-      <div id='clear-all' class="dragndrop__btn"><i class="fas fa-times-circle"></i></div>
-    </div>
+      <section id="canvas-zone">
+        <div id='zoomin' class="dragndrop__btn dragndrop__elt"><i class="fas fa-search"></i></div>
+        <div id='content'></div>
+        <div class="dragndrop">
+            <div id='droppable' class="dragndrop__elt"><i class="fas fa-trash"></i></div>
+            <div id='clear-all' class="dragndrop__btn dragndrop__elt"><i class="fas fa-times-circle"></i></div>
+        </div>
+      </section>
     
     <script type="text/javascript">
 
@@ -86,10 +89,9 @@
 		  ui.draggable.remove();
               }
 	  });
-	  //insertImage('/ssf2st/flop/old-chars/balrog/crouch-mk/1_cr.jpg');
-	  //insertImage('/ssf2st/st/dhalsim/close-mp/3_cr.jpg');
       });
       </script>
+      <script src="imageEdit.js"></script>
   </body>
 
 

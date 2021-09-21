@@ -17,13 +17,26 @@ body {
 }
 
 .dragndrop__btn {
-    text-align:center;
     float:right;
     width: 105px;
-    height: 75px;
     color: #EEE;
     margin: 20px;
-    padding-top:30px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(34deg, rgba(220,220,220,1) 0%, rgba(208,208,208,1) 66%, rgba(189,189,189,1) 100%);
+    color: #111;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+    align-self: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dragndrop__elt {
+    align-self: center;
+    text-align: center;
+    height: 75px;
+    padding-top: 30px;
 }
 
 .p2 {
@@ -41,18 +54,7 @@ i {
     border-radius: 10px;
 }
 
-div#clear-all {
-    border: none;
-    position: relative;
-    z-index: 1;
-    background: linear-gradient(34deg, rgba(220,220,220,1) 0%, rgba(208,208,208,1) 66%, rgba(189,189,189,1) 100%);
-    color: #111;
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
-    align-self: center;
-    border-radius: 8px;
-}
-
-div#clear-all::after {
+.dragndrop__btn::after {
     content: "";
     position: absolute;
     top: 0;
@@ -69,6 +71,18 @@ div#clear-all::after {
     border-radius: 8px;
 }
 
-div#clear-all:hover::after{
+.dragndrop__btn:hover::after{
     opacity: 1;
+}
+
+#zoomin {
+    border-radius: 58px;
+}
+
+#zoomin::after {
+    border-radius: 58px;
+}
+
+section.zoomedIn img {
+    height: 7rem;
 }
