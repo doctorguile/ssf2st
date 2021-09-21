@@ -5,7 +5,7 @@ body {
 	font-family: sans-serif;
     background-size: 48px 48px;
     background-image: linear-gradient(90deg, teal 1px, transparent 0px), linear-gradient(teal 1px, transparent 0px);
-    background-color: rgb(184, 184, 195);
+    background-color: rgb(42, 42, 42);
 }
 
 .dragndrop {
@@ -21,7 +21,7 @@ body {
     float:right;
     width: 105px;
     height: 75px;
-    color: #111;
+    color: #EEE;
     margin: 20px;
     padding-top:30px;
 }
@@ -35,8 +35,8 @@ i {
 }
 
 #droppable {
-    color: black;
-    border: 5px black dashed;
+    color: #EEE;
+    border: 5px #EEE dashed;
     flex: 1;
     border-radius: 10px;
 }
@@ -45,8 +45,8 @@ div#clear-all {
     border: none;
     position: relative;
     z-index: 1;
-    background: linear-gradient(34deg, rgba(17,17,17,1) 0%, rgba(39,39,39,1) 66%, rgba(47,47,57,1) 100%);
-    color: #eee;
+    background: linear-gradient(34deg, rgba(220,220,220,1) 0%, rgba(208,208,208,1) 66%, rgba(189,189,189,1) 100%);
+    color: #111;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
     align-self: center;
     border-radius: 8px;
@@ -62,8 +62,8 @@ div#clear-all::after {
     opacity: 0;
     z-index: -1;
     transform: opacity 250ms;
-    background: linear-gradient(34deg, rgba(24,24,24,1) 0%, rgba(44,44,44,1) 66%, rgba(58,58,70,1) 100%);
-    color: #eee;
+    background: linear-gradient(34deg, rgba(247,247,247,1) 0%, rgba(229,229,229,1) 66%, rgba(204,204,204,1) 100%);
+    color: #333;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
     transition: opacity 220ms;
     border-radius: 8px;

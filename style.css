@@ -1,16 +1,16 @@
 
 body {
     font-family: sans-serif;
-    background-color: #EFEFEF;
+    background-color: #101025;
 }
 
 a:hover {
-    color:blue;     
+    color:#71b8ff;     
     text-decoration:underline;
 }
 
-a {
-    color: #112233;
+a, h1, h2 {
+    color: #CDE;
     text-decoration:none;
 }
 
@@ -71,7 +71,7 @@ td.br {
     border-bottom:medium solid black
 }
 .movename {
-    background-color:lightskyblue;
+    background-color:rgb(2, 85, 85);
     font-size:larger;
     font-weight:bold;
     padding:5px;
@@ -92,7 +92,7 @@ td.br {
 }
 
 footer {
-    background-color: lightskyblue;
+    background-color: rgb(2, 85, 85);
     display: flex;
     align-content: center;
     flex-flow: column nowrap;
@@ -165,15 +165,15 @@ h2 {
     top: 27px;
     right: 2px;
     z-index: 3;
-    background: #EFEFEF;
-    color: #595959;
+    background: rgb(10,10,25);
+    color: #B4B4C4;
     display: inline;
     font-size: 1.1rem;
     padding-right: 4px;
 }
 
 .heading {
-    background-color:lightskyblue;
+    background-color:rgb(2, 85, 85);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -205,7 +205,7 @@ h2 {
     border-radius: 4px;
     object-fit: none;
     box-shadow: 0px 1px 5px rgba(12, 12, 12, 0.4);
-    background-color: #fff;
+    background-color: rgb(16, 16, 41);
 }
 
 .mugshot-container {
