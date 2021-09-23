@@ -85,6 +85,11 @@ i {
 
 img {
     image-rendering: crisp-edges;
+    cursor: grab
+}
+
+img:active {
+    cursor: grabbing
 }
 
 section.zoomedIn img {
