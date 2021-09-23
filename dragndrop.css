@@ -84,12 +84,12 @@ i {
 }
 
 img {
-    image-rendering: crisp-edges;
-    cursor: grab
+    image-rendering: optimizeSpeed;
+    cursor: grab;
 }
 
 img:active {
-    cursor: grabbing
+    cursor: grabbing;
 }
 
 section.zoomedIn img {

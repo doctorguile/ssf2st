@@ -9,7 +9,7 @@ a:hover {
     text-decoration:underline;
 }
 
-a, h1, h2 {
+a, h1, h2, p {
     color: #def;
     text-decoration:none;
 }
@@ -110,9 +110,12 @@ footer ul {
 }
 
 footer li {
-    list-style-type: none;
     margin-right: 14px;
     margin-bottom: 6px;
+}
+
+li {
+    list-style-type: none;
 }
 
 footer h2 {
@@ -139,16 +142,18 @@ h2 {
     object-fit:cover;
 }
 
-#attack-list ul {
+#attack-index {
     display: flex;
-    flex-flow: column wrap;
-    max-height: 400px;
+    flex-flow: column nowrap;
+    max-height: 345px;
     list-style-type: circle;
     border: 1px solid #bbb;
     border-radius: 8px;
     padding-top: 27px;
     padding-bottom: 28px;
     overflow: hidden;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #attack-list li {
@@ -162,7 +167,7 @@ h2 {
 #attack-list nav h2 {
     text-align: center;
     position: relative;
-    top: 27px;
+    top: 11px;
     right: 2px;
     z-index: 3;
     background: rgb(10,10,25);
@@ -177,7 +182,8 @@ h2 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding: 6px
+    padding: 6px;
+    margin-bottom: 24px;
 }
 
 .heading a {
@@ -222,4 +228,32 @@ h2 {
 
 #attack-index li {
     font-size: 0.95rem;
+}
+
+.categories {
+    display: flex;
+    flex-flow: row nowrap;
+    border: 1px #cde solid;
+    border-radius: 8px;
+}
+
+ul.index li{
+    display:none;
+}
+
+ul.visible li{
+    display:unset;
+}
+
+.index{
+    display: flex;
+    flex-flow: column wrap;
+    height: 300px;
+    padding-left: 6px;
+}
+
+.tab{
+    flex: 1;
+    border-radius: 8px;
+    text-align: center
 }
