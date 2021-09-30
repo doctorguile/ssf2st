@@ -9,7 +9,7 @@ a:hover {
     text-decoration:underline;
 }
 
-a, h1, h2, p {
+a, h1, h2, p, label {
     color: #def;
     text-decoration:none;
 }
@@ -147,7 +147,6 @@ h2 {
     flex-flow: column nowrap;
     max-height: 345px;
     list-style-type: circle;
-    border: 1px solid #bbb;
     border-radius: 8px;
     padding-top: 27px;
     padding-bottom: 28px;
@@ -233,8 +232,7 @@ h2 {
 .categories {
     display: flex;
     flex-flow: row nowrap;
-    border: 1px #cde solid;
-    border-radius: 8px;
+    margin-bottom: 6px;
 }
 
 ul.index li{
@@ -248,12 +246,26 @@ ul.visible li{
 .index{
     display: flex;
     flex-flow: column wrap;
-    height: 300px;
-    padding-left: 6px;
+    padding-left: 0px;
+    margin: 0px;
 }
 
 .tab{
     flex: 1;
-    border-radius: 8px;
-    text-align: center
+    text-align: center;
+    cursor: pointer;
+    margin-right: 3px;
+    border-bottom: 1px solid gray;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+.moves {
+    display: flex;
+    height: 300px;
+    padding-left: 12px;
+    padding-top: 8px;
 }
