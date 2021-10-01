@@ -248,6 +248,7 @@ ul.visible li{
     flex-flow: column wrap;
     padding-left: 0px;
     margin: 0px;
+    height: 100%
 }
 
 .tab{
@@ -256,6 +257,11 @@ ul.visible li{
     cursor: pointer;
     margin-right: 3px;
     border-bottom: 1px solid gray;
+}
+
+.tab.toggled {
+    border-bottom: 2px solid teal;
+    border-radius: 2px;
 }
 
 label {

@@ -31,10 +31,10 @@ document
     .getElementById('tab-2')
     .addEventListener('click', function() {
         document
-            .getElementById('tab-1')
+            .getElementById('tab-2')
             .classList.add('toggled')
         document
-            .getElementById('tab-2')
+            .getElementById('tab-1')
             .classList.remove('toggled')
         document
             .getElementById('tab-3')
@@ -60,13 +60,13 @@ document
     .getElementById('tab-3')
     .addEventListener('click', function() {
         document
-            .getElementById('tab-1')
+            .getElementById('tab-3')
             .classList.add('toggled')
         document
             .getElementById('tab-2')
             .classList.remove('toggled')
         document
-            .getElementById('tab-3')
+            .getElementById('tab-1')
             .classList.remove('toggled')
         document
             .getElementById('tab-4')
@@ -89,7 +89,7 @@ document
     .getElementById('tab-4')
     .addEventListener('click', function() {
         document
-            .getElementById('tab-1')
+            .getElementById('tab-4')
             .classList.add('toggled')
         document
             .getElementById('tab-2')
@@ -98,7 +98,7 @@ document
             .getElementById('tab-3')
             .classList.remove('toggled')
         document
-            .getElementById('tab-4')
+            .getElementById('tab-1')
             .classList.remove('toggled')
             document
             .getElementById('misc')
