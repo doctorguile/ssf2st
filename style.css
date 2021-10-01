@@ -5,16 +5,16 @@ body {
 }
 
 a:hover {
-    color:#e6c7e6; 
+    color:#d3a7d3; 
     text-decoration:underline;
 }
 
-a, label {
+a, label, p {
     color: #def;
     text-decoration:none;
 }
 
-h1, h2, p {
+h1, h2 {
     color: #fafafa;
 }
 
