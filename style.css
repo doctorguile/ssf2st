@@ -5,13 +5,17 @@ body {
 }
 
 a:hover {
-    color:#90c7ff;     
+    color:#e6c7e6; 
     text-decoration:underline;
 }
 
-a, h1, h2, p, label {
+a, label {
     color: #def;
     text-decoration:none;
+}
+
+h1, h2, p {
+    color: #fafafa;
 }
 
 .move-property {
@@ -93,13 +97,19 @@ td.br {
 
 footer {
     background-color: rgb(2, 85, 85);
-    display: flex;
-    align-content: center;
-    flex-flow: column nowrap;
     position: fixed;
     left: 0px;
     bottom: 0px;
     z-index: 6;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.charlist {
+    display: flex;
+    align-content: center;
+    flex-flow: column nowrap;
 }
 
 footer ul {
@@ -112,14 +122,16 @@ footer ul {
 footer li {
     margin-right: 14px;
     margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+footer h2 {
+    font-size: 1.05rem;
+    text-align: center;
 }
 
 li {
     list-style-type: none;
-}
-
-footer h2 {
-    text-align: center;
 }
 
 h2 {
@@ -278,4 +290,17 @@ label {
     height: 300px;
     padding-left: 12px;
     padding-top: 8px;
+}
+
+.back-to-top {
+    background-color: #772c77;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+    max-width: 100px;
+    align-self: end;
+    position: relative;
+    right: 6px;
+    bottom: 20px;
+    margin-top: -20px;
 }

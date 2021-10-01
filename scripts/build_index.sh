@@ -16,7 +16,6 @@ for move in $(echo */ | tr -d "/"); do
      <div id=\"$move\" class=\"move\">
        <div class=\"heading\">
          <h2>$move_name</h2>
-         <a href=\"#top\">Back to top</a>
        </div>
      <div class=\"screenshots\">" >> table.html
 
