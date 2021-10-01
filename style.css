@@ -110,12 +110,14 @@ footer {
     display: flex;
     align-content: center;
     flex-flow: column nowrap;
+    max-width: 576px;
+    align-self: center;
 }
 
 footer ul {
     display: flex;
     flex-flow: wrap row;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 6px;
 }
 
@@ -123,6 +125,7 @@ footer li {
     margin-right: 14px;
     margin-bottom: 6px;
     font-size: 0.9rem;
+    width: 94px;
 }
 
 footer h2 {
