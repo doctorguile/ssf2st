@@ -12,7 +12,7 @@ Ken crouching strong
 
 # DONE
 
-Ryu
+Ryu + old
 Honda
 Guile
 Dhalsim
@@ -22,7 +22,7 @@ Cammy
 Ken
 Boxer
 Zangief
-T.Hawk
+T.Hawk + old
 Dictator
 FeiLong
 Sagat
