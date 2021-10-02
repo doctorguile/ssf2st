@@ -44,36 +44,6 @@ div.attack-block-hit {
     width: 100%;
 }
 
-table.attack-block-hit  td {
-    padding: 5px;
-}
-
-td.tl {
-    border-left:medium solid black;
-    border-top:medium solid black
-}
-td.tr {
-    border-right:medium solid black;
-    border-top:medium solid black
-}
-td.ml {
-    border-left:medium solid black;
-    border-top:medium solid black
-}
-td.mr {
-    border-right:medium solid black;
-    border-top:medium solid black
-}
-td.bl {
-    border-left:medium solid black;
-    border-top:medium solid black;
-    border-bottom:medium solid black
-}
-td.br {
-    border-right:medium solid black;
-    border-top:medium solid black;
-    border-bottom:medium solid black
-}
 .movename {
     background-color:rgb(2, 85, 85);
     font-size:larger;
