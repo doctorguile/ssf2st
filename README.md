@@ -6,10 +6,6 @@
 ## FIX SPECIAL ATTACKS
 Claw
 
-## MISSING ATTACKS
-Chun empty jumps
-Ken crouching strong
-
 # DONE
 
 Ryu + old
