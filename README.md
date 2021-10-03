@@ -15,10 +15,10 @@ Dhalsim
 DeeJay
 Chun-li
 Cammy
-Ken
+Ken + old
 Boxer
-Zangief
+Zangief + old
 T.Hawk + old
-Dictator
+Dictator + old
 FeiLong
 Sagat
