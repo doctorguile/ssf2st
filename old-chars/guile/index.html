@@ -16,7 +16,7 @@
   <script src=
   "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js">
   </script>
-</head>
+</head>x
 
   <header>
     <div class="heading">
@@ -30,54 +30,76 @@
       <img src='../../images/old/guile.png' alt="guile portrait">
     </div>
     <nav>
-      <h2>Character moveset</h2>
-      <ul id="attack-index">
+                  <div id="attack-index">
 
-<li><a href='#0012-far_standing_jab'>Far standing jab</a></li>
-<li><a href='#0013-close_standing_jab'>Close standing jab</a></li>
-<li><a href='#0014-crouching_jab'>Crouching jab</a></li>
-<li><a href='#0022-far_standing_strong'>Far standing strong</a></li>
-<li><a href='#0023-close_standing_strong'>Close standing strong</a></li>
-<li><a href='#0024-crouching_strong'>Crouching strong</a></li>
-<li><a href='#0032-far_standing_fierce'>Far standing fierce</a></li>
-<li><a href='#0033-close_standing_fierce'>Close standing fierce</a></li>
-<li><a href='#0034-crouching_fierce'>Crouching fierce</a></li>
-<li><a href='#0042-far_standing_short'>Far standing short</a></li>
-<li><a href='#0043-close_standing_short'>Close standing short</a></li>
-<li><a href='#0044-crouching_short'>Crouching short</a></li>
-<li><a href='#0052-far_standing_forward'>Far standing forward</a></li>
-<li><a href='#0053-close_standing_forward'>Close standing forward</a></li>
-<li><a href='#0054-crouching_forward'>Crouching forward</a></li>
-<li><a href='#0062-far_standing_roundhouse'>Far standing roundhouse</a></li>
-<li><a href='#0063-close_standing_roundhouse'>Close standing roundhouse</a></li>
-<li><a href='#0064-crouching_roundhouse'>Crouching roundhouse</a></li>
-<li><a href='#0100-back_jump_'>Back jump </a></li>
-<li><a href='#0100-neutral_jump_'>Neutral jump </a></li>
-<li><a href='#0101-diagonal_jump_standing_rnf'>Diagonal jump standing rnf</a></li>
-<li><a href='#0110-diagonal_jump_jab'>Diagonal jump jab</a></li>
-<li><a href='#0110-neutral_jump_jab'>Neutral jump jab</a></li>
-<li><a href='#0120-diagonal_jump_strong'>Diagonal jump strong</a></li>
-<li><a href='#0120-neutral_jump_strong'>Neutral jump strong</a></li>
-<li><a href='#0130-diagonal_jump_fierce'>Diagonal jump fierce</a></li>
-<li><a href='#0130-neutral_jump_fierce'>Neutral jump fierce</a></li>
-<li><a href='#0140-diagonal_jump_short'>Diagonal jump short</a></li>
-<li><a href='#0140-neutral_jump_short'>Neutral jump short</a></li>
-<li><a href='#0150-diagonal_jump_forward'>Diagonal jump forward</a></li>
-<li><a href='#0150-forward_jump_'>Forward jump </a></li>
-<li><a href='#0150-neutral_jump_forward'>Neutral jump forward</a></li>
-<li><a href='#0160-diagonal_jump_roundhouse'>Diagonal jump roundhouse</a></li>
-<li><a href='#0160-neutral_jump_roundhouse'>Neutral jump roundhouse</a></li>
-<li><a href='#3000-kairthrow'>Kairthrow</a></li>
-<li><a href='#3000-pairthrow'>Pairthrow</a></li>
-<li><a href='#3000-throw'>Throw</a></li>
-<li><a href='#3000-throwb'>Throwb</a></li>
-<li><a href='#3000-throwf'>Throwf</a></li>
-<li><a href='#fk'>Fk</a></li>
-<li><a href='#kb'>Kb</a></li>
-<li><a href='#rk'>Rk</a></li>
-<li><a href='#sb'>Sb</a></li>
-<li><a href='#ssf'>Ssf</a></li>
-      </ul id="attack-index">
+        <div class="categories">
+          <div class="tab toggled" id="tab-1">
+            <p>Normals</p>
+          </div>
+          <div class="tab" id="tab-2">
+            <p>Aerials</p>
+          </div>
+          <div class="tab" id="tab-3">
+            <p>Specials</p>
+          </div>
+          <div class="tab" id="tab-4">
+            <p>Misc</p>
+          </div>
+        </div>
+        <div class="moves">
+          <ul class="index visible" id="normals">
+            <li><a href='#0012-far_standing_jab'>Far standing jab</a></li>
+            <li><a href='#0013-close_standing_jab'>Close standing jab</a></li>
+            <li><a href='#0014-crouching_jab'>Crouching jab</a></li>
+            <li><a href='#0022-far_standing_strong'>Far standing strong</a></li>
+            <li><a href='#0023-close_standing_strong'>Close standing strong</a></li>
+            <li><a href='#0024-crouching_strong'>Crouching strong</a></li>
+            <li><a href='#0032-far_standing_fierce'>Far standing fierce</a></li>
+            <li><a href='#0033-close_standing_fierce'>Close standing fierce</a></li>
+            <li><a href='#0034-crouching_fierce'>Crouching fierce</a></li>
+            <li><a href='#0042-far_standing_short'>Far standing short</a></li>
+            <li><a href='#0043-close_standing_short'>Close standing short</a></li>
+            <li><a href='#0044-crouching_short'>Crouching short</a></li>
+            <li><a href='#0052-far_standing_forward'>Far standing forward</a></li>
+            <li><a href='#0053-close_standing_forward'>Close standing forward</a></li>
+            <li><a href='#0054-crouching_forward'>Crouching forward</a></li>
+            <li><a href='#0055-knee_bazooka'>Knee bazooka</a></li>
+            <li><a href='#0062-far_standing_roundhouse'>Far standing roundhouse</a></li>
+            <li><a href='#0063-close_standing_roundhouse'>Close standing roundhouse</a></li>
+            <li><a href='#0064-crouching_roundhouse'>Crouching roundhouse</a></li>
+            <li><a href='#0065-reverse_spin_kick'>Reverse spin kick</a></li>
+          </ul>
+          <ul class="index" id="aerials">
+            <li><a href='#0100-back_jump_'>Back jump </a></li>
+            <li><a href='#0100-neutral_jump_'>Neutral jump </a></li>
+            <li><a href='#0101-diagonal_jump_standing_rnf'>Diagonal jump standing rnf</a></li>
+            <li><a href='#0110-diagonal_jump_jab'>Diagonal jump jab</a></li>
+            <li><a href='#0110-neutral_jump_jab'>Neutral jump jab</a></li>
+            <li><a href='#0120-diagonal_jump_strong'>Diagonal jump strong</a></li>
+            <li><a href='#0120-neutral_jump_strong'>Neutral jump strong</a></li>
+            <li><a href='#0130-diagonal_jump_fierce'>Diagonal jump fierce</a></li>
+            <li><a href='#0130-neutral_jump_fierce'>Neutral jump fierce</a></li>
+            <li><a href='#0140-diagonal_jump_short'>Diagonal jump short</a></li>
+            <li><a href='#0140-neutral_jump_short'>Neutral jump short</a></li>
+            <li><a href='#0150-diagonal_jump_forward'>Diagonal jump forward</a></li>
+            <li><a href='#0150-forward_jump_'>Forward jump </a></li>
+            <li><a href='#0150-neutral_jump_forward'>Neutral jump forward</a></li>
+            <li><a href='#0160-diagonal_jump_roundhouse'>Diagonal jump roundhouse</a></li>
+            <li><a href='#0160-neutral_jump_roundhouse'>Neutral jump roundhouse</a></li>
+          </ul>
+          <ul class="index" id="specials">
+            <li><a href='#1010-sonicboom'>Sonicboom</a></li>
+            <li><a href='#1040-flashkick_forward_roundhouse'>Flashkick forward roundhouse</a></li>
+            <li><a href='#1040-flashkick_short'>Flashkick short</a></li>
+          </ul>
+          <ul class="index" id="misc">
+            <li><a href='#3000-kairthrow'>Kairthrow</a></li>
+            <li><a href='#3000-pairthrow'>Pairthrow</a></li>
+            <li><a href='#3000-throw'>Throw</a></li>
+          </ul>
+        </div>
+                </div id="attack-index">
+
     </nav>
   </section>
 
@@ -87,7 +109,6 @@
      <div id="0012-far_standing_jab" class="move">
        <div class="heading">
          <h2>Far standing jab</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stfarjab1" alt="0012-far_standing_jab" class="movesetimg hoverbox" src="./0012-far_standing_jab/stfarjab1.png">
@@ -100,7 +121,6 @@
      <div id="0013-close_standing_jab" class="move">
        <div class="heading">
          <h2>Close standing jab</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stcljab1" alt="0013-close_standing_jab" class="movesetimg hoverbox" src="./0013-close_standing_jab/stcljab1.png">
@@ -113,7 +133,6 @@
      <div id="0014-crouching_jab" class="move">
        <div class="heading">
          <h2>Crouching jab</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="crjab1" alt="0014-crouching_jab" class="movesetimg hoverbox" src="./0014-crouching_jab/crjab1.png">
@@ -125,7 +144,6 @@
      <div id="0022-far_standing_strong" class="move">
        <div class="heading">
          <h2>Far standing strong</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stfarstrng1" alt="0022-far_standing_strong" class="movesetimg hoverbox" src="./0022-far_standing_strong/stfarstrng1.png">
@@ -140,7 +158,6 @@
      <div id="0023-close_standing_strong" class="move">
        <div class="heading">
          <h2>Close standing strong</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stclstrng1" alt="0023-close_standing_strong" class="movesetimg hoverbox" src="./0023-close_standing_strong/stclstrng1.png">
@@ -155,7 +172,6 @@
      <div id="0024-crouching_strong" class="move">
        <div class="heading">
          <h2>Crouching strong</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="crstrng1" alt="0024-crouching_strong" class="movesetimg hoverbox" src="./0024-crouching_strong/crstrng1.png">
@@ -168,7 +184,6 @@
      <div id="0032-far_standing_fierce" class="move">
        <div class="heading">
          <h2>Far standing fierce</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stfarfrc1" alt="0032-far_standing_fierce" class="movesetimg hoverbox" src="./0032-far_standing_fierce/stfarfrc1.png">
@@ -183,7 +198,6 @@
      <div id="0033-close_standing_fierce" class="move">
        <div class="heading">
          <h2>Close standing fierce</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stclfrc1" alt="0033-close_standing_fierce" class="movesetimg hoverbox" src="./0033-close_standing_fierce/stclfrc1.png">
@@ -198,7 +212,6 @@
      <div id="0034-crouching_fierce" class="move">
        <div class="heading">
          <h2>Crouching fierce</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="crfrc1" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc1.png">
@@ -213,7 +226,6 @@
      <div id="0042-far_standing_short" class="move">
        <div class="heading">
          <h2>Far standing short</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stfarshrt1" alt="0042-far_standing_short" class="movesetimg hoverbox" src="./0042-far_standing_short/stfarshrt1.png">
@@ -227,7 +239,6 @@
      <div id="0043-close_standing_short" class="move">
        <div class="heading">
          <h2>Close standing short</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stclshrt1" alt="0043-close_standing_short" class="movesetimg hoverbox" src="./0043-close_standing_short/stclshrt1.png">
@@ -241,7 +252,6 @@
      <div id="0044-crouching_short" class="move">
        <div class="heading">
          <h2>Crouching short</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="crshrt1" alt="0044-crouching_short" class="movesetimg hoverbox" src="./0044-crouching_short/crshrt1.png">
@@ -255,7 +265,6 @@
      <div id="0052-far_standing_forward" class="move">
        <div class="heading">
          <h2>Far standing forward</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stfarfrwrd1" alt="0052-far_standing_forward" class="movesetimg hoverbox" src="./0052-far_standing_forward/stfarfrwrd1.png">
@@ -274,7 +283,6 @@
      <div id="0053-close_standing_forward" class="move">
        <div class="heading">
          <h2>Close standing forward</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stclfrwrd1" alt="0053-close_standing_forward" class="movesetimg hoverbox" src="./0053-close_standing_forward/stclfrwrd1.png">
@@ -288,7 +296,6 @@
      <div id="0054-crouching_forward" class="move">
        <div class="heading">
          <h2>Crouching forward</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="crfrwrd1" alt="0054-crouching_forward" class="movesetimg hoverbox" src="./0054-crouching_forward/crfrwrd1.png">
@@ -299,10 +306,23 @@
 </div>
     </div>
 
+     <div id="0055-knee_bazooka" class="move">
+       <div class="heading">
+         <h2>Knee bazooka</h2>
+       </div>
+     <div class="screenshots">
+<img id="kb1" alt="0055-knee_bazooka" class="movesetimg hoverbox" src="./0055-knee_bazooka/kb1.png">
+<img id="kb2" alt="0055-knee_bazooka" class="movesetimg hoverbox" src="./0055-knee_bazooka/kb2.png">
+<img id="kb3" alt="0055-knee_bazooka" class="movesetimg hoverbox" src="./0055-knee_bazooka/kb3.png">
+<img id="kb4" alt="0055-knee_bazooka" class="movesetimg hoverbox" src="./0055-knee_bazooka/kb4.png">
+<img id="kb5" alt="0055-knee_bazooka" class="movesetimg hoverbox" src="./0055-knee_bazooka/kb5.png">
+<img id="kb6" alt="0055-knee_bazooka" class="movesetimg hoverbox" src="./0055-knee_bazooka/kb6.png">
+</div>
+    </div>
+
      <div id="0062-far_standing_roundhouse" class="move">
        <div class="heading">
          <h2>Far standing roundhouse</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stfarrh1" alt="0062-far_standing_roundhouse" class="movesetimg hoverbox" src="./0062-far_standing_roundhouse/stfarrh1.png">
@@ -318,7 +338,6 @@
      <div id="0063-close_standing_roundhouse" class="move">
        <div class="heading">
          <h2>Close standing roundhouse</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="stclrh1" alt="0063-close_standing_roundhouse" class="movesetimg hoverbox" src="./0063-close_standing_roundhouse/stclrh1.png">
@@ -331,7 +350,6 @@
      <div id="0064-crouching_roundhouse" class="move">
        <div class="heading">
          <h2>Crouching roundhouse</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="crrh1" alt="0064-crouching_roundhouse" class="movesetimg hoverbox" src="./0064-crouching_roundhouse/crrh1.png">
@@ -348,10 +366,28 @@
 </div>
     </div>
 
+     <div id="0065-reverse_spin_kick" class="move">
+       <div class="heading">
+         <h2>Reverse spin kick</h2>
+       </div>
+     <div class="screenshots">
+<img id="rk1" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk1.png">
+<img id="rk2" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk2.png">
+<img id="rk3" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk3.png">
+<img id="rk4" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk4.png">
+<img id="rk5" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk5.png">
+<img id="rk6" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk6.png">
+<img id="rk7" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk7.png">
+<img id="rk8" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk8.png">
+<img id="rk9" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk9.png">
+<img id="rk10" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk10.png">
+<img id="rk11" alt="0065-reverse_spin_kick" class="movesetimg hoverbox" src="./0065-reverse_spin_kick/rk11.png">
+</div>
+    </div>
+
      <div id="0100-back_jump_" class="move">
        <div class="heading">
          <h2>Back jump</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="bj1" alt="0100-back_jump_" class="movesetimg hoverbox" src="./0100-back_jump_/bj1.png">
@@ -371,7 +407,6 @@
      <div id="0100-neutral_jump_" class="move">
        <div class="heading">
          <h2>Neutral jump</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="nj1" alt="0100-neutral_jump_" class="movesetimg hoverbox" src="./0100-neutral_jump_/nj1.png">
@@ -391,7 +426,6 @@
      <div id="0101-diagonal_jump_standing_rnf" class="move">
        <div class="heading">
          <h2>Diagonal jump standing rnf</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="djstrnf5" alt="0101-diagonal_jump_standing_rnf" class="movesetimg hoverbox" src="./0101-diagonal_jump_standing_rnf/djstrnf5.png">
@@ -401,7 +435,6 @@
      <div id="0110-diagonal_jump_jab" class="move">
        <div class="heading">
          <h2>Diagonal jump jab</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="djjab1" alt="0110-diagonal_jump_jab" class="movesetimg hoverbox" src="./0110-diagonal_jump_jab/djjab1.png">
@@ -415,7 +448,6 @@
      <div id="0110-neutral_jump_jab" class="move">
        <div class="heading">
          <h2>Neutral jump jab</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="njjab1" alt="0110-neutral_jump_jab" class="movesetimg hoverbox" src="./0110-neutral_jump_jab/njjab1.png">
@@ -427,7 +459,6 @@
      <div id="0120-diagonal_jump_strong" class="move">
        <div class="heading">
          <h2>Diagonal jump strong</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="djstrng1" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng1.png">
@@ -440,7 +471,6 @@
      <div id="0120-neutral_jump_strong" class="move">
        <div class="heading">
          <h2>Neutral jump strong</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="njstrng1" alt="0120-neutral_jump_strong" class="movesetimg hoverbox" src="./0120-neutral_jump_strong/njstrng1.png">
@@ -454,7 +484,6 @@
      <div id="0130-diagonal_jump_fierce" class="move">
        <div class="heading">
          <h2>Diagonal jump fierce</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="djfrc1" alt="0130-diagonal_jump_fierce" class="movesetimg hoverbox" src="./0130-diagonal_jump_fierce/djfrc1.png">
@@ -468,7 +497,6 @@
      <div id="0130-neutral_jump_fierce" class="move">
        <div class="heading">
          <h2>Neutral jump fierce</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="njfrc1" alt="0130-neutral_jump_fierce" class="movesetimg hoverbox" src="./0130-neutral_jump_fierce/njfrc1.png">
@@ -482,7 +510,6 @@
      <div id="0140-diagonal_jump_short" class="move">
        <div class="heading">
          <h2>Diagonal jump short</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="djshrt1" alt="0140-diagonal_jump_short" class="movesetimg hoverbox" src="./0140-diagonal_jump_short/djshrt1.png">
@@ -494,7 +521,6 @@
      <div id="0140-neutral_jump_short" class="move">
        <div class="heading">
          <h2>Neutral jump short</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="njshrt1" alt="0140-neutral_jump_short" class="movesetimg hoverbox" src="./0140-neutral_jump_short/njshrt1.png">
@@ -506,7 +532,6 @@
      <div id="0150-diagonal_jump_forward" class="move">
        <div class="heading">
          <h2>Diagonal jump forward</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="djfrwrd1" alt="0150-diagonal_jump_forward" class="movesetimg hoverbox" src="./0150-diagonal_jump_forward/djfrwrd1.png">
@@ -520,7 +545,6 @@
      <div id="0150-forward_jump_" class="move">
        <div class="heading">
          <h2>Forward jump</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="fj1" alt="0150-forward_jump_" class="movesetimg hoverbox" src="./0150-forward_jump_/fj1.png">
@@ -540,7 +564,6 @@
      <div id="0150-neutral_jump_forward" class="move">
        <div class="heading">
          <h2>Neutral jump forward</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="njfrwrd1" alt="0150-neutral_jump_forward" class="movesetimg hoverbox" src="./0150-neutral_jump_forward/njfrwrd1.png">
@@ -557,7 +580,6 @@
      <div id="0160-diagonal_jump_roundhouse" class="move">
        <div class="heading">
          <h2>Diagonal jump roundhouse</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="djrh1" alt="0160-diagonal_jump_roundhouse" class="movesetimg hoverbox" src="./0160-diagonal_jump_roundhouse/djrh1.png">
@@ -572,7 +594,6 @@
      <div id="0160-neutral_jump_roundhouse" class="move">
        <div class="heading">
          <h2>Neutral jump roundhouse</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="njrh1" alt="0160-neutral_jump_roundhouse" class="movesetimg hoverbox" src="./0160-neutral_jump_roundhouse/njrh1.png">
@@ -584,10 +605,75 @@
 </div>
     </div>
 
+     <div id="1010-sonicboom" class="move">
+       <div class="heading">
+         <h2>Sonicboom</h2>
+       </div>
+     <div class="screenshots">
+<img id="sb1" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb1.png">
+<img id="sb2" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb2.png">
+<img id="sb3" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb3.png">
+<img id="sb4" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb4.png">
+<img id="sb5" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb5.png">
+<img id="sb6" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb6.png">
+<img id="sb7frc" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb7frc.png">
+<img id="sb7jab" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb7jab.png">
+<img id="sb7strng" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb7strng.png">
+<img id="sb8frc" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb8frc.png">
+<img id="sb8jab" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb8jab.png">
+<img id="sb8strng" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb8strng.png">
+<img id="sb9frc" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb9frc.png">
+<img id="sb9jab" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb9jab.png">
+<img id="sb9strng" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb9strng.png">
+<img id="sb10frc" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb10frc.png">
+<img id="sb10jab" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb10jab.png">
+<img id="sb10strng" alt="1010-sonicboom" class="movesetimg hoverbox" src="./1010-sonicboom/sb10strng.png">
+</div>
+    </div>
+
+     <div id="1040-flashkick_forward_roundhouse" class="move">
+       <div class="heading">
+         <h2>Flashkick forward roundhouse</h2>
+       </div>
+     <div class="screenshots">
+<img id="OGuile_fk5" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/OGuile_fk5.png">
+<img id="fk1" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk1.png">
+<img id="fk2" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk2.png">
+<img id="fk3" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk3.png">
+<img id="fk4" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk4.png">
+<img id="fk6" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk6.png">
+<img id="fk7" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk7.png">
+<img id="fk8" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk8.png">
+<img id="fk9" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk9.png">
+<img id="fk10" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk10.png">
+<img id="fk11" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk11.png">
+<img id="fk12" alt="1040-flashkick_forward_roundhouse" class="movesetimg hoverbox" src="./1040-flashkick_forward_roundhouse/fk12.png">
+</div>
+    </div>
+
+     <div id="1040-flashkick_short" class="move">
+       <div class="heading">
+         <h2>Flashkick short</h2>
+       </div>
+     <div class="screenshots">
+<img id="OGuile_fk5shrt" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/OGuile_fk5shrt.png">
+<img id="fk1" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk1.png">
+<img id="fk2" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk2.png">
+<img id="fk3" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk3.png">
+<img id="fk4" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk4.png">
+<img id="fk6" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk6.png">
+<img id="fk7" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk7.png">
+<img id="fk8" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk8.png">
+<img id="fk9" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk9.png">
+<img id="fk10" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk10.png">
+<img id="fk11" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk11.png">
+<img id="fk12" alt="1040-flashkick_short" class="movesetimg hoverbox" src="./1040-flashkick_short/fk12.png">
+</div>
+    </div>
+
      <div id="3000-kairthrow" class="move">
        <div class="heading">
          <h2>Kairthrow</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="kairthrow" alt="3000-kairthrow" class="movesetimg hoverbox" src="./3000-kairthrow/kairthrow.png">
@@ -597,7 +683,6 @@
      <div id="3000-pairthrow" class="move">
        <div class="heading">
          <h2>Pairthrow</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="pairthrow" alt="3000-pairthrow" class="movesetimg hoverbox" src="./3000-pairthrow/pairthrow.png">
@@ -607,122 +692,11 @@
      <div id="3000-throw" class="move">
        <div class="heading">
          <h2>Throw</h2>
-         <a href="#top">Back to top</a>
        </div>
      <div class="screenshots">
 <img id="throw" alt="3000-throw" class="movesetimg hoverbox" src="./3000-throw/throw.png">
-</div>
-    </div>
-
-     <div id="3000-throwb" class="move">
-       <div class="heading">
-         <h2>Throwb</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="throwb" alt="3000-throwb" class="movesetimg hoverbox" src="./3000-throwb/throwb.png">
-</div>
-    </div>
-
-     <div id="3000-throwf" class="move">
-       <div class="heading">
-         <h2>Throwf</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="throwf" alt="3000-throwf" class="movesetimg hoverbox" src="./3000-throwf/throwf.png">
-</div>
-    </div>
-
-     <div id="fk" class="move">
-       <div class="heading">
-         <h2>Fk</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="fk1" alt="fk" class="movesetimg hoverbox" src="./fk/fk1.png">
-<img id="fk2" alt="fk" class="movesetimg hoverbox" src="./fk/fk2.png">
-<img id="fk3" alt="fk" class="movesetimg hoverbox" src="./fk/fk3.png">
-<img id="fk4" alt="fk" class="movesetimg hoverbox" src="./fk/fk4.png">
-<img id="fk6" alt="fk" class="movesetimg hoverbox" src="./fk/fk6.png">
-<img id="fk7" alt="fk" class="movesetimg hoverbox" src="./fk/fk7.png">
-<img id="fk8" alt="fk" class="movesetimg hoverbox" src="./fk/fk8.png">
-<img id="fk9" alt="fk" class="movesetimg hoverbox" src="./fk/fk9.png">
-<img id="fk10" alt="fk" class="movesetimg hoverbox" src="./fk/fk10.png">
-<img id="fk11" alt="fk" class="movesetimg hoverbox" src="./fk/fk11.png">
-<img id="fk12" alt="fk" class="movesetimg hoverbox" src="./fk/fk12.png">
-</div>
-    </div>
-
-     <div id="kb" class="move">
-       <div class="heading">
-         <h2>Kb</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="kb1" alt="kb" class="movesetimg hoverbox" src="./kb/kb1.png">
-<img id="kb2" alt="kb" class="movesetimg hoverbox" src="./kb/kb2.png">
-<img id="kb3" alt="kb" class="movesetimg hoverbox" src="./kb/kb3.png">
-<img id="kb4" alt="kb" class="movesetimg hoverbox" src="./kb/kb4.png">
-<img id="kb5" alt="kb" class="movesetimg hoverbox" src="./kb/kb5.png">
-<img id="kb6" alt="kb" class="movesetimg hoverbox" src="./kb/kb6.png">
-</div>
-    </div>
-
-     <div id="rk" class="move">
-       <div class="heading">
-         <h2>Rk</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="rk1" alt="rk" class="movesetimg hoverbox" src="./rk/rk1.png">
-<img id="rk2" alt="rk" class="movesetimg hoverbox" src="./rk/rk2.png">
-<img id="rk3" alt="rk" class="movesetimg hoverbox" src="./rk/rk3.png">
-<img id="rk4" alt="rk" class="movesetimg hoverbox" src="./rk/rk4.png">
-<img id="rk5" alt="rk" class="movesetimg hoverbox" src="./rk/rk5.png">
-<img id="rk6" alt="rk" class="movesetimg hoverbox" src="./rk/rk6.png">
-<img id="rk7" alt="rk" class="movesetimg hoverbox" src="./rk/rk7.png">
-<img id="rk8" alt="rk" class="movesetimg hoverbox" src="./rk/rk8.png">
-<img id="rk9" alt="rk" class="movesetimg hoverbox" src="./rk/rk9.png">
-<img id="rk10" alt="rk" class="movesetimg hoverbox" src="./rk/rk10.png">
-<img id="rk11" alt="rk" class="movesetimg hoverbox" src="./rk/rk11.png">
-</div>
-    </div>
-
-     <div id="sb" class="move">
-       <div class="heading">
-         <h2>Sb</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="sb1" alt="sb" class="movesetimg hoverbox" src="./sb/sb1.png">
-<img id="sb2" alt="sb" class="movesetimg hoverbox" src="./sb/sb2.png">
-<img id="sb3" alt="sb" class="movesetimg hoverbox" src="./sb/sb3.png">
-<img id="sb4" alt="sb" class="movesetimg hoverbox" src="./sb/sb4.png">
-<img id="sb5" alt="sb" class="movesetimg hoverbox" src="./sb/sb5.png">
-<img id="sb6" alt="sb" class="movesetimg hoverbox" src="./sb/sb6.png">
-<img id="sb7frc" alt="sb" class="movesetimg hoverbox" src="./sb/sb7frc.png">
-<img id="sb7jab" alt="sb" class="movesetimg hoverbox" src="./sb/sb7jab.png">
-<img id="sb7strng" alt="sb" class="movesetimg hoverbox" src="./sb/sb7strng.png">
-<img id="sb8frc" alt="sb" class="movesetimg hoverbox" src="./sb/sb8frc.png">
-<img id="sb8jab" alt="sb" class="movesetimg hoverbox" src="./sb/sb8jab.png">
-<img id="sb8strng" alt="sb" class="movesetimg hoverbox" src="./sb/sb8strng.png">
-<img id="sb9frc" alt="sb" class="movesetimg hoverbox" src="./sb/sb9frc.png">
-<img id="sb9jab" alt="sb" class="movesetimg hoverbox" src="./sb/sb9jab.png">
-<img id="sb9strng" alt="sb" class="movesetimg hoverbox" src="./sb/sb9strng.png">
-<img id="sb10frc" alt="sb" class="movesetimg hoverbox" src="./sb/sb10frc.png">
-<img id="sb10jab" alt="sb" class="movesetimg hoverbox" src="./sb/sb10jab.png">
-<img id="sb10strng" alt="sb" class="movesetimg hoverbox" src="./sb/sb10strng.png">
-</div>
-    </div>
-
-     <div id="ssf" class="move">
-       <div class="heading">
-         <h2>Ssf</h2>
-         <a href="#top">Back to top</a>
-       </div>
-     <div class="screenshots">
-<img id="ssf2" alt="ssf" class="movesetimg hoverbox" src="./ssf/ssf2.png">
+<img id="throwb" alt="3000-throw" class="movesetimg hoverbox" src="./3000-throw/throwb.png">
+<img id="throwf" alt="3000-throw" class="movesetimg hoverbox" src="./3000-throw/throwf.png">
 </div>
     </div>
   </section id="hitbox-list">
@@ -759,6 +733,9 @@
     </div>
   </footer>
 
-  <script src="../../dragndrop.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+   <script src="../../atkIndex.js"></script>
+   <script src="../../dragndrop.js"></script>
 </body>
 </html>
