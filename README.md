@@ -11,14 +11,14 @@ Claw
 Ryu + old
 Honda + old
 Guile + old
-Dhalsim
-DeeJay
-Chun-li
-Cammy
+Dhalsim + old
+DeeJay + old
+Chun-li + old
+Cammy + old
 Ken + old
-Boxer
+Boxer + old
 Zangief + old
 T.Hawk + old
 Dictator + old
-FeiLong
+FeiLong + old
 Sagat
