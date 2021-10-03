@@ -4,30 +4,25 @@
   <meta http-equiv="Content-Type" content=
   "text/html; charset=utf-8">
   <title>Super Street Fighter II Turbo - Hitbox Diagrams :
-  Ken (old)</title>
+  Ryu</title>
   <link rel="stylesheet" href="../../style.css">
   <link rel="stylesheet" href="../../movelist.css">
   <link href=
   "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css"
   rel="stylesheet" type="text/css">
-  <script src=
-  "https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
-  </script>
-  <script src=
-  "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js">
-  </script>
+
 </head>
 
   <header>
     <div class="heading">
-      <h1>Ken (old)</h1>
+      <h1>Ryu</h1>
     </div>
   </header>
 
   <section id="attack-list">
     
     <div class="mugshot-container">
-      <img src='../../images/old/ken.png' alt="ken portrait">
+      <img src='../../images/new/ryu.png' alt="ryu portrait">
     </div>
     <nav>
       <div id="attack-index">
@@ -54,9 +49,11 @@
             <li><a href='#0022-far_standing_strong'>Far standing strong</a></li>
             <li><a href='#0023-close_standing_strong'>Close standing strong</a></li>
             <li><a href='#0024-crouching_strong'>Crouching strong</a></li>
+            <li><a href='#0025-swing'>Swing</a></li>
             <li><a href='#0032-far_standing_fierce'>Far standing fierce</a></li>
             <li><a href='#0033-close_standing_fierce'>Close standing fierce</a></li>
             <li><a href='#0034-crouching_fierce'>Crouching fierce</a></li>
+            <li><a href='#0035-solar_plexus'>Solar plexus</a></li>
             <li><a href='#0042-far_standing_short'>Far standing short</a></li>
             <li><a href='#0043-close_standing_short'>Close standing short</a></li>
             <li><a href='#0044-crouching_short'>Crouching short</a></li>
@@ -82,13 +79,16 @@
             <li><a href='#0160-neutral_jump_roundhouse'>Neutral jump roundhouse</a></li>
           </ul>
           <ul class="index" id="specials">
-            <li><a href='#1010-hadoken'>Hadoken</a></li>
-            <li><a href='#1020-shoryuken'>Shoryuken</a></li>
-            <li><a href='#1030-shoryuken_fierce'>Shoryuken fierce</a></li>
+            <li><a href='#1010-hadoken_jab'>Hadoken jab</a></li>
+            <li><a href='#1020-hadoken_strong'>Hadoken strong</a></li>
+            <li><a href='#1030-hadoken_fierce'>Hadoken fierce</a></li>
+            <li><a href='#1030-shoryuken_jab'>Shoryuken jab</a></li>
+            <li><a href='#1031-shoryuken_strong_fierce'>Shoryuken strong fierce</a></li>
             <li><a href='#1040-tatsumaki'>Tatsumaki</a></li>
-            <li><a href='#1110-air_tatsumaki'>Air tatsumaki</a></li>
+            <li><a href='#1140-air_tatsumaki'>Air tatsumaki</a></li>
           </ul>
           <ul class="index" id="misc">
+            <li><a href='#2000-super'>Super</a></li>
             <li><a href='#3000-throws'>Throws</a></li>
             <li><a href='#9100-back_jump'>Back jump</a></li>
             <li><a href='#9100-forward_jump'>Forward jump</a></li>
@@ -96,7 +96,6 @@
           </ul>
         </div>
       </div id="attack-index">
-
     </nav>
   </section>
 
@@ -181,6 +180,19 @@
 </div>
     </div>
 
+     <div id="0025-swing" class="move">
+       <div class="heading">
+         <h2>Swing</h2>
+       </div>
+     <div class="screenshots">
+<img id="swing2" alt="0025-swing" class="movesetimg hoverbox" src="./0025-swing/swing2.png">
+<img id="swing3" alt="0025-swing" class="movesetimg hoverbox" src="./0025-swing/swing3.png">
+<img id="swing4" alt="0025-swing" class="movesetimg hoverbox" src="./0025-swing/swing4.png">
+<img id="swing5" alt="0025-swing" class="movesetimg hoverbox" src="./0025-swing/swing5.png">
+<img id="swing7" alt="0025-swing" class="movesetimg hoverbox" src="./0025-swing/swing7.png">
+</div>
+    </div>
+
      <div id="0032-far_standing_fierce" class="move">
        <div class="heading">
          <h2>Far standing fierce</h2>
@@ -219,6 +231,21 @@
 <img id="crfrc4" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc4.png">
 <img id="crfrc5" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc5.png">
 <img id="crfrc6" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc6.png">
+</div>
+    </div>
+
+     <div id="0035-solar_plexus" class="move">
+       <div class="heading">
+         <h2>Solar plexus</h2>
+       </div>
+     <div class="screenshots">
+<img id="dash1" alt="0035-solar_plexus" class="movesetimg hoverbox" src="./0035-solar_plexus/dash1.png">
+<img id="dash2" alt="0035-solar_plexus" class="movesetimg hoverbox" src="./0035-solar_plexus/dash2.png">
+<img id="dash3" alt="0035-solar_plexus" class="movesetimg hoverbox" src="./0035-solar_plexus/dash3.png">
+<img id="dash4" alt="0035-solar_plexus" class="movesetimg hoverbox" src="./0035-solar_plexus/dash4.png">
+<img id="dash5anm" alt="0035-solar_plexus" class="movesetimg hoverbox" src="./0035-solar_plexus/dash5anm.gif">
+<img id="dash6" alt="0035-solar_plexus" class="movesetimg hoverbox" src="./0035-solar_plexus/dash6.png">
+<img id="dash7" alt="0035-solar_plexus" class="movesetimg hoverbox" src="./0035-solar_plexus/dash7.png">
 </div>
     </div>
 
@@ -374,6 +401,8 @@
 <img id="djstrng5" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng5.png">
 <img id="djstrng6" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng6.png">
 <img id="djstrng7" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng7.png">
+<img id="djstrng8" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng8.png">
+<img id="djstrng9" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng9.png">
 </div>
     </div>
 
@@ -430,6 +459,7 @@
 <img id="djshrt1" alt="0140-diagonal_jump_short" class="movesetimg hoverbox" src="./0140-diagonal_jump_short/djshrt1.png">
 <img id="djshrt2" alt="0140-diagonal_jump_short" class="movesetimg hoverbox" src="./0140-diagonal_jump_short/djshrt2.png">
 <img id="djshrt3" alt="0140-diagonal_jump_short" class="movesetimg hoverbox" src="./0140-diagonal_jump_short/djshrt3.png">
+<img id="djshrt4" alt="0140-diagonal_jump_short" class="movesetimg hoverbox" src="./0140-diagonal_jump_short/djshrt4.png">
 </div>
     </div>
 
@@ -502,54 +532,96 @@
 </div>
     </div>
 
-     <div id="1010-hadoken" class="move">
+     <div id="1010-hadoken_jab" class="move">
        <div class="heading">
-         <h2>Hadoken</h2>
+         <h2>Hadoken jab</h2>
        </div>
      <div class="screenshots">
-<img id="fb1" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb1.png">
-<img id="fb2" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb2.png">
-<img id="fb3" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb3.png">
-<img id="fb4" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb4.png">
-<img id="fb5" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb5.png">
-<img id="fb6frc" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb6frc.png">
-<img id="fb6jab" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb6jab.png">
-<img id="fb6strng" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb6strng.png">
-<img id="fb7frc" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb7frc.png">
-<img id="fb7jab" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb7jab.png">
-<img id="fb7strng" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb7strng.png">
-<img id="fb8frc" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb8frc.png">
-<img id="fb8jab" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb8jab.png">
-<img id="fb8strng" alt="1010-hadoken" class="movesetimg hoverbox" src="./1010-hadoken/fb8strng.png">
+<img id="fb1bisbis" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb1bisbis.png">
+<img id="fb2bisbis" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb2bisbis.png">
+<img id="fb3bisbis" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb3bisbis.png">
+<img id="fb4bisbis" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb4bisbis.png">
+<img id="fb5bisbis" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb5bisbis.png">
+<img id="fb7bjab" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb7bjab.png">
+<img id="fb7rjab" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb7rjab.png">
+<img id="fb10bjab" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb10bjab.png">
+<img id="fb10rjab" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb10rjab.png">
+<img id="fb13bjab" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb13bjab.png">
+<img id="fb13rjab" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb13rjab.png">
+<img id="fb14bjab" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb14bjab.png">
+<img id="fb14rjab" alt="1010-hadoken_jab" class="movesetimg hoverbox" src="./1010-hadoken_jab/fb14rjab.png">
 </div>
     </div>
 
-     <div id="1020-shoryuken" class="move">
+     <div id="1020-hadoken_strong" class="move">
        <div class="heading">
-         <h2>Shoryuken</h2>
+         <h2>Hadoken strong</h2>
        </div>
      <div class="screenshots">
-<img id="srk1" alt="1020-shoryuken" class="movesetimg hoverbox" src="./1020-shoryuken/srk1.png">
-<img id="srk2" alt="1020-shoryuken" class="movesetimg hoverbox" src="./1020-shoryuken/srk2.png">
-<img id="srk3" alt="1020-shoryuken" class="movesetimg hoverbox" src="./1020-shoryuken/srk3.png">
-<img id="srk4" alt="1020-shoryuken" class="movesetimg hoverbox" src="./1020-shoryuken/srk4.png">
-<img id="srk5" alt="1020-shoryuken" class="movesetimg hoverbox" src="./1020-shoryuken/srk5.png">
-<img id="srk6" alt="1020-shoryuken" class="movesetimg hoverbox" src="./1020-shoryuken/srk6.png">
+<img id="fb1bis" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb1bis.png">
+<img id="fb2bis" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb2bis.png">
+<img id="fb3bis" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb3bis.png">
+<img id="fb4bis" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb4bis.png">
+<img id="fb5bis" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb5bis.png">
+<img id="fb7bstrng" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb7bstrng.png">
+<img id="fb7rstrng" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb7rstrng.png">
+<img id="fb10bstrng" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb10bstrng.png">
+<img id="fb10rstrng" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb10rstrng.png">
+<img id="fb13bstrng" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb13bstrng.png">
+<img id="fb13rstrng" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb13rstrng.png">
+<img id="fb14bstrng" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb14bstrng.png">
+<img id="fb14rstrng" alt="1020-hadoken_strong" class="movesetimg hoverbox" src="./1020-hadoken_strong/fb14rstrng.png">
 </div>
     </div>
 
-     <div id="1030-shoryuken_fierce" class="move">
+     <div id="1030-hadoken_fierce" class="move">
        <div class="heading">
-         <h2>Shoryuken fierce</h2>
+         <h2>Hadoken fierce</h2>
        </div>
      <div class="screenshots">
-<img id="srk0frc" alt="1030-shoryuken_fierce" class="movesetimg hoverbox" src="./1030-shoryuken_fierce/srk0frc.png">
-<img id="srk1frc" alt="1030-shoryuken_fierce" class="movesetimg hoverbox" src="./1030-shoryuken_fierce/srk1frc.png">
-<img id="srk2frcanm" alt="1030-shoryuken_fierce" class="movesetimg hoverbox" src="./1030-shoryuken_fierce/srk2frcanm.gif">
-<img id="srk3frcanm" alt="1030-shoryuken_fierce" class="movesetimg hoverbox" src="./1030-shoryuken_fierce/srk3frcanm.gif">
-<img id="srk4frcanm" alt="1030-shoryuken_fierce" class="movesetimg hoverbox" src="./1030-shoryuken_fierce/srk4frcanm.gif">
-<img id="srk5frcanm" alt="1030-shoryuken_fierce" class="movesetimg hoverbox" src="./1030-shoryuken_fierce/srk5frcanm.gif">
-<img id="srk6frcanm" alt="1030-shoryuken_fierce" class="movesetimg hoverbox" src="./1030-shoryuken_fierce/srk6frcanm.gif">
+<img id="fb1" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb1.png">
+<img id="fb2" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb2.png">
+<img id="fb3" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb3.png">
+<img id="fb4" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb4.png">
+<img id="fb5" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb5.png">
+<img id="fb7bfrc" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb7bfrc.png">
+<img id="fb7rfrc" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb7rfrc.png">
+<img id="fb10bfrc" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb10bfrc.png">
+<img id="fb10rfrc" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb10rfrc.png">
+<img id="fb13bfrc" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb13bfrc.png">
+<img id="fb13rfrc" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb13rfrc.png">
+<img id="fb14bfrc" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb14bfrc.png">
+<img id="fb14rfrc" alt="1030-hadoken_fierce" class="movesetimg hoverbox" src="./1030-hadoken_fierce/fb14rfrc.png">
+</div>
+    </div>
+
+     <div id="1030-shoryuken_jab" class="move">
+       <div class="heading">
+         <h2>Shoryuken jab</h2>
+       </div>
+     <div class="screenshots">
+<img id="srk1bis" alt="1030-shoryuken_jab" class="movesetimg hoverbox" src="./1030-shoryuken_jab/srk1bis.png">
+<img id="srk2bis" alt="1030-shoryuken_jab" class="movesetimg hoverbox" src="./1030-shoryuken_jab/srk2bis.png">
+<img id="srk3jab" alt="1030-shoryuken_jab" class="movesetimg hoverbox" src="./1030-shoryuken_jab/srk3jab.png">
+<img id="srk4jab" alt="1030-shoryuken_jab" class="movesetimg hoverbox" src="./1030-shoryuken_jab/srk4jab.png">
+<img id="srk5bis" alt="1030-shoryuken_jab" class="movesetimg hoverbox" src="./1030-shoryuken_jab/srk5bis.png">
+<img id="srk6bis" alt="1030-shoryuken_jab" class="movesetimg hoverbox" src="./1030-shoryuken_jab/srk6bis.png">
+<img id="srk7bis" alt="1030-shoryuken_jab" class="movesetimg hoverbox" src="./1030-shoryuken_jab/srk7bis.png">
+</div>
+    </div>
+
+     <div id="1031-shoryuken_strong_fierce" class="move">
+       <div class="heading">
+         <h2>Shoryuken strong fierce</h2>
+       </div>
+     <div class="screenshots">
+<img id="srk1" alt="1031-shoryuken_strong_fierce" class="movesetimg hoverbox" src="./1031-shoryuken_strong_fierce/srk1.png">
+<img id="srk2" alt="1031-shoryuken_strong_fierce" class="movesetimg hoverbox" src="./1031-shoryuken_strong_fierce/srk2.png">
+<img id="srk3" alt="1031-shoryuken_strong_fierce" class="movesetimg hoverbox" src="./1031-shoryuken_strong_fierce/srk3.png">
+<img id="srk4" alt="1031-shoryuken_strong_fierce" class="movesetimg hoverbox" src="./1031-shoryuken_strong_fierce/srk4.png">
+<img id="srk5" alt="1031-shoryuken_strong_fierce" class="movesetimg hoverbox" src="./1031-shoryuken_strong_fierce/srk5.png">
+<img id="srk6" alt="1031-shoryuken_strong_fierce" class="movesetimg hoverbox" src="./1031-shoryuken_strong_fierce/srk6.png">
+<img id="srk7" alt="1031-shoryuken_strong_fierce" class="movesetimg hoverbox" src="./1031-shoryuken_strong_fierce/srk7.png">
 </div>
     </div>
 
@@ -558,37 +630,55 @@
          <h2>Tatsumaki</h2>
        </div>
      <div class="screenshots">
-<img id="tatsu1" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu1.png">
+<img id="tatsu0" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu0.png">
 <img id="tatsu2" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu2.png">
 <img id="tatsu3" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu3.png">
-<img id="tatsu4" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu4.png">
-<img id="tatsu5" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu5.png">
-<img id="tatsu6&10&14shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu6&10&14shrt.png">
-<img id="tatsu7&11&15shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu7&11&15shrt.png">
-<img id="tatsu8&12&16shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu8&12&16shrt.png">
-<img id="tatsu9&13&17shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu9&13&17shrt.png">
-<img id="tatsu18shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu18shrt.png">
-<img id="tatsu19shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu19shrt.png">
-<img id="tatsu20shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu20shrt.png">
-<img id="tatsu21shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu21shrt.png">
+<img id="tatsu4shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu4shrt.png">
+<img id="tatsu5shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu5shrt.png">
+<img id="tatsu6shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu6shrt.png">
+<img id="tatsu7shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu7shrt.png">
+<img id="tatsu8shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu8shrt.png">
+<img id="tatsu9shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu9shrt.png">
+<img id="tatsu10shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu10shrt.png">
+<img id="tatsu11shrt" alt="1040-tatsumaki" class="movesetimg hoverbox" src="./1040-tatsumaki/tatsu11shrt.png">
 </div>
     </div>
 
-     <div id="1110-air_tatsumaki" class="move">
+     <div id="1140-air_tatsumaki" class="move">
        <div class="heading">
          <h2>Air tatsumaki</h2>
        </div>
      <div class="screenshots">
-<img id="atatsu1&5&9shrt" alt="1110-air_tatsumaki" class="movesetimg hoverbox" src="./1110-air_tatsumaki/atatsu1&5&9shrt.png">
-<img id="atatsu2&6&10shrt" alt="1110-air_tatsumaki" class="movesetimg hoverbox" src="./1110-air_tatsumaki/atatsu2&6&10shrt.png">
-<img id="atatsu3&7&11shrt" alt="1110-air_tatsumaki" class="movesetimg hoverbox" src="./1110-air_tatsumaki/atatsu3&7&11shrt.png">
-<img id="atatsu4&8&12shrt" alt="1110-air_tatsumaki" class="movesetimg hoverbox" src="./1110-air_tatsumaki/atatsu4&8&12shrt.png">
-<img id="atatsu10shrt" alt="1110-air_tatsumaki" class="movesetimg hoverbox" src="./1110-air_tatsumaki/atatsu10shrt.png">
-<img id="atatsu11shrt" alt="1110-air_tatsumaki" class="movesetimg hoverbox" src="./1110-air_tatsumaki/atatsu11shrt.png">
-<img id="atatsu12shrt" alt="1110-air_tatsumaki" class="movesetimg hoverbox" src="./1110-air_tatsumaki/atatsu12shrt.png">
-<img id="atatsu13shrt" alt="1110-air_tatsumaki" class="movesetimg hoverbox" src="./1110-air_tatsumaki/atatsu13shrt.png">
-<img id="atatsu14shrt" alt="1110-air_tatsumaki" class="movesetimg hoverbox" src="./1110-air_tatsumaki/atatsu14shrt.png">
-<img id="atatsu15shrt" alt="1110-air_tatsumaki" class="movesetimg hoverbox" src="./1110-air_tatsumaki/atatsu15shrt.png">
+<img id="atatsu1shrt" alt="1140-air_tatsumaki" class="movesetimg hoverbox" src="./1140-air_tatsumaki/atatsu1shrt.png">
+<img id="atatsu2shrt" alt="1140-air_tatsumaki" class="movesetimg hoverbox" src="./1140-air_tatsumaki/atatsu2shrt.png">
+<img id="atatsu3shrt" alt="1140-air_tatsumaki" class="movesetimg hoverbox" src="./1140-air_tatsumaki/atatsu3shrt.png">
+<img id="atatsu4shrt" alt="1140-air_tatsumaki" class="movesetimg hoverbox" src="./1140-air_tatsumaki/atatsu4shrt.png">
+<img id="atatsu5shrt" alt="1140-air_tatsumaki" class="movesetimg hoverbox" src="./1140-air_tatsumaki/atatsu5shrt.png">
+<img id="atatsu6shrt" alt="1140-air_tatsumaki" class="movesetimg hoverbox" src="./1140-air_tatsumaki/atatsu6shrt.png">
+<img id="atatsu7shrt" alt="1140-air_tatsumaki" class="movesetimg hoverbox" src="./1140-air_tatsumaki/atatsu7shrt.png">
+<img id="atatsu8shrt" alt="1140-air_tatsumaki" class="movesetimg hoverbox" src="./1140-air_tatsumaki/atatsu8shrt.png">
+<img id="atatsu9shrt" alt="1140-air_tatsumaki" class="movesetimg hoverbox" src="./1140-air_tatsumaki/atatsu9shrt.png">
+<img id="atatsu10shrt" alt="1140-air_tatsumaki" class="movesetimg hoverbox" src="./1140-air_tatsumaki/atatsu10shrt.png">
+</div>
+    </div>
+
+     <div id="2000-super" class="move">
+       <div class="heading">
+         <h2>Super</h2>
+       </div>
+     <div class="screenshots">
+<img id="super1" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super1.png">
+<img id="super2" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super2.png">
+<img id="super3" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super3.png">
+<img id="super4" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super4.png">
+<img id="super5" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super5.png">
+<img id="super6" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super6.png">
+<img id="super7" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super7.png">
+<img id="super8" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super8.png">
+<img id="super9" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super9.png">
+<img id="super10" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super10.png">
+<img id="super11" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super11.png">
+<img id="super12" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super12.png">
 </div>
     </div>
 
