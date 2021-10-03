@@ -9,7 +9,7 @@ Claw
 # DONE
 
 Ryu + old
-Honda
+Honda + old
 Guile
 Dhalsim
 DeeJay
