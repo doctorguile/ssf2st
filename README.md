@@ -3,8 +3,6 @@
 [2x-boxes](https://toufadev.github.io/ssf2st/index.html)
 
 # TODO
-## FIX SPECIAL ATTACKS
-Claw
 
 # DONE
 
@@ -21,4 +19,5 @@ Zangief + old
 T.Hawk + old
 Dictator + old
 FeiLong + old
-Sagat
+Sagat + old
+Claw + old
