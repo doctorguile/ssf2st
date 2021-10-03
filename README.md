@@ -12,7 +12,7 @@ Ryu + old
 Honda + old
 Guile
 Dhalsim
-DeeJay
+DeeJay + old
 Chun-li
 Cammy
 Ken + old
@@ -20,5 +20,5 @@ Boxer
 Zangief + old
 T.Hawk + old
 Dictator + old
-FeiLong
+FeiLong + old
 Sagat
