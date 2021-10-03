@@ -10,7 +10,7 @@ Claw
 
 Ryu + old
 Honda + old
-Guile
+Guile + old
 Dhalsim
 DeeJay
 Chun-li
