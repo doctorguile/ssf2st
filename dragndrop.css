@@ -84,7 +84,7 @@ i {
 }
 
 img {
-    image-rendering: optimizeSpeed;
+    image-rendering: crisp-edges;
     cursor: grab;
 }
 
