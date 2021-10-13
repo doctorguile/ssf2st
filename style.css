@@ -66,7 +66,7 @@ div.attack-block-hit {
 }
 
 footer {
-    background-color: rgb(2, 85, 85);
+    background-color: rgb(20, 95, 95);
     position: fixed;
     left: 0px;
     bottom: 0px;
@@ -261,7 +261,7 @@ label {
 .moves {
     display: flex;
     height: 300px;
-    padding-left: 12px;
+    padding-<left: 12px;
     padding-top: 8px;
 }
 
@@ -276,4 +276,30 @@ label {
     right: 6px;
     bottom: 20px;
     margin-top: -20px;
+}
+
+.option-bar {
+    background-color: rgb(20, 95, 95);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 6;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.option-bar select {
+    background-color: teal;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    position: relative;
+    
 }
