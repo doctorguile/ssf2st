@@ -2,9 +2,6 @@
 
 DIC_FILE="../../scripts/dictionaries.sh"
 
-sed '/<section id="hitbox-list">/q' index.html > top.html
-sed -n '/<\/section id="hitbox-list">/, $p' index.html > bottom.html
-
 if [ -f $DIC_FILE ];
 then
     . $DIC_FILE
@@ -12,6 +9,10 @@ else
     echo "$DIC_FILE not found"
     exit 1
 fi
+
+sed '/<section id="hitbox-list">/q' index.html > top.html
+sed -n '/<\/section id="hitbox-list">/, $p' index.html > bottom.html
+
 
 echo "" > table.html
 
@@ -30,14 +31,20 @@ for move in $(echo */ | tr -d "/"); do
 	
 	move_name_en=${dic_en[$dic_entry]}
 	move_name_fr=${dic_fr[$dic_entry]}
+    	move_name_es=${dic_es[$dic_entry]}
+	move_name_jp=${dic_jp[$dic_entry]}
     fi
     move_name_en=$(echo "${move_name_en^}")
     move_name_fr=$(echo "${move_name_fr^}")
+    move_name_es=$(echo "${move_name_es^}")
+    move_name_jp=$(echo "${move_name_jp^}")
     echo "
      <div id=\"$move\" class=\"move\">
        <div class=\"heading\">
          <h2 lang=\"en\">$move_name_en</h2>
 	 <h2 lang=\"fr\">$move_name_fr</h2>
+       	 <h2 lang=\"es\">$move_name_es</h2>
+	 <h2 lang=\"jp\">$move_name_jp</h2>
        </div>
      <div class=\"screenshots\">" >> table.html
 
