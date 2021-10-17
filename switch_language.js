@@ -3,7 +3,7 @@ $('[lang="es"]').hide();
 $('[lang="jp"]').hide();
 
 $('#switch-lang').change(function() {
-    var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+    var lang = $(this).val; // decide which language to display using switch case. The rest is obvious (i think)
     switch (lang) {
     case 'en':
         $('[lang]').hide();
