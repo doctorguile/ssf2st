@@ -2,6 +2,7 @@
 
 DIC_FILE="../../scripts/dictionaries.sh"
 DIC_FILE_SPECIFIC="./dictionaries.sh"
+
 if [ -f $DIC_FILE ];
 then
     . $DIC_FILE

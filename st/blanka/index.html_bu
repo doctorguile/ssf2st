@@ -2,10 +2,9 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Super Street Fighter II Turbo - Hitbox Diagrams : E. Honda</title>
+    <title>Super Street Fighter II Turbo - Hitbox Diagrams : Blanka</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../movelist.css">
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
@@ -22,17 +21,17 @@
       
     </div>
     <div class="heading">
-      <h1 lang="en">E. Honda</h1>
-      <h1 lang="fr">E. Honda</h1>
-      <h1 lang="es">E. Honda</h1>
-      <h1 lang="jp">本田</h1>
+      <h1 lang="en">Blanka</h1>
+      <h1 lang="fr">Blanka</h1>
+      <h1 lang="es">Blanka</h1>
+      <h1 lang="jp">ブランカ</h1>
     </div>
   </header>
 
   <section id="attack-list">
     
     <div class="mugshot-container">
-      <img src='../../images/new/ehonda.png' alt="ehonda portrait">
+      <img src='../../images/new/blanka.png' alt="boxer portrait">
     </div>
     <nav>
       <div id="attack-index">
@@ -59,20 +58,18 @@
             <li><a lang="en" href='#0022-far_standing_strong'>Far standing strong</a></li>            <li><a lang="fr" href='#0022-far_standing_strong'>Far MP</a></li>            <li><a lang="es" href='#0022-far_standing_strong'>Far standing MP</a></li>            <li><a lang="jp" href='#0022-far_standing_strong'>遠立ち中Ｐ</a></li>
             <li><a lang="en" href='#0023-close_standing_strong'>Close standing strong</a></li>            <li><a lang="fr" href='#0023-close_standing_strong'>Close MP</a></li>            <li><a lang="es" href='#0023-close_standing_strong'>Close standing mp</a></li>            <li><a lang="jp" href='#0023-close_standing_strong'>近立ち中Ｐ</a></li>
             <li><a lang="en" href='#0024-crouching_strong'>Crouching strong</a></li>            <li><a lang="fr" href='#0024-crouching_strong'>Bas MP</a></li>            <li><a lang="es" href='#0024-crouching_strong'>Crouching MP</a></li>            <li><a lang="jp" href='#0024-crouching_strong'>下中Ｐ</a></li>
-            <li><a lang="en" href='#0032-far_standing_fierce'>Far standing fierce</a></li>            <li><a lang="fr" href='#0032-far_standing_fierce'>Far HP</a></li>            <li><a lang="es" href='#0032-far_standing_fierce'>Far standing HP</a></li>            <li><a lang="jp" href='#0032-far_standing_fierce'>遠立ち大Ｐ</a></li>
-            <li><a lang="en" href='#0033-close_standing_fierce'>Close standing fierce</a></li>            <li><a lang="fr" href='#0033-close_standing_fierce'>Close HP</a></li>            <li><a lang="es" href='#0033-close_standing_fierce'>Close standing HP</a></li>            <li><a lang="jp" href='#0033-close_standing_fierce'>遠立ち大Ｐ</a></li>
+            <li><a lang="en" href='#0025-headbutt'>Headbutt</a></li>            <li><a lang="fr" href='#0025-headbutt'>Coup de boule</a></li>            <li><a lang="es" href='#0025-headbutt'>Headbutt</a></li>            <li><a lang="jp" href='#0025-headbutt'>ロッククラッシュ</a></li>
+            <li><a lang="en" href='#0032-standing_fierce'>Standing fierce</a></li>            <li><a lang="fr" href='#0032-standing_fierce'>HP</a></li>            <li><a lang="es" href='#0032-standing_fierce'>Standing HP</a></li>            <li><a lang="jp" href='#0032-standing_fierce'>立ち大Ｐ</a></li>
             <li><a lang="en" href='#0034-crouching_fierce'>Crouching fierce</a></li>            <li><a lang="fr" href='#0034-crouching_fierce'>Bas gros poing</a></li>            <li><a lang="es" href='#0034-crouching_fierce'>Crouching HP</a></li>            <li><a lang="jp" href='#0034-crouching_fierce'>下大Ｐ</a></li>
+            <li><a lang="en" href='#0035-slide'>Slide</a></li>            <li><a lang="fr" href='#0035-slide'>Glissade du singe</a></li>            <li><a lang="es" href='#0035-slide'>Slide</a></li>            <li><a lang="jp" href='#0035-slide'>アマゾンリバーラン</a></li>
             <li><a lang="en" href='#0042-far_standing_short'>Far standing short</a></li>            <li><a lang="fr" href='#0042-far_standing_short'>Far LK</a></li>            <li><a lang="es" href='#0042-far_standing_short'>Far standing LK</a></li>            <li><a lang="jp" href='#0042-far_standing_short'>遠立ち小Ｋ</a></li>
             <li><a lang="en" href='#0043-close_standing_short'>Close standing short</a></li>            <li><a lang="fr" href='#0043-close_standing_short'>Close LK</a></li>            <li><a lang="es" href='#0043-close_standing_short'>Close standing LK</a></li>            <li><a lang="jp" href='#0043-close_standing_short'>近立ち小Ｋ</a></li>
             <li><a lang="en" href='#0044-crouching_short'>Crouching short</a></li>            <li><a lang="fr" href='#0044-crouching_short'>Bas LK</a></li>            <li><a lang="es" href='#0044-crouching_short'>Crouching LK</a></li>            <li><a lang="jp" href='#0044-crouching_short'>下小Ｋ</a></li>
             <li><a lang="en" href='#0052-far_standing_forward'>Far standing forward</a></li>            <li><a lang="fr" href='#0052-far_standing_forward'>Far MK</a></li>            <li><a lang="es" href='#0052-far_standing_forward'>Far standing MK</a></li>            <li><a lang="jp" href='#0052-far_standing_forward'>遠立ち中Ｋ</a></li>
-            <li><a lang="en" href='#0053-close_standing_forward'>Close standing forward</a></li>            <li><a lang="fr" href='#0053-close_standing_forward'>Close MK</a></li>            <li><a lang="es" href='#0053-close_standing_forward'>Close standing MK</a></li>            <li><a lang="jp" href='#0053-close_standing_forward'>近立ち中Ｋ</a></li>
+            <li><a lang="en" href='#0053-standing_close_forward'>Standing close forward</a></li>            <li><a lang="fr" href='#0053-standing_close_forward'>Close MK</a></li>            <li><a lang="es" href='#0053-standing_close_forward'>Standing close MK</a></li>            <li><a lang="jp" href='#0053-standing_close_forward'>近立ち中Ｋ</a></li>
             <li><a lang="en" href='#0054-crouching_forward'>Crouching forward</a></li>            <li><a lang="fr" href='#0054-crouching_forward'>Bas MK</a></li>            <li><a lang="es" href='#0054-crouching_forward'>Crouching MK</a></li>            <li><a lang="jp" href='#0054-crouching_forward'>下中Ｋ</a></li>
-            <li><a lang="en" href='#0055-double_knee_attack'>Double knee attack</a></li>            <li><a lang="fr" href='#0055-double_knee_attack'>Double knee attack</a></li>            <li><a lang="es" href='#0055-double_knee_attack'>Double knee_attack</a></li>            <li><a lang="jp" href='#0055-double_knee_attack'>ひざ蹴り</a></li>
-            <li><a lang="en" href='#0062-far_standing_roundhouse'>Far standing roundhouse</a></li>            <li><a lang="fr" href='#0062-far_standing_roundhouse'>Far HK</a></li>            <li><a lang="es" href='#0062-far_standing_roundhouse'>Far standing HK</a></li>            <li><a lang="jp" href='#0062-far_standing_roundhouse'>遠立ち大Ｋ</a></li>
-            <li><a lang="en" href='#0063-close_standing_roundhouse'>Close standing roundhouse</a></li>            <li><a lang="fr" href='#0063-close_standing_roundhouse'>Close HK</a></li>            <li><a lang="es" href='#0063-close_standing_roundhouse'>Close standing HK</a></li>            <li><a lang="jp" href='#0063-close_standing_roundhouse'>近立ち大Ｋ</a></li>
+            <li><a lang="en" href='#0062-standing_roundhouse'>Standing roundhouse</a></li>            <li><a lang="fr" href='#0062-standing_roundhouse'>Close HK</a></li>            <li><a lang="es" href='#0062-standing_roundhouse'>Standing HK</a></li>            <li><a lang="jp" href='#0062-standing_roundhouse'>立ち大Ｋ</a></li>
             <li><a lang="en" href='#0064-crouching_roundhouse'>Crouching roundhouse</a></li>            <li><a lang="fr" href='#0064-crouching_roundhouse'>Crouch HK</a></li>            <li><a lang="es" href='#0064-crouching_roundhouse'>Crouching HK</a></li>            <li><a lang="jp" href='#0064-crouching_roundhouse'>下大Ｋ</a></li>
-            <li><a lang="en" href='#0065-sweep'>Sweep</a></li>            <li><a lang="fr" href='#0065-sweep'>Baleyette</a></li>            <li><a lang="es" href='#0065-sweep'>Sweep</a></li>            <li><a lang="jp" href='#0065-sweep'>払い蹴り</a></li>
           </ul>
           <ul class="index" id="aerials">
             <li><a lang="en" href='#0110-diagonal_jump_jab'>Diagonal jump jab</a></li>            <li><a lang="fr" href='#0110-diagonal_jump_jab'>Saut avant LP</a></li>            <li><a lang="es" href='#0110-diagonal_jump_jab'>Diagonal jump LP</a></li>            <li><a lang="jp" href='#0110-diagonal_jump_jab'>斜めＪ小Ｐ</a></li>
@@ -85,22 +82,22 @@
             <li><a lang="en" href='#0140-neutral_jump_short'>Neutral jump short</a></li>            <li><a lang="fr" href='#0140-neutral_jump_short'>Saut neutre LK</a></li>            <li><a lang="es" href='#0140-neutral_jump_short'>Neutral jump LK</a></li>            <li><a lang="jp" href='#0140-neutral_jump_short'>垂直Ｊ小Ｋ</a></li>
             <li><a lang="en" href='#0150-diagonal_jump_forward'>Diagonal jump forward</a></li>            <li><a lang="fr" href='#0150-diagonal_jump_forward'>Saut avant MK</a></li>            <li><a lang="es" href='#0150-diagonal_jump_forward'>Diagonal jump MK</a></li>            <li><a lang="jp" href='#0150-diagonal_jump_forward'>斜めＪＫ</a></li>
             <li><a lang="en" href='#0150-neutral_jump_forward'>Neutral jump forward</a></li>            <li><a lang="fr" href='#0150-neutral_jump_forward'>Saut neutre MK</a></li>            <li><a lang="es" href='#0150-neutral_jump_forward'>Neutral jump MK</a></li>            <li><a lang="jp" href='#0150-neutral_jump_forward'>垂直ＪＰ</a></li>
-            <li><a lang="en" href='#0155-flying_sumo_press'>Flying sumo press</a></li>            <li><a lang="fr" href='#0155-flying_sumo_press'>Flying sumo press</a></li>            <li><a lang="es" href='#0155-flying_sumo_press'>Flying sumo press</a></li>            <li><a lang="jp" href='#0155-flying_sumo_press'>フライングスモウプレス</a></li>
             <li><a lang="en" href='#0160-diagonal_jump_roundhouse'>Diagonal jump roundhouse</a></li>            <li><a lang="fr" href='#0160-diagonal_jump_roundhouse'>Saut avant HK</a></li>            <li><a lang="es" href='#0160-diagonal_jump_roundhouse'>Diagonal jump HK</a></li>            <li><a lang="jp" href='#0160-diagonal_jump_roundhouse'>斜めＪ大Ｋ</a></li>
             <li><a lang="en" href='#0160-neutral_jump_roundhouse'>Neutral jump roundhouse</a></li>            <li><a lang="fr" href='#0160-neutral_jump_roundhouse'>Saut neutre HK</a></li>            <li><a lang="es" href='#0160-neutral_jump_roundhouse'>Neutral jump HK</a></li>            <li><a lang="jp" href='#0160-neutral_jump_roundhouse'>垂直Ｊ大Ｋ</a></li>
           </ul>
           <ul class="index" id="specials">
-            <li><a lang="en" href='#1010-headbutt_jab'>Headbutt jab</a></li>            <li><a lang="fr" href='#1010-headbutt_jab'>Headbutt LP</a></li>            <li><a lang="es" href='#1010-headbutt_jab'>Headbutt LP</a></li>            <li><a lang="jp" href='#1010-headbutt_jab'>頭突き　小Ｐ</a></li>
-            <li><a lang="en" href='#1011-headbutt_strong'>Headbutt strong</a></li>            <li><a lang="fr" href='#1011-headbutt_strong'>Headbutt MP</a></li>            <li><a lang="es" href='#1011-headbutt_strong'>Headbutt MP</a></li>            <li><a lang="jp" href='#1011-headbutt_strong'>頭突き　中Ｐ</a></li>
-            <li><a lang="en" href='#1012-headbutt_fierce'>Headbutt fierce</a></li>            <li><a lang="fr" href='#1012-headbutt_fierce'>Headbutt HP</a></li>            <li><a lang="es" href='#1012-headbutt_fierce'>Headbutt HP</a></li>            <li><a lang="jp" href='#1012-headbutt_fierce'>頭突き　大Ｐ</a></li>
-            <li><a lang="en" href='#1020-hundred_hands_slap'>Hundred hands slap</a></li>            <li><a lang="fr" href='#1020-hundred_hands_slap'>Milles mains</a></li>            <li><a lang="es" href='#1020-hundred_hands_slap'>Hundred hands slap</a></li>            <li><a lang="jp" href='#1020-hundred_hands_slap'>百裂張り手</a></li>
-            <li><a lang="en" href='#1040-sumo_splash_short_forward'>Sumo splash short forward</a></li>            <li><a lang="fr" href='#1040-sumo_splash_short_forward'>Sumo splash LK MK</a></li>            <li><a lang="es" href='#1040-sumo_splash_short_forward'>Sumo splash LK MK</a></li>            <li><a lang="jp" href='#1040-sumo_splash_short_forward'>百貫落とし　小中Ｋ</a></li>
-            <li><a lang="en" href='#1041-sumo_splash_roundhouse'>Sumo splash roundhouse</a></li>            <li><a lang="fr" href='#1041-sumo_splash_roundhouse'>Sumo splash HK</a></li>            <li><a lang="es" href='#1041-sumo_splash_roundhouse'>Sumo splash HK</a></li>            <li><a lang="jp" href='#1041-sumo_splash_roundhouse'>百貫落とし　大Ｋ</a></li>
+            <li><a lang="en" href='#1010-electric_thunder'>Electric thunder</a></li>            <li><a lang="fr" href='#1010-electric_thunder'>Électricité</a></li>            <li><a lang="es" href='#1010-electric_thunder'>Electric thunder</a></li>            <li><a lang="jp" href='#1010-electric_thunder'>電撃</a></li>
+            <li><a lang="en" href='#1010-electric_thunder_fierce'>Electruc thunder fierce</a></li>            <li><a lang="fr" href='#1010-electric_thunder_fierce'>Électricité HP</a></li>            <li><a lang="es" href='#1010-electric_thunder_fierce'>Electruc thunder HP</a></li>            <li><a lang="jp" href='#1010-electric_thunder_fierce'>電撃　大Ｐ</a></li>
+            <li><a lang="en" href='#1020-horizontal_roll'>Horizontal roll</a></li>            <li><a lang="fr" href='#1020-horizontal_roll'>Roulade horizontale</a></li>            <li><a lang="es" href='#1020-horizontal_roll'>Horizontal roll</a></li>            <li><a lang="jp" href='#1020-horizontal_roll'>ローリングアタック</a></li>
+            <li><a lang="en" href='#1030-vertical_roll'>Vertical roll</a></li>            <li><a lang="fr" href='#1030-vertical_roll'>Roulade verticale</a></li>            <li><a lang="es" href='#1030-vertical_roll'>Vertical roll</a></li>            <li><a lang="jp" href='#1030-vertical_roll'>バーチカルローリング</a></li>
+            <li><a lang="en" href='#1030-vertical_roll_knockback'>Vertical roll knockback</a></li>            <li><a lang="fr" href='#1030-vertical_roll_knockback'>Recover de la roulade</a></li>            <li><a lang="es" href='#1030-vertical_roll_knockback'>Vertical roll knockback</a></li>            <li><a lang="jp" href='#1030-vertical_roll_knockback'>バーチカルローリング (当たって跳ね返ったとき)</a></li>
+            <li><a lang="en" href='#1040-backstep_roll'>Backstep roll</a></li>            <li><a lang="fr" href='#1040-backstep_roll'>Roulade pied</a></li>            <li><a lang="es" href='#1040-backstep_roll'>Backstep roll</a></li>            <li><a lang="jp" href='#1040-backstep_roll'>バックステップローリング</a></li>
+            <li><a lang="en" href='#1050-hop_forward'>Hop forward</a></li>            <li><a lang="fr" href='#1050-hop_forward'>Dash avant</a></li>            <li><a lang="es" href='#1050-hop_forward'>Hop forward</a></li>            <li><a lang="jp" href='#1050-hop_forward'>ステップフォワード</a></li>
+            <li><a lang="en" href='#1051-hop_back'>Hop backward</a></li>            <li><a lang="fr" href='#1051-hop_back'>Dash arrière</a></li>            <li><a lang="es" href='#1051-hop_back'>Hop backward</a></li>            <li><a lang="jp" href='#1051-hop_back'>ステップバック</a></li>
           </ul>
           <ul class="index" id="misc">
             <li><a lang="en" href='#2000-super'>Super</a></li>            <li><a lang="fr" href='#2000-super'>Super</a></li>            <li><a lang="es" href='#2000-super'>Super</a></li>            <li><a lang="jp" href='#2000-super'>スーパーコンボ</a></li>
-            <li><a lang="en" href='#3000-oicho'>Oicho</a></li>            <li><a lang="fr" href='#3000-oicho'>Oicho</a></li>            <li><a lang="es" href='#3000-oicho'>Oicho</a></li>            <li><a lang="jp" href='#3000-oicho'>大銀杏投げ</a></li>
-            <li><a lang="en" href='#3000-throws'>Throws</a></li>            <li><a lang="fr" href='#3000-throws'>Chopes</a></li>            <li><a lang="es" href='#3000-throws'>Throws</a></li>            <li><a lang="jp" href='#3000-throws'>投げ技</a></li>
+            <li><a lang="en" href='#3000-throw'>Throw</a></li>            <li><a lang="fr" href='#3000-throw'>Choppe</a></li>            <li><a lang="es" href='#3000-throw'>Throw</a></li>            <li><a lang="jp" href='#3000-throw'>投げ技</a></li>
             <li><a lang="en" href='#9100-back_jump'>Back jump</a></li>            <li><a lang="fr" href='#9100-back_jump'>Saut arrière</a></li>            <li><a lang="es" href='#9100-back_jump'>Back jump</a></li>            <li><a lang="jp" href='#9100-back_jump'>後Ｊ</a></li>
             <li><a lang="en" href='#9100-forward_jump'>Forward jump</a></li>            <li><a lang="fr" href='#9100-forward_jump'>Saut avant</a></li>            <li><a lang="es" href='#9100-forward_jump'>Forward jump</a></li>            <li><a lang="jp" href='#9100-forward_jump'>前Ｊ</a></li>
             <li><a lang="en" href='#9100-neutral_jump'>Neutral jump</a></li>            <li><a lang="fr" href='#9100-neutral_jump'>Saut neutre</a></li>            <li><a lang="es" href='#9100-neutral_jump'>Neutral jump</a></li>            <li><a lang="jp" href='#9100-neutral_jump'>垂直Ｊ</a></li>
@@ -127,6 +124,8 @@
 <img id="stfarjab3" alt="0012-far_standing_jab" class="movesetimg hoverbox" src="./0012-far_standing_jab/stfarjab3.png">
 <img id="stfarjab4" alt="0012-far_standing_jab" class="movesetimg hoverbox" src="./0012-far_standing_jab/stfarjab4.png">
 <img id="stfarjab5" alt="0012-far_standing_jab" class="movesetimg hoverbox" src="./0012-far_standing_jab/stfarjab5.png">
+<img id="stfarjab6" alt="0012-far_standing_jab" class="movesetimg hoverbox" src="./0012-far_standing_jab/stfarjab6.png">
+<img id="stfarjab7" alt="0012-far_standing_jab" class="movesetimg hoverbox" src="./0012-far_standing_jab/stfarjab7.png">
 </div>
     </div>
 
@@ -144,6 +143,7 @@
 <img id="stcljab4" alt="0013-close_standing_jab" class="movesetimg hoverbox" src="./0013-close_standing_jab/stcljab4.png">
 <img id="stcljab5" alt="0013-close_standing_jab" class="movesetimg hoverbox" src="./0013-close_standing_jab/stcljab5.png">
 <img id="stcljab6" alt="0013-close_standing_jab" class="movesetimg hoverbox" src="./0013-close_standing_jab/stcljab6.png">
+<img id="stcljab7" alt="0013-close_standing_jab" class="movesetimg hoverbox" src="./0013-close_standing_jab/stcljab7.png">
 </div>
     </div>
 
@@ -160,6 +160,8 @@
 <img id="crjab3" alt="0014-crouching_jab" class="movesetimg hoverbox" src="./0014-crouching_jab/crjab3.png">
 <img id="crjab4" alt="0014-crouching_jab" class="movesetimg hoverbox" src="./0014-crouching_jab/crjab4.png">
 <img id="crjab5" alt="0014-crouching_jab" class="movesetimg hoverbox" src="./0014-crouching_jab/crjab5.png">
+<img id="crjab6" alt="0014-crouching_jab" class="movesetimg hoverbox" src="./0014-crouching_jab/crjab6.png">
+<img id="crjab7" alt="0014-crouching_jab" class="movesetimg hoverbox" src="./0014-crouching_jab/crjab7.png">
 </div>
     </div>
 
@@ -177,7 +179,6 @@
 <img id="stfarstrng4" alt="0022-far_standing_strong" class="movesetimg hoverbox" src="./0022-far_standing_strong/stfarstrng4.png">
 <img id="stfarstrng5" alt="0022-far_standing_strong" class="movesetimg hoverbox" src="./0022-far_standing_strong/stfarstrng5.png">
 <img id="stfarstrng6" alt="0022-far_standing_strong" class="movesetimg hoverbox" src="./0022-far_standing_strong/stfarstrng6.png">
-<img id="stfarstrng7" alt="0022-far_standing_strong" class="movesetimg hoverbox" src="./0022-far_standing_strong/stfarstrng7.png">
 </div>
     </div>
 
@@ -193,8 +194,6 @@
 <img id="stclstrng2" alt="0023-close_standing_strong" class="movesetimg hoverbox" src="./0023-close_standing_strong/stclstrng2.png">
 <img id="stclstrng3" alt="0023-close_standing_strong" class="movesetimg hoverbox" src="./0023-close_standing_strong/stclstrng3.png">
 <img id="stclstrng4" alt="0023-close_standing_strong" class="movesetimg hoverbox" src="./0023-close_standing_strong/stclstrng4.png">
-<img id="stclstrng5" alt="0023-close_standing_strong" class="movesetimg hoverbox" src="./0023-close_standing_strong/stclstrng5.png">
-<img id="stclstrng6" alt="0023-close_standing_strong" class="movesetimg hoverbox" src="./0023-close_standing_strong/stclstrng6.png">
 </div>
     </div>
 
@@ -213,46 +212,45 @@
 <img id="crstrng5" alt="0024-crouching_strong" class="movesetimg hoverbox" src="./0024-crouching_strong/crstrng5.png">
 <img id="crstrng6" alt="0024-crouching_strong" class="movesetimg hoverbox" src="./0024-crouching_strong/crstrng6.png">
 <img id="crstrng7" alt="0024-crouching_strong" class="movesetimg hoverbox" src="./0024-crouching_strong/crstrng7.png">
+<img id="crstrng8" alt="0024-crouching_strong" class="movesetimg hoverbox" src="./0024-crouching_strong/crstrng8.png">
 </div>
     </div>
 
-     <div id="0032-far_standing_fierce" class="move">
+     <div id="0025-headbutt" class="move">
        <div class="heading">
-         <h2 lang="en">Far standing fierce</h2>
-	 <h2 lang="fr">Far HP</h2>
-       	 <h2 lang="es">Far standing HP</h2>
-	 <h2 lang="jp">遠立ち大Ｐ</h2>
+         <h2 lang="en">Headbutt</h2>
+	 <h2 lang="fr">Coup de boule</h2>
+       	 <h2 lang="es">Headbutt</h2>
+	 <h2 lang="jp">ロッククラッシュ</h2>
        </div>
      <div class="screenshots">
-<img id="stfarfrc1" alt="0032-far_standing_fierce" class="movesetimg hoverbox" src="./0032-far_standing_fierce/stfarfrc1.png">
-<img id="stfarfrc2" alt="0032-far_standing_fierce" class="movesetimg hoverbox" src="./0032-far_standing_fierce/stfarfrc2.png">
-<img id="stfarfrc3" alt="0032-far_standing_fierce" class="movesetimg hoverbox" src="./0032-far_standing_fierce/stfarfrc3.png">
-<img id="stfarfrc4" alt="0032-far_standing_fierce" class="movesetimg hoverbox" src="./0032-far_standing_fierce/stfarfrc4.png">
-<img id="stfarfrc5" alt="0032-far_standing_fierce" class="movesetimg hoverbox" src="./0032-far_standing_fierce/stfarfrc5.png">
-<img id="stfarfrc6" alt="0032-far_standing_fierce" class="movesetimg hoverbox" src="./0032-far_standing_fierce/stfarfrc6.png">
-<img id="stfarfrc7" alt="0032-far_standing_fierce" class="movesetimg hoverbox" src="./0032-far_standing_fierce/stfarfrc7.png">
-<img id="stfarfrc8" alt="0032-far_standing_fierce" class="movesetimg hoverbox" src="./0032-far_standing_fierce/stfarfrc8.png">
-<img id="stfarfrc9" alt="0032-far_standing_fierce" class="movesetimg hoverbox" src="./0032-far_standing_fierce/stfarfrc9.png">
+<img id="hb1" alt="0025-headbutt" class="movesetimg hoverbox" src="./0025-headbutt/hb1.png">
+<img id="hb2" alt="0025-headbutt" class="movesetimg hoverbox" src="./0025-headbutt/hb2.png">
+<img id="hb3" alt="0025-headbutt" class="movesetimg hoverbox" src="./0025-headbutt/hb3.png">
+<img id="hb4" alt="0025-headbutt" class="movesetimg hoverbox" src="./0025-headbutt/hb4.png">
+<img id="hb5" alt="0025-headbutt" class="movesetimg hoverbox" src="./0025-headbutt/hb5.png">
+<img id="hb6" alt="0025-headbutt" class="movesetimg hoverbox" src="./0025-headbutt/hb6.png">
+<img id="hb7" alt="0025-headbutt" class="movesetimg hoverbox" src="./0025-headbutt/hb7.png">
+<img id="hb8" alt="0025-headbutt" class="movesetimg hoverbox" src="./0025-headbutt/hb8.png">
+<img id="hb9" alt="0025-headbutt" class="movesetimg hoverbox" src="./0025-headbutt/hb9.png">
 </div>
     </div>
 
-     <div id="0033-close_standing_fierce" class="move">
+     <div id="0032-standing_fierce" class="move">
        <div class="heading">
-         <h2 lang="en">Close standing fierce</h2>
-	 <h2 lang="fr">Close HP</h2>
-       	 <h2 lang="es">Close standing HP</h2>
-	 <h2 lang="jp">遠立ち大Ｐ</h2>
+         <h2 lang="en">Standing fierce</h2>
+	 <h2 lang="fr">HP</h2>
+       	 <h2 lang="es">Standing HP</h2>
+	 <h2 lang="jp">立ち大Ｐ</h2>
        </div>
      <div class="screenshots">
-<img id="stclfrc1" alt="0033-close_standing_fierce" class="movesetimg hoverbox" src="./0033-close_standing_fierce/stclfrc1.png">
-<img id="stclfrc2" alt="0033-close_standing_fierce" class="movesetimg hoverbox" src="./0033-close_standing_fierce/stclfrc2.png">
-<img id="stclfrc3" alt="0033-close_standing_fierce" class="movesetimg hoverbox" src="./0033-close_standing_fierce/stclfrc3.png">
-<img id="stclfrc4" alt="0033-close_standing_fierce" class="movesetimg hoverbox" src="./0033-close_standing_fierce/stclfrc4.png">
-<img id="stclfrc5" alt="0033-close_standing_fierce" class="movesetimg hoverbox" src="./0033-close_standing_fierce/stclfrc5.png">
-<img id="stclfrc6" alt="0033-close_standing_fierce" class="movesetimg hoverbox" src="./0033-close_standing_fierce/stclfrc6.png">
-<img id="stclfrc7" alt="0033-close_standing_fierce" class="movesetimg hoverbox" src="./0033-close_standing_fierce/stclfrc7.png">
-<img id="stclfrc8" alt="0033-close_standing_fierce" class="movesetimg hoverbox" src="./0033-close_standing_fierce/stclfrc8.png">
-<img id="stclfrc9" alt="0033-close_standing_fierce" class="movesetimg hoverbox" src="./0033-close_standing_fierce/stclfrc9.png">
+<img id="stfarfrc1" alt="0032-standing_fierce" class="movesetimg hoverbox" src="./0032-standing_fierce/stfarfrc1.png">
+<img id="stfarfrc2" alt="0032-standing_fierce" class="movesetimg hoverbox" src="./0032-standing_fierce/stfarfrc2.png">
+<img id="stfarfrc3" alt="0032-standing_fierce" class="movesetimg hoverbox" src="./0032-standing_fierce/stfarfrc3.png">
+<img id="stfarfrc4" alt="0032-standing_fierce" class="movesetimg hoverbox" src="./0032-standing_fierce/stfarfrc4.png">
+<img id="stfarfrc5" alt="0032-standing_fierce" class="movesetimg hoverbox" src="./0032-standing_fierce/stfarfrc5.png">
+<img id="stfarfrc6" alt="0032-standing_fierce" class="movesetimg hoverbox" src="./0032-standing_fierce/stfarfrc6.png">
+<img id="stfarfrc7" alt="0032-standing_fierce" class="movesetimg hoverbox" src="./0032-standing_fierce/stfarfrc7.png">
 </div>
     </div>
 
@@ -270,10 +268,23 @@
 <img id="crfrc4" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc4.png">
 <img id="crfrc5" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc5.png">
 <img id="crfrc6" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc6.png">
-<img id="crfrc7" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc7.png">
-<img id="crfrc8" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc8.png">
-<img id="crfrc9" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc9.png">
-<img id="crfrc10" alt="0034-crouching_fierce" class="movesetimg hoverbox" src="./0034-crouching_fierce/crfrc10.png">
+</div>
+    </div>
+
+     <div id="0035-slide" class="move">
+       <div class="heading">
+         <h2 lang="en">Slide</h2>
+	 <h2 lang="fr">Glissade du singe</h2>
+       	 <h2 lang="es">Slide</h2>
+	 <h2 lang="jp">アマゾンリバーラン</h2>
+       </div>
+     <div class="screenshots">
+<img id="sld1" alt="0035-slide" class="movesetimg hoverbox" src="./0035-slide/sld1.png">
+<img id="sld2" alt="0035-slide" class="movesetimg hoverbox" src="./0035-slide/sld2.png">
+<img id="sld3" alt="0035-slide" class="movesetimg hoverbox" src="./0035-slide/sld3.png">
+<img id="sld4" alt="0035-slide" class="movesetimg hoverbox" src="./0035-slide/sld4.png">
+<img id="sld5" alt="0035-slide" class="movesetimg hoverbox" src="./0035-slide/sld5.png">
+<img id="sld6" alt="0035-slide" class="movesetimg hoverbox" src="./0035-slide/sld6.png">
 </div>
     </div>
 
@@ -311,6 +322,9 @@
 <img id="stclshrt6" alt="0043-close_standing_short" class="movesetimg hoverbox" src="./0043-close_standing_short/stclshrt6.png">
 <img id="stclshrt7" alt="0043-close_standing_short" class="movesetimg hoverbox" src="./0043-close_standing_short/stclshrt7.png">
 <img id="stclshrt8" alt="0043-close_standing_short" class="movesetimg hoverbox" src="./0043-close_standing_short/stclshrt8.png">
+<img id="stclshrt9" alt="0043-close_standing_short" class="movesetimg hoverbox" src="./0043-close_standing_short/stclshrt9.png">
+<img id="stclshrt10" alt="0043-close_standing_short" class="movesetimg hoverbox" src="./0043-close_standing_short/stclshrt10.png">
+<img id="stclshrt11" alt="0043-close_standing_short" class="movesetimg hoverbox" src="./0043-close_standing_short/stclshrt11.png">
 </div>
     </div>
 
@@ -327,6 +341,7 @@
 <img id="crshrt3" alt="0044-crouching_short" class="movesetimg hoverbox" src="./0044-crouching_short/crshrt3.png">
 <img id="crshrt4" alt="0044-crouching_short" class="movesetimg hoverbox" src="./0044-crouching_short/crshrt4.png">
 <img id="crshrt5" alt="0044-crouching_short" class="movesetimg hoverbox" src="./0044-crouching_short/crshrt5.png">
+<img id="crshrt6" alt="0044-crouching_short" class="movesetimg hoverbox" src="./0044-crouching_short/crshrt6.png">
 </div>
     </div>
 
@@ -338,6 +353,7 @@
 	 <h2 lang="jp">遠立ち中Ｋ</h2>
        </div>
      <div class="screenshots">
+<img id="stfarfrwrd1" alt="0052-far_standing_forward" class="movesetimg hoverbox" src="./0052-far_standing_forward/stfarfrwrd1.png">
 <img id="stfarfrwrd2" alt="0052-far_standing_forward" class="movesetimg hoverbox" src="./0052-far_standing_forward/stfarfrwrd2.png">
 <img id="stfarfrwrd3" alt="0052-far_standing_forward" class="movesetimg hoverbox" src="./0052-far_standing_forward/stfarfrwrd3.png">
 <img id="stfarfrwrd4" alt="0052-far_standing_forward" class="movesetimg hoverbox" src="./0052-far_standing_forward/stfarfrwrd4.png">
@@ -347,22 +363,25 @@
 </div>
     </div>
 
-     <div id="0053-close_standing_forward" class="move">
+     <div id="0053-standing_close_forward" class="move">
        <div class="heading">
-         <h2 lang="en">Close standing forward</h2>
+         <h2 lang="en">Standing close forward</h2>
 	 <h2 lang="fr">Close MK</h2>
-       	 <h2 lang="es">Close standing MK</h2>
+       	 <h2 lang="es">Standing close MK</h2>
 	 <h2 lang="jp">近立ち中Ｋ</h2>
        </div>
      <div class="screenshots">
-<img id="stclfrwrd1" alt="0053-close_standing_forward" class="movesetimg hoverbox" src="./0053-close_standing_forward/stclfrwrd1.png">
-<img id="stclfrwrd2" alt="0053-close_standing_forward" class="movesetimg hoverbox" src="./0053-close_standing_forward/stclfrwrd2.png">
-<img id="stclfrwrd3" alt="0053-close_standing_forward" class="movesetimg hoverbox" src="./0053-close_standing_forward/stclfrwrd3.png">
-<img id="stclfrwrd4" alt="0053-close_standing_forward" class="movesetimg hoverbox" src="./0053-close_standing_forward/stclfrwrd4.png">
-<img id="stclfrwrd5" alt="0053-close_standing_forward" class="movesetimg hoverbox" src="./0053-close_standing_forward/stclfrwrd5.png">
-<img id="stclfrwrd6" alt="0053-close_standing_forward" class="movesetimg hoverbox" src="./0053-close_standing_forward/stclfrwrd6.png">
-<img id="stclfrwrd7" alt="0053-close_standing_forward" class="movesetimg hoverbox" src="./0053-close_standing_forward/stclfrwrd7.png">
-<img id="stclfrwrd8" alt="0053-close_standing_forward" class="movesetimg hoverbox" src="./0053-close_standing_forward/stclfrwrd8.png">
+<img id="stclfrwrd1" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd1.png">
+<img id="stclfrwrd2" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd2.png">
+<img id="stclfrwrd3" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd3.png">
+<img id="stclfrwrd4" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd4.png">
+<img id="stclfrwrd5" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd5.png">
+<img id="stclfrwrd6" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd6.png">
+<img id="stclfrwrd7" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd7.png">
+<img id="stclfrwrd8" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd8.png">
+<img id="stclfrwrd9" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd9.png">
+<img id="stclfrwrd10" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd10.png">
+<img id="stclfrwrd11" alt="0053-standing_close_forward" class="movesetimg hoverbox" src="./0053-standing_close_forward/stclfrwrd11.png">
 </div>
     </div>
 
@@ -379,66 +398,27 @@
 <img id="crfrwrd3" alt="0054-crouching_forward" class="movesetimg hoverbox" src="./0054-crouching_forward/crfrwrd3.png">
 <img id="crfrwrd4" alt="0054-crouching_forward" class="movesetimg hoverbox" src="./0054-crouching_forward/crfrwrd4.png">
 <img id="crfrwrd5" alt="0054-crouching_forward" class="movesetimg hoverbox" src="./0054-crouching_forward/crfrwrd5.png">
+<img id="crfrwrd6" alt="0054-crouching_forward" class="movesetimg hoverbox" src="./0054-crouching_forward/crfrwrd6.png">
 </div>
     </div>
 
-     <div id="0055-double_knee_attack" class="move">
+     <div id="0062-standing_roundhouse" class="move">
        <div class="heading">
-         <h2 lang="en">Double knee attack</h2>
-	 <h2 lang="fr">Double knee attack</h2>
-       	 <h2 lang="es">Double knee_attack</h2>
-	 <h2 lang="jp">ひざ蹴り</h2>
-       </div>
-     <div class="screenshots">
-<img id="knee1" alt="0055-double_knee_attack" class="movesetimg hoverbox" src="./0055-double_knee_attack/knee1.png">
-<img id="knee2" alt="0055-double_knee_attack" class="movesetimg hoverbox" src="./0055-double_knee_attack/knee2.png">
-<img id="knee3" alt="0055-double_knee_attack" class="movesetimg hoverbox" src="./0055-double_knee_attack/knee3.png">
-<img id="knee4" alt="0055-double_knee_attack" class="movesetimg hoverbox" src="./0055-double_knee_attack/knee4.png">
-<img id="knee5" alt="0055-double_knee_attack" class="movesetimg hoverbox" src="./0055-double_knee_attack/knee5.png">
-<img id="knee6" alt="0055-double_knee_attack" class="movesetimg hoverbox" src="./0055-double_knee_attack/knee6.png">
-<img id="knee7" alt="0055-double_knee_attack" class="movesetimg hoverbox" src="./0055-double_knee_attack/knee7.png">
-<img id="knee8" alt="0055-double_knee_attack" class="movesetimg hoverbox" src="./0055-double_knee_attack/knee8.png">
-<img id="knee9" alt="0055-double_knee_attack" class="movesetimg hoverbox" src="./0055-double_knee_attack/knee9.png">
-</div>
-    </div>
-
-     <div id="0062-far_standing_roundhouse" class="move">
-       <div class="heading">
-         <h2 lang="en">Far standing roundhouse</h2>
-	 <h2 lang="fr">Far HK</h2>
-       	 <h2 lang="es">Far standing HK</h2>
-	 <h2 lang="jp">遠立ち大Ｋ</h2>
-       </div>
-     <div class="screenshots">
-<img id="stfarrh1" alt="0062-far_standing_roundhouse" class="movesetimg hoverbox" src="./0062-far_standing_roundhouse/stfarrh1.png">
-<img id="stfarrh2" alt="0062-far_standing_roundhouse" class="movesetimg hoverbox" src="./0062-far_standing_roundhouse/stfarrh2.png">
-<img id="stfarrh3" alt="0062-far_standing_roundhouse" class="movesetimg hoverbox" src="./0062-far_standing_roundhouse/stfarrh3.png">
-<img id="stfarrh4" alt="0062-far_standing_roundhouse" class="movesetimg hoverbox" src="./0062-far_standing_roundhouse/stfarrh4.png">
-<img id="stfarrh5" alt="0062-far_standing_roundhouse" class="movesetimg hoverbox" src="./0062-far_standing_roundhouse/stfarrh5.png">
-<img id="stfarrh6" alt="0062-far_standing_roundhouse" class="movesetimg hoverbox" src="./0062-far_standing_roundhouse/stfarrh6.png">
-<img id="stfarrh7" alt="0062-far_standing_roundhouse" class="movesetimg hoverbox" src="./0062-far_standing_roundhouse/stfarrh7.png">
-<img id="stfarrh8" alt="0062-far_standing_roundhouse" class="movesetimg hoverbox" src="./0062-far_standing_roundhouse/stfarrh8.png">
-<img id="stfarrh9" alt="0062-far_standing_roundhouse" class="movesetimg hoverbox" src="./0062-far_standing_roundhouse/stfarrh9.png">
-</div>
-    </div>
-
-     <div id="0063-close_standing_roundhouse" class="move">
-       <div class="heading">
-         <h2 lang="en">Close standing roundhouse</h2>
+         <h2 lang="en">Standing roundhouse</h2>
 	 <h2 lang="fr">Close HK</h2>
-       	 <h2 lang="es">Close standing HK</h2>
-	 <h2 lang="jp">近立ち大Ｋ</h2>
+       	 <h2 lang="es">Standing HK</h2>
+	 <h2 lang="jp">立ち大Ｋ</h2>
        </div>
      <div class="screenshots">
-<img id="stclrh1" alt="0063-close_standing_roundhouse" class="movesetimg hoverbox" src="./0063-close_standing_roundhouse/stclrh1.png">
-<img id="stclrh2" alt="0063-close_standing_roundhouse" class="movesetimg hoverbox" src="./0063-close_standing_roundhouse/stclrh2.png">
-<img id="stclrh3" alt="0063-close_standing_roundhouse" class="movesetimg hoverbox" src="./0063-close_standing_roundhouse/stclrh3.png">
-<img id="stclrh4" alt="0063-close_standing_roundhouse" class="movesetimg hoverbox" src="./0063-close_standing_roundhouse/stclrh4.png">
-<img id="stclrh5" alt="0063-close_standing_roundhouse" class="movesetimg hoverbox" src="./0063-close_standing_roundhouse/stclrh5.png">
-<img id="stclrh6" alt="0063-close_standing_roundhouse" class="movesetimg hoverbox" src="./0063-close_standing_roundhouse/stclrh6.png">
-<img id="stclrh7" alt="0063-close_standing_roundhouse" class="movesetimg hoverbox" src="./0063-close_standing_roundhouse/stclrh7.png">
-<img id="stclrh8" alt="0063-close_standing_roundhouse" class="movesetimg hoverbox" src="./0063-close_standing_roundhouse/stclrh8.png">
-<img id="stclrh9" alt="0063-close_standing_roundhouse" class="movesetimg hoverbox" src="./0063-close_standing_roundhouse/stclrh9.png">
+<img id="stfarrh1" alt="0062-standing_roundhouse" class="movesetimg hoverbox" src="./0062-standing_roundhouse/stfarrh1.png">
+<img id="stfarrh2" alt="0062-standing_roundhouse" class="movesetimg hoverbox" src="./0062-standing_roundhouse/stfarrh2.png">
+<img id="stfarrh3" alt="0062-standing_roundhouse" class="movesetimg hoverbox" src="./0062-standing_roundhouse/stfarrh3.png">
+<img id="stfarrh4" alt="0062-standing_roundhouse" class="movesetimg hoverbox" src="./0062-standing_roundhouse/stfarrh4.png">
+<img id="stfarrh5" alt="0062-standing_roundhouse" class="movesetimg hoverbox" src="./0062-standing_roundhouse/stfarrh5.png">
+<img id="stfarrh6" alt="0062-standing_roundhouse" class="movesetimg hoverbox" src="./0062-standing_roundhouse/stfarrh6.png">
+<img id="stfarrh7" alt="0062-standing_roundhouse" class="movesetimg hoverbox" src="./0062-standing_roundhouse/stfarrh7.png">
+<img id="stfarrh8" alt="0062-standing_roundhouse" class="movesetimg hoverbox" src="./0062-standing_roundhouse/stfarrh8.png">
+<img id="stfarrh9" alt="0062-standing_roundhouse" class="movesetimg hoverbox" src="./0062-standing_roundhouse/stfarrh9.png">
 </div>
     </div>
 
@@ -460,24 +440,6 @@
 </div>
     </div>
 
-     <div id="0065-sweep" class="move">
-       <div class="heading">
-         <h2 lang="en">Sweep</h2>
-	 <h2 lang="fr">Baleyette</h2>
-       	 <h2 lang="es">Sweep</h2>
-	 <h2 lang="jp">払い蹴り</h2>
-       </div>
-     <div class="screenshots">
-<img id="sweep1" alt="0065-sweep" class="movesetimg hoverbox" src="./0065-sweep/sweep1.png">
-<img id="sweep2" alt="0065-sweep" class="movesetimg hoverbox" src="./0065-sweep/sweep2.png">
-<img id="sweep3" alt="0065-sweep" class="movesetimg hoverbox" src="./0065-sweep/sweep3.png">
-<img id="sweep4" alt="0065-sweep" class="movesetimg hoverbox" src="./0065-sweep/sweep4.png">
-<img id="sweep5" alt="0065-sweep" class="movesetimg hoverbox" src="./0065-sweep/sweep5.png">
-<img id="sweep6" alt="0065-sweep" class="movesetimg hoverbox" src="./0065-sweep/sweep6.png">
-<img id="sweep7" alt="0065-sweep" class="movesetimg hoverbox" src="./0065-sweep/sweep7.png">
-</div>
-    </div>
-
      <div id="0110-diagonal_jump_jab" class="move">
        <div class="heading">
          <h2 lang="en">Diagonal jump jab</h2>
@@ -491,10 +453,6 @@
 <img id="djjab3" alt="0110-diagonal_jump_jab" class="movesetimg hoverbox" src="./0110-diagonal_jump_jab/djjab3.png">
 <img id="djjab4" alt="0110-diagonal_jump_jab" class="movesetimg hoverbox" src="./0110-diagonal_jump_jab/djjab4.png">
 <img id="djjab5" alt="0110-diagonal_jump_jab" class="movesetimg hoverbox" src="./0110-diagonal_jump_jab/djjab5.png">
-<img id="djjab6" alt="0110-diagonal_jump_jab" class="movesetimg hoverbox" src="./0110-diagonal_jump_jab/djjab6.png">
-<img id="djjab7" alt="0110-diagonal_jump_jab" class="movesetimg hoverbox" src="./0110-diagonal_jump_jab/djjab7.png">
-<img id="djjab8" alt="0110-diagonal_jump_jab" class="movesetimg hoverbox" src="./0110-diagonal_jump_jab/djjab8.png">
-<img id="djjab9" alt="0110-diagonal_jump_jab" class="movesetimg hoverbox" src="./0110-diagonal_jump_jab/djjab9.png">
 </div>
     </div>
 
@@ -527,10 +485,6 @@
 <img id="djstrng3" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng3.png">
 <img id="djstrng4" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng4.png">
 <img id="djstrng5" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng5.png">
-<img id="djstrng6" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng6.png">
-<img id="djstrng7" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng7.png">
-<img id="djstrng8" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng8.png">
-<img id="djstrng9" alt="0120-diagonal_jump_strong" class="movesetimg hoverbox" src="./0120-diagonal_jump_strong/djstrng9.png">
 </div>
     </div>
 
@@ -547,9 +501,6 @@
 <img id="njstrng3" alt="0120-neutral_jump_strong" class="movesetimg hoverbox" src="./0120-neutral_jump_strong/njstrng3.png">
 <img id="njstrng4" alt="0120-neutral_jump_strong" class="movesetimg hoverbox" src="./0120-neutral_jump_strong/njstrng4.png">
 <img id="njstrng5" alt="0120-neutral_jump_strong" class="movesetimg hoverbox" src="./0120-neutral_jump_strong/njstrng5.png">
-<img id="njstrng6" alt="0120-neutral_jump_strong" class="movesetimg hoverbox" src="./0120-neutral_jump_strong/njstrng6.png">
-<img id="njstrng7" alt="0120-neutral_jump_strong" class="movesetimg hoverbox" src="./0120-neutral_jump_strong/njstrng7.png">
-<img id="njstrng8" alt="0120-neutral_jump_strong" class="movesetimg hoverbox" src="./0120-neutral_jump_strong/njstrng8.png">
 </div>
     </div>
 
@@ -565,9 +516,6 @@
 <img id="djfrc2" alt="0130-diagonal_jump_fierce" class="movesetimg hoverbox" src="./0130-diagonal_jump_fierce/djfrc2.png">
 <img id="djfrc3" alt="0130-diagonal_jump_fierce" class="movesetimg hoverbox" src="./0130-diagonal_jump_fierce/djfrc3.png">
 <img id="djfrc4" alt="0130-diagonal_jump_fierce" class="movesetimg hoverbox" src="./0130-diagonal_jump_fierce/djfrc4.png">
-<img id="djfrc5" alt="0130-diagonal_jump_fierce" class="movesetimg hoverbox" src="./0130-diagonal_jump_fierce/djfrc5.png">
-<img id="djfrc6" alt="0130-diagonal_jump_fierce" class="movesetimg hoverbox" src="./0130-diagonal_jump_fierce/djfrc6.png">
-<img id="djfrc7" alt="0130-diagonal_jump_fierce" class="movesetimg hoverbox" src="./0130-diagonal_jump_fierce/djfrc7.png">
 </div>
     </div>
 
@@ -600,6 +548,8 @@
 <img id="djshrt1" alt="0140-diagonal_jump_short" class="movesetimg hoverbox" src="./0140-diagonal_jump_short/djshrt1.png">
 <img id="djshrt2" alt="0140-diagonal_jump_short" class="movesetimg hoverbox" src="./0140-diagonal_jump_short/djshrt2.png">
 <img id="djshrt3" alt="0140-diagonal_jump_short" class="movesetimg hoverbox" src="./0140-diagonal_jump_short/djshrt3.png">
+<img id="djshrt4" alt="0140-diagonal_jump_short" class="movesetimg hoverbox" src="./0140-diagonal_jump_short/djshrt4.png">
+<img id="djshrt5" alt="0140-diagonal_jump_short" class="movesetimg hoverbox" src="./0140-diagonal_jump_short/djshrt5.png">
 </div>
     </div>
 
@@ -632,10 +582,6 @@
 <img id="djfrwrd3" alt="0150-diagonal_jump_forward" class="movesetimg hoverbox" src="./0150-diagonal_jump_forward/djfrwrd3.png">
 <img id="djfrwrd4" alt="0150-diagonal_jump_forward" class="movesetimg hoverbox" src="./0150-diagonal_jump_forward/djfrwrd4.png">
 <img id="djfrwrd5" alt="0150-diagonal_jump_forward" class="movesetimg hoverbox" src="./0150-diagonal_jump_forward/djfrwrd5.png">
-<img id="djfrwrd6" alt="0150-diagonal_jump_forward" class="movesetimg hoverbox" src="./0150-diagonal_jump_forward/djfrwrd6.png">
-<img id="djfrwrd7" alt="0150-diagonal_jump_forward" class="movesetimg hoverbox" src="./0150-diagonal_jump_forward/djfrwrd7.png">
-<img id="djfrwrd8" alt="0150-diagonal_jump_forward" class="movesetimg hoverbox" src="./0150-diagonal_jump_forward/djfrwrd8.png">
-<img id="djfrwrd9" alt="0150-diagonal_jump_forward" class="movesetimg hoverbox" src="./0150-diagonal_jump_forward/djfrwrd9.png">
 </div>
     </div>
 
@@ -652,24 +598,6 @@
 <img id="njfrwrd3" alt="0150-neutral_jump_forward" class="movesetimg hoverbox" src="./0150-neutral_jump_forward/njfrwrd3.png">
 <img id="njfrwrd4" alt="0150-neutral_jump_forward" class="movesetimg hoverbox" src="./0150-neutral_jump_forward/njfrwrd4.png">
 <img id="njfrwrd5" alt="0150-neutral_jump_forward" class="movesetimg hoverbox" src="./0150-neutral_jump_forward/njfrwrd5.png">
-<img id="njfrwrd6" alt="0150-neutral_jump_forward" class="movesetimg hoverbox" src="./0150-neutral_jump_forward/njfrwrd6.png">
-<img id="njfrwrd7" alt="0150-neutral_jump_forward" class="movesetimg hoverbox" src="./0150-neutral_jump_forward/njfrwrd7.png">
-<img id="njfrwrd8" alt="0150-neutral_jump_forward" class="movesetimg hoverbox" src="./0150-neutral_jump_forward/njfrwrd8.png">
-<img id="njfrwrd9" alt="0150-neutral_jump_forward" class="movesetimg hoverbox" src="./0150-neutral_jump_forward/njfrwrd9.png">
-</div>
-    </div>
-
-     <div id="0155-flying_sumo_press" class="move">
-       <div class="heading">
-         <h2 lang="en">Flying sumo press</h2>
-	 <h2 lang="fr">Flying sumo press</h2>
-       	 <h2 lang="es">Flying sumo press</h2>
-	 <h2 lang="jp">フライングスモウプレス</h2>
-       </div>
-     <div class="screenshots">
-<img id="sumo1" alt="0155-flying_sumo_press" class="movesetimg hoverbox" src="./0155-flying_sumo_press/sumo1.png">
-<img id="sumo2" alt="0155-flying_sumo_press" class="movesetimg hoverbox" src="./0155-flying_sumo_press/sumo2.png">
-<img id="sumo3" alt="0155-flying_sumo_press" class="movesetimg hoverbox" src="./0155-flying_sumo_press/sumo3.png">
 </div>
     </div>
 
@@ -686,10 +614,6 @@
 <img id="djrh3" alt="0160-diagonal_jump_roundhouse" class="movesetimg hoverbox" src="./0160-diagonal_jump_roundhouse/djrh3.png">
 <img id="djrh4" alt="0160-diagonal_jump_roundhouse" class="movesetimg hoverbox" src="./0160-diagonal_jump_roundhouse/djrh4.png">
 <img id="djrh5" alt="0160-diagonal_jump_roundhouse" class="movesetimg hoverbox" src="./0160-diagonal_jump_roundhouse/djrh5.png">
-<img id="djrh6" alt="0160-diagonal_jump_roundhouse" class="movesetimg hoverbox" src="./0160-diagonal_jump_roundhouse/djrh6.png">
-<img id="djrh7" alt="0160-diagonal_jump_roundhouse" class="movesetimg hoverbox" src="./0160-diagonal_jump_roundhouse/djrh7.png">
-<img id="djrh8" alt="0160-diagonal_jump_roundhouse" class="movesetimg hoverbox" src="./0160-diagonal_jump_roundhouse/djrh8.png">
-<img id="djrh9" alt="0160-diagonal_jump_roundhouse" class="movesetimg hoverbox" src="./0160-diagonal_jump_roundhouse/djrh9.png">
 </div>
     </div>
 
@@ -706,151 +630,172 @@
 <img id="njrh3" alt="0160-neutral_jump_roundhouse" class="movesetimg hoverbox" src="./0160-neutral_jump_roundhouse/njrh3.png">
 <img id="njrh4" alt="0160-neutral_jump_roundhouse" class="movesetimg hoverbox" src="./0160-neutral_jump_roundhouse/njrh4.png">
 <img id="njrh5" alt="0160-neutral_jump_roundhouse" class="movesetimg hoverbox" src="./0160-neutral_jump_roundhouse/njrh5.png">
-<img id="njrh6" alt="0160-neutral_jump_roundhouse" class="movesetimg hoverbox" src="./0160-neutral_jump_roundhouse/njrh6.png">
-<img id="njrh7" alt="0160-neutral_jump_roundhouse" class="movesetimg hoverbox" src="./0160-neutral_jump_roundhouse/njrh7.png">
-<img id="njrh8" alt="0160-neutral_jump_roundhouse" class="movesetimg hoverbox" src="./0160-neutral_jump_roundhouse/njrh8.png">
-<img id="njrh9" alt="0160-neutral_jump_roundhouse" class="movesetimg hoverbox" src="./0160-neutral_jump_roundhouse/njrh9.png">
 </div>
     </div>
 
-     <div id="1010-headbutt_jab" class="move">
+     <div id="1010-electric_thunder" class="move">
        <div class="heading">
-         <h2 lang="en">Headbutt jab</h2>
-	 <h2 lang="fr">Headbutt LP</h2>
-       	 <h2 lang="es">Headbutt LP</h2>
-	 <h2 lang="jp">頭突き　小Ｐ</h2>
+         <h2 lang="en">Electric thunder</h2>
+	 <h2 lang="fr">Électricité</h2>
+       	 <h2 lang="es">Electric thunder</h2>
+	 <h2 lang="jp">電撃</h2>
        </div>
      <div class="screenshots">
-<img id="hb0jab" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hb0jab.png">
-<img id="hb1bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hb1bisbis.png">
-<img id="hb2bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hb2bisbis.png">
-<img id="hb3bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hb3bisbis.png">
-<img id="hb4bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hb4bisbis.png">
-<img id="hb5bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hb5bisbis.png">
-<img id="hblands1bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hblands1bisbis.png">
-<img id="hblands2bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hblands2bisbis.png">
-<img id="hblands3bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hblands3bisbis.png">
-<img id="hblands4bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hblands4bisbis.png">
-<img id="hblands5bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hblands5bisbis.png">
-<img id="hblands6bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hblands6bisbis.png">
-<img id="hblands7bisbis" alt="1010-headbutt_jab" class="movesetimg hoverbox" src="./1010-headbutt_jab/hblands7bisbis.png">
+<img id="elec1bis" alt="1010-electric_thunder" class="movesetimg hoverbox" src="./1010-electric_thunder/elec1bis.png">
+<img id="elec2" alt="1010-electric_thunder" class="movesetimg hoverbox" src="./1010-electric_thunder/elec2.gif">
+<img id="elec3jab" alt="1010-electric_thunder" class="movesetimg hoverbox" src="./1010-electric_thunder/elec3jab.png">
+<img id="elec4jab" alt="1010-electric_thunder" class="movesetimg hoverbox" src="./1010-electric_thunder/elec4jab.png">
+<img id="elec5jab" alt="1010-electric_thunder" class="movesetimg hoverbox" src="./1010-electric_thunder/elec5jab.png">
+<img id="elec6jab" alt="1010-electric_thunder" class="movesetimg hoverbox" src="./1010-electric_thunder/elec6jab.png">
 </div>
     </div>
 
-     <div id="1011-headbutt_strong" class="move">
+     <div id="1010-electric_thunder_fierce" class="move">
        <div class="heading">
-         <h2 lang="en">Headbutt strong</h2>
-	 <h2 lang="fr">Headbutt MP</h2>
-       	 <h2 lang="es">Headbutt MP</h2>
-	 <h2 lang="jp">頭突き　中Ｐ</h2>
+         <h2 lang="en">Electruc thunder fierce</h2>
+	 <h2 lang="fr">Électricité HP</h2>
+       	 <h2 lang="es">Electruc thunder  HP</h2>
+	 <h2 lang="jp">電撃　大Ｐ</h2>
        </div>
      <div class="screenshots">
-<img id="hb0strong" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hb0strong.png">
-<img id="hb1bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hb1bis.png">
-<img id="hb2bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hb2bis.png">
-<img id="hb3bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hb3bis.png">
-<img id="hb4bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hb4bis.png">
-<img id="hb5bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hb5bis.png">
-<img id="hblands1bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hblands1bis.png">
-<img id="hblands2bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hblands2bis.png">
-<img id="hblands3bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hblands3bis.png">
-<img id="hblands4bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hblands4bis.png">
-<img id="hblands5bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hblands5bis.png">
-<img id="hblands6bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hblands6bis.png">
-<img id="hblands7bis" alt="1011-headbutt_strong" class="movesetimg hoverbox" src="./1011-headbutt_strong/hblands7bis.png">
+<img id="elec1" alt="1010-electric_thunder_fierce" class="movesetimg hoverbox" src="./1010-electric_thunder_fierce/elec1.png">
+<img id="elec2anm" alt="1010-electric_thunder_fierce" class="movesetimg hoverbox" src="./1010-electric_thunder_fierce/elec2anm.gif">
+<img id="frc3" alt="1010-electric_thunder_fierce" class="movesetimg hoverbox" src="./1010-electric_thunder_fierce/frc3.png">
+<img id="frc4" alt="1010-electric_thunder_fierce" class="movesetimg hoverbox" src="./1010-electric_thunder_fierce/frc4.png">
+<img id="frc5" alt="1010-electric_thunder_fierce" class="movesetimg hoverbox" src="./1010-electric_thunder_fierce/frc5.png">
+<img id="frc6" alt="1010-electric_thunder_fierce" class="movesetimg hoverbox" src="./1010-electric_thunder_fierce/frc6.png">
+<img id="frc7" alt="1010-electric_thunder_fierce" class="movesetimg hoverbox" src="./1010-electric_thunder_fierce/frc7.png">
+<img id="frc8" alt="1010-electric_thunder_fierce" class="movesetimg hoverbox" src="./1010-electric_thunder_fierce/frc8.png">
 </div>
     </div>
 
-     <div id="1012-headbutt_fierce" class="move">
+     <div id="1020-horizontal_roll" class="move">
        <div class="heading">
-         <h2 lang="en">Headbutt fierce</h2>
-	 <h2 lang="fr">Headbutt HP</h2>
-       	 <h2 lang="es">Headbutt HP</h2>
-	 <h2 lang="jp">頭突き　大Ｐ</h2>
+         <h2 lang="en">Horizontal roll</h2>
+	 <h2 lang="fr">Roulade horizontale</h2>
+       	 <h2 lang="es">Horizontal roll</h2>
+	 <h2 lang="jp">ローリングアタック</h2>
        </div>
      <div class="screenshots">
-<img id="hb1" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hb1.png">
-<img id="hb2" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hb2.png">
-<img id="hb3" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hb3.png">
-<img id="hb4" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hb4.png">
-<img id="hb5" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hb5.png">
-<img id="hblands1" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hblands1.png">
-<img id="hblands2" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hblands2.png">
-<img id="hblands3" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hblands3.png">
-<img id="hblands4" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hblands4.png">
-<img id="hblands5" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hblands5.png">
-<img id="hblands6" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hblands6.png">
-<img id="hblands7" alt="1012-headbutt_fierce" class="movesetimg hoverbox" src="./1012-headbutt_fierce/hblands7.png">
+<img id="Blanka_hroll1anm" alt="1020-horizontal_roll" class="movesetimg hoverbox" src="./1020-horizontal_roll/Blanka_hroll1anm.gif">
+<img id="Blanka_lands1bis" alt="1020-horizontal_roll" class="movesetimg hoverbox" src="./1020-horizontal_roll/Blanka_lands1bis.png">
+<img id="Blanka_lands2bis" alt="1020-horizontal_roll" class="movesetimg hoverbox" src="./1020-horizontal_roll/Blanka_lands2bis.png">
+<img id="Blanka_lands3bis" alt="1020-horizontal_roll" class="movesetimg hoverbox" src="./1020-horizontal_roll/Blanka_lands3bis.png">
 </div>
     </div>
 
-     <div id="1020-hundred_hands_slap" class="move">
+     <div id="1030-vertical_roll" class="move">
        <div class="heading">
-         <h2 lang="en">Hundred hands slap</h2>
-	 <h2 lang="fr">Milles mains</h2>
-       	 <h2 lang="es">Hundred hands slap</h2>
-	 <h2 lang="jp">百裂張り手</h2>
+         <h2 lang="en">Vertical roll</h2>
+	 <h2 lang="fr">Roulade verticale</h2>
+       	 <h2 lang="es">Vertical roll</h2>
+	 <h2 lang="jp">バーチカルローリング</h2>
        </div>
      <div class="screenshots">
-<img id="hhs1" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs1.png">
-<img id="hhs2" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs2.png">
-<img id="hhs3" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs3.png">
-<img id="hhs4" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs4.png">
-<img id="hhs5" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs5.png">
-<img id="hhs6" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs6.png">
-<img id="hhs7" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs7.png">
-<img id="hhs8" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs8.png">
-<img id="hhs9" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs9.png">
-<img id="hhs10" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs10.png">
-<img id="hhs11" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs11.png">
-<img id="hhs12" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs12.png">
-<img id="hhs13" alt="1020-hundred_hands_slap" class="movesetimg hoverbox" src="./1020-hundred_hands_slap/hhs13.png">
+<img id="vroll1" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll1.gif">
+<img id="vroll2" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll2.gif">
+<img id="vroll4" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll4.png">
+<img id="vroll5" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll5.png">
+<img id="vroll6" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll6.png">
+<img id="vroll7" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll7.png">
+<img id="vroll8" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll8.png">
+<img id="vroll9" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll9.png">
+<img id="vroll10" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll10.png">
+<img id="vroll11" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll11.png">
+<img id="vroll12" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll12.png">
+<img id="vroll13" alt="1030-vertical_roll" class="movesetimg hoverbox" src="./1030-vertical_roll/vroll13.png">
 </div>
     </div>
 
-     <div id="1040-sumo_splash_short_forward" class="move">
+     <div id="1030-vertical_roll_knockback" class="move">
        <div class="heading">
-         <h2 lang="en">Sumo splash short forward</h2>
-	 <h2 lang="fr">Sumo splash LK MK</h2>
-       	 <h2 lang="es">Sumo splash LK MK</h2>
-	 <h2 lang="jp">百貫落とし　小中Ｋ</h2>
+         <h2 lang="en">Vertical roll knockback</h2>
+	 <h2 lang="fr">Recover de la roulade</h2>
+       	 <h2 lang="es">Vertical roll knockback</h2>
+	 <h2 lang="jp">バーチカルローリング (当たって跳ね返ったとき)</h2>
        </div>
      <div class="screenshots">
-<img id="bdrop1bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop1bis.png">
-<img id="bdrop2bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop2bis.png">
-<img id="bdrop3bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop3bis.png">
-<img id="bdrop4bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop4bis.png">
-<img id="bdrop5bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop5bis.png">
-<img id="bdrop6bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop6bis.png">
-<img id="bdrop7bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop7bis.png">
-<img id="bdrop8to10anmbis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop8to10anmbis.png">
-<img id="bdrop11bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop11bis.png">
-<img id="bdrop12bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop12bis.png">
-<img id="bdrop13bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop13bis.png">
-<img id="bdrop14bis" alt="1040-sumo_splash_short_forward" class="movesetimg hoverbox" src="./1040-sumo_splash_short_forward/bdrop14bis.png">
+<img id="Blanka_vroll2anm" alt="1030-vertical_roll_knockback" class="movesetimg hoverbox" src="./1030-vertical_roll_knockback/Blanka_vroll2anm.gif">
+<img id="lands1bis" alt="1030-vertical_roll_knockback" class="movesetimg hoverbox" src="./1030-vertical_roll_knockback/lands1bis.png">
+<img id="lands2bis" alt="1030-vertical_roll_knockback" class="movesetimg hoverbox" src="./1030-vertical_roll_knockback/lands2bis.png">
+<img id="lands3bis" alt="1030-vertical_roll_knockback" class="movesetimg hoverbox" src="./1030-vertical_roll_knockback/lands3bis.png">
 </div>
     </div>
 
-     <div id="1041-sumo_splash_roundhouse" class="move">
+     <div id="1040-backstep_roll" class="move">
        <div class="heading">
-         <h2 lang="en">Sumo splash roundhouse</h2>
-	 <h2 lang="fr">Sumo splash HK</h2>
-       	 <h2 lang="es">Sumo splash HK</h2>
-	 <h2 lang="jp">百貫落とし　大Ｋ</h2>
+         <h2 lang="en">Backstep roll</h2>
+	 <h2 lang="fr">Roulade pied</h2>
+       	 <h2 lang="es">Backstep roll</h2>
+	 <h2 lang="jp">バックステップローリング</h2>
        </div>
      <div class="screenshots">
-<img id="bdrop1" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop1.png">
-<img id="bdrop2" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop2.png">
-<img id="bdrop3" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop3.png">
-<img id="bdrop4" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop4.png">
-<img id="bdrop5" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop5.png">
-<img id="bdrop6" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop6.png">
-<img id="bdrop7" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop7.png">
-<img id="bdrop8to10anm" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop8to10anm.gif">
-<img id="bdrop11" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop11.png">
-<img id="bdrop12" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop12.png">
-<img id="bdrop13" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop13.png">
-<img id="bdrop14" alt="1041-sumo_splash_roundhouse" class="movesetimg hoverbox" src="./1041-sumo_splash_roundhouse/bdrop14.png">
+<img id="broll1" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll1.png">
+<img id="broll2" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll2.png">
+<img id="broll3" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll3.png">
+<img id="broll4" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll4.png">
+<img id="broll5" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll5.png">
+<img id="broll6" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll6.png">
+<img id="broll7" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll7.png">
+<img id="broll8" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll8.png">
+<img id="broll9" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll9.png">
+<img id="broll10" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll10.png">
+<img id="broll11" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll11.png">
+<img id="broll12" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll12.png">
+<img id="broll13" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll13.png">
+<img id="broll14" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll14.png">
+<img id="broll15" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll15.png">
+<img id="broll16" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll16.png">
+<img id="broll17" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/broll17.gif">
+<img id="lands1" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/lands1.png">
+<img id="lands2" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/lands2.png">
+<img id="lands3" alt="1040-backstep_roll" class="movesetimg hoverbox" src="./1040-backstep_roll/lands3.png">
+</div>
+    </div>
+
+     <div id="1050-hop_forward" class="move">
+       <div class="heading">
+         <h2 lang="en">Hop forward</h2>
+	 <h2 lang="fr">Dash avant</h2>
+       	 <h2 lang="es">Hop forward</h2>
+	 <h2 lang="jp">ステップフォワード</h2>
+       </div>
+     <div class="screenshots">
+<img id="hopf1" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf1.png">
+<img id="hopf2" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf2.png">
+<img id="hopf3" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf3.png">
+<img id="hopf4" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf4.png">
+<img id="hopf5" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf5.png">
+<img id="hopf6" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf6.png">
+<img id="hopf7" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf7.png">
+<img id="hopf8" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf8.png">
+<img id="hopf9" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf9.png">
+<img id="hopf10" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf10.png">
+<img id="hopf11" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf11.png">
+<img id="hopf12" alt="1050-hop_forward" class="movesetimg hoverbox" src="./1050-hop_forward/hopf12.png">
+</div>
+    </div>
+
+     <div id="1051-hop_back" class="move">
+       <div class="heading">
+         <h2 lang="en">Hop backward</h2>
+	 <h2 lang="fr">Dash arrière</h2>
+       	 <h2 lang="es">Hop backward</h2>
+	 <h2 lang="jp">ステップバック</h2>
+       </div>
+     <div class="screenshots">
+<img id="hopb1" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb1.png">
+<img id="hopb2" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb2.png">
+<img id="hopb3" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb3.png">
+<img id="hopb4" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb4.png">
+<img id="hopb5" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb5.png">
+<img id="hopb6" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb6.png">
+<img id="hopb7" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb7.png">
+<img id="hopb8" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb8.png">
+<img id="hopb9" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb9.png">
+<img id="hopb10" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb10.png">
+<img id="hopb11" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb11.png">
+<img id="hopb12" alt="1051-hop_back" class="movesetimg hoverbox" src="./1051-hop_back/hopb12.png">
 </div>
     </div>
 
@@ -865,48 +810,27 @@
 <img id="super1" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super1.png">
 <img id="super2" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super2.png">
 <img id="super3" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super3.png">
-<img id="super4" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super4.png">
-<img id="super5" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super5.png">
-<img id="super6" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super6.png">
-<img id="super7" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super7.png">
-<img id="super8" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super8.png">
-<img id="super9" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super9.png">
-<img id="super10" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super10.png">
-<img id="super11" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super11.png">
-<img id="super12" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super12.png">
-<img id="super13" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super13.png">
-<img id="super14" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super14.png">
-<img id="super15" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super15.png">
-<img id="super16" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super16.png">
-<img id="super17" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super17.png">
-<img id="super18" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super18.png">
-<img id="super19" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super19.png">
+<img id="super4" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super4.gif">
+<img id="super5" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super5.gif">
+<img id="super6" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/super6.gif">
+<img id="superb2" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/superb2.png">
+<img id="superb3" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/superb3.png">
+<img id="superb4" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/superb4.png">
+<img id="superb5" alt="2000-super" class="movesetimg hoverbox" src="./2000-super/superb5.png">
 </div>
     </div>
 
-     <div id="3000-oicho" class="move">
+     <div id="3000-throw" class="move">
        <div class="heading">
-         <h2 lang="en">Oicho</h2>
-	 <h2 lang="fr">Oicho</h2>
-       	 <h2 lang="es">Oicho</h2>
-	 <h2 lang="jp">大銀杏投げ</h2>
-       </div>
-     <div class="screenshots">
-<img id="oicho" alt="3000-oicho" class="movesetimg hoverbox" src="./3000-oicho/oicho.png">
-<img id="oichocr" alt="3000-oicho" class="movesetimg hoverbox" src="./3000-oicho/oichocr.png">
-</div>
-    </div>
-
-     <div id="3000-throws" class="move">
-       <div class="heading">
-         <h2 lang="en">Throws</h2>
-	 <h2 lang="fr">Chopes</h2>
-       	 <h2 lang="es">Throws</h2>
+         <h2 lang="en">Throw</h2>
+	 <h2 lang="fr">Choppe</h2>
+       	 <h2 lang="es">Throw</h2>
 	 <h2 lang="jp">投げ技</h2>
        </div>
      <div class="screenshots">
-<img id="throw" alt="3000-throws" class="movesetimg hoverbox" src="./3000-throws/throw.png">
-<img id="throwbf" alt="3000-throws" class="movesetimg hoverbox" src="./3000-throws/throwbf.png">
+<img id="throw" alt="3000-throw" class="movesetimg hoverbox" src="./3000-throw/throw.png">
+<img id="throwb" alt="3000-throw" class="movesetimg hoverbox" src="./3000-throw/throwb.png">
+<img id="throwf" alt="3000-throw" class="movesetimg hoverbox" src="./3000-throw/throwf.png">
 </div>
     </div>
 
@@ -931,6 +855,7 @@
 <img id="bj11" alt="9100-back_jump" class="movesetimg hoverbox" src="./9100-back_jump/bj11.png">
 <img id="bj12" alt="9100-back_jump" class="movesetimg hoverbox" src="./9100-back_jump/bj12.png">
 <img id="bj13" alt="9100-back_jump" class="movesetimg hoverbox" src="./9100-back_jump/bj13.png">
+<img id="bj14" alt="9100-back_jump" class="movesetimg hoverbox" src="./9100-back_jump/bj14.png">
 </div>
     </div>
 
@@ -954,6 +879,11 @@
 <img id="fj10" alt="9100-forward_jump" class="movesetimg hoverbox" src="./9100-forward_jump/fj10.png">
 <img id="fj11" alt="9100-forward_jump" class="movesetimg hoverbox" src="./9100-forward_jump/fj11.png">
 <img id="fj12" alt="9100-forward_jump" class="movesetimg hoverbox" src="./9100-forward_jump/fj12.png">
+<img id="fj13" alt="9100-forward_jump" class="movesetimg hoverbox" src="./9100-forward_jump/fj13.png">
+<img id="fj14" alt="9100-forward_jump" class="movesetimg hoverbox" src="./9100-forward_jump/fj14.png">
+<img id="fj15" alt="9100-forward_jump" class="movesetimg hoverbox" src="./9100-forward_jump/fj15.png">
+<img id="fj16" alt="9100-forward_jump" class="movesetimg hoverbox" src="./9100-forward_jump/fj16.png">
+<img id="fj17" alt="9100-forward_jump" class="movesetimg hoverbox" src="./9100-forward_jump/fj17.png">
 </div>
     </div>
 
@@ -978,6 +908,7 @@
 <img id="nj11" alt="9100-neutral_jump" class="movesetimg hoverbox" src="./9100-neutral_jump/nj11.png">
 <img id="nj12" alt="9100-neutral_jump" class="movesetimg hoverbox" src="./9100-neutral_jump/nj12.png">
 <img id="nj13" alt="9100-neutral_jump" class="movesetimg hoverbox" src="./9100-neutral_jump/nj13.png">
+<img id="nj14" alt="9100-neutral_jump" class="movesetimg hoverbox" src="./9100-neutral_jump/nj14.png">
 </div>
     </div>
   </section id="hitbox-list">
@@ -988,7 +919,6 @@
   </div>
 
   <footer>
-
     <div class="back-to-top">
       <a href=#top lang="en" >Back to top ↑</a>
       <a href=#top lang="fr" >Haut de page ↑</a>
@@ -1004,72 +934,71 @@
       
       <ul>
         <li lang="en" ><a href="../../st/ryu/index.html" lang="en" >Ryu</a> <a href="../../old-chars/ryu/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/ryu/index.html?lang=fr" lang="fr" >Ryu</a> <a href="../../old-chars/ryu/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/ryu/index.html?lang=es" lang="es" >Ryu</a> <a href="../../old-chars/ryu/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/ryu/index.html?lang=jp" lang="jp" >リュウ</a> <a href="../../old-chars/ryu/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/ryu/index.html" lang="fr" >Ryu</a> <a href="../../old-chars/ryu/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/ryu/index.html" lang="es" >Ryu</a> <a href="../../old-chars/ryu/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/ryu/index.html" lang="jp" >リュウ</a> <a href="../../old-chars/ryu/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/ken/index.html" lang="en" >Ken</a> <a href="../../old-chars/ken/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/ken/index.html?lang=fr" lang="fr" >Ken</a> <a href="../../old-chars/ken/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/ken/index.html?lang=es" lang="es" >Ken</a> <a href="../../old-chars/ken/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/ken/index.html?lang=jp" lang="jp" >ケン</a> <a href="../../old-chars/ken/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/ken/index.html" lang="fr" >Ken</a> <a href="../../old-chars/ken/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/ken/index.html" lang="en" >Ken</a> <a href="../../old-chars/ken/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/ken/index.html" lang="jp" >ケン</a> <a href="../../old-chars/ken/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/ehonda/index.html" lang="en" >E. Honda</a> <a href="../../old-chars/ehonda/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/ehonda/index.html?lang=fr" lang="fr" >E. Honda</a> <a href="../../old-chars/ehonda/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/ehonda/index.html?lang=es" lang="es" >E. Honda</a> <a href="../../old-chars/ehonda/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/ehonda/index.html?lang=jp" lang="jp" >本田</a> <a href="../../old-chars/ehonda/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/ehonda/index.html" lang="fr" >E. Honda</a> <a href="../../old-chars/ehonda/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/ehonda/index.html" lang="es" >E. Honda</a> <a href="../../old-chars/ehonda/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/ehonda/index.html" lang="jp" >本田</a> <a href="../../old-chars/ehonda/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/chunli/index.html" lang="en" >Chun-Li</a> <a href="../../old-chars/chunli/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/chunli/index.html?lang=fr" lang="fr" >Chun-Li</a> <a href="../../old-chars/chunli/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/chunli/index.html?lang=es" lang="es" >Chun-Li</a> <a href="../../old-chars/chunli/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/chunli/index.html?lang=jp" lang="jp" >春麗</a> <a href="../../old-chars/chunli/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/chunli/index.html" lang="fr" >Chun-Li</a> <a href="../../old-chars/chunli/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/chunli/index.html" lang="es" >Chun-Li</a> <a href="../../old-chars/chunli/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/chunli/index.html" lang="jp" >春麗</a> <a href="../../old-chars/chunli/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/blanka/index.html" lang="en" >Blanka</a> <a href="../../old-chars/blanka/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/blanka/index.html?lang=fr" lang="fr" >Blanka</a> <a href="../../old-chars/blanka/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/blanka/index.html?lang=es" lang="es" >Blanka</a> <a href="../../old-chars/blanka/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/blanka/index.html?lang=jp" lang="jp" >ブランカ</a> <a href="../../old-chars/blanka/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/blanka/index.html" lang="fr" >Blanka</a> <a href="../../old-chars/blanka/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/blanka/index.html" lang="es" >Blanka</a> <a href="../../old-chars/blanka/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/blanka/index.html" lang="jp" >ブランカ</a> <a href="../../old-chars/blanka/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/zangief/index.html" lang="en" >Zangief</a> <a href="../../old-chars/zangief/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/zangief/index.html?lang=fr" lang="fr" >Zangief</a> <a href="../../old-chars/zangief/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/zangief/index.html?lang=es" lang="es" >Zangief</a> <a href="../../old-chars/zangief/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/zangief/index.html?lang=jp" lang="jp" >ザンギエフ</a> <a href="../../old-chars/zangief/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/zangief/index.html" lang="fr" >Zangief</a> <a href="../../old-chars/zangief/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/zangief/index.html" lang="es" >Zangief</a> <a href="../../old-chars/zangief/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/zangief/index.html" lang="jp" >ザンギエフ</a> <a href="../../old-chars/zangief/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/guile/index.html" lang="en" >Guile</a> <a href="../../old-chars/guile/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/guile/index.html?lang=fr" lang="fr" >Guile</a> <a href="../../old-chars/guile/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/guile/index.html?lang=es" lang="es" >Guile</a> <a href="../../old-chars/guile/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/guile/index.html?lang=jp" lang="jp" >ガイル</a> <a href="../../old-chars/guile/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/guile/index.html" lang="fr" >Guile</a> <a href="../../old-chars/guile/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/guile/index.html" lang="es" >Guile</a> <a href="../../old-chars/guile/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/guile/index.html" lang="jp" >ガイル</a> <a href="../../old-chars/guile/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/dhalsim/index.html" lang="en" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/dhalsim/index.html?lang=fr" lang="fr" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/dhalsim/index.html?lang=es" lang="es" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/dhalsim/index.html?lang=jp" lang="jp" >ダルシム</a> <a href="../../old-chars/dhalsim/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/dhalsim/index.html" lang="fr" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/dhalsim/index.html" lang="es" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/dhalsim/index.html" lang="jp" >ダルシム</a> <a href="../../old-chars/dhalsim/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/thawk/index.html" lang="en" >T. Hawk</a> <a href="../../old-chars/thawk/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/thawk/index.html?lang=fr" lang="fr" >T. Hawk</a> <a href="../../old-chars/thawk/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/thawk/index.html?lang=es" lang="es" >T. Hawk</a> <a href="../../old-chars/thawk/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/thawk/index.html?lang=jp" lang="jp" >ホーク</a> <a href="../../old-chars/thawk/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/thawk/index.html" lang="fr" >T. Hawk</a> <a href="../../old-chars/thawk/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/thawk/index.html" lang="es" >T. Hawk</a> <a href="../../old-chars/thawk/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/thawk/index.html" lang="jp" >ホーク</a> <a href="../../old-chars/thawk/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/cammy/index.html" lang="en" >Cammy</a> <a href="../../old-chars/cammy/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/cammy/index.html?lang=fr" lang="fr" >Cammy</a> <a href="../../old-chars/cammy/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/cammy/index.html?lang=es" lang="es" >Cammy</a> <a href="../../old-chars/cammy/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/cammy/index.html?lang=jp" lang="jp" >キャミィ</a> <a href="../../old-chars/cammy/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/cammy/index.html" lang="fr" >Cammy</a> <a href="../../old-chars/cammy/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/cammy/index.html" lang="es" >Cammy</a> <a href="../../old-chars/cammy/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/cammy/index.html" lang="jp" >キャミィ</a> <a href="../../old-chars/cammy/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/feilong/index.html" lang="en" >Fei Long</a> <a href="../../old-chars/feilong/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/feilong/index.html?lang=fr" lang="fr" >Fei Long</a> <a href="../../old-chars/feilong/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/feilong/index.html?lang=es" lang="es" >Fei Long</a> <a href="../../old-chars/feilong/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/feilong/index.html?lang=jp" lang="jp" >フェイロン</a> <a href="../../old-chars/feilong/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/feilong/index.html" lang="fr" >Fei Long</a> <a href="../../old-chars/feilong/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/feilong/index.html" lang="es" >Fei Long</a> <a href="../../old-chars/feilong/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/feilong/index.html" lang="jp" >フェイロン</a> <a href="../../old-chars/feilong/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/deejay/index.html" lang="en" >Dee Jay</a> <a href="../../old-chars/deejay/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/deejay/index.html?lang=fr" lang="fr" >Dee Jay</a> <a href="../../old-chars/deejay/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/deejay/index.html?lang=es" lang="es" >Dee Jay</a> <a href="../../old-chars/deejay/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/deejay/index.html?lang=jp" lang="jp" >ディージェイ</a> <a href="../../old-chars/deejay/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/deejay/index.html" lang="fr" >Dee Jay</a> <a href="../../old-chars/deejay/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/deejay/index.html" lang="es" >Dee Jay</a> <a href="../../old-chars/deejay/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/deejay/index.html" lang="jp" >ディージェイ</a> <a href="../../old-chars/deejay/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/balrog/index.html" lang="en" >Boxer</a> <a href="../../old-chars/balrog/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/balrog/index.html?lang=fr" lang="fr" >Boxer</a> <a href="../../old-chars/balrog/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/balrog/index.html?lang=es" lang="es" >Boxer</a> <a href="../../old-chars/balrog/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/balrog/index.html?lang=jp" lang="jp" >バイソン</a> <a href="../../old-chars/balrog/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/balrog/index.html" lang="fr" >Boxer</a> <a href="../../old-chars/balrog/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/balrog/index.html" lang="es" >Boxer</a> <a href="../../old-chars/balrog/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/balrog/index.html" lang="jp" >バイソン</a> <a href="../../old-chars/balrog/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/vega/index.html" lang="en" >Claw</a> <a href="../../old-chars/vega/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/vega/index.html?lang=fr" lang="fr" >Griffe</a> <a href="../../old-chars/vega/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/vega/index.html?lang=es" lang="es" >Claw</a> <a href="../../old-chars/vega/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/vega/index.html?lang=jp" lang="jp" >バルログ</a> <a href="../../old-chars/vega/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/vega/index.html" lang="fr" >Griffe</a> <a href="../../old-chars/vega/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/vega/index.html" lang="es" >Claw</a> <a href="../../old-chars/vega/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/vega/index.html" lang="jp" >バルログ</a> <a href="../../old-chars/vega/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/sagat/index.html" lang="en" >Sagat</a> <a href="../../old-chars/sagat/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/sagat/index.html?lang=fr" lang="fr" >Sagat</a> <a href="../../old-chars/sagat/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/sagat/index.html?lang=es" lang="es" >Sagat</a> <a href="../../old-chars/sagat/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/sagat/index.html?lang=jp" lang="jp" >サガット</a> <a href="../../old-chars/sagat/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/sagat/index.html" lang="fr" >Sagat</a> <a href="../../old-chars/sagat/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/sagat/index.html" lang="es" >Sagat</a> <a href="../../old-chars/sagat/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/sagat/index.html" lang="jp" >サガット</a> <a href="../../old-chars/sagat/index.html" lang="jp" >（S）</a></li>
         <li lang="en" ><a href="../../st/mbison/index.html" lang="en" >Dictator</a> <a href="../../old-chars/mbison/index.html" lang="en" >(old)</a></li>
-        <li lang="fr" ><a href="../../st/mbison/index.html?lang=fr" lang="fr" >Dictateur</a> <a href="../../old-chars/mbison/index.html" lang="fr" >(old)</a></li>
-        <li lang="es" ><a href="../../st/mbison/index.html?lang=es" lang="es" >Dictator</a> <a href="../../old-chars/mbison/index.html" lang="es" >(old)</a></li>
-        <li lang="jp" ><a href="../../st/mbison/index.html?lang=jp" lang="jp" >ベガ</a> <a href="../../old-chars/mbison/index.html" lang="jp" >（S）</a></li>
+        <li lang="fr" ><a href="../../st/mbison/index.html" lang="fr" >Dictateur</a> <a href="../../old-chars/mbison/index.html" lang="fr" >(old)</a></li>
+        <li lang="es" ><a href="../../st/mbison/index.html" lang="es" >Dictator</a> <a href="../../old-chars/mbison/index.html" lang="es" >(old)</a></li>
+        <li lang="jp" ><a href="../../st/mbison/index.html" lang="jp" >ベガ</a> <a href="../../old-chars/mbison/index.html" lang="jp" >（S）</a></li>
       </ul>
     </div>
-
   </footer>
 
   <script src="../../switch_language.js"></script>
