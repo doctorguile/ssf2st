@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Super Street Fighter II Turbo - Hitbox theory fighter</title>
-  <meta name="description" content="A Super Street Fighter II Turbo hitbox viewer with a drag and drop feature that allows you to compare and confront attacks.">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href ="images/favicon.ico">
+    <title>Super Street Fighter II Turbo - Hitbox theory fighter</title>
+    <meta name="description" content="A Super Street Fighter II Turbo hitbox viewer with a drag and drop feature that allows you to compare and confront attacks.">
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-</head>
-  
-<frameset cols="40%,60%">
-<frame src="./st/ryu/index.html" />
-<frame src="dragndrop.html" />
-</frameset>
-
-  <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script>
+   /*
     var index = window.location.href.indexOf('?');
-    if(index != -1){
-        var querystring = window.location.href.slice(index + 1)       
-                $('area[href]').each(function() {
-                   var $this = $(this);       
-                   var href = $this.attr("href");
-                   href += (href.indexOf('?') != -1) ? '&' : '?';
-                   href += querystring;
-                   $this.attr("href", href);
-                });
-        }
-  </script>
+      if(index != -1){
+          var querystring = window.location.href.slice(index + 1)       
+          $('area[href]').each(function() {
+              var $this = $(this);       
+              var href = $this.attr("href");
+              href += (href.indexOf('?') != -1) ? '&' : '?';
+              href += querystring;
+              $this.attr("href", href);
+          });
+	  console.log(querystring);
+      }
+   */
+    </script>
+
+  </head>
+
+  <frameset cols="40%,60%">
+    <frame src="./st/ryu/index.html" />
+    <frame src="dragndrop.html" />
+  </frameset>
 
 </html>
