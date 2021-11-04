@@ -4,6 +4,12 @@
 
 # TODO
 
+MOBILE USER
+"DXSteveX: ça serait bien que ça se câle tout seul sur une ligne. La croix du sol."
+animations
+Spanish Language
+ReScrapping for throwbox
+
 # DONE
 
 Ryu + old
@@ -21,3 +27,4 @@ Dictator + old
 FeiLong + old
 Sagat + old
 Claw + old
+multiples langues 

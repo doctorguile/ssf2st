@@ -14,8 +14,8 @@
     <div class="option-bar">
       <select id="switch-lang">
 	<option value="en"selected>English</option>
-	<option value="fr">Français</option>
-      	<option value="es">Español</option>
+	<option value="alt">English Alt</option>
+      	<option value="fr">Français</option>
       	<option value="jp">日本語</option>
       </select>
       

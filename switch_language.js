@@ -1,7 +1,3 @@
-$('[lang="fr"]').hide();
-$('[lang="es"]').hide();
-$('[lang="jp"]').hide();
-
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
         sURLVariables = sPageURL.split('&'),
@@ -32,6 +28,11 @@ case 'fr':
     $('.option-bar option[value=fr]').attr('selected', 'selected');
     $('[lang]').hide();
     $('[lang="fr"]').show();
+    break;
+case 'alt':
+    $('.option-bar option[value=alt]').attr('selected', 'selected');
+    $('[lang]').hide();
+    $('[lang="alt"]').show();
     break;
 case 'es':
     $('.option-bar option[value=es]').attr('selected', 'selected');
@@ -67,6 +68,10 @@ $('#switch-lang').change(function() {
     case 'jp':
         $('[lang]').hide();
         $('[lang="jp"]').show();
+        break;
+    case 'alt':
+        $('[lang]').hide();
+        $('[lang="alt"]').show();
         break;
     default:
         $('[lang]').hide();
