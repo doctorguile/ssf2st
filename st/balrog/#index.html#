@@ -15,7 +15,7 @@
     <div class="option-bar">
       <select id="switch-lang">
 	<option value="en" selected >English</option>
-	<option value="alt">English Alt</option>
+	<option value="fr">Français</option>
       	<option value="fr">Français</option>
       	<option value="jp">日本語</option>
       </select>
@@ -53,59 +53,59 @@
         </div>
         <div class="moves">
           <ul class="index visible" id="normals">
-            <li><a style="display: none;" lang="en" href='#0012-far_standing_jab'>Far standing jab</a></li>            <li><a style="display: none;" lang="alt" href='#0012-far_standing_jab'>Far standing jab</a></li>            <li><a style="display: none;" lang="fr" href='#0012-far_standing_jab'>Far LP</a></li>            <li><a style="display: none;" lang="es" href='#0012-far_standing_jab'></a></li>            <li><a style="display: none;" lang="jp" href='#0012-far_standing_jab'>遠立ち小Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0013-close_standing_jab'>Close standing jab</a></li>            <li><a style="display: none;" lang="alt" href='#0013-close_standing_jab'>Close standing jab</a></li>            <li><a style="display: none;" lang="fr" href='#0013-close_standing_jab'>Close LP</a></li>            <li><a style="display: none;" lang="es" href='#0013-close_standing_jab'></a></li>            <li><a style="display: none;" lang="jp" href='#0013-close_standing_jab'>近立ち小Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0014-crouching_jab'>Crouching jab</a></li>            <li><a style="display: none;" lang="alt" href='#0014-crouching_jab'>Crouching jab</a></li>            <li><a style="display: none;" lang="fr" href='#0014-crouching_jab'>Bas LP</a></li>            <li><a style="display: none;" lang="es" href='#0014-crouching_jab'></a></li>            <li><a style="display: none;" lang="jp" href='#0014-crouching_jab'>下小Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0022-far_standing_strong'>Far standing strong</a></li>            <li><a style="display: none;" lang="alt" href='#0022-far_standing_strong'>Far standing strong</a></li>            <li><a style="display: none;" lang="fr" href='#0022-far_standing_strong'>Far MP</a></li>            <li><a style="display: none;" lang="es" href='#0022-far_standing_strong'></a></li>            <li><a style="display: none;" lang="jp" href='#0022-far_standing_strong'>遠立ち中Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0023-close_standing_strong'>Close standing strong</a></li>            <li><a style="display: none;" lang="alt" href='#0023-close_standing_strong'>Close standing strong</a></li>            <li><a style="display: none;" lang="fr" href='#0023-close_standing_strong'>Close MP</a></li>            <li><a style="display: none;" lang="es" href='#0023-close_standing_strong'></a></li>            <li><a style="display: none;" lang="jp" href='#0023-close_standing_strong'>近立ち中Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0024-crouching_strong'>Crouching strong</a></li>            <li><a style="display: none;" lang="alt" href='#0024-crouching_strong'>Crouching strong</a></li>            <li><a style="display: none;" lang="fr" href='#0024-crouching_strong'>Bas MP</a></li>            <li><a style="display: none;" lang="es" href='#0024-crouching_strong'></a></li>            <li><a style="display: none;" lang="jp" href='#0024-crouching_strong'>下中Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0032-far_standing_fierce'>Far standing fierce</a></li>            <li><a style="display: none;" lang="alt" href='#0032-far_standing_fierce'>Far standing fierce</a></li>            <li><a style="display: none;" lang="fr" href='#0032-far_standing_fierce'>Far HP</a></li>            <li><a style="display: none;" lang="es" href='#0032-far_standing_fierce'></a></li>            <li><a style="display: none;" lang="jp" href='#0032-far_standing_fierce'>遠立ち大Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0033-close_standing_fierce'>Close standing fierce</a></li>            <li><a style="display: none;" lang="alt" href='#0033-close_standing_fierce'>Close standing fierce</a></li>            <li><a style="display: none;" lang="fr" href='#0033-close_standing_fierce'>Close HP</a></li>            <li><a style="display: none;" lang="es" href='#0033-close_standing_fierce'></a></li>            <li><a style="display: none;" lang="jp" href='#0033-close_standing_fierce'>遠立ち大Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0034-crouching_fierce'>Crouching fierce</a></li>            <li><a style="display: none;" lang="alt" href='#0034-crouching_fierce'>Crouching fierce</a></li>            <li><a style="display: none;" lang="fr" href='#0034-crouching_fierce'>Bas gros poing</a></li>            <li><a style="display: none;" lang="es" href='#0034-crouching_fierce'></a></li>            <li><a style="display: none;" lang="jp" href='#0034-crouching_fierce'>下大Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0042-far_standing_short'>Far standing short</a></li>            <li><a style="display: none;" lang="alt" href='#0042-far_standing_short'>Far standing short</a></li>            <li><a style="display: none;" lang="fr" href='#0042-far_standing_short'>Far LK</a></li>            <li><a style="display: none;" lang="es" href='#0042-far_standing_short'></a></li>            <li><a style="display: none;" lang="jp" href='#0042-far_standing_short'>遠立ち小Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0043-close_standing_short'>Close standing short</a></li>            <li><a style="display: none;" lang="alt" href='#0043-close_standing_short'>Close standing short</a></li>            <li><a style="display: none;" lang="fr" href='#0043-close_standing_short'>Close LK</a></li>            <li><a style="display: none;" lang="es" href='#0043-close_standing_short'></a></li>            <li><a style="display: none;" lang="jp" href='#0043-close_standing_short'>近立ち小Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0044-crouching_short'>Crouching short</a></li>            <li><a style="display: none;" lang="alt" href='#0044-crouching_short'>Crouching short</a></li>            <li><a style="display: none;" lang="fr" href='#0044-crouching_short'>Bas LK</a></li>            <li><a style="display: none;" lang="es" href='#0044-crouching_short'></a></li>            <li><a style="display: none;" lang="jp" href='#0044-crouching_short'>下小Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0052-far_standing_forward'>Far standing forward</a></li>            <li><a style="display: none;" lang="alt" href='#0052-far_standing_forward'>Far standing forward</a></li>            <li><a style="display: none;" lang="fr" href='#0052-far_standing_forward'>Far MK</a></li>            <li><a style="display: none;" lang="es" href='#0052-far_standing_forward'></a></li>            <li><a style="display: none;" lang="jp" href='#0052-far_standing_forward'>遠立ち中Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0053-close_standing_forward'>Close standing forward</a></li>            <li><a style="display: none;" lang="alt" href='#0053-close_standing_forward'>Close standing forward</a></li>            <li><a style="display: none;" lang="fr" href='#0053-close_standing_forward'>Close MK</a></li>            <li><a style="display: none;" lang="es" href='#0053-close_standing_forward'></a></li>            <li><a style="display: none;" lang="jp" href='#0053-close_standing_forward'>近立ち中Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0054-crouching_forward'>Crouching forward</a></li>            <li><a style="display: none;" lang="alt" href='#0054-crouching_forward'>Crouching forward</a></li>            <li><a style="display: none;" lang="fr" href='#0054-crouching_forward'>Bas MK</a></li>            <li><a style="display: none;" lang="es" href='#0054-crouching_forward'></a></li>            <li><a style="display: none;" lang="jp" href='#0054-crouching_forward'>下中Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0062-far_standing_roundhouse'>Far standing roundhouse</a></li>            <li><a style="display: none;" lang="alt" href='#0062-far_standing_roundhouse'>Far standing roundhouse</a></li>            <li><a style="display: none;" lang="fr" href='#0062-far_standing_roundhouse'>Far HK</a></li>            <li><a style="display: none;" lang="es" href='#0062-far_standing_roundhouse'></a></li>            <li><a style="display: none;" lang="jp" href='#0062-far_standing_roundhouse'>遠立ち大Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0063-close_standing_roundhouse'>Close standing roundhouse</a></li>            <li><a style="display: none;" lang="alt" href='#0063-close_standing_roundhouse'>Close standing roundhouse</a></li>            <li><a style="display: none;" lang="fr" href='#0063-close_standing_roundhouse'>Close HK</a></li>            <li><a style="display: none;" lang="es" href='#0063-close_standing_roundhouse'></a></li>            <li><a style="display: none;" lang="jp" href='#0063-close_standing_roundhouse'>近立ち大Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0064-crouching_roundhouse'>Crouching roundhouse</a></li>            <li><a style="display: none;" lang="alt" href='#0064-crouching_roundhouse'>Crouching roundhouse</a></li>            <li><a style="display: none;" lang="fr" href='#0064-crouching_roundhouse'>Crouch HK</a></li>            <li><a style="display: none;" lang="es" href='#0064-crouching_roundhouse'></a></li>            <li><a style="display: none;" lang="jp" href='#0064-crouching_roundhouse'>下大Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0012-far_standing_jab'>Far standing jab</a></li>            <li><a style="display: none;" lang="fr" href='#0012-far_standing_jab'>Far LP</a></li>            <li><a style="display: none;" lang="es" href='#0012-far_standing_jab'>Far standing LP</a></li>            <li><a style="display: none;" lang="jp" href='#0012-far_standing_jab'>遠立ち小Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0013-close_standing_jab'>Close standing jab</a></li>            <li><a style="display: none;" lang="fr" href='#0013-close_standing_jab'>Close LP</a></li>            <li><a style="display: none;" lang="es" href='#0013-close_standing_jab'>Close standing LP</a></li>            <li><a style="display: none;" lang="jp" href='#0013-close_standing_jab'>近立ち小Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0014-crouching_jab'>Crouching jab</a></li>            <li><a style="display: none;" lang="fr" href='#0014-crouching_jab'>Bas LP</a></li>            <li><a style="display: none;" lang="es" href='#0014-crouching_jab'>Crouching LP</a></li>            <li><a style="display: none;" lang="jp" href='#0014-crouching_jab'>下小Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0022-far_standing_strong'>Far standing strong</a></li>            <li><a style="display: none;" lang="fr" href='#0022-far_standing_strong'>Far MP</a></li>            <li><a style="display: none;" lang="es" href='#0022-far_standing_strong'>Far standing MP</a></li>            <li><a style="display: none;" lang="jp" href='#0022-far_standing_strong'>遠立ち中Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0023-close_standing_strong'>Close standing strong</a></li>            <li><a style="display: none;" lang="fr" href='#0023-close_standing_strong'>Close MP</a></li>            <li><a style="display: none;" lang="es" href='#0023-close_standing_strong'>Close standing mp</a></li>            <li><a style="display: none;" lang="jp" href='#0023-close_standing_strong'>近立ち中Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0024-crouching_strong'>Crouching strong</a></li>            <li><a style="display: none;" lang="fr" href='#0024-crouching_strong'>Bas MP</a></li>            <li><a style="display: none;" lang="es" href='#0024-crouching_strong'>Crouching MP</a></li>            <li><a style="display: none;" lang="jp" href='#0024-crouching_strong'>下中Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0032-far_standing_fierce'>Far standing fierce</a></li>            <li><a style="display: none;" lang="fr" href='#0032-far_standing_fierce'>Far HP</a></li>            <li><a style="display: none;" lang="es" href='#0032-far_standing_fierce'>Far standing HP</a></li>            <li><a style="display: none;" lang="jp" href='#0032-far_standing_fierce'>遠立ち大Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0033-close_standing_fierce'>Close standing fierce</a></li>            <li><a style="display: none;" lang="fr" href='#0033-close_standing_fierce'>Close HP</a></li>            <li><a style="display: none;" lang="es" href='#0033-close_standing_fierce'>Close standing HP</a></li>            <li><a style="display: none;" lang="jp" href='#0033-close_standing_fierce'>遠立ち大Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0034-crouching_fierce'>Crouching fierce</a></li>            <li><a style="display: none;" lang="fr" href='#0034-crouching_fierce'>Bas gros poing</a></li>            <li><a style="display: none;" lang="es" href='#0034-crouching_fierce'>Crouching HP</a></li>            <li><a style="display: none;" lang="jp" href='#0034-crouching_fierce'>下大Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0042-far_standing_short'>Far standing short</a></li>            <li><a style="display: none;" lang="fr" href='#0042-far_standing_short'>Far LK</a></li>            <li><a style="display: none;" lang="es" href='#0042-far_standing_short'>Far standing LK</a></li>            <li><a style="display: none;" lang="jp" href='#0042-far_standing_short'>遠立ち小Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0043-close_standing_short'>Close standing short</a></li>            <li><a style="display: none;" lang="fr" href='#0043-close_standing_short'>Close LK</a></li>            <li><a style="display: none;" lang="es" href='#0043-close_standing_short'>Close standing LK</a></li>            <li><a style="display: none;" lang="jp" href='#0043-close_standing_short'>近立ち小Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0044-crouching_short'>Crouching short</a></li>            <li><a style="display: none;" lang="fr" href='#0044-crouching_short'>Bas LK</a></li>            <li><a style="display: none;" lang="es" href='#0044-crouching_short'>Crouching LK</a></li>            <li><a style="display: none;" lang="jp" href='#0044-crouching_short'>下小Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0052-far_standing_forward'>Far standing forward</a></li>            <li><a style="display: none;" lang="fr" href='#0052-far_standing_forward'>Far MK</a></li>            <li><a style="display: none;" lang="es" href='#0052-far_standing_forward'>Far standing MK</a></li>            <li><a style="display: none;" lang="jp" href='#0052-far_standing_forward'>遠立ち中Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0053-close_standing_forward'>Close standing forward</a></li>            <li><a style="display: none;" lang="fr" href='#0053-close_standing_forward'>Close MK</a></li>            <li><a style="display: none;" lang="es" href='#0053-close_standing_forward'>Close standing MK</a></li>            <li><a style="display: none;" lang="jp" href='#0053-close_standing_forward'>近立ち中Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0054-crouching_forward'>Crouching forward</a></li>            <li><a style="display: none;" lang="fr" href='#0054-crouching_forward'>Bas MK</a></li>            <li><a style="display: none;" lang="es" href='#0054-crouching_forward'>Crouching MK</a></li>            <li><a style="display: none;" lang="jp" href='#0054-crouching_forward'>下中Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0062-far_standing_roundhouse'>Far standing roundhouse</a></li>            <li><a style="display: none;" lang="fr" href='#0062-far_standing_roundhouse'>Far HK</a></li>            <li><a style="display: none;" lang="es" href='#0062-far_standing_roundhouse'>Far standing HK</a></li>            <li><a style="display: none;" lang="jp" href='#0062-far_standing_roundhouse'>遠立ち大Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0063-close_standing_roundhouse'>Close standing roundhouse</a></li>            <li><a style="display: none;" lang="fr" href='#0063-close_standing_roundhouse'>Close HK</a></li>            <li><a style="display: none;" lang="es" href='#0063-close_standing_roundhouse'>Close standing HK</a></li>            <li><a style="display: none;" lang="jp" href='#0063-close_standing_roundhouse'>近立ち大Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0064-crouching_roundhouse'>Crouching roundhouse</a></li>            <li><a style="display: none;" lang="fr" href='#0064-crouching_roundhouse'>Crouch HK</a></li>            <li><a style="display: none;" lang="es" href='#0064-crouching_roundhouse'>Crouching HK</a></li>            <li><a style="display: none;" lang="jp" href='#0064-crouching_roundhouse'>下大Ｋ</a></li>
           </ul>
           <ul class="index" id="aerials">
-            <li><a style="display: none;" lang="en" href='#0110-diagonal_jump_jab'>Diagonal jump jab</a></li>            <li><a style="display: none;" lang="alt" href='#0110-diagonal_jump_jab'>Diagonal jump jab</a></li>            <li><a style="display: none;" lang="fr" href='#0110-diagonal_jump_jab'>Saut avant LP</a></li>            <li><a style="display: none;" lang="es" href='#0110-diagonal_jump_jab'></a></li>            <li><a style="display: none;" lang="jp" href='#0110-diagonal_jump_jab'>斜めＪ小Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0110-neutral_jump_jab'>Neutral jump jab</a></li>            <li><a style="display: none;" lang="alt" href='#0110-neutral_jump_jab'>Neutral jump jab</a></li>            <li><a style="display: none;" lang="fr" href='#0110-neutral_jump_jab'>Saut neutre LP</a></li>            <li><a style="display: none;" lang="es" href='#0110-neutral_jump_jab'></a></li>            <li><a style="display: none;" lang="jp" href='#0110-neutral_jump_jab'>垂直Ｊ小Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0120-diagonal_jump_strong'>Diagonal jump strong</a></li>            <li><a style="display: none;" lang="alt" href='#0120-diagonal_jump_strong'>Diagonal jump strong</a></li>            <li><a style="display: none;" lang="fr" href='#0120-diagonal_jump_strong'>Saut avant MP</a></li>            <li><a style="display: none;" lang="es" href='#0120-diagonal_jump_strong'></a></li>            <li><a style="display: none;" lang="jp" href='#0120-diagonal_jump_strong'>斜めＪＰ</a></li>
-            <li><a style="display: none;" lang="en" href='#0120-neutral_jump_strong'>Neutral jump strong</a></li>            <li><a style="display: none;" lang="alt" href='#0120-neutral_jump_strong'>Neutral jump strong</a></li>            <li><a style="display: none;" lang="fr" href='#0120-neutral_jump_strong'>Saut neutre MP</a></li>            <li><a style="display: none;" lang="es" href='#0120-neutral_jump_strong'></a></li>            <li><a style="display: none;" lang="jp" href='#0120-neutral_jump_strong'>垂直ＪＰ</a></li>
-            <li><a style="display: none;" lang="en" href='#0130-diagonal_jump_fierce'>Diagonal jump fierce</a></li>            <li><a style="display: none;" lang="alt" href='#0130-diagonal_jump_fierce'>Diagonal jump fierce</a></li>            <li><a style="display: none;" lang="fr" href='#0130-diagonal_jump_fierce'>Saut avant HP</a></li>            <li><a style="display: none;" lang="es" href='#0130-diagonal_jump_fierce'></a></li>            <li><a style="display: none;" lang="jp" href='#0130-diagonal_jump_fierce'>斜めＪ大Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0130-neutral_jump_fierce'>Neutral jump fierce</a></li>            <li><a style="display: none;" lang="alt" href='#0130-neutral_jump_fierce'>Neutral jump fierce</a></li>            <li><a style="display: none;" lang="fr" href='#0130-neutral_jump_fierce'>Saut neutre HP</a></li>            <li><a style="display: none;" lang="es" href='#0130-neutral_jump_fierce'></a></li>            <li><a style="display: none;" lang="jp" href='#0130-neutral_jump_fierce'>垂直Ｊ大Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#0140-diagonal_jump_short'>Diagonal jump short</a></li>            <li><a style="display: none;" lang="alt" href='#0140-diagonal_jump_short'>Diagonal jump short</a></li>            <li><a style="display: none;" lang="fr" href='#0140-diagonal_jump_short'>Saut avant LK</a></li>            <li><a style="display: none;" lang="es" href='#0140-diagonal_jump_short'></a></li>            <li><a style="display: none;" lang="jp" href='#0140-diagonal_jump_short'>斜めＪ小Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0140-neutral_jump_forward'>Neutral jump forward</a></li>            <li><a style="display: none;" lang="alt" href='#0140-neutral_jump_forward'>Neutral jump forward</a></li>            <li><a style="display: none;" lang="fr" href='#0140-neutral_jump_forward'>Saut neutre MK</a></li>            <li><a style="display: none;" lang="es" href='#0140-neutral_jump_forward'></a></li>            <li><a style="display: none;" lang="jp" href='#0140-neutral_jump_forward'>垂直ＪＰ</a></li>
-            <li><a style="display: none;" lang="en" href='#0140-neutral_jump_short'>Neutral jump short</a></li>            <li><a style="display: none;" lang="alt" href='#0140-neutral_jump_short'>Neutral jump short</a></li>            <li><a style="display: none;" lang="fr" href='#0140-neutral_jump_short'>Saut neutre LK</a></li>            <li><a style="display: none;" lang="es" href='#0140-neutral_jump_short'></a></li>            <li><a style="display: none;" lang="jp" href='#0140-neutral_jump_short'>垂直Ｊ小Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0150-diagonal_jump_forward'>Diagonal jump forward</a></li>            <li><a style="display: none;" lang="alt" href='#0150-diagonal_jump_forward'>Diagonal jump forward</a></li>            <li><a style="display: none;" lang="fr" href='#0150-diagonal_jump_forward'>Saut avant MK</a></li>            <li><a style="display: none;" lang="es" href='#0150-diagonal_jump_forward'></a></li>            <li><a style="display: none;" lang="jp" href='#0150-diagonal_jump_forward'>斜めＪＫ</a></li>
-            <li><a style="display: none;" lang="en" href='#0160-diagonal_jump_roundhouse'>Diagonal jump roundhouse</a></li>            <li><a style="display: none;" lang="alt" href='#0160-diagonal_jump_roundhouse'>Diagonal jump roundhouse</a></li>            <li><a style="display: none;" lang="fr" href='#0160-diagonal_jump_roundhouse'>Saut avant HK</a></li>            <li><a style="display: none;" lang="es" href='#0160-diagonal_jump_roundhouse'></a></li>            <li><a style="display: none;" lang="jp" href='#0160-diagonal_jump_roundhouse'>斜めＪ大Ｋ</a></li>
-            <li><a style="display: none;" lang="en" href='#0160-neutral_jump_roundhouse'>Neutral jump roundhouse</a></li>            <li><a style="display: none;" lang="alt" href='#0160-neutral_jump_roundhouse'>Neutral jump roundhouse</a></li>            <li><a style="display: none;" lang="fr" href='#0160-neutral_jump_roundhouse'>Saut neutre HK</a></li>            <li><a style="display: none;" lang="es" href='#0160-neutral_jump_roundhouse'></a></li>            <li><a style="display: none;" lang="jp" href='#0160-neutral_jump_roundhouse'>垂直Ｊ大Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0110-diagonal_jump_jab'>Diagonal jump jab</a></li>            <li><a style="display: none;" lang="fr" href='#0110-diagonal_jump_jab'>Saut avant LP</a></li>            <li><a style="display: none;" lang="es" href='#0110-diagonal_jump_jab'>Diagonal jump LP</a></li>            <li><a style="display: none;" lang="jp" href='#0110-diagonal_jump_jab'>斜めＪ小Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0110-neutral_jump_jab'>Neutral jump jab</a></li>            <li><a style="display: none;" lang="fr" href='#0110-neutral_jump_jab'>Saut neutre LP</a></li>            <li><a style="display: none;" lang="es" href='#0110-neutral_jump_jab'>Neutral jump LP</a></li>            <li><a style="display: none;" lang="jp" href='#0110-neutral_jump_jab'>垂直Ｊ小Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0120-diagonal_jump_strong'>Diagonal jump strong</a></li>            <li><a style="display: none;" lang="fr" href='#0120-diagonal_jump_strong'>Saut avant MP</a></li>            <li><a style="display: none;" lang="es" href='#0120-diagonal_jump_strong'>Diagonal jump MP</a></li>            <li><a style="display: none;" lang="jp" href='#0120-diagonal_jump_strong'>斜めＪＰ</a></li>
+            <li><a style="display: none;" lang="en" href='#0120-neutral_jump_strong'>Neutral jump strong</a></li>            <li><a style="display: none;" lang="fr" href='#0120-neutral_jump_strong'>Saut neutre MP</a></li>            <li><a style="display: none;" lang="es" href='#0120-neutral_jump_strong'>Neutral jump MP</a></li>            <li><a style="display: none;" lang="jp" href='#0120-neutral_jump_strong'>垂直ＪＰ</a></li>
+            <li><a style="display: none;" lang="en" href='#0130-diagonal_jump_fierce'>Diagonal jump fierce</a></li>            <li><a style="display: none;" lang="fr" href='#0130-diagonal_jump_fierce'>Saut avant HP</a></li>            <li><a style="display: none;" lang="es" href='#0130-diagonal_jump_fierce'>Diagonal jump HP</a></li>            <li><a style="display: none;" lang="jp" href='#0130-diagonal_jump_fierce'>斜めＪ大Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0130-neutral_jump_fierce'>Neutral jump fierce</a></li>            <li><a style="display: none;" lang="fr" href='#0130-neutral_jump_fierce'>Saut neutre HP</a></li>            <li><a style="display: none;" lang="es" href='#0130-neutral_jump_fierce'>Neutral jump HP</a></li>            <li><a style="display: none;" lang="jp" href='#0130-neutral_jump_fierce'>垂直Ｊ大Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#0140-diagonal_jump_short'>Diagonal jump short</a></li>            <li><a style="display: none;" lang="fr" href='#0140-diagonal_jump_short'>Saut avant LK</a></li>            <li><a style="display: none;" lang="es" href='#0140-diagonal_jump_short'>Diagonal jump LK</a></li>            <li><a style="display: none;" lang="jp" href='#0140-diagonal_jump_short'>斜めＪ小Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0140-neutral_jump_forward'>Neutral jump forward</a></li>            <li><a style="display: none;" lang="fr" href='#0140-neutral_jump_forward'>Saut neutre MK</a></li>            <li><a style="display: none;" lang="es" href='#0140-neutral_jump_forward'>Neutral jump MK</a></li>            <li><a style="display: none;" lang="jp" href='#0140-neutral_jump_forward'>垂直ＪＰ</a></li>
+            <li><a style="display: none;" lang="en" href='#0140-neutral_jump_short'>Neutral jump short</a></li>            <li><a style="display: none;" lang="fr" href='#0140-neutral_jump_short'>Saut neutre LK</a></li>            <li><a style="display: none;" lang="es" href='#0140-neutral_jump_short'>Neutral jump LK</a></li>            <li><a style="display: none;" lang="jp" href='#0140-neutral_jump_short'>垂直Ｊ小Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0150-diagonal_jump_forward'>Diagonal jump forward</a></li>            <li><a style="display: none;" lang="fr" href='#0150-diagonal_jump_forward'>Saut avant MK</a></li>            <li><a style="display: none;" lang="es" href='#0150-diagonal_jump_forward'>Diagonal jump MK</a></li>            <li><a style="display: none;" lang="jp" href='#0150-diagonal_jump_forward'>斜めＪＫ</a></li>
+            <li><a style="display: none;" lang="en" href='#0160-diagonal_jump_roundhouse'>Diagonal jump roundhouse</a></li>            <li><a style="display: none;" lang="fr" href='#0160-diagonal_jump_roundhouse'>Saut avant HK</a></li>            <li><a style="display: none;" lang="es" href='#0160-diagonal_jump_roundhouse'>Diagonal jump HK</a></li>            <li><a style="display: none;" lang="jp" href='#0160-diagonal_jump_roundhouse'>斜めＪ大Ｋ</a></li>
+            <li><a style="display: none;" lang="en" href='#0160-neutral_jump_roundhouse'>Neutral jump roundhouse</a></li>            <li><a style="display: none;" lang="fr" href='#0160-neutral_jump_roundhouse'>Saut neutre HK</a></li>            <li><a style="display: none;" lang="es" href='#0160-neutral_jump_roundhouse'>Neutral jump HK</a></li>            <li><a style="display: none;" lang="jp" href='#0160-neutral_jump_roundhouse'>垂直Ｊ大Ｋ</a></li>
           </ul>
           <ul class="index" id="specials">
-            <li><a style="display: none;" lang="en" href='#1014-buffalo_headbutt_jab'>Buffalo headbutt jab</a></li>            <li><a style="display: none;" lang="alt" href='#1014-buffalo_headbutt_jab'>Buffalo headbutt jab</a></li>            <li><a style="display: none;" lang="fr" href='#1014-buffalo_headbutt_jab'>Buffalo headbutt LP</a></li>            <li><a style="display: none;" lang="es" href='#1014-buffalo_headbutt_jab'></a></li>            <li><a style="display: none;" lang="jp" href='#1014-buffalo_headbutt_jab'>バッファローヘッドバッド　小Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#1024-buffalo_headbutt_strong'>Buffalo headbutt strong</a></li>            <li><a style="display: none;" lang="alt" href='#1024-buffalo_headbutt_strong'>Buffalo headbutt strong</a></li>            <li><a style="display: none;" lang="fr" href='#1024-buffalo_headbutt_strong'>Buffalo headbutt MP</a></li>            <li><a style="display: none;" lang="es" href='#1024-buffalo_headbutt_strong'></a></li>            <li><a style="display: none;" lang="jp" href='#1024-buffalo_headbutt_strong'>バッファローヘッドバッド　中Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#1025-buffalo_headbutt_fierce'>Buffalo headbutt fierce</a></li>            <li><a style="display: none;" lang="alt" href='#1025-buffalo_headbutt_fierce'>Buffalo headbutt fierce</a></li>            <li><a style="display: none;" lang="fr" href='#1025-buffalo_headbutt_fierce'>Buffalo headbutt HP</a></li>            <li><a style="display: none;" lang="es" href='#1025-buffalo_headbutt_fierce'></a></li>            <li><a style="display: none;" lang="jp" href='#1025-buffalo_headbutt_fierce'>バッファローヘッドバッド　大Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#1033-straight_rush_jab_fierce'>Straight rush jab fierce</a></li>            <li><a style="display: none;" lang="alt" href='#1033-straight_rush_jab_fierce'>Straight rush jab fierce</a></li>            <li><a style="display: none;" lang="fr" href='#1033-straight_rush_jab_fierce'>Dash avant LP HP</a></li>            <li><a style="display: none;" lang="es" href='#1033-straight_rush_jab_fierce'></a></li>            <li><a style="display: none;" lang="jp" href='#1033-straight_rush_jab_fierce'>ダッシュストレート　小大</a></li>
-            <li><a style="display: none;" lang="en" href='#1033-straight_rush_strong'>Straight rush strong</a></li>            <li><a style="display: none;" lang="alt" href='#1033-straight_rush_strong'>Straight rush strong</a></li>            <li><a style="display: none;" lang="fr" href='#1033-straight_rush_strong'>Dash upper strong</a></li>            <li><a style="display: none;" lang="es" href='#1033-straight_rush_strong'></a></li>            <li><a style="display: none;" lang="jp" href='#1033-straight_rush_strong'>ダッシュストレート　中Ｐ</a></li>
-            <li><a style="display: none;" lang="en" href='#1034-low_rush'>Low rush</a></li>            <li><a style="display: none;" lang="alt" href='#1034-low_rush'>Low rush</a></li>            <li><a style="display: none;" lang="fr" href='#1034-low_rush'>Dash low</a></li>            <li><a style="display: none;" lang="es" href='#1034-low_rush'></a></li>            <li><a style="display: none;" lang="jp" href='#1034-low_rush'>ダッシュグランドストレート</a></li>
-            <li><a style="display: none;" lang="en" href='#1040-upper_rush'>Upper rush</a></li>            <li><a style="display: none;" lang="alt" href='#1040-upper_rush'>Upper rush</a></li>            <li><a style="display: none;" lang="fr" href='#1040-upper_rush'>Dash upper</a></li>            <li><a style="display: none;" lang="es" href='#1040-upper_rush'></a></li>            <li><a style="display: none;" lang="jp" href='#1040-upper_rush'>ダッシュアッパー</a></li>
-            <li><a style="display: none;" lang="en" href='#1044-knockdown_rush'>Knockdown rush</a></li>            <li><a style="display: none;" lang="alt" href='#1044-knockdown_rush'>Knockdown rush</a></li>            <li><a style="display: none;" lang="fr" href='#1044-knockdown_rush'>Dash upper pied</a></li>            <li><a style="display: none;" lang="es" href='#1044-knockdown_rush'></a></li>            <li><a style="display: none;" lang="jp" href='#1044-knockdown_rush'>ダッシュグランドアッパー</a></li>
-            <li><a style="display: none;" lang="en" href='#1060-turn_around_punch'>Turn around punch</a></li>            <li><a style="display: none;" lang="alt" href='#1060-turn_around_punch'>Turn around punch</a></li>            <li><a style="display: none;" lang="fr" href='#1060-turn_around_punch'>Turn around punch</a></li>            <li><a style="display: none;" lang="es" href='#1060-turn_around_punch'></a></li>            <li><a style="display: none;" lang="jp" href='#1060-turn_around_punch'>ターンパンチ</a></li>
+            <li><a style="display: none;" lang="en" href='#1014-buffalo_headbutt_jab'>Buffalo headbutt jab</a></li>            <li><a style="display: none;" lang="fr" href='#1014-buffalo_headbutt_jab'>Buffalo headbutt LP</a></li>            <li><a style="display: none;" lang="es" href='#1014-buffalo_headbutt_jab'>Buffalo headbutt LP</a></li>            <li><a style="display: none;" lang="jp" href='#1014-buffalo_headbutt_jab'>バッファローヘッドバッド　小Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#1024-buffalo_headbutt_strong'>Buffalo headbutt strong</a></li>            <li><a style="display: none;" lang="fr" href='#1024-buffalo_headbutt_strong'>Buffalo headbutt MP</a></li>            <li><a style="display: none;" lang="es" href='#1024-buffalo_headbutt_strong'>Buffalo headbutt MP</a></li>            <li><a style="display: none;" lang="jp" href='#1024-buffalo_headbutt_strong'>バッファローヘッドバッド　中Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#1025-buffalo_headbutt_fierce'>Buffalo headbutt fierce</a></li>            <li><a style="display: none;" lang="fr" href='#1025-buffalo_headbutt_fierce'>Buffalo headbutt HP</a></li>            <li><a style="display: none;" lang="es" href='#1025-buffalo_headbutt_fierce'>Buffalo headbutt HP</a></li>            <li><a style="display: none;" lang="jp" href='#1025-buffalo_headbutt_fierce'>バッファローヘッドバッド　大Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#1033-straight_rush_jab_fierce'>Straight rush jab fierce</a></li>            <li><a style="display: none;" lang="fr" href='#1033-straight_rush_jab_fierce'>Dash avant LP HP</a></li>            <li><a style="display: none;" lang="es" href='#1033-straight_rush_jab_fierce'>Straight rush jab HP</a></li>            <li><a style="display: none;" lang="jp" href='#1033-straight_rush_jab_fierce'>ダッシュストレート　小大</a></li>
+            <li><a style="display: none;" lang="en" href='#1033-straight_rush_strong'>Straight rush strong</a></li>            <li><a style="display: none;" lang="fr" href='#1033-straight_rush_strong'>Dash upper strong</a></li>            <li><a style="display: none;" lang="es" href='#1033-straight_rush_strong'>Straight rush MP</a></li>            <li><a style="display: none;" lang="jp" href='#1033-straight_rush_strong'>ダッシュストレート　中Ｐ</a></li>
+            <li><a style="display: none;" lang="en" href='#1034-low_rush'>Low rush</a></li>            <li><a style="display: none;" lang="fr" href='#1034-low_rush'>Dash low</a></li>            <li><a style="display: none;" lang="es" href='#1034-low_rush'>Low rush</a></li>            <li><a style="display: none;" lang="jp" href='#1034-low_rush'>ダッシュグランドストレート</a></li>
+            <li><a style="display: none;" lang="en" href='#1040-upper_rush'>Upper rush</a></li>            <li><a style="display: none;" lang="fr" href='#1040-upper_rush'>Dash upper</a></li>            <li><a style="display: none;" lang="es" href='#1040-upper_rush'>Upper rush</a></li>            <li><a style="display: none;" lang="jp" href='#1040-upper_rush'>ダッシュアッパー</a></li>
+            <li><a style="display: none;" lang="en" href='#1044-knockdown_rush'>Knockdown rush</a></li>            <li><a style="display: none;" lang="fr" href='#1044-knockdown_rush'>Dash upper pied</a></li>            <li><a style="display: none;" lang="es" href='#1044-knockdown_rush'>Knockdown rush</a></li>            <li><a style="display: none;" lang="jp" href='#1044-knockdown_rush'>ダッシュグランドアッパー</a></li>
+            <li><a style="display: none;" lang="en" href='#1060-turn_around_punch'>Turn around punch</a></li>            <li><a style="display: none;" lang="fr" href='#1060-turn_around_punch'>Turn around punch</a></li>            <li><a style="display: none;" lang="es" href='#1060-turn_around_punch'>Turn around punch</a></li>            <li><a style="display: none;" lang="jp" href='#1060-turn_around_punch'>ターンパンチ</a></li>
           </ul>
           <ul class="index" id="misc">
-            <li><a style="display: none;" lang="en" href='#2010-super_first_hit_punch'>Super first hit punch</a></li>            <li><a style="display: none;" lang="alt" href='#2010-super_first_hit_punch'>Super first hit punch</a></li>            <li><a style="display: none;" lang="fr" href='#2010-super_first_hit_punch'>Super premier hit poing</a></li>            <li><a style="display: none;" lang="es" href='#2010-super_first_hit_punch'></a></li>            <li><a style="display: none;" lang="jp" href='#2010-super_first_hit_punch'>最小のクレイジーバッファローのヒットＰ</a></li>
-            <li><a style="display: none;" lang="en" href='#2011-super_punch'>Super punch</a></li>            <li><a style="display: none;" lang="alt" href='#2011-super_punch'>Super punch</a></li>            <li><a style="display: none;" lang="fr" href='#2011-super_punch'>Super poing</a></li>            <li><a style="display: none;" lang="es" href='#2011-super_punch'></a></li>            <li><a style="display: none;" lang="jp" href='#2011-super_punch'>クレイジーバッファローＰ</a></li>
-            <li><a style="display: none;" lang="en" href='#2040-super_first_hit_kick'>Super first hit kick</a></li>            <li><a style="display: none;" lang="alt" href='#2040-super_first_hit_kick'>Super first hit kick</a></li>            <li><a style="display: none;" lang="fr" href='#2040-super_first_hit_kick'>Super premier hit pied</a></li>            <li><a style="display: none;" lang="es" href='#2040-super_first_hit_kick'></a></li>            <li><a style="display: none;" lang="jp" href='#2040-super_first_hit_kick'>最小のクレイジーバッファローのヒットＫ</a></li>
-            <li><a style="display: none;" lang="en" href='#2041-super_kick'>Super kick</a></li>            <li><a style="display: none;" lang="alt" href='#2041-super_kick'>Super kick</a></li>            <li><a style="display: none;" lang="fr" href='#2041-super_kick'>Super pied</a></li>            <li><a style="display: none;" lang="es" href='#2041-super_kick'></a></li>            <li><a style="display: none;" lang="jp" href='#2041-super_kick'>クレイジーバッファローＫ</a></li>
-            <li><a style="display: none;" lang="en" href='#2065-super_last_hit'>Super last hit</a></li>            <li><a style="display: none;" lang="alt" href='#2065-super_last_hit'>Super last hit</a></li>            <li><a style="display: none;" lang="fr" href='#2065-super_last_hit'>Super dernier hit</a></li>            <li><a style="display: none;" lang="es" href='#2065-super_last_hit'></a></li>            <li><a style="display: none;" lang="jp" href='#2065-super_last_hit'>最後のクレイジーバッファローのヒット</a></li>
-            <li><a style="display: none;" lang="en" href='#9100-back_jump'>Back jump</a></li>            <li><a style="display: none;" lang="alt" href='#9100-back_jump'>Back jump</a></li>            <li><a style="display: none;" lang="fr" href='#9100-back_jump'>Saut arrière</a></li>            <li><a style="display: none;" lang="es" href='#9100-back_jump'></a></li>            <li><a style="display: none;" lang="jp" href='#9100-back_jump'>後Ｊ</a></li>
-            <li><a style="display: none;" lang="en" href='#9100-forward_jump'>Forward jump</a></li>            <li><a style="display: none;" lang="alt" href='#9100-forward_jump'>Forward jump</a></li>            <li><a style="display: none;" lang="fr" href='#9100-forward_jump'>Saut avant</a></li>            <li><a style="display: none;" lang="es" href='#9100-forward_jump'></a></li>            <li><a style="display: none;" lang="jp" href='#9100-forward_jump'>前Ｊ</a></li>
-            <li><a style="display: none;" lang="en" href='#9100-neutral_jump'>Neutral jump</a></li>            <li><a style="display: none;" lang="alt" href='#9100-neutral_jump'>Neutral jump</a></li>            <li><a style="display: none;" lang="fr" href='#9100-neutral_jump'>Saut neutre</a></li>            <li><a style="display: none;" lang="es" href='#9100-neutral_jump'></a></li>            <li><a style="display: none;" lang="jp" href='#9100-neutral_jump'>垂直Ｊ</a></li>
+            <li><a style="display: none;" lang="en" href='#2010-super_first_hit_punch'>Super first hit punch</a></li>            <li><a style="display: none;" lang="fr" href='#2010-super_first_hit_punch'>Super premier hit poing</a></li>            <li><a style="display: none;" lang="es" href='#2010-super_first_hit_punch'>Super first hit punch</a></li>            <li><a style="display: none;" lang="jp" href='#2010-super_first_hit_punch'>最小のクレイジーバッファローのヒットＰ</a></li>
+            <li><a style="display: none;" lang="en" href='#2011-super_punch'>Super punch</a></li>            <li><a style="display: none;" lang="fr" href='#2011-super_punch'>Super poing</a></li>            <li><a style="display: none;" lang="es" href='#2011-super_punch'>Super punch</a></li>            <li><a style="display: none;" lang="jp" href='#2011-super_punch'>クレイジーバッファローＰ</a></li>
+            <li><a style="display: none;" lang="en" href='#2040-super_first_hit_kick'>Super first hit kick</a></li>            <li><a style="display: none;" lang="fr" href='#2040-super_first_hit_kick'>Super premier hit pied</a></li>            <li><a style="display: none;" lang="es" href='#2040-super_first_hit_kick'>Super first hit kick</a></li>            <li><a style="display: none;" lang="jp" href='#2040-super_first_hit_kick'>最小のクレイジーバッファローのヒットＫ</a></li>
+            <li><a style="display: none;" lang="en" href='#2041-super_kick'>Super kick</a></li>            <li><a style="display: none;" lang="fr" href='#2041-super_kick'>Super pied</a></li>            <li><a style="display: none;" lang="es" href='#2041-super_kick'>Super kick</a></li>            <li><a style="display: none;" lang="jp" href='#2041-super_kick'>クレイジーバッファローＫ</a></li>
+            <li><a style="display: none;" lang="en" href='#2065-super_last_hit'>Super last hit</a></li>            <li><a style="display: none;" lang="fr" href='#2065-super_last_hit'>Super dernier hit</a></li>            <li><a style="display: none;" lang="es" href='#2065-super_last_hit'>Super last hit</a></li>            <li><a style="display: none;" lang="jp" href='#2065-super_last_hit'>最後のクレイジーバッファローのヒット</a></li>
+            <li><a style="display: none;" lang="en" href='#9100-back_jump'>Back jump</a></li>            <li><a style="display: none;" lang="fr" href='#9100-back_jump'>Saut arrière</a></li>            <li><a style="display: none;" lang="es" href='#9100-back_jump'>Back jump</a></li>            <li><a style="display: none;" lang="jp" href='#9100-back_jump'>後Ｊ</a></li>
+            <li><a style="display: none;" lang="en" href='#9100-forward_jump'>Forward jump</a></li>            <li><a style="display: none;" lang="fr" href='#9100-forward_jump'>Saut avant</a></li>            <li><a style="display: none;" lang="es" href='#9100-forward_jump'>Forward jump</a></li>            <li><a style="display: none;" lang="jp" href='#9100-forward_jump'>前Ｊ</a></li>
+            <li><a style="display: none;" lang="en" href='#9100-neutral_jump'>Neutral jump</a></li>            <li><a style="display: none;" lang="fr" href='#9100-neutral_jump'>Saut neutre</a></li>            <li><a style="display: none;" lang="es" href='#9100-neutral_jump'>Neutral jump</a></li>            <li><a style="display: none;" lang="jp" href='#9100-neutral_jump'>垂直Ｊ</a></li>
           </ul>
         </div>
             </div id="attack-index">
@@ -119,9 +119,8 @@
      <div id="0012-far_standing_jab" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Far standing jab</h2>
-	 <h2 style="display: none;" lang="alt">Far standing LP</h2>
 	 <h2 style="display: none;" lang="fr">Far LP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Far standing LP</h2>
 	 <h2 style="display: none;" lang="jp">遠立ち小Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -134,9 +133,8 @@
      <div id="0013-close_standing_jab" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Close standing jab</h2>
-	 <h2 style="display: none;" lang="alt">Close standing LP</h2>
 	 <h2 style="display: none;" lang="fr">Close LP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Close standing LP</h2>
 	 <h2 style="display: none;" lang="jp">近立ち小Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -149,9 +147,8 @@
      <div id="0014-crouching_jab" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Crouching jab</h2>
-	 <h2 style="display: none;" lang="alt">Crouching LP</h2>
 	 <h2 style="display: none;" lang="fr">Bas LP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Crouching LP</h2>
 	 <h2 style="display: none;" lang="jp">下小Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -164,9 +161,8 @@
      <div id="0022-far_standing_strong" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Far standing strong</h2>
-	 <h2 style="display: none;" lang="alt">Far standing MP</h2>
 	 <h2 style="display: none;" lang="fr">Far MP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Far standing MP</h2>
 	 <h2 style="display: none;" lang="jp">遠立ち中Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -181,9 +177,8 @@
      <div id="0023-close_standing_strong" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Close standing strong</h2>
-	 <h2 style="display: none;" lang="alt">Close standing mp</h2>
 	 <h2 style="display: none;" lang="fr">Close MP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Close standing mp</h2>
 	 <h2 style="display: none;" lang="jp">近立ち中Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -196,9 +191,8 @@
      <div id="0024-crouching_strong" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Crouching strong</h2>
-	 <h2 style="display: none;" lang="alt">Crouching MP</h2>
 	 <h2 style="display: none;" lang="fr">Bas MP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Crouching MP</h2>
 	 <h2 style="display: none;" lang="jp">下中Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -213,9 +207,8 @@
      <div id="0032-far_standing_fierce" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Far standing fierce</h2>
-	 <h2 style="display: none;" lang="alt">Far standing HP</h2>
 	 <h2 style="display: none;" lang="fr">Far HP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Far standing HP</h2>
 	 <h2 style="display: none;" lang="jp">遠立ち大Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -230,9 +223,8 @@
      <div id="0033-close_standing_fierce" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Close standing fierce</h2>
-	 <h2 style="display: none;" lang="alt">Close standing HP</h2>
 	 <h2 style="display: none;" lang="fr">Close HP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Close standing HP</h2>
 	 <h2 style="display: none;" lang="jp">遠立ち大Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -247,9 +239,8 @@
      <div id="0034-crouching_fierce" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Crouching fierce</h2>
-	 <h2 style="display: none;" lang="alt">Crouching HP</h2>
 	 <h2 style="display: none;" lang="fr">Bas gros poing</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Crouching HP</h2>
 	 <h2 style="display: none;" lang="jp">下大Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -264,9 +255,8 @@
      <div id="0042-far_standing_short" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Far standing short</h2>
-	 <h2 style="display: none;" lang="alt">Far standing LK</h2>
 	 <h2 style="display: none;" lang="fr">Far LK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Far standing LK</h2>
 	 <h2 style="display: none;" lang="jp">遠立ち小Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -279,9 +269,8 @@
      <div id="0043-close_standing_short" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Close standing short</h2>
-	 <h2 style="display: none;" lang="alt">Close standing LK</h2>
 	 <h2 style="display: none;" lang="fr">Close LK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Close standing LK</h2>
 	 <h2 style="display: none;" lang="jp">近立ち小Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -294,9 +283,8 @@
      <div id="0044-crouching_short" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Crouching short</h2>
-	 <h2 style="display: none;" lang="alt">Crouching LK</h2>
 	 <h2 style="display: none;" lang="fr">Bas LK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Crouching LK</h2>
 	 <h2 style="display: none;" lang="jp">下小Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -309,9 +297,8 @@
      <div id="0052-far_standing_forward" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Far standing forward</h2>
-	 <h2 style="display: none;" lang="alt">Far standing MK</h2>
 	 <h2 style="display: none;" lang="fr">Far MK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Far standing MK</h2>
 	 <h2 style="display: none;" lang="jp">遠立ち中Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -324,9 +311,8 @@
      <div id="0053-close_standing_forward" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Close standing forward</h2>
-	 <h2 style="display: none;" lang="alt">Close standing MK</h2>
 	 <h2 style="display: none;" lang="fr">Close MK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Close standing MK</h2>
 	 <h2 style="display: none;" lang="jp">近立ち中Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -339,9 +325,8 @@
      <div id="0054-crouching_forward" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Crouching forward</h2>
-	 <h2 style="display: none;" lang="alt">Crouching MK</h2>
 	 <h2 style="display: none;" lang="fr">Bas MK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Crouching MK</h2>
 	 <h2 style="display: none;" lang="jp">下中Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -355,9 +340,8 @@
      <div id="0062-far_standing_roundhouse" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Far standing roundhouse</h2>
-	 <h2 style="display: none;" lang="alt">Far standing HK</h2>
 	 <h2 style="display: none;" lang="fr">Far HK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Far standing HK</h2>
 	 <h2 style="display: none;" lang="jp">遠立ち大Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -372,9 +356,8 @@
      <div id="0063-close_standing_roundhouse" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Close standing roundhouse</h2>
-	 <h2 style="display: none;" lang="alt">Close standing HK</h2>
 	 <h2 style="display: none;" lang="fr">Close HK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Close standing HK</h2>
 	 <h2 style="display: none;" lang="jp">近立ち大Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -387,9 +370,8 @@
      <div id="0064-crouching_roundhouse" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Crouching roundhouse</h2>
-	 <h2 style="display: none;" lang="alt">Crouching HK</h2>
 	 <h2 style="display: none;" lang="fr">Crouch HK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Crouching HK</h2>
 	 <h2 style="display: none;" lang="jp">下大Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -404,9 +386,8 @@
      <div id="0110-diagonal_jump_jab" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Diagonal jump jab</h2>
-	 <h2 style="display: none;" lang="alt">Diagonal jump LP</h2>
 	 <h2 style="display: none;" lang="fr">Saut avant LP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Diagonal jump LP</h2>
 	 <h2 style="display: none;" lang="jp">斜めＪ小Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -421,9 +402,8 @@
      <div id="0110-neutral_jump_jab" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Neutral jump jab</h2>
-	 <h2 style="display: none;" lang="alt">Neutral jump LP</h2>
 	 <h2 style="display: none;" lang="fr">Saut neutre LP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Neutral jump LP</h2>
 	 <h2 style="display: none;" lang="jp">垂直Ｊ小Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -437,9 +417,8 @@
      <div id="0120-diagonal_jump_strong" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Diagonal jump strong</h2>
-	 <h2 style="display: none;" lang="alt">Diagonal jump MP</h2>
 	 <h2 style="display: none;" lang="fr">Saut avant MP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Diagonal jump MP</h2>
 	 <h2 style="display: none;" lang="jp">斜めＪＰ</h2>
        </div>
      <div class="screenshots">
@@ -454,9 +433,8 @@
      <div id="0120-neutral_jump_strong" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Neutral jump strong</h2>
-	 <h2 style="display: none;" lang="alt">Neutral jump MP</h2>
 	 <h2 style="display: none;" lang="fr">Saut neutre MP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Neutral jump MP</h2>
 	 <h2 style="display: none;" lang="jp">垂直ＪＰ</h2>
        </div>
      <div class="screenshots">
@@ -472,9 +450,8 @@
      <div id="0130-diagonal_jump_fierce" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Diagonal jump fierce</h2>
-	 <h2 style="display: none;" lang="alt">Diagonal jump HP</h2>
 	 <h2 style="display: none;" lang="fr">Saut avant HP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Diagonal jump HP</h2>
 	 <h2 style="display: none;" lang="jp">斜めＪ大Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -489,9 +466,8 @@
      <div id="0130-neutral_jump_fierce" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Neutral jump fierce</h2>
-	 <h2 style="display: none;" lang="alt">Neutral jump HP</h2>
 	 <h2 style="display: none;" lang="fr">Saut neutre HP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Neutral jump HP</h2>
 	 <h2 style="display: none;" lang="jp">垂直Ｊ大Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -507,9 +483,8 @@
      <div id="0140-diagonal_jump_short" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Diagonal jump short</h2>
-	 <h2 style="display: none;" lang="alt">Diagonal jump LK</h2>
 	 <h2 style="display: none;" lang="fr">Saut avant LK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Diagonal jump LK</h2>
 	 <h2 style="display: none;" lang="jp">斜めＪ小Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -523,9 +498,8 @@
      <div id="0140-neutral_jump_forward" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Neutral jump forward</h2>
-	 <h2 style="display: none;" lang="alt">Neutral jump MK</h2>
 	 <h2 style="display: none;" lang="fr">Saut neutre MK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Neutral jump MK</h2>
 	 <h2 style="display: none;" lang="jp">垂直ＪＰ</h2>
        </div>
      <div class="screenshots">
@@ -539,9 +513,8 @@
      <div id="0140-neutral_jump_short" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Neutral jump short</h2>
-	 <h2 style="display: none;" lang="alt">Neutral jump LK</h2>
 	 <h2 style="display: none;" lang="fr">Saut neutre LK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Neutral jump LK</h2>
 	 <h2 style="display: none;" lang="jp">垂直Ｊ小Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -555,9 +528,8 @@
      <div id="0150-diagonal_jump_forward" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Diagonal jump forward</h2>
-	 <h2 style="display: none;" lang="alt">Diagonal jump MK</h2>
 	 <h2 style="display: none;" lang="fr">Saut avant MK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Diagonal jump MK</h2>
 	 <h2 style="display: none;" lang="jp">斜めＪＫ</h2>
        </div>
      <div class="screenshots">
@@ -571,9 +543,8 @@
      <div id="0160-diagonal_jump_roundhouse" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Diagonal jump roundhouse</h2>
-	 <h2 style="display: none;" lang="alt">Diagonal jump HK</h2>
 	 <h2 style="display: none;" lang="fr">Saut avant HK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Diagonal jump HK</h2>
 	 <h2 style="display: none;" lang="jp">斜めＪ大Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -588,9 +559,8 @@
      <div id="0160-neutral_jump_roundhouse" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Neutral jump roundhouse</h2>
-	 <h2 style="display: none;" lang="alt">Neutral jump HK</h2>
 	 <h2 style="display: none;" lang="fr">Saut neutre HK</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Neutral jump HK</h2>
 	 <h2 style="display: none;" lang="jp">垂直Ｊ大Ｋ</h2>
        </div>
      <div class="screenshots">
@@ -605,9 +575,8 @@
      <div id="1014-buffalo_headbutt_jab" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Buffalo headbutt jab</h2>
-	 <h2 style="display: none;" lang="alt">Buffalo headbutt LP</h2>
 	 <h2 style="display: none;" lang="fr">Buffalo headbutt LP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Buffalo headbutt LP</h2>
 	 <h2 style="display: none;" lang="jp">バッファローヘッドバッド　小Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -624,9 +593,8 @@
      <div id="1024-buffalo_headbutt_strong" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Buffalo headbutt strong</h2>
-	 <h2 style="display: none;" lang="alt">Buffalo headbutt MP</h2>
 	 <h2 style="display: none;" lang="fr">Buffalo headbutt MP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Buffalo headbutt MP</h2>
 	 <h2 style="display: none;" lang="jp">バッファローヘッドバッド　中Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -644,9 +612,8 @@
      <div id="1025-buffalo_headbutt_fierce" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Buffalo headbutt fierce</h2>
-	 <h2 style="display: none;" lang="alt">Buffalo headbutt HP</h2>
 	 <h2 style="display: none;" lang="fr">Buffalo headbutt HP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Buffalo headbutt HP</h2>
 	 <h2 style="display: none;" lang="jp">バッファローヘッドバッド　大Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -663,9 +630,8 @@
      <div id="1033-straight_rush_jab_fierce" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Straight rush jab fierce</h2>
-	 <h2 style="display: none;" lang="alt">Straight rush jab HP</h2>
 	 <h2 style="display: none;" lang="fr">Dash avant LP HP</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Straight rush jab HP</h2>
 	 <h2 style="display: none;" lang="jp">ダッシュストレート　小大</h2>
        </div>
      <div class="screenshots">
@@ -680,9 +646,8 @@
      <div id="1033-straight_rush_strong" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Straight rush strong</h2>
-	 <h2 style="display: none;" lang="alt">Straight rush MP</h2>
 	 <h2 style="display: none;" lang="fr">Dash upper strong</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Straight rush MP</h2>
 	 <h2 style="display: none;" lang="jp">ダッシュストレート　中Ｐ</h2>
        </div>
      <div class="screenshots">
@@ -697,9 +662,8 @@
      <div id="1034-low_rush" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Low rush</h2>
-	 <h2 style="display: none;" lang="alt">Low rush</h2>
 	 <h2 style="display: none;" lang="fr">Dash low</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Low rush</h2>
 	 <h2 style="display: none;" lang="jp">ダッシュグランドストレート</h2>
        </div>
      <div class="screenshots">
@@ -715,9 +679,8 @@
      <div id="1040-upper_rush" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Upper rush</h2>
-	 <h2 style="display: none;" lang="alt">Upper rush</h2>
 	 <h2 style="display: none;" lang="fr">Dash upper</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Upper rush</h2>
 	 <h2 style="display: none;" lang="jp">ダッシュアッパー</h2>
        </div>
      <div class="screenshots">
@@ -732,9 +695,8 @@
      <div id="1044-knockdown_rush" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Knockdown rush</h2>
-	 <h2 style="display: none;" lang="alt">Knockdown rush</h2>
 	 <h2 style="display: none;" lang="fr">Dash upper pied</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Knockdown rush</h2>
 	 <h2 style="display: none;" lang="jp">ダッシュグランドアッパー</h2>
        </div>
      <div class="screenshots">
@@ -749,9 +711,8 @@
      <div id="1060-turn_around_punch" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Turn around punch</h2>
-	 <h2 style="display: none;" lang="alt">Turn around punch</h2>
 	 <h2 style="display: none;" lang="fr">Turn around punch</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Turn around punch</h2>
 	 <h2 style="display: none;" lang="jp">ターンパンチ</h2>
        </div>
      <div class="screenshots">
@@ -772,9 +733,8 @@
      <div id="2010-super_first_hit_punch" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Super first hit punch</h2>
-	 <h2 style="display: none;" lang="alt">Super first hit punch</h2>
 	 <h2 style="display: none;" lang="fr">Super premier hit poing</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Super first hit punch</h2>
 	 <h2 style="display: none;" lang="jp">最小のクレイジーバッファローのヒットＰ</h2>
        </div>
      <div class="screenshots">
@@ -790,9 +750,8 @@
      <div id="2011-super_punch" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Super punch</h2>
-	 <h2 style="display: none;" lang="alt">Super punch</h2>
 	 <h2 style="display: none;" lang="fr">Super poing</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Super punch</h2>
 	 <h2 style="display: none;" lang="jp">クレイジーバッファローＰ</h2>
        </div>
      <div class="screenshots">
@@ -805,9 +764,8 @@
      <div id="2040-super_first_hit_kick" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Super first hit kick</h2>
-	 <h2 style="display: none;" lang="alt">Super first hit kick</h2>
 	 <h2 style="display: none;" lang="fr">Super premier hit pied</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Super first hit kick</h2>
 	 <h2 style="display: none;" lang="jp">最小のクレイジーバッファローのヒットＫ</h2>
        </div>
      <div class="screenshots">
@@ -822,9 +780,8 @@
      <div id="2041-super_kick" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Super kick</h2>
-	 <h2 style="display: none;" lang="alt">Super kick</h2>
 	 <h2 style="display: none;" lang="fr">Super pied</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Super kick</h2>
 	 <h2 style="display: none;" lang="jp">クレイジーバッファローＫ</h2>
        </div>
      <div class="screenshots">
@@ -837,9 +794,8 @@
      <div id="2065-super_last_hit" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Super last hit</h2>
-	 <h2 style="display: none;" lang="alt">Super last hit</h2>
 	 <h2 style="display: none;" lang="fr">Super dernier hit</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Super last hit</h2>
 	 <h2 style="display: none;" lang="jp">最後のクレイジーバッファローのヒット</h2>
        </div>
      <div class="screenshots">
@@ -860,9 +816,8 @@
      <div id="9100-back_jump" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Back jump</h2>
-	 <h2 style="display: none;" lang="alt">Back jump</h2>
 	 <h2 style="display: none;" lang="fr">Saut arrière</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Back jump</h2>
 	 <h2 style="display: none;" lang="jp">後Ｊ</h2>
        </div>
      <div class="screenshots">
@@ -881,9 +836,8 @@
      <div id="9100-forward_jump" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Forward jump</h2>
-	 <h2 style="display: none;" lang="alt">Forward jump</h2>
 	 <h2 style="display: none;" lang="fr">Saut avant</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Forward jump</h2>
 	 <h2 style="display: none;" lang="jp">前Ｊ</h2>
        </div>
      <div class="screenshots">
@@ -902,9 +856,8 @@
      <div id="9100-neutral_jump" class="move">
        <div class="heading">
          <h2 style="display: none;" lang="en">Neutral jump</h2>
-	 <h2 style="display: none;" lang="alt">Neutral jump</h2>
 	 <h2 style="display: none;" lang="fr">Saut neutre</h2>
-       	 <h2 style="display: none;" lang="es"></h2>
+       	 <h2 style="display: none;" lang="es">Neutral jump</h2>
 	 <h2 style="display: none;" lang="jp">垂直Ｊ</h2>
        </div>
      <div class="screenshots">
@@ -930,7 +883,6 @@
 
     <div class="back-to-top">
       <a href=#top style="display: none;" lang="en" >Back to top ↑</a>
-      <a href=#top style="display: none;" lang="alt" >Back to top ↑</a>
       <a href=#top style="display: none;" lang="fr" >Haut de page ↑</a>
       <a href=#top style="display: none;" lang="es" >Back to top ↑</a>
       <a href=#top style="display: none;" lang="jp" >トップへ戻る ↑</a>
@@ -938,92 +890,75 @@
     <div class="charlist">
 
       <h2 style="display: none;" lang="en" >Characters:</h2>
-      <h2 style="display: none;" lang="alt" >Characters:</h2>
       <h2 style="display: none;" lang="fr" >Personnages:</h2>
       <h2 style="display: none;" lang="es" >Characters:</h2>
       <h2 style="display: none;" lang="jp" >キャラクター:</h2>
       
       <ul>
         <li style="display: none;" lang="en" ><a href="../../st/ryu/index.html" style="display: none;" lang="en" >Ryu</a> <a href="../../old-chars/ryu/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/ryu/index.html?lang=alt" style="display: none;" lang="alt" >Ryu</a> <a href="../../old-chars/ryu/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/ryu/index.html?lang=fr" style="display: none;" lang="fr" >Ryu</a> <a href="../../old-chars/ryu/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/ryu/index.html?lang=es" style="display: none;" lang="es" >Ryu</a> <a href="../../old-chars/ryu/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/ryu/index.html?lang=jp" style="display: none;" lang="jp" >リュウ</a> <a href="../../old-chars/ryu/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/ryu/index.html?lang=fr" style="display: none;" lang="fr" >Ryu</a> <a href="../../old-chars/ryu/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/ryu/index.html?lang=es" style="display: none;" lang="es" >Ryu</a> <a href="../../old-chars/ryu/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/ryu/index.html?lang=jp" style="display: none;" lang="jp" >リュウ</a> <a href="../../old-chars/ryu/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/ken/index.html" style="display: none;" lang="en" >Ken</a> <a href="../../old-chars/ken/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/ken/index.html?lang=alt" style="display: none;" lang="alt" >Ken</a> <a href="../../old-chars/ken/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/ken/index.html?lang=fr" style="display: none;" lang="fr" >Ken</a> <a href="../../old-chars/ken/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/ken/index.html?lang=es" style="display: none;" lang="es" >Ken</a> <a href="../../old-chars/ken/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/ken/index.html?lang=jp" style="display: none;" lang="jp" >ケン</a> <a href="../../old-chars/ken/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/ken/index.html?lang=fr" style="display: none;" lang="fr" >Ken</a> <a href="../../old-chars/ken/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/ken/index.html?lang=es" style="display: none;" lang="es" >Ken</a> <a href="../../old-chars/ken/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/ken/index.html?lang=jp" style="display: none;" lang="jp" >ケン</a> <a href="../../old-chars/ken/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/ehonda/index.html" style="display: none;" lang="en" >E. Honda</a> <a href="../../old-chars/ehonda/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/ehonda/index.html?lang=alt" style="display: none;" lang="alt" >E. Honda</a> <a href="../../old-chars/ehonda/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/ehonda/index.html?lang=fr" style="display: none;" lang="fr" >E. Honda</a> <a href="../../old-chars/ehonda/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/ehonda/index.html?lang=es" style="display: none;" lang="es" >E. Honda</a> <a href="../../old-chars/ehonda/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/ehonda/index.html?lang=jp" style="display: none;" lang="jp" >本田</a> <a href="../../old-chars/ehonda/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/ehonda/index.html?lang=fr" style="display: none;" lang="fr" >E. Honda</a> <a href="../../old-chars/ehonda/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/ehonda/index.html?lang=es" style="display: none;" lang="es" >E. Honda</a> <a href="../../old-chars/ehonda/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/ehonda/index.html?lang=jp" style="display: none;" lang="jp" >本田</a> <a href="../../old-chars/ehonda/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/chunli/index.html" style="display: none;" lang="en" >Chun-Li</a> <a href="../../old-chars/chunli/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/chunli/index.html?lang=alt" style="display: none;" lang="alt" >Chun-Li</a> <a href="../../old-chars/chunli/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/chunli/index.html?lang=fr" style="display: none;" lang="fr" >Chun-Li</a> <a href="../../old-chars/chunli/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/chunli/index.html?lang=es" style="display: none;" lang="es" >Chun-Li</a> <a href="../../old-chars/chunli/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/chunli/index.html?lang=jp" style="display: none;" lang="jp" >春麗</a> <a href="../../old-chars/chunli/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/chunli/index.html?lang=fr" style="display: none;" lang="fr" >Chun-Li</a> <a href="../../old-chars/chunli/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/chunli/index.html?lang=es" style="display: none;" lang="es" >Chun-Li</a> <a href="../../old-chars/chunli/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/chunli/index.html?lang=jp" style="display: none;" lang="jp" >春麗</a> <a href="../../old-chars/chunli/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/blanka/index.html" style="display: none;" lang="en" >Blanka</a> <a href="../../old-chars/blanka/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/blanka/index.html?lang=alt" style="display: none;" lang="alt" >Blanka</a> <a href="../../old-chars/blanka/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/blanka/index.html?lang=fr" style="display: none;" lang="fr" >Blanka</a> <a href="../../old-chars/blanka/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/blanka/index.html?lang=es" style="display: none;" lang="es" >Blanka</a> <a href="../../old-chars/blanka/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/blanka/index.html?lang=jp" style="display: none;" lang="jp" >ブランカ</a> <a href="../../old-chars/blanka/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/blanka/index.html?lang=fr" style="display: none;" lang="fr" >Blanka</a> <a href="../../old-chars/blanka/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/blanka/index.html?lang=es" style="display: none;" lang="es" >Blanka</a> <a href="../../old-chars/blanka/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/blanka/index.html?lang=jp" style="display: none;" lang="jp" >ブランカ</a> <a href="../../old-chars/blanka/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/zangief/index.html" style="display: none;" lang="en" >Zangief</a> <a href="../../old-chars/zangief/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/zangief/index.html?lang=alt" style="display: none;" lang="alt" >Zangief</a> <a href="../../old-chars/zangief/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/zangief/index.html?lang=fr" style="display: none;" lang="fr" >Zangief</a> <a href="../../old-chars/zangief/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/zangief/index.html?lang=es" style="display: none;" lang="es" >Zangief</a> <a href="../../old-chars/zangief/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/zangief/index.html?lang=jp" style="display: none;" lang="jp" >ザンギエフ</a> <a href="../../old-chars/zangief/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/zangief/index.html?lang=fr" style="display: none;" lang="fr" >Zangief</a> <a href="../../old-chars/zangief/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/zangief/index.html?lang=es" style="display: none;" lang="es" >Zangief</a> <a href="../../old-chars/zangief/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/zangief/index.html?lang=jp" style="display: none;" lang="jp" >ザンギエフ</a> <a href="../../old-chars/zangief/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/guile/index.html" style="display: none;" lang="en" >Guile</a> <a href="../../old-chars/guile/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/guile/index.html?lang=alt" style="display: none;" lang="alt" >Guile</a> <a href="../../old-chars/guile/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/guile/index.html?lang=fr" style="display: none;" lang="fr" >Guile</a> <a href="../../old-chars/guile/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/guile/index.html?lang=es" style="display: none;" lang="es" >Guile</a> <a href="../../old-chars/guile/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/guile/index.html?lang=jp" style="display: none;" lang="jp" >ガイル</a> <a href="../../old-chars/guile/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/guile/index.html?lang=fr" style="display: none;" lang="fr" >Guile</a> <a href="../../old-chars/guile/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/guile/index.html?lang=es" style="display: none;" lang="es" >Guile</a> <a href="../../old-chars/guile/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/guile/index.html?lang=jp" style="display: none;" lang="jp" >ガイル</a> <a href="../../old-chars/guile/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/dhalsim/index.html" style="display: none;" lang="en" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/dhalsim/index.html?lang=alt" style="display: none;" lang="alt" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/dhalsim/index.html?lang=fr" style="display: none;" lang="fr" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/dhalsim/index.html?lang=es" style="display: none;" lang="es" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/dhalsim/index.html?lang=jp" style="display: none;" lang="jp" >ダルシム</a> <a href="../../old-chars/dhalsim/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/dhalsim/index.html?lang=fr" style="display: none;" lang="fr" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/dhalsim/index.html?lang=es" style="display: none;" lang="es" >Dhalsim</a> <a href="../../old-chars/dhalsim/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/dhalsim/index.html?lang=jp" style="display: none;" lang="jp" >ダルシム</a> <a href="../../old-chars/dhalsim/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/thawk/index.html" style="display: none;" lang="en" >T. Hawk</a> <a href="../../old-chars/thawk/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/thawk/index.html?lang=alt" style="display: none;" lang="alt" >T. Hawk</a> <a href="../../old-chars/thawk/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/thawk/index.html?lang=fr" style="display: none;" lang="fr" >T. Hawk</a> <a href="../../old-chars/thawk/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/thawk/index.html?lang=es" style="display: none;" lang="es" >T. Hawk</a> <a href="../../old-chars/thawk/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/thawk/index.html?lang=jp" style="display: none;" lang="jp" >ホーク</a> <a href="../../old-chars/thawk/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
-        <li style="display: none;" lang="en" ><a href="../../st/thawk/index.html" style="display: none;" lang="en" >T. Hawk</a> <a href="../../old-chars/thawk/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/thawk/index.html?lang=alt" style="display: none;" lang="alt" >T. Hawk</a> <a href="../../old-chars/thawk/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/cammy/index.html?lang=fr" style="display: none;" lang="fr" >Cammy</a> <a href="../../old-chars/cammy/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/cammy/index.html?lang=es" style="display: none;" lang="es" >Cammy</a> <a href="../../old-chars/cammy/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/cammy/index.html?lang=jp" style="display: none;" lang="jp" >キャミィ</a> <a href="../../old-chars/cammy/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/thawk/index.html?lang=fr" style="display: none;" lang="fr" >T. Hawk</a> <a href="../../old-chars/thawk/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/thawk/index.html?lang=es" style="display: none;" lang="es" >T. Hawk</a> <a href="../../old-chars/thawk/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/thawk/index.html?lang=jp" style="display: none;" lang="jp" >ホーク</a> <a href="../../old-chars/thawk/index.html" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="en" ><a href="../../st/cammy/index.html" style="display: none;" lang="en" >Cammy</a> <a href="../../old-chars/cammy/index.html" style="display: none;" lang="en" >(old)</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/cammy/index.html?lang=fr" style="display: none;" lang="fr" >Cammy</a> <a href="../../old-chars/cammy/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/cammy/index.html?lang=es" style="display: none;" lang="es" >Cammy</a> <a href="../../old-chars/cammy/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/cammy/index.html?lang=jp" style="display: none;" lang="jp" >キャミィ</a> <a href="../../old-chars/cammy/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/feilong/index.html" style="display: none;" lang="en" >Fei Long</a> <a href="../../old-chars/feilong/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/feilong/index.html?lang=alt" style="display: none;" lang="alt" >Fei Long</a> <a href="../../old-chars/feilong/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/feilong/index.html?lang=fr" style="display: none;" lang="fr" >Fei Long</a> <a href="../../old-chars/feilong/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/feilong/index.html?lang=es" style="display: none;" lang="es" >Fei Long</a> <a href="../../old-chars/feilong/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/feilong/index.html?lang=jp" style="display: none;" lang="jp" >フェイロン</a> <a href="../../old-chars/feilong/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/feilong/index.html?lang=fr" style="display: none;" lang="fr" >Fei Long</a> <a href="../../old-chars/feilong/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/feilong/index.html?lang=es" style="display: none;" lang="es" >Fei Long</a> <a href="../../old-chars/feilong/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/feilong/index.html?lang=jp" style="display: none;" lang="jp" >フェイロン</a> <a href="../../old-chars/feilong/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/deejay/index.html" style="display: none;" lang="en" >Dee Jay</a> <a href="../../old-chars/deejay/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/deejay/index.html?lang=alt" style="display: none;" lang="alt" >Dee Jay</a> <a href="../../old-chars/deejay/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/deejay/index.html?lang=fr" style="display: none;" lang="fr" >Dee Jay</a> <a href="../../old-chars/deejay/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/deejay/index.html?lang=es" style="display: none;" lang="es" >Dee Jay</a> <a href="../../old-chars/deejay/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/deejay/index.html?lang=jp" style="display: none;" lang="jp" >ディージェイ</a> <a href="../../old-chars/deejay/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/deejay/index.html?lang=fr" style="display: none;" lang="fr" >Dee Jay</a> <a href="../../old-chars/deejay/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/deejay/index.html?lang=es" style="display: none;" lang="es" >Dee Jay</a> <a href="../../old-chars/deejay/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/deejay/index.html?lang=jp" style="display: none;" lang="jp" >ディージェイ</a> <a href="../../old-chars/deejay/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/balrog/index.html" style="display: none;" lang="en" >Boxer</a> <a href="../../old-chars/balrog/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/balrog/index.html?lang=alt" style="display: none;" lang="alt" >Boxer</a> <a href="../../old-chars/balrog/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/balrog/index.html?lang=fr" style="display: none;" lang="fr" >Boxer</a> <a href="../../old-chars/balrog/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/balrog/index.html?lang=es" style="display: none;" lang="es" >Boxer</a> <a href="../../old-chars/balrog/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/balrog/index.html?lang=jp" style="display: none;" lang="jp" >バイソン</a> <a href="../../old-chars/balrog/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
-        <li style="display: none;" lang="en" ><a href="../../st/balrog/index.html" style="display: none;" lang="en" >Boxer</a> <a href="../../old-chars/balrog/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/balrog/index.html?lang=alt" style="display: none;" lang="alt" >Boxer</a> <a href="../../old-chars/balrog/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/vega/index.html?lang=fr" style="display: none;" lang="fr" >Griffe</a> <a href="../../old-chars/vega/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/vega/index.html?lang=es" style="display: none;" lang="es" >Claw</a> <a href="../../old-chars/vega/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/vega/index.html?lang=jp" style="display: none;" lang="jp" >バルログ</a> <a href="../../old-chars/vega/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/balrog/index.html?lang=fr" style="display: none;" lang="fr" >Boxer</a> <a href="../../old-chars/balrog/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/balrog/index.html?lang=es" style="display: none;" lang="es" >Boxer</a> <a href="../../old-chars/balrog/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/balrog/index.html?lang=jp" style="display: none;" lang="jp" >バイソン</a> <a href="../../old-chars/balrog/index.html" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="en" ><a href="../../st/vega/index.html" style="display: none;" lang="en" >Claw</a> <a href="../../old-chars/vega/index.html" style="display: none;" lang="en" >(old)</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/vega/index.html?lang=fr" style="display: none;" lang="fr" >Griffe</a> <a href="../../old-chars/vega/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/vega/index.html?lang=es" style="display: none;" lang="es" >Claw</a> <a href="../../old-chars/vega/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/vega/index.html?lang=jp" style="display: none;" lang="jp" >バルログ</a> <a href="../../old-chars/vega/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/sagat/index.html" style="display: none;" lang="en" >Sagat</a> <a href="../../old-chars/sagat/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/sagat/index.html?lang=alt" style="display: none;" lang="alt" >Sagat</a> <a href="../../old-chars/sagat/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/sagat/index.html?lang=fr" style="display: none;" lang="fr" >Sagat</a> <a href="../../old-chars/sagat/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/sagat/index.html?lang=es" style="display: none;" lang="es" >Sagat</a> <a href="../../old-chars/sagat/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/sagat/index.html?lang=jp" style="display: none;" lang="jp" >サガット</a> <a href="../../old-chars/sagat/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/sagat/index.html?lang=fr" style="display: none;" lang="fr" >Sagat</a> <a href="../../old-chars/sagat/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/sagat/index.html?lang=es" style="display: none;" lang="es" >Sagat</a> <a href="../../old-chars/sagat/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/sagat/index.html?lang=jp" style="display: none;" lang="jp" >サガット</a> <a href="../../old-chars/sagat/index.html" style="display: none;" lang="jp" >（S）</a></li>
         <li style="display: none;" lang="en" ><a href="../../st/mbison/index.html" style="display: none;" lang="en" >Dictator</a> <a href="../../old-chars/mbison/index.html" style="display: none;" lang="en" >(old)</a></li>
-	<li style="display: none;" lang="alt" ><a href="../../st/mbison/index.html?lang=alt" style="display: none;" lang="alt" >Dictator</a> <a href="../../old-chars/mbison/index.html?lang=alt" style="display: none;" lang="alt" >(old)</a></li>
-        <li style="display: none;" lang="fr" ><a href="../../st/mbison/index.html?lang=fr" style="display: none;" lang="fr" >Dictateur</a> <a href="../../old-chars/mbison/index.html?lang=fr" style="display: none;" lang="fr" >(old)</a></li>
-        <li style="display: none;" lang="es" ><a href="../../st/mbison/index.html?lang=es" style="display: none;" lang="es" >Dictator</a> <a href="../../old-chars/mbison/index.html?lang=es" style="display: none;" lang="es" >(old)</a></li>
-        <li style="display: none;" lang="jp" ><a href="../../st/mbison/index.html?lang=jp" style="display: none;" lang="jp" >ベガ</a> <a href="../../old-chars/mbison/index.html?lang=jp" style="display: none;" lang="jp" >（S）</a></li>
+        <li style="display: none;" lang="fr" ><a href="../../st/mbison/index.html?lang=fr" style="display: none;" lang="fr" >Dictateur</a> <a href="../../old-chars/mbison/index.html" style="display: none;" lang="fr" >(old)</a></li>
+        <li style="display: none;" lang="es" ><a href="../../st/mbison/index.html?lang=es" style="display: none;" lang="es" >Dictator</a> <a href="../../old-chars/mbison/index.html" style="display: none;" lang="es" >(old)</a></li>
+        <li style="display: none;" lang="jp" ><a href="../../st/mbison/index.html?lang=jp" style="display: none;" lang="jp" >ベガ</a> <a href="../../old-chars/mbison/index.html" style="display: none;" lang="jp" >（S）</a></li>
       </ul>
     </div>
 

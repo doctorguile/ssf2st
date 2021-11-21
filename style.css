@@ -14,7 +14,7 @@ a, label, p {
     text-decoration:none;
 }
 
-h1, h2 {
+h1, h2, select {
     color: #fafafa;
 }
 
@@ -66,7 +66,7 @@ div.attack-block-hit {
 }
 
 footer {
-    background-color: rgb(2, 85, 85);
+    background-color: rgb(20, 95, 95);
     position: fixed;
     left: 0px;
     bottom: 0px;
@@ -168,6 +168,7 @@ h2 {
     justify-content: space-between;
     padding: 6px;
     margin-bottom: 24px;
+    margin-top: 50px;
 }
 
 .heading a {
@@ -270,10 +271,39 @@ label {
     border-radius: 4px;
     padding: 8px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
-    max-width: 100px;
+    max-width: 110px;
     align-self: end;
     position: relative;
     right: 6px;
     bottom: 20px;
     margin-top: -20px;
+}
+
+.option-bar {
+    background-color: rgb(2, 95, 95);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 6;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 4px;
+}
+
+.option-bar select {
+    background-color: rgb(2, 95, 95);
+    padding: 10px;
+    width: 150px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    position: relative;
+}
+
+.option-bar select:hover {
+    background-color: rgb(4, 131, 131);
 }
