@@ -60,7 +60,7 @@ for move in $(echo */ | tr -d "/"); do
     move_name_jp=$(echo "${move_name_jp^}")
     
     line_en=$(echo "            <li><a style=\"display: none;\" lang=\"en\" href='#"$move"'>"${move_name_en}"</a></li>" | tr " " "?")
-    line_alt=$(echo "            <li><a style=\"display: none;\" lang=\"alt\" href='#"$move"'>"${move_name_en}"</a></li>" | tr " " "?")
+    line_alt=$(echo "            <li><a style=\"display: none;\" lang=\"alt\" href='#"$move"'>"${move_name_alt}"</a></li>" | tr " " "?")
     line_fr=$(echo "            <li><a style=\"display: none;\" lang=\"fr\" href='#"$move"'>"${move_name_fr}"</a></li>" | tr " " "?")
     line_es=$(echo "            <li><a style=\"display: none;\" lang=\"es\" href='#"$move"'>"${move_name_es}"</a></li>" | tr " " "?")
     line_jp=$(echo "            <li><a style=\"display: none;\" lang=\"jp\" href='#"$move"'>"${move_name_jp}"</a></li>" | tr " " "?")
