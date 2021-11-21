@@ -14,7 +14,7 @@ a, label, p {
     text-decoration:none;
 }
 
-h1, h2 {
+h1, h2, select {
     color: #fafafa;
 }
 
@@ -262,7 +262,7 @@ label {
 .moves {
     display: flex;
     height: 300px;
-    padding-<left: 12px;
+    padding-left: 12px;
     padding-top: 8px;
 }
 
@@ -271,7 +271,7 @@ label {
     border-radius: 4px;
     padding: 8px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
-    max-width: 100px;
+    max-width: 110px;
     align-self: end;
     position: relative;
     right: 6px;
@@ -280,7 +280,7 @@ label {
 }
 
 .option-bar {
-    background-color: rgb(20, 95, 95);
+    background-color: rgb(2, 95, 95);
     position: fixed;
     left: 0px;
     top: 0px;
@@ -288,11 +288,11 @@ label {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-
+    padding-bottom: 4px;
 }
 
 .option-bar select {
-    background-color: teal;
+    background-color: rgb(2, 95, 95);
     padding: 10px;
     width: 150px;
     border: none;
@@ -302,5 +302,8 @@ label {
     appearance: button;
     outline: none;
     position: relative;
-    
+}
+
+.option-bar select:hover {
+    background-color: rgb(4, 131, 131);
 }
