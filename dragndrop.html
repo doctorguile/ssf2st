@@ -2,97 +2,184 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title></title>
-    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="dragndrop.css">
-    <script src="https://kit.fontawesome.com/8a320ab812.js" crossorigin="anonymous"></script>
+    <link
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/base/jquery-ui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="dragndrop.css" />
+    <script
+      src="https://kit.fontawesome.com/8a320ab812.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
   </head>
 
   <body>
-      <section id="canvas-zone">
-        <div id='zoomin' class="dragndrop__btn dragndrop__elt"><i class="fas fa-search"></i></div>
-        <div id='content'></div>
-        <div class="dragndrop">
-            <div id='droppable' class="dragndrop__elt"><i class="fas fa-trash"></i></div>
-            <div id='clear-all' class="dragndrop__btn dragndrop__elt"><i class="fas fa-times-circle"></i></div>
+    <section id="canvas-zone">
+      <div id="options">
+        <div id="zoomin" class="dragndrop__btn dragndrop__elt">
+          <i class="fas fa-search"></i>
         </div>
-      </section>
-    
+        <div id="help" class="dragndrop__btn dragndrop__elt">
+          <i class="far fa-question-circle"></i>
+        </div>
+      </div>
+      <div id="content"></div>
+      <div class="dragndrop">
+        <div id="droppable" class="dragndrop__elt">
+          <i class="fas fa-trash"></i>
+        </div>
+        <div id="clear-all" class="dragndrop__btn dragndrop__elt">
+          <i class="fas fa-times-circle"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="help-tooltip">
+      <div class="help-header">
+        <h2>Caption</h2>
+        <i class="fas fa-times-circle"></i>
+      </div>
+
+      <div class="caption">
+        <div class="line line-hurtbox"></div>
+
+        <p>
+          Hurtbox - indicates where your character is vulnerable to
+          <span class="term term-attack">attacks</span>
+        </p>
+      </div>
+      <div class="caption">
+        <div class="line line-hitbox"></div>
+
+        <p>Hitbox - indicates where your character's move hits</p>
+      </div>
+      <div class="caption">
+        <div class="line line-pushbox"></div>
+
+        <p>
+          Pushbox - two pushboxes can't overlap, resulting in one pushing the
+          other
+        </p>
+      </div>
+      <div class="caption">
+        <div class="line line-throwbox"></div>
+
+        <p>Throwbox - indicates your character's throw range</p>
+      </div>
+      <div class="caption">
+        <div class="line line-throwablebox"></div>
+
+        <p>
+          Throwable box - indicates where your character is vulnerable to
+          <span class="term term-throw">throws</span>
+        </p>
+      </div>
+
+      <div class="caption">
+        <div class="line line-airthrowablebox"></div>
+
+        <p>
+          Air throwable box - indicates where your character is vulnerable to
+          <span class="term term-airthrow">air throws</span>
+        </p>
+      </div>
+
+      <div class="caption">
+        <div class="line line-phurtbox"></div>
+        <p>Projectile hurtbox</p>
+      </div>
+
+      <div class="caption">
+        <div class="line line-phitbox"></div>
+        <p>Projectile hitbox</p>
+      </div>
+    </section>
+
     <script type="text/javascript">
-
       function getZIndex(j) {
-	  var z = $(j).css("z-index");
-	  z = parseInt(z,10); 
-	  if (isNaN(z)) return 1;
-	  return z;
-      }    
-      
-      function maxZ() {
-          var mj = 0;
-          $('img').each(function(){
-              var z = getZIndex(this);
-              if (z > mj) {
-                  mj = z;
-              }
-          });
-          return mj;
-      } 
-
-      function updateZindex(){
-          var z = getZIndex(this);
-          var mz = maxZ();
-          if (z < mz || mz == 1) {
-              $(this).css("z-index",mz+1);
-          }
+        var z = $(j).css("z-index");
+        z = parseInt(z, 10);
+        if (isNaN(z)) return 1;
+        return z;
       }
 
-      $.generateId = function() {
-          return arguments.callee.prefix + arguments.callee.count++;
+      function maxZ() {
+        var mj = 0;
+        $("img").each(function () {
+          var z = getZIndex(this);
+          if (z > mj) {
+            mj = z;
+          }
+        });
+        return mj;
+      }
+
+      function updateZindex() {
+        var z = getZIndex(this);
+        var mz = maxZ();
+        if (z < mz || mz == 1) {
+          $(this).css("z-index", mz + 1);
+        }
+      }
+
+      $.generateId = function () {
+        return arguments.callee.prefix + arguments.callee.count++;
       };
 
-      $.generateId.prefix = 'jqid';
+      $.generateId.prefix = "jqid";
       $.generateId.count = 0;
-      
-      $.fn.generateId = function() {
-          return this.each(function() {
-              this.id = $.generateId();
-          });
-      };
 
+      $.fn.generateId = function () {
+        return this.each(function () {
+          this.id = $.generateId();
+        });
+      };
 
       function insertImageP1(src) {
-          var id = $.generateId();
-          var opacity = 1;
-          $('#content').append('<img id="'+ id + '" src="' + src + '"/>');
-          setTimeout(function() {
-              $('#'+id).css("z-index",1).draggable().fadeTo('fast', opacity).mousedown(updateZindex);
-          },100);
+        var id = $.generateId();
+        var opacity = 1;
+        $("#content").append('<img id="' + id + '" src="' + src + '"/>');
+        setTimeout(function () {
+          $("#" + id)
+            .css("z-index", 1)
+            .draggable()
+            .fadeTo("fast", opacity)
+            .mousedown(updateZindex);
+        }, 100);
       }
 
       function insertImageP2(src) {
-          var id = $.generateId();
-          var opacity = 1;
-          $('#content').append('<img class="p2" id="'+ id + '" src="' + src + '"/>');
-          setTimeout(function() {
-              $('#'+id).css("z-index",1).draggable().fadeTo('fast', opacity).mousedown(updateZindex);
-          },100);
+        var id = $.generateId();
+        var opacity = 1;
+        $("#content").append(
+          '<img class="p2" id="' + id + '" src="' + src + '"/>'
+        );
+        setTimeout(function () {
+          $("#" + id)
+            .css("z-index", 1)
+            .draggable()
+            .fadeTo("fast", opacity)
+            .mousedown(updateZindex);
+        }, 100);
       }
 
-      $(function() {
-	  var defaultOpacity = 1;
-	  $("#clear-all").button().click(function() {
-              $('img').remove();
-	  });
-	  $("#droppable").droppable({
-              drop: function(evt,ui) { 
-		  ui.draggable.remove();
-              }
-	  });
+      $(function () {
+        var defaultOpacity = 1;
+        $("#clear-all")
+          .button()
+          .click(function () {
+            $("img").remove();
+          });
+        $("#droppable").droppable({
+          drop: function (evt, ui) {
+            ui.draggable.remove();
+          },
+        });
       });
-      </script>
-      <script src="imageEdit.js"></script>
+    </script>
+    <script src="imageEdit.js"></script>
   </body>
-
-
 </html>
