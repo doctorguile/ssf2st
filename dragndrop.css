@@ -206,3 +206,7 @@ section#help-tooltip.visible {
   flex-flow: nowrap row;
   gap: 16px;
 }
+
+#content {
+  height: 0px;
+}
